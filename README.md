@@ -1,8 +1,3 @@
-Aşağıya, rapora dayalı ve **Modül 1’i de eksiksiz anlatan**, ayrıca README içinde rapor dosyasına **tıklanabilir bağlantı** veren, baştan sona kapsamlı bir metin hazırladım. Bunu doğrudan `README.md` olarak kullanabilirsin.
-
-> Not: Rapor dosyasının repo kökünde bulunduğunu varsayıyorum. Dosya adına tıklanınca GitHub üzerinde açılacaktır.
-
----
 
 # 🥗 Diyetisyen LLM
 
@@ -354,7 +349,3 @@ Bu mimari sağlık alanında:
 * Daha denetlenebilir
 
 bir yaklaşım sunmaktadır.
-
-
-
-bölümlerini de ekleyelim.
