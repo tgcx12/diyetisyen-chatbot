@@ -1,6 +1,7 @@
 
 # 🥗 Diyetisyen LLM
 
+
 ## RAG + NLP + Deterministik Planlama ve LLM Kalibrasyon Katmanlı Akıllı Sağlık Asistanı
 
 📄 **Akademik Rapor (Detaylı Metodoloji ve Deney Sonuçları):**
