@@ -1,0 +1,45 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "Doymuş yağ tüketimi, yüksek tansiyonu kontrol altında tutmak için sınırlı olmalıdır  |  Tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır  |  İşlenmiş ürünlerde yüksek miktarda doymuş yağlar bulunabilir, bu nedenle zeytinyağı gibi sağlıklı yağlar tercih edilmelidir  |  Sodyum, doymuş yağlar ve ilave şeker alımını azaltmak, kalp hastalığı ve yüksek tansiyon riskini azaltır  |  Yağ, şeker ve tuz içeriği yüksek besinlerin tüketiminin artması, kronik hastalık riskini artırır  |  Doymuş yağ asidi içeren besinler yerine, kolesterol ve sodyum içeriği düşüktür.",
+  "used_chunks": [
+    "chunk_000408",
+    "chunk_000393",
+    "genel_04_tuz_yag_seker",
+    "chunk_000390",
+    "chunk_000389",
+    "ht_dash_01"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

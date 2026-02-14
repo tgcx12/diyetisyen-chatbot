@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Beslenmede kolesterolü düşürmek için dikkat edilmesi gereken noktalar şunlardır: * Günlük doymuş yağ ve trans yağ tüketimine dikkat edin  |  * Tam tahıllı ekmek, pirinç yerine bulgur gibi sağlıklı seçenekler tercih edin  |  * Zeytinyağı ve fındık yağı gibi doymamış yağlar tüketin  |  * Kolesterolü düşüren lifler (tam tahıllı ekmek, pirinç yerine bulgur) tüketin  |  * Günlük enerjinin %20 35'ini yağlardan elde edin  |  %10'undan daha azının (%7 8) doymuş yağlardan, %1'inden azının ise trans yağlardan sağlanması gerekmektedir",
+  "used_chunks": [
+    "chunk_000404",
+    "chunk_000398",
+    "chol_5_5_01",
+    "chunk_000395",
+    "chol_5_4_01",
+    "chunk_000394",
+    "chunk_000397",
+    "chunk_000400",
+    "chol_5_3_01",
+    "kalp_2_4_14",
+    "chunk_000399",
+    "chunk_000407"
+  ],
+  "strict_chunks_count": 16,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Günde en az 5 porsiyon sebze ve meyve tüketimi önerilir  |  Badem, ceviz gibi kabuklu yemişler uygun seçeneklerdir  |  Kabuklu yemis tüketimi önerilir  |  Zeytin ve zeytinyağı da seçenekler arasındadır  |  Tekli doymamış yağlar, örneğin fındık yağı veya kanola yağı tüketimi önerilir  |  Kuruyemiş tüketim sıklığı bireysel ihtiyaçlara göre belirlenmelidir.",
+  "used_chunks": [
+    "t2p_3",
+    "dm_ek_04"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için kuruyemiş kabuklu yemiş tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_freq",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

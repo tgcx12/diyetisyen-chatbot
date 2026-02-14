@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Günlük Doymuş Yağ  |  Trans Yağ  |  Kolesterol Alımı  |  Omega 3  |  Şeker Tüketimi  |  Hayvansal Protein Seçimi",
+  "used_chunks": [
+    "chunk_000404",
+    "chunk_000398",
+    "chol_5_5_01",
+    "chunk_000395",
+    "chol_5_4_01",
+    "chunk_000394",
+    "chunk_000397",
+    "chunk_000400",
+    "chol_5_3_01",
+    "kalp_2_4_14",
+    "chunk_000399",
+    "chunk_000407"
+  ],
+  "strict_chunks_count": 16,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

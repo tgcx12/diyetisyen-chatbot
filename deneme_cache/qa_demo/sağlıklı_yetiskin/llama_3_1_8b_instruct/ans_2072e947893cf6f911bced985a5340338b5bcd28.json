@@ -1,0 +1,53 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Sebze ve meyvelerin mevsiminde tüketilmesine dikkat edilmeli ve günde en az 400 g sebze ve meyve tüketilmelidir.  |  Günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek, nişastalı olmayan kökler ve yumrular (örneğin havuç, enginar, kereviz (kereviz kökü), şalgam, pancar) tüketmek kansere karşı koruyucu Yaşlılarda Sağlıklı Beslenme Önerileri  |  Sebze ve meyveler bol ve çeşitli tüketilmelidir.  |  Tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler günlük beslenmede yer almalıdır.  |  Böylece karbonhidrat, protein, yağ, vitamin, mineral, posa ve su alımı dengelenir.  |  Bu miktara patates ve nişastası yüksek sebzeler dahil edilmemektedir.",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi",
+    "chunk_000595_01",
+    "c178",
+    "yasli_saglikli_05_sebze_meyve",
+    "c175b",
+    "genel_01_dengeli_beslenme",
+    "yasli_ilke_01_besin_cesitliligi",
+    "chunk_000592_04",
+    "chunk_000594_01",
+    "yasli_ilke_09_posa",
+    "yasli_ilke_06_tam_tahil",
+    "yasli_saglikli_06_tahil_yag"
+  ],
+  "strict_chunks_count": 17,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

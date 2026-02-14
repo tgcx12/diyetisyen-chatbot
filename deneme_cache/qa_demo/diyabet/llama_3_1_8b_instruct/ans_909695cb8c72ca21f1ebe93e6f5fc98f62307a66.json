@@ -1,0 +1,43 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, .  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı, .  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı, .  |  Posa içeriği düşük olan beyaz ekmek yerine tam buğday ekmeği, tam taneli tahıl ekmeği, kepekli ekmek, beyaz pirinç yerine kepekli pirinç veya bulgur, meyve suyu yerine meyve tüketilmeli, .  |  Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı.  |  İyi Yağlar",
+  "used_chunks": [
+    "t2p_3",
+    "dm_ek_04"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

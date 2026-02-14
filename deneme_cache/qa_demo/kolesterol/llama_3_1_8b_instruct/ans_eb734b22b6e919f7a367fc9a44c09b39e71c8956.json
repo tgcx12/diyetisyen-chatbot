@@ -1,0 +1,45 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+  "answer": "Et Tüketimi ve Pişirme Yöntemleri  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır.  |  Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  ızgara, haşlama, buharda ya da kendi suyunda pişirme yöntemleri tercih edilmelidir.  |  Hayvansal Protein Seçimi",
+  "used_chunks": [
+    "chunk_000400",
+    "kalp_2_4_08",
+    "chol_5_3_01",
+    "chunk_000401"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için beyaz et (tavuk hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_beyaz_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

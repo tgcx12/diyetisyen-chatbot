@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Baklagiller aynı zamanda folik asit açısından zengindir.  |  Sarımsak ve Kurubaklagillerin Koruyucu Etkileri  |  baklagil  |  Sarımsak bol miktarda potasyum, fosfor, selenyum, A ve C vitaminleri ile 75 farklı kükürtlü madde içerir.  |  İyi bir bitkisel protein ve lif kaynağı olan kurubaklagiller bol tüketilmelidir.",
+  "used_chunks": [
+    "kalp_2_4_12",
+    "kalp_2_4_11"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

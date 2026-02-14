@@ -1,0 +1,42 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Haftada en az iki kez 300 500 g balık tüketilmelidir  |  Küçük balıklar olan hamsi, sardalya gibi soğuk su balıkları tercih edilmelidir  |  Balıklar ızgara, fırında veya buharda pişirilmelidir  |  Bitkisel yağlar ve balık gibi sağlıklı yağ kaynakları önemlidir  |  Tekli doymamış yağlar ve omega 3 yağ asitleri içeren balıklar kanser gelişimini önlemeye yardımcı olur  |  Somon, uskumru gibi yağlı balıklar da tüketilebilir",
+  "used_chunks": [
+    "chunk_000599_02",
+    "yasli_ilke_07_doymus_yag",
+    "c176"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için balık tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

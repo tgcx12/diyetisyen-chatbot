@@ -1,0 +1,39 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "",
+  "used_chunks": [],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": false,
+    "reason": "no_evidence"
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

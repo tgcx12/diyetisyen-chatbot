@@ -1,0 +1,395 @@
+{
+  "domain": "kolesterol",
+  "model_key": "gemma_3_4b",
+  "count": 35,
+  "items": [
+    {
+      "question": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Ambalajlı yiyeceklerde düşük yağ, doymuş yağ ve trans yağ içeriği tercih edilmelidir  |  Beyaz ekmek yerine tam tahıllı ekmek ve pirinç yerine bulgur gibi kolesterolü düşüren lifler tüketilmelidir  |  Zeytinyağı ve fındık yağı gibi doymamış yağlar ve Omega 3 kaynakları tercih edilmelidir  |  Günlük doymuş yağ ve trans yağ alımı %20 35 ile sınırlı olmalı, kolesterol alımı 300 mg’ın altında tutulmalıdır  |  Yağlı etler, sakatatlar ve işlenmiş et ürünleri yerine hayvansal protein kaynakları tercih edilmelidir  |  Şeker ve şekerli gıdaların tüketimi kontrol altında tutulmalıdır",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000398",
+        "chol_5_5_01",
+        "chunk_000395",
+        "chol_5_4_01",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000400",
+        "chol_5_3_01",
+        "kalp_2_4_14",
+        "chunk_000399",
+        "chunk_000407"
+      ]
+    },
+    {
+      "question": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Günlük doymuş yağ ve trans yağ alımı sınırlandırılmalıdır  |  Doymamış yağlar ve omega 3 içeren yiyecekler tercih edilmelidir  |  Diyetin kolesterol miktarının 300 mg’ın altında tutulmasında yarar vardır  |  Kolesterolü düşüren lifler (tam tahıllı ekmek, bulgur) tercih edilmelidir  |  Günlük şeker ve şekerli gıda tüketimi kontrol altında tutulmalıdır  |  Yumurta tüketimi, yağlı et ve süt ürünlerine göre daha az risklidir",
+      "used_chunks": [
+        "chunk_000398",
+        "chunk_000395",
+        "chunk_000404",
+        "chol_5_4_01",
+        "chunk_000394",
+        "chunk_000401",
+        "chol_5_5_01",
+        "chunk_000399",
+        "chunk_000400",
+        "chunk_000397",
+        "kalp_2_4_14",
+        "chunk_000406"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "Günlük yağsız dana eti 60g ve beyaz et 150g ile sınırlandırılmalıdır  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli, et miktarı abartılmamalıdır  |  İşlenmiş et ürünleri (sucuk, salam, sosis) yüksek kolesterol içerir  |  ızgara, haşlama, buharda veya kendi suyunda pişirme yöntemleri tercih edilmelidir  |  Az tuzlu ve az yağlı ibareli salamura veya konserve zeytinler tüketilebilir  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı",
+      "used_chunks": [
+        "chol_5_3_01",
+        "kalp_2_4_08",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada 3 gün kırmızı et  |  4 gün beyaz et tüketilmeli  |  Günlük yağsız dana eti 60g ile sınırlandırılmalıdır  |  İşlenmiş et ürünleri yüksek kolesterol içerir  |  Az tuzlu ve az yağlı salamura veya zeytin tüketimi sınırlı olmalıdır",
+      "used_chunks": [
+        "kalp_2_4_08",
+        "chol_5_3_01",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük yağsız dana eti 60g  |  Beyaz et 150g ile sınırlandırılmalıdır  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli  |  Et miktarı abartılmamalıdır  |  İşlenmiş et ürünleri yüksek kolesterol içerir  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir",
+      "used_chunks": [
+        "chol_5_3_01",
+        "kalp_2_4_08",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Haftada 3 gün kırmızı et ve 4 gün beyaz et (tavuk/hindi) tüketilmeli  |  Et miktarı abartılmamalıdır  |  ızgara, haşlama, buharda veya kendi suyunda pişirme yöntemleri tercih edilmelidir  |  Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır  |  Kırmızı ve beyaz etlerin görünür yağları uzaklaştırılmalıdır  |  Tavuk ve hindi gibi beyaz etlerin tüketimi, özellikle derisiyle birlikte, kolesterol alımını artırabilir.",
+      "used_chunks": [
+        "chunk_000400",
+        "kalp_2_4_08",
+        "chol_5_3_01",
+        "chunk_000401"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli  |  Beyaz et tüketimi günlük 150g ile sınırlandırılmalıdır  |  Tavuk ve hindi gibi kanatlı hayvanlar derisiyle birlikte tüketilmelidir  |  Etlerin görünür yağları satın alma, yemek hazırlama ve tabaktan uzaklaştırılmalıdır  |  Beyaz et tüketimi abartılmamalıdır",
+      "used_chunks": [
+        "kalp_2_4_08",
+        "chunk_000400",
+        "chol_5_3_01",
+        "chunk_000401"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır  |  Tavuk ve hindi gibi kanatlı hayvanlar derisiyle birlikte tüketilmelidir  |  Kırmızı ve beyaz etlerin görünür yağları uzaklaştırılmalıdır  |  Et tüketimi haftada 3 gün kırmızı et ve 4 gün beyaz etle sınırlı olmalıdır  |  Abartılı beyaz et tüketiminden kaçınılmalıdır  |  Beyaz et tüketimi, özellikle tavuk ve hindi gibi kaynaklardan dikkatli olmalıdır.",
+      "used_chunks": [
+        "chol_5_3_01",
+        "chunk_000400",
+        "chunk_000401",
+        "kalp_2_4_08"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir  |  Doymamış yağlar ve Omega 3, kötü kolesterolü düşürür  |  Kuru yemişler (cüz, fındık) ve balık, kalbi korur  |  Balık yağı iyi kolesterolü yükseltirken trigliseridleri düşürür  |  Şeker tüketimi kontrol altında tutulmalıdır  |  Fazla şeker tüketimi kan kolesterolünü artırabilir",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir  |  Balık, özellikle somon, uskumru ve sardalya gibi türler, kolesterol seviyelerini düşürmeye yardımcı olabilir  |  Balık yağı iyi kolesterolü yükseltirken kötü kolesterolün ön maddesi olan trigliseridleri düşürmektedir  |  Balık tüketimi, kalp sağlığını destekler  |  Hamsi gibi diğer yağlı balıklar da faydalı olabilir  |  Balık tüketiminin düzenli olması önemlidir",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir  |  Balık, kötü kolesterolü düşürmede yardımcı olur  |  Balık yağı iyi kolesterolü yükseltir  |  Balık, kalp ritim bozukluklarını önlemeye yardımcı olur  |  Somon, uskumru gibi balıklar faydalıdır  |  Hamsi gibi balıklar da tüketilebilir",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Tam yumurtayı sağlıklı bireyler günde bir adet, kalp damar hastalıkları olanlar haftada 2 3 kez bir adet tüketebilir  |  Yumurtayı haşlama veya yağsız tavada omlet biçiminde pişirmek önerilir  |  Yumurta, yağlı et ve süt ürünlerine göre kan kolesterolünü daha az yükseltir  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı dikkate alınmalıdır  |  Süt ürünleri, peynir, süt ve yoğurt az yağlı olanlardan seçilmelidir  |  Yumurta tüketimi haftada 1 2 kez önerilir.",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Sağlıklı bireyler tam yumurta günde bir adet, kalp damar hastalıkları olanlar haftada 2 3 adet  |  Yumurtanın haşlama veya yağsız tavada omlet biçiminde pişirilmesi önerilir  |  Yumurta tüketimi haftada 1 2 kez olmalıdır  |  Yumurta sarisi tüketimi kolesterolü yükseltebilir  |  Yumurta sarisi tüketimini sınırlamak önemlidir  |  Yumurta tüketiminde dikkatli olmak gerekir",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Sağlıklı bireyler tam yumurta günde bir adet  |  Kalp damar hastalıkları olanlar haftada 2 3 kez bir adet tüketebilir  |  Yumurtanın haşlama veya yağsız tavada omlet biçiminde pişirilmesi önerilir  |  Yumurta tüketimi haftada 1 2 kez olmalıdır  |  Yumurta sarisi tüketimi kolesterolü yükseltebilir  |  Yumurta sarisi tüketimini sınırlamak önemlidir",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Yetişkinlerde ve çocuklarda az yağlı süt ve ürünleri tercih edilmeli  |  Peynir, süt ve yoğurt az yağlı olanlardan seçilmelidir  |  Yumurta haftada 1 2 kez, haşlama veya omlet biçiminde pişirilmelidir  |  Yağlı etler, sakatatlar ve işlenmiş et ürünleri yüksek kolesterol içerir  |  Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır  |  Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır",
+      "used_chunks": [
+        "chunk_000402",
+        "kalp_2_4_10",
+        "chunk_000395",
+        "chol_5_3_01",
+        "chunk_000406",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yumurta haftada 1 2 kez, haşlama veya omlet şeklinde  |  Az yağlı süt ve yogurt tüketimi önerilir  |  Peynir ve süt ürünleri az yağlı olanlardan seçilmeli  |  Yağlı etlerden ve tam yağlı süt ürünlerinden kaçınılmalı  |  Salamura ve konserve zeytinler porsiyon kontrolüyle tüketilebilir  |  Süt ve süt ürünleri tüketimi, özellikle az yağlı olanlardan tercih edilerek haftada birkaç kez yapılabilir",
+      "used_chunks": [
+        "chunk_000402",
+        "kalp_2_4_10",
+        "chunk_000406",
+        "chunk_000395",
+        "chol_5_3_01",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yarım yağlı veya yağsız süt ve süt ürünleri tercih edilmelidir  |  Peynir, süt ve yogurt az yağlı olanlardan seçilmelidir  |  Yumurta haftada 1 2 kez haşlanmış veya yağsız tavada omlet biçiminde pişirilmelidir  |  Yağlı etlerden ve salamuralardan kaçınılmalıdır  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinler tüketilebilir  |  Süt ve süt ürünlerinin tüketimi, özellikle yetişkinlerde azaltılmalıdır",
+      "used_chunks": [
+        "chunk_000402",
+        "chol_5_3_01",
+        "chunk_000406",
+        "chunk_000395",
+        "kalp_2_4_10",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Tam tahıllı ekmek, rafine ekmek yerine tercih edilmelidir  |  Bulgur, pirinç yerine tercih edilmelidir  |  Tam tahıl tüketimi kolesterolü düşürmeye yardımcı olabilir  |  Lif içeriği önemlidir  |  Yulaf ve tam tahıl tüketimi önerilir",
+      "used_chunks": [
+        "chol_5_5_01"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Baklagil tüketimi folik asit açısından faydalıdır  |  Kurubaklagiller iyi bir bitkisel protein ve lif kaynağıdır  |  Sarımsak potasyum, fosfor, selenyum ve vitaminler içerir  |  Kurubaklagillerin bol tüketilmesi önerilir  |  Baklagillerin tüketimi, özellikle de kurubaklagiller, sağlıklı bir diyetin parçası olabilir  |  Baklagillerin tüketimi, özellikle de kuru baklagiller, potasyum ve lif açısından zengindir.",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Baklagil tüketimi, sağlıklı bir diyetin parçası olarak önerilir  |  kurubaklagillerin bol tüketilmesini tavsiye edilir  |  Baklagillerin tüketimi haftada birkaç kez olabilir  |  İyi bir bitkisel protein ve lif kaynağı olan kurubaklagillerin tüketimi önemlidir  |  Baklagiller folik asit açısından zengindir  |  Sarımsak ve kurubaklagillerin tüketimi önerilir.",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Baklagil tüketim miktarı hakkında spesifik bir porsiyon/adet/gram/ml bilgisi bulunamadı  |  Kurubaklagillerin bol tüketilmesi önerilir  |  Sarımsak ve kurubaklagiller iyi bir bitkisel protein ve lif kaynağıdır  |  Baklagiller folik asit açısından zengindir  |  İyi bir baklagil olan kuru baklagillerin tüketimi önerilir  |  Baklagillerin tüketimi kalp sağlığı için faydalıdır",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Ceviz, içinde bulunan Omega 3 yağ asitleri sayesinde kalbi korur  |  Kuruyemişler özellikle kalp hastalıklarının önlenmesinde önemli etkilere sahiptir  |  Yer fıstığı, ceviz, badem, fındık, fıstık, ay çekirdeği ve kabak çekirdeği kalbi koruyucu maddeler içerir  |  Günlük şeker tüketimi kontrol altında tutulmalıdır, çünkü fazla şeker kan kolesterolünü artırabilir  |  Az tuzlu ve az yağlı zeytinlerin tüketimi önerilir, ancak yağ ve tuz içeriği yüksek olduğu için dikkatli olunmalıdır",
+      "used_chunks": [
+        "kalp_2_4_14",
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada 2 kez yağlı balık tüketilmelidir  |  Kuruyemişler özellikle kalp hastalıklarının önlenmesinde önemlidir  |  Yer fıstığı, ceviz, badem, fındık, fıstık, ay çekirdeği ve kabak çekirdeği kalbi koruyucu maddeler içerir  |  Günlük şeker ve şekerli gıda tüketimi kontrol altında tutulmalıdır  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir  |  Doymamış Yağlar ve Omega 3, özellikle fındık yağı kötü kolesterolü düşürür.",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kuruyemişler, özellikle kalp hastalıklarının önlenmesinde önemlidir  |  kuruyemis  |  Ceviz, fındık, badem gibi kabuklu yemişler günlük beslenmede yer alabilir  |  yer fıstığı, ceviz, badem, fındık, fıstık, ay çekirdeği ve kabak çekirdeği kalbi koruyucu maddeler içerir  |  Doymamış yağlar ve Omega 3 içeren zeytinyağı ve fındık yağı kötü kolesterolü düşürür  |  Günlük şeker tüketimi kontrol altında tutulmalıdır",
+      "used_chunks": [
+        "kalp_2_4_14",
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Günlük doymuş yağ ve trans yağ alımı, ambalajlı ürün etiket bilgilerine göre belirlenmeli  |  Doymuş yağ alımı %20 35’in altında, trans yağ alımı %1’in altında olmalı  |  Süt ve ürünlerinde yağsız veya yarı yağlı seçenekler tercih edilmeli  |  Salatalar için 5 g (bir tatlı kaşığı) yağ kullanılmalı, sebzeler için 15 g  |  Yağda ve fırınlanmış besinlerde trans yağ asidi kaynaklarından kaçınılmalı  |  Diyette fazla yağ, doymuş yağ, trans yağ ve kolesterol tüketimi kalp ve damar hastalıkları riskini artırır",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000398",
+        "chunk_000395",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000399",
+        "chunk_000401",
+        "chunk_000400",
+        "chunk_000402",
+        "chunk_000403",
+        "chunk_000396",
+        "chunk_000409"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Doymuş yağ alımının günlük 300 mg’ın altında tutulmasında yarar vardır  |  Sağlıklı bireyler tam yumurtayı günde bir adet, kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir  |  Zeytinyağı ve fındık yağı kötü kolesterolü düşürür  |  Salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir  |  Etsiz sebze yemekleri için bu miktar 15 g olmalıdır  |  Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir",
+      "used_chunks": [
+        "chunk_000398",
+        "chunk_000404",
+        "chunk_000394",
+        "chol_5_4_01",
+        "chunk_000401",
+        "chunk_000395",
+        "chunk_000399",
+        "chunk_000402",
+        "chunk_000400",
+        "chunk_000406",
+        "chunk_000397",
+        "chunk_000403"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Diyetin kolesterol miktarının 300 mg’ın altında tutulmasında yarar vardır  |  Günlük enerjinin yağlardan gelen katkısı %20 35 olmalı  |  Salatalara 5 g (bir tatlı kaşığı) yağ eklenmesi yeterlidir  |  Etsiz sebze yemekleri için 15 g yağ tüketilmeli  |  Yağda ve fırında yapılan kızartmalardan ve bazı unlu mamullerden uzak durulmalıdır  |  Margarinlerin tüketiminden kaçınılmalıdır",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000398",
+        "chunk_000403",
+        "chunk_000395",
+        "chunk_000401",
+        "chunk_000399",
+        "chunk_000402",
+        "chunk_000409",
+        "chunk_000400",
+        "chunk_000396"
+      ]
+    },
+    {
+      "question": "kolesterol için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "Trans yağdan kaçınılmalı, yağda ve fırında yapılan kızartmalar, bazı unlu mamuller ve patlamış mısır gibi ürünlerde bulunur  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı, ambalajlı besinlerde bulunan trans yağ asidi miktarına sınır getirilmekle birlikte margarinlerin tüketiminden kaçınılmalıdır  |  Diyetin kolesterol miktarının ise 300 mg’ın altında tutulmasında yarar vardır  |  Ambalajlı tüketime sunulan yiyecek ve içeceklerin ambalajlarının üzerinde yazılı olan etiket bilgisi okunarak toplam yağ, doymuş ve trans yağ ile kolesterol içerikleri daha düşük olan benzer besinler tercih edilmelidir  |  Özellikle yetişkinlerde ve çocuklarda süt ve ürünlerinin tüketimini artırırken, yetişkinlerde daha az yağ içeren (yarım yağlı ya da yağsız süt ve ürünlerinin) tüketimi tercih edilmeli/ teşvik edilmelidir",
+      "used_chunks": [
+        "chunk_000396",
+        "chunk_000394",
+        "chunk_000404",
+        "chunk_000395",
+        "chunk_000399",
+        "chunk_000409",
+        "chunk_000398",
+        "chunk_000401",
+        "chunk_000407",
+        "chunk_000400",
+        "chunk_000397",
+        "chunk_000402"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Günde en az 5 porsiyon sebze meyve ve haftada 2 3 kez kurubaklagil tüketilmelidir  |  Tam tahıllı ve posalı besinler tercih edilmeli, beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur gibi tam tahıl kaynakları tüketilmeli  |  Salatalara 150 g için 5 g yağ eklenmeli, etsiz sebze yemekleri için 15 g yağ eklenmeli  |  Lif, folik asit ve kanserden korunma açısından diyet lifi ve baklagiller önemli  |  Sarımsak ve kurubaklagiller bol miktarda potasyum, fosfor, selenyum ve A, C vitaminleri ile iyi bir bitkisel protein ve lif kaynağıdır  |  Yumurta haftada 1 2 kez haşlanmış veya yağsız tavada omlet şeklinde pişirilmelidir",
+      "used_chunks": [
+        "chol_5_5_01",
+        "chunk_000403",
+        "kalp_2_4_10",
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Günde en az 5 porsiyon sebze meyve tüketilmelidir  |  Haftada 2 3 kez kurubaklagil tüketilmeli  |  Tam tahıl ve posalı besinler tercih edilmelidir  |  Salatalara 150 g için 5 g yağ eklenmeli  |  Yumurta haftada 1 2 kez, haşlanmış veya yağsız tavada pişirilmelidir  |  Diyet lifi yüksek tansiyonu ve kötü kolesterolü düşürür.",
+      "used_chunks": [
+        "chol_5_5_01",
+        "kalp_2_4_10",
+        "chunk_000403",
+        "kalp_2_4_12"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günde en az 5 porsiyon sebze meyve tüketin  |  Haftada 2 3 kez kurubaklagil yiyin  |  Etsiz sebze yemeklerinde 15 g lif tüketin  |  Tam tahıl ve posalı besinler tercih edin  |  Yumurta tüketiminde haftada 1 2 kez, haşlanmış veya yağsız omlet şeklinde pişirin",
+      "used_chunks": [
+        "chol_5_5_01",
+        "chunk_000403",
+        "kalp_2_4_10",
+        "kalp_2_4_12"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Haftada 2 kez yağlı balık tüketilmelidir  |  Doymamış yağlar (zeytinyağı, fındık yağı) kötü kolesterolü düşürür  |  Az tuzlu ve az yağlı ibareli salamura veya konserve zeytinler, porsiyon kontrolüyle tüketilebilir  |  Günlük toplam yağ tüketimi azaltılmalıdır  |  Zeytin, yüksek yağ ve tuz içeriği nedeniyle dikkatli tüketilmelidir",
+      "used_chunks": [
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_07"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada 2 kez yağlı balık tüketilmelidir  |  Günlük toplam yağ tüketimi azaltılmalıdır  |  Az tuzlu ve az yağlı salamura veya konserve zeytinler tüketilebilir (6 8 adet)  |  Tuz içeriği yüksek olan zeytinlerin tüketimi kolesterolü etkileyebilir  |  Tuzlu yiyecekler kolesterol seviyelerini yükseltebilir  |  Salamura veya tursu tüketimi, sodyum alımını kontrol altında tutmayı gerektirir.",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_07",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Haftada 2 kez yağlı balık tüketimi önerilir  |  Zeytinyağı ve fındık yağı kötü kolesterolü düşürür  |  Az tuzlu ve az yağlı salamura veya konserve zeytinler 6 8 adet içerebilir  |  Günlük toplam yağ tüketimi azaltılmalıdır  |  Tuzlu gıdalardan kaçınılmalıdır  |  Zeytin, yağ ve tuz içeriği nedeniyle dikkatli tüketilmelidir",
+      "used_chunks": [
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_07"
+      ]
+    },
+    {
+      "question": "kolesterol için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Şekerli içecekler ve reçel, bal gibi şekerli gıdalar kan kolesterolünü artırabilir  |  Günlük şeker tüketimi kontrol altında tutulmalıdır  |  Zeytinyağı ve fındık yağı gibi doymamış yağlar kötü kolesterolü düşürür  |  Haftada 2 kez yağlı balık tüketimi önerilir  |  Ambalajlı besinlerde trans yağ asidi miktarına sınır getirilmiştir  |  Balık yağı iyi kolesterolü yükseltirken trigliseridleri düşürmektedir",
+      "used_chunks": [
+        "chunk_000404",
+        "kalp_2_4_14",
+        "chunk_000396",
+        "chol_5_4_01",
+        "kalp_2_4_09"
+      ]
+    }
+  ]
+}

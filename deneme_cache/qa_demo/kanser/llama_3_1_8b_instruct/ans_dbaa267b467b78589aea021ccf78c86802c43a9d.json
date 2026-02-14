@@ -1,0 +1,43 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Koruyucu diyet yaklaşımları: 5 porsiyon, tam tahıl örnekleri  |  kanser  |  Posa ve kanser ilişkisini ortaya koyan çalışmalarda kansere karşı koruyucu olan çoğu diyet yaklaşımında toplam 5 porsiyon sebzemeyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) olması gerektiği belirtilmektedir.  |  Kanser Önlemede Akdeniz Tarzı Beslenme (Diyetisyen Notu)  |  ÖNEMLİ DİETİSYEN NOTU (not36): Kanser hastalığının önlenmesinde Akdeniz tarzı beslenme şekli önemlidir.",
+  "used_chunks": [
+    "c176",
+    "ca_fiber_diet_patterns_5servings",
+    "not_36",
+    "ca_nutrition_rel_1",
+    "akciger_kanseri_04",
+    "c175a",
+    "ca_folate_sources_reco",
+    "c178",
+    "ca_prev_1",
+    "ca_diet_factors_overview"
+  ],
+  "strict_chunks_count": 10,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

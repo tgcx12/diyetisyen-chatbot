@@ -1,0 +1,41 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Baklagil tüketimi folik asit açısından faydalıdır  |  Kurubaklagiller iyi bir bitkisel protein ve lif kaynağıdır  |  Sarımsak potasyum, fosfor, selenyum ve vitaminler içerir  |  Kurubaklagillerin bol tüketilmesi önerilir  |  Baklagillerin tüketimi, özellikle de kurubaklagiller, sağlıklı bir diyetin parçası olabilir  |  Baklagillerin tüketimi, özellikle de kuru baklagiller, potasyum ve lif açısından zengindir.",
+  "used_chunks": [
+    "kalp_2_4_12",
+    "kalp_2_4_11"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

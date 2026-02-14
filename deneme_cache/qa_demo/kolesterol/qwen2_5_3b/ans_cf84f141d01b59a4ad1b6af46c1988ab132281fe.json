@@ -1,0 +1,42 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "kolesterol  |  Haftada 2 kez  |  salamura  |  az yağlı  |  az tuzlu  |  zeytinyağı",
+  "used_chunks": [
+    "chol_5_4_01",
+    "kalp_2_4_07",
+    "chunk_000408"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için tuz sodyum tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tuz_1_num_freq",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

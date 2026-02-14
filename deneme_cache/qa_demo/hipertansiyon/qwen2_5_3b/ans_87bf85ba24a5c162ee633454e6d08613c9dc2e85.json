@@ -1,0 +1,40 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "günde 2 kez  |  ayda 8 kez  |  EVIDENCE içinde bulunamadı.",
+  "used_chunks": [
+    "cvh_dash_3"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için baklagil tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_freq",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

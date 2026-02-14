@@ -1,0 +1,495 @@
+[
+  {
+    "id": "q01",
+    "query": "Kolesterol yüksekliği olan bireylerde hangi yağ türleri tercih edilmelidir?",
+    "gold": {
+      "answer": "Kolesterol yüksekliğinde doymamış yağlardan zengin, doymuş yağdan fakir yağlar tercih edilmelidir.",
+      "must_have": ["doymamis", "doymus"],
+      "must_not_have": ["trans"]
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kolesterol", "yag"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q02",
+    "query": "Kolesterol düzeyini artıran besin grupları nelerdir?",
+    "gold": {
+      "answer": "Sakatatlar, yağlı etler ve tam yağlı süt ürünleri kolesterol düzeyini artırabilir.",
+      "must_have": ["sakatat", "yagli", "sut"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["kolesterol", "besin"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q03",
+    "query": "Kolesterol kontrolünde lif tüketiminin rolü nedir?",
+    "gold": {
+      "answer": "Yeterli lif tüketimi LDL kolesterolün düşürülmesine yardımcı olur.",
+      "must_have": ["lif", "ldl"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kolesterol", "lif"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q04",
+    "query": "Diyabetli bireylerde hangi karbonhidrat türleri sınırlandırılmalıdır?",
+    "gold": {
+      "answer": "Basit ve rafine karbonhidratlar sınırlandırılmalıdır.",
+      "must_have": ["basit", "rafine"],
+      "must_not_have": ["kompleks"]
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["diyabet", "karbonhidrat"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q05",
+    "query": "Diyabetli bireyler için önerilen kompleks karbonhidratlar nelerdir?",
+    "gold": {
+      "answer": "Tam tahıllar, kuru baklagiller ve sebzeler kompleks karbonhidratlara örnektir.",
+      "must_have": ["tam tahil", "baklagil", "sebze"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["diyabet", "karbonhidrat"],
+      "must_cite": true
+    }
+  },
+
+  {
+    "id": "q06",
+    "query": "Hipertansiyonu olan bireylerde sodyum tüketimi neden kısıtlanmalıdır?",
+    "gold": {
+      "answer": "Yüksek sodyum alımı kan basıncını yükselttiği için kısıtlanmalıdır.",
+      "must_have": ["sodyum", "kan basinci"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["hipertansiyon", "sodyum"],
+      "must_cite": true
+    }
+  },
+
+  {
+    "id": "q07",
+    "query": "Hipertansiyonda kaçınılması gereken hazır gıdalar nelerdir?",
+    "gold": {
+      "answer": "Hazır çorbalar, işlenmiş etler ve konserve ürünler kaçınılması gerekenlerdir.",
+      "must_have": ["hazir", "islenmis", "konserve"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["hipertansiyon", "paketli_gida"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q08",
+    "query": "Obezite tedavisinde enerji alımı nasıl düzenlenmelidir?",
+    "gold": {
+      "answer": "Obezite tedavisinde enerji alımı bireyin ihtiyacına göre azaltılmalıdır.",
+      "must_have": ["enerji", "azalt"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["obezite", "enerji"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q09",
+    "query": "Obez bireylerde tercih edilmesi gereken pişirme yöntemleri nelerdir?",
+    "gold": {
+      "answer": "Haşlama, ızgara ve fırında pişirme yöntemleri tercih edilmelidir.",
+      "must_have": ["haslama", "izgara", "firin"],
+      "must_not_have": ["kizartma"]
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["obezite", "pisirme"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q10",
+    "query": "Kalp-damar hastalıklarından korunmada balık tüketiminin önemi nedir?",
+    "gold": {
+      "answer": "Balık omega-3 yağ asitleri içerdiği için kalp-damar sağlığını destekler.",
+      "must_have": ["balik", "omega"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kalp", "balik"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q11",
+    "query": "Omega-3 yağ asitlerinden zengin besinler nelerdir?",
+    "gold": {
+      "answer": "Somon, uskumru ve ceviz omega-3 yağ asitlerinden zengindir.",
+      "must_have": ["somon", "uskumru", "ceviz"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["omega3", "yag"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q12",
+    "query": "Kanserden korunmada sebze ve meyve tüketimi neden önemlidir?",
+    "gold": {
+      "answer": "Sebze ve meyveler antioksidanlar içererek kanser riskini azaltır.",
+      "must_have": ["sebze", "meyve", "antioksidan"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kanser", "sebze_meyve"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q13",
+    "query": "Kanser riskini artırdığı belirtilen beslenme alışkanlıkları nelerdir?",
+    "gold": {
+      "answer": "Yüksek yağlı, işlenmiş ve düşük lifli beslenme kanser riskini artırır.",
+      "must_have": ["yuksek yagli", "islenmis", "dusuk lif"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kanser", "beslenme"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q14",
+    "query": "Tam tahıllı ürünlerin sağlık üzerindeki temel faydası nedir?",
+    "gold": {
+      "answer": "Tam tahıllar lif içeriği sayesinde sindirim ve metabolik sağlığı destekler.",
+      "must_have": ["tam tahil", "lif"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["tahil", "lif"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q15",
+    "query": "Glisemik indeksi düşük besinler nelerdir?",
+    "gold": {
+      "answer": "Bulgur, mercimek ve tam buğday ekmeği düşük glisemik indekslidir.",
+      "must_have": ["bulgur", "mercimek", "tam bugday"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["glisemik_indeks", "karbonhidrat"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q16",
+    "query": "Diyabette posa tüketimi neden teşvik edilir?",
+    "gold": {
+      "answer": "Posa kan şekeri dalgalanmalarını azaltarak glisemik kontrolü destekler.",
+      "must_have": ["posa", "kan sekeri"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["diyabet", "posa"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q17",
+    "query": "Diyabetli bireylerin kaçınması gereken içecekler nelerdir?",
+    "gold": {
+      "answer": "Şekerli gazlı içecekler ve meyve suları kaçınılması gereken içeceklerdir.",
+      "must_have": ["sekerli", "gazli", "meyve suyu"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["diyabet", "icecek"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q18",
+    "query": "Hipertansiyon yönetiminde kilo kontrolünün önemi nedir?",
+    "gold": {
+      "answer": "Kilo kontrolü kan basıncının düşürülmesine yardımcı olur.",
+      "must_have": ["kilo", "kan basinci"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["hipertansiyon", "kilo"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q19",
+    "query": "Hipertansiyonda önerilen süt ve süt ürünleri hangileridir?",
+    "gold": {
+      "answer": "Az yağlı süt, yoğurt ve peynir önerilmektedir.",
+      "must_have": ["az yagli", "sut", "yogurt", "peynir"],
+      "must_not_have": ["tam yagli"]
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["hipertansiyon", "sut_urunleri"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q20",
+    "query": "Kalp sağlığını korumak için kırmızı et tüketimi nasıl olmalıdır?",
+    "gold": {
+      "answer": "Kırmızı et tüketimi sınırlandırılmalı ve yağsız olanlar tercih edilmelidir.",
+      "must_have": ["kirmizi et", "sinirlandir"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["kalp", "kirmizi_et"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q21",
+    "query": "İşlenmiş et ürünlerinin sağlık üzerindeki olumsuz etkisi nedir?",
+    "gold": {
+      "answer": "İşlenmiş etler kalp hastalıkları ve kanser riskini artırabilir.",
+      "must_have": ["islenmis et", "risk"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["islenmis_et", "risk"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q22",
+    "query": "Günlük su tüketiminin yeterli olması neden önemlidir?",
+    "gold": {
+      "answer": "Yeterli su tüketimi metabolik fonksiyonlar ve genel sağlık için gereklidir.",
+      "must_have": ["su", "metabolik"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["su", "genel_saglik"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q23",
+    "query": "Şeker tüketimi fazla olan bireylerde hangi sağlık sorunları görülebilir?",
+    "gold": {
+      "answer": "Fazla şeker tüketimi obezite ve diyabet riskini artırır.",
+      "must_have": ["seker", "obezite", "diyabet"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["seker", "risk"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q24",
+    "query": "Sebze tüketiminin sindirim sistemi üzerindeki etkisi nedir?",
+    "gold": {
+      "answer": "Sebzeler lif içeriği sayesinde sindirim sisteminin düzenli çalışmasını sağlar.",
+      "must_have": ["sebze", "lif", "sindirim"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["sebze", "sindirim"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q25",
+    "query": "Protein ihtiyacını karşılamak için hayvansal olmayan kaynaklar nelerdir?",
+    "gold": {
+      "answer": "Mercimek, nohut ve fasulye bitkisel protein kaynaklarıdır.",
+      "must_have": ["mercimek", "nohut", "fasulye"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["protein", "baklagil"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q26",
+    "query": "Yüksek lifli diyetin bağırsak sağlığına katkısı nedir?",
+    "gold": {
+      "answer": "Yüksek lifli diyet bağırsak hareketlerini artırarak kabızlığı önler.",
+      "must_have": ["lif", "bagirsak"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["lif", "bagirsak"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q27",
+    "query": "Aşırı tuz tüketimi hangi sağlık sorunlarına yol açabilir?",
+    "gold": {
+      "answer": "Aşırı tuz tüketimi hipertansiyon ve kalp hastalıklarına yol açabilir.",
+      "must_have": ["tuz", "hipertansiyon"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["tuz", "hipertansiyon"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q28",
+    "query": "Sağlıklı beslenmede öğün atlamamanın önemi nedir?",
+    "gold": {
+      "answer": "Öğün atlamamak kan şekeri dengesini ve metabolizmayı korur.",
+      "must_have": ["ogun", "kan sekeri"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["ogun", "metabolizma"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q29",
+    "query": "Kalsiyumdan zengin besinler nelerdir?",
+    "gold": {
+      "answer": "Süt, yoğurt ve peynir kalsiyumdan zengindir.",
+      "must_have": ["sut", "yogurt", "peynir"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["kalsiyum", "sut_urunleri"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q30",
+    "query": "D vitamini yetersizliğinin kemik sağlığı üzerindeki etkisi nedir?",
+    "gold": {
+      "answer": "D vitamini yetersizliği kemik mineral yoğunluğunu azaltır.",
+      "must_have": ["d vitamini", "kemik"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["d_vitamini", "kemik"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q31",
+    "query": "Sağlıklı bir diyetin temel bileşenleri nelerdir?",
+    "gold": {
+      "answer": "Sebze-meyve tüketimi ve yeterli protein alımı sağlıklı diyetin temel bileşenleridir.",
+      "must_have": ["sebze", "meyve", "protein"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "food_list",
+      "expected_topics": ["saglikli_beslenme"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q32",
+    "query": "Günlük lif alımının yetersiz olması hangi soruna yol açabilir?",
+    "gold": {
+      "answer": "Yetersiz lif alımı kabızlığa neden olabilir.",
+      "must_have": ["lif", "kabizlik"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["lif", "kabizlik"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q33",
+    "query": "Enerji içeceklerinin aşırı tüketimi hangi riskleri taşır?",
+    "gold": {
+      "answer": "Enerji içecekleri kalp ritim bozuklukları ve tansiyon artışına yol açabilir.",
+      "must_have": ["enerji icecegi", "kalp", "tansiyon"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["enerji_icecegi", "risk"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q34",
+    "query": "Sağlıklı yağ tüketimi için önerilen bitkisel yağ hangisidir?",
+    "gold": {
+      "answer": "Zeytinyağı sağlıklı yağ tüketimi için önerilmektedir.",
+      "must_have": ["zeytinyagi"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["zeytinyagi", "yag"],
+      "must_cite": true
+    }
+  },
+  {
+    "id": "q35",
+    "query": "Günlük sebze tüketiminin artırılması hangi kronik hastalık risklerini azaltır?",
+    "gold": {
+      "answer": "Sebze tüketimi kalp-damar hastalıkları ve bazı kanserlerin riskini azaltır.",
+      "must_have": ["sebze", "kalp", "kanser"],
+      "must_not_have": []
+    },
+    "meta": {
+      "answer_type": "rule",
+      "expected_topics": ["sebze", "kronik_hastalik"],
+      "must_cite": true
+    }
+  }
+]
+

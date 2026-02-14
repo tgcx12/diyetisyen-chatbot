@@ -1,0 +1,957 @@
+{
+  "prefer_tags": [
+    "baklagil",
+    "coklu_doymamis",
+    "et_grubu",
+    "hafif",
+    "kompleks_kh",
+    "omega3",
+    "pilav_makarna",
+    "tekli_doymamis"
+  ],
+  "limit_tags": [
+    "az_yagli_sut_urunleri",
+    "baklagil_gaz_yapici",
+    "baklagil_yemegi",
+    "balik",
+    "beyaz_et",
+    "bulgur",
+    "doymus_yag_orta",
+    "ekmek",
+    "gi_yuksek",
+    "hdl_artirma",
+    "islenmis_et",
+    "posa_yuksek",
+    "sodyum_orta",
+    "sut_urunu"
+  ],
+  "avoid_tags": [
+    "akrilamid",
+    "doymus_yag_yuksek",
+    "et_suyu",
+    "meyve",
+    "trans_yag_riski"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "baklagil",
+        "coklu_doymamis",
+        "et_grubu",
+        "hafif",
+        "kompleks_kh",
+        "omega3",
+        "pilav_makarna",
+        "tekli_doymamis"
+      ],
+      "limit": [
+        "az_yagli_sut_urunleri",
+        "baklagil_gaz_yapici",
+        "baklagil_yemegi",
+        "balik",
+        "beyaz_et",
+        "bulgur",
+        "doymus_yag_orta",
+        "ekmek",
+        "gi_yuksek",
+        "hdl_artirma",
+        "islenmis_et",
+        "posa_yuksek",
+        "sodyum_orta",
+        "sut_urunu"
+      ],
+      "avoid": [
+        "akrilamid",
+        "doymus_yag_yuksek",
+        "et_suyu",
+        "meyve",
+        "trans_yag_riski"
+      ]
+    },
+    "numeric_constraints": [
+      {
+        "tag": "sodyum_orta",
+        "min_count": 10.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "bardak",
+        "description": "yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli"
+      },
+      {
+        "tag": "balik",
+        "min_count": 2.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "balık haftada en az 2 kez tüketilmeli"
+      },
+      {
+        "tag": "balik",
+        "min_count": 2.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "balık haftada en az 2 kez önerilir"
+      },
+      {
+        "tag": "balik",
+        "min_count": 2.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "balık haftada en az 2 kez önerilir. omega 3 içerir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "süt ve süt ürünleri tüketim sıklığı konusunda genel öneriler şunlardır: günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": 10.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "bardak",
+        "description": "yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli"
+      },
+      {
+        "tag": "baklagil_gaz_yapici",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "baklagil tüketimini haftada 2 3 kez yapın"
+      },
+      {
+        "tag": "baklagil_gaz_yapici",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "baklagil tüketimini haftada 2 3 kez yapın"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi önemlidir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve tüketmek önemlidir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 1000.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak ve gereksinimin en az yarısını tam taneli tahıllardan karşılamak 6"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve tüketin ve kuru baklagiller sıkça (haftada 2 3 kez) tüketin"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 14.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "posa tüketimini arttırmak için 14 gram veya daha fazla posa almalısınız"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerekir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı"
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli"
+      }
+    ],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[et_grubu]",
+        "meal": "genel",
+        "tag": "et_grubu",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[hafif]",
+        "meal": "genel",
+        "tag": "hafif",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[pilav_makarna]",
+        "meal": "genel",
+        "tag": "pilav_makarna",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[islenmis_et]",
+        "meal": "genel",
+        "tag": "islenmis_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_yuksek]",
+        "meal": "genel",
+        "tag": "doymus_yag_yuksek",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[omega3]",
+        "meal": "genel",
+        "tag": "omega3",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[akrilamid]",
+        "meal": "genel",
+        "tag": "akrilamid",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[coklu_doymamis]",
+        "meal": "genel",
+        "tag": "coklu_doymamis",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[sut_urunu]",
+        "meal": "genel",
+        "tag": "sut_urunu",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_orta]",
+        "meal": "genel",
+        "tag": "doymus_yag_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[baklagil_yemegi]",
+        "meal": "genel",
+        "tag": "baklagil_yemegi",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[bulgur]",
+        "meal": "genel",
+        "tag": "bulgur",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[bulgur]",
+        "meal": "genel",
+        "tag": "bulgur",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kompleks_kh]",
+        "meal": "genel",
+        "tag": "kompleks_kh",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[et_suyu]",
+        "meal": "genel",
+        "tag": "et_suyu",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[meyve]",
+        "meal": "genel",
+        "tag": "meyve",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[baklagil]",
+        "meal": "genel",
+        "tag": "baklagil",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[et_suyu]",
+        "meal": "genel",
+        "tag": "et_suyu",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[gi_yuksek]",
+        "meal": "genel",
+        "tag": "gi_yuksek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[baklagil_yemegi]",
+        "meal": "genel",
+        "tag": "baklagil_yemegi",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[baklagil_gaz_yapici]",
+        "meal": "genel",
+        "tag": "baklagil_gaz_yapici",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[tekli_doymamis]",
+        "meal": "genel",
+        "tag": "tekli_doymamis",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[posa_yuksek]",
+        "meal": "genel",
+        "tag": "posa_yuksek",
+        "intent": "limit"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [
+    {
+      "text": "Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "intent": "prefer",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "text": "Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "intent": "prefer",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "text": "günde en az 10 bardak su içilmelidir",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "text": "Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "intent": "prefer",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "text": "Kabuğu ile yenilebilen meyveler kabuğu soyulmadan iyice yıkanmalı ve kabuğu ile tüketilmeli",
+      "intent": "prefer",
+      "chunk_id": "t2p_1"
+    },
+    {
+      "text": "haftada 2 3 kez",
+      "intent": "unmatched_numeric",
+      "chunk_id": "t2p_4"
+    }
+  ],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "et_grubu"
+      ],
+      "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Yumurta, tavuk eti veya hindi eti veya balık tercih edilmeli",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Süt ürünleri tüketimi azaltılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "hafif"
+      ],
+      "quote": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "hafif"
+      ],
+      "quote": "İzgarada veya fırında pişirme yöntemi tercih edilmeli",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "pilav_makarna"
+      ],
+      "quote": "Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "pilav_makarna"
+      ],
+      "quote": "Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli",
+      "chunk_id": "dm_4_6_01"
+    },
+    {
+      "related_tags": [
+        "islenmis_et"
+      ],
+      "quote": "İzgarada veya fırında pişirme yöntemi tercih edilmeli",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Kolesterol içeriği yüksek besinlerden kaçınılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Balık haftada en az 2 kez önerilir. Omega 3 içerir.",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_yuksek"
+      ],
+      "quote": "Kolesterol içeriği yüksek besinlerden kaçınılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli.",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "omega3"
+      ],
+      "quote": "Balık haftada en az 2 kez tüketilmeli",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "omega3"
+      ],
+      "quote": "Balık haftada en az 2 kez önerilir",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Balık haftada en az 2 kez tüketilmeli",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Balık haftada en az 2 kez önerilir",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "akrilamid"
+      ],
+      "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Trans yağdan kaçınılmalı mı",
+      "chunk_id": "dm_ek_05"
+    },
+    {
+      "related_tags": [
+        "coklu_doymamis"
+      ],
+      "quote": "Balık haftada en az 2 kez önerilir. Omega 3 içerir.",
+      "chunk_id": "dm_ek_03"
+    },
+    {
+      "related_tags": [
+        "coklu_doymamis"
+      ],
+      "quote": "Yumuşak margarin ve zeytinyağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalıdır",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "sut_urunu"
+      ],
+      "quote": "Süt ürünleri tüketimi azaltılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "baklagil_yemegi"
+      ],
+      "quote": "Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "baklagil_yemegi"
+      ],
+      "quote": "Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Tam tahıl ekmekler tercih edilmeli",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı",
+      "chunk_id": "t2p_4"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "Tam tahıl ekmekler tercih edilmeli",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "kompleks_kh"
+      ],
+      "quote": "Beyaz ekmek yerine tam buğday ekmeği, tam taneli tahıl ekmeği, kepekli ekmek veya beyaz pirinç yerine kepekli pirinç veya bulgur tüketilmelidir",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Meyve suyu yerine meyve tüketilmelidir",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalıdır",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Meyve suyu yerine meyve tüketilmelidir",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Meyve suyu yerine meyve tüketimi önerilir",
+      "chunk_id": "dm_ek_10"
+    },
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Yumuşak margarin ve zeytinyağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalıdır",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "gi_yuksek"
+      ],
+      "quote": "Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalıdır",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "gi_yuksek"
+      ],
+      "quote": "Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "quote": "Baklagil tüketimini haftada 2 3 kez yapın.",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "quote": "Baklagil tüketimini haftada 2 3 kez yapın.",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Tereyağı, margarin yerine yumuşak margarin ve zeytinyağı gibi bitkisel yağlar tercih edilmelidir",
+      "chunk_id": "t2p_3"
+    },
+    {
+      "related_tags": [
+        "posa_yuksek"
+      ],
+      "quote": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli, posa tüketimini arttırmak ve gereksinimin en az yarısını tam taneli tahıllardan karşılamak",
+      "chunk_id": "t2p_3"
+    }
+  ]
+}

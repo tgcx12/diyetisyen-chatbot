@@ -1,0 +1,47 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Günlük diyette doymuş yağı azaltmak için az yağlı süt ve ürünleri ile et ve ürünleri tercih edilmeli.  |  Doymuş yağlar tam yağlı süt ve süt ürünleri ile et ve et ürünlerinde bulunur.  |  Günlük alınan doymuş yağ miktarı toplam enerjinin %10’unu aşmamalıdır.  |  Tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler günlük beslenmede yer almalıdır.  |  Kemik sağlığı için her gün 2 3 su bardağı süt ve/veya yoğurt tüketilmelidir.  |  Süt ve süt ürünlerinin az yağlı olanları tercih edilmelidir.",
+  "used_chunks": [
+    "chunk_000592_02",
+    "chunk_000592_01",
+    "yasli_saglikli_04_besin_cesitliligi",
+    "chunk_000596_01",
+    "yasli_ilke_10_kalsiyum",
+    "chunk_000601_01"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "sut_1_num_amt",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Besinler ile alınan sodyumun %75’inden fazlası paketlenmiş ve ev dışında tüketilen hazır besinlerden gelir  |  Fazla sodyum (tuz) alımı hipertansiyon geliştirme riskini artırır",
+  "used_chunks": [
+    "not_18",
+    "yasli_ilke_11_tuz",
+    "ht_lifestyle_01",
+    "cvh_salt_1",
+    "genel_04_tuz_yag_seker",
+    "ht_beverage_01",
+    "ht_info_01"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

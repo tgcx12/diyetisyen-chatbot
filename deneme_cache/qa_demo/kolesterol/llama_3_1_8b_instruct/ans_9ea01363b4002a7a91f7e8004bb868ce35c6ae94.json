@@ -1,0 +1,44 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Et Tüketimi ve Pişirme Yöntemleri  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır.  |  Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır.  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Hayvansal Protein Seçimi  |  Yağlı etler, sakatatlar (karaciğer, beyin vb.) ve işlenmiş et ürünleri (sucuk, salam, sosis) yüksek kolesterol içerir.",
+  "used_chunks": [
+    "kalp_2_4_08",
+    "chol_5_3_01",
+    "chunk_000408"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için kırmızı et tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

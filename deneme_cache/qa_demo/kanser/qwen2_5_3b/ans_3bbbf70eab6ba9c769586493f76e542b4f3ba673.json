@@ -1,0 +1,41 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "kuruyemiş  |  kabuklu yemiş  |  fındık  |  yağlı tohum",
+  "used_chunks": [
+    "c176",
+    "ca_protein_high_animal_note"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Yemeklere ek tuz eklenmemeli ve tuzlu besinler sınırlandırılmalıdır.",
+  "used_chunks": [
+    "chunk_000593_01",
+    "c176",
+    "yasli_ilke_11_tuz"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için kuruyemiş kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_amt",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

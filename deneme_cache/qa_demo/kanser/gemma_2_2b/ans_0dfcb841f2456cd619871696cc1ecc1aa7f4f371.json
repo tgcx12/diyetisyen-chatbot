@@ -1,0 +1,43 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Onkoloji için genel olarak sınırlandırılmalı ve kaçınılması gerekenler şunlardır: * Tekli doymamış yağlar ve soğuk su balıkları tüketimi artırın  |  * Kırmızı et tüketimini sınırlayın (haftada yaklaşık üç porsiyon)  |  * İşlenmiş et tüketimini azaltın  |  * Tam tahıl örnekleri, sebze meyve ve kepekli tahıllar tüketin  |  * Sigara içiminin engellenmesi önemlidir  |  * Obezite önlenmelidir",
+  "used_chunks": [
+    "c176",
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_fiber_diet_patterns_5servings",
+    "ca_risk_reduction_1",
+    "not_35",
+    "ca_prev_1",
+    "akciger_kanseri_04",
+    "not_34",
+    "not_36",
+    "ca_nutrition_rel_1",
+    "c175a",
+    "c178"
+  ],
+  "strict_chunks_count": 15,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

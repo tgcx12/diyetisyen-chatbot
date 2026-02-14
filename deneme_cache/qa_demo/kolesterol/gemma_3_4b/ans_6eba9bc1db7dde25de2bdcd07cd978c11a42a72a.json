@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Günde en az 5 porsiyon sebze meyve tüketilmelidir  |  Haftada 2 3 kez kurubaklagil tüketilmeli  |  Tam tahıl ve posalı besinler tercih edilmelidir  |  Salatalara 150 g için 5 g yağ eklenmeli  |  Yumurta haftada 1 2 kez, haşlanmış veya yağsız tavada pişirilmelidir  |  Diyet lifi yüksek tansiyonu ve kötü kolesterolü düşürür.",
+  "used_chunks": [
+    "chol_5_5_01",
+    "kalp_2_4_10",
+    "chunk_000403",
+    "kalp_2_4_12"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Kırmızı et tüketiminin haftada üç porsiyonla sınırlanması önerilir  |  Alternatif protein kaynakları olarak yumurta, balık, tavuk ve soğuk su balıkları (sardalya, hamsi) tercih edilmelidir  |  Yağlı balıklar, özellikle küçük balıklar (sardalya, hamsi) ve omega 3 yağ asitleri kanser gelişimini önlemeye yardımcı olur  |  Kırmızı et ve tavuk gibi ürünlerin yüksek sıcaklıklarda pişirilmesi, heterosiklik aminler oluşturabilir  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar faydalıdır  |  Kömür ateşinde pişirilen balıklar ve etlerde PAH içeriği yüksek olabilir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "c176",
+    "ca_heterocyclic_amines",
+    "ca_pah_benzoapyrene_note"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için balık tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

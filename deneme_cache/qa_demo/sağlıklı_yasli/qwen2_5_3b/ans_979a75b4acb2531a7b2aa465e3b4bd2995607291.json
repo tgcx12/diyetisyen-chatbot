@@ -1,0 +1,52 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler günlük beslenmede yer almalıdır.  |  Böylece karbonhidrat, protein, yağ, vitamin, mineral, posa ve su alımı dengelenir.  |  Yaşlılarda Sağlıklı Beslenme Önerileri  |  Sebze ve meyveler bol ve çeşitli tüketilmelidir.  |  Bu besinler vitamin, mineral ve posa açısından zengindir.  |  Günlük beslenmede sebze ve meyvelere mutlaka yer verilmesi önerilir.",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_saglikli_05_sebze_meyve",
+    "yasli_ilke_01_besin_cesitliligi",
+    "yasli_besin_04_tahil",
+    "chunk_yasli_0004",
+    "yasli_ilke_09_posa",
+    "yasli_saglikli_06_tahil_yag",
+    "yasli_besin_05_sebze",
+    "yasli_ilke_06_tam_tahil",
+    "yasli_ilke_05_sebze_meyve",
+    "yasli_besin_03_kuru_baklagil",
+    "yasli_besin_06_meyve"
+  ],
+  "strict_chunks_count": 13,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "invalid_output"
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

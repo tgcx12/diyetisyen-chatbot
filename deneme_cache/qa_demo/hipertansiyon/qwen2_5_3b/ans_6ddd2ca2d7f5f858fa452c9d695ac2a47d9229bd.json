@@ -1,0 +1,45 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "doymuş  |  tereyağı  |  tercih  |  zeytinyağı",
+  "used_chunks": [
+    "chunk_000408",
+    "chunk_000393",
+    "genel_04_tuz_yag_seker",
+    "chunk_000390",
+    "chunk_000389",
+    "ht_dash_01"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

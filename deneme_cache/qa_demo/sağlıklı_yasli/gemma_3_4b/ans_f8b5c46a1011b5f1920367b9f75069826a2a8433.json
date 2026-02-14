@@ -1,0 +1,44 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Yaşlı bireylerde kan şekeri kontrolü ve ağırlık yönetimi için şeker tüketimi sınırlandırılmalıdır  |  Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.  |  Aşırı tuz ve şeker tüketimi kronik hastalık riskini artırabilir  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Et, tavuk, balık ve yumurta grubunda yer alan besinlerin tüketimi yaşlı bireylerde değişkenlik gösterebilir  |  Şekerli içeceklerden kaçınılmalı, şeker tüketimi azaltılmalı.",
+  "used_chunks": [
+    "yasli_ilke_12_seker",
+    "yasli_saglikli_07_su_tuz_seker",
+    "yasli_ilke_07_doymus_yag",
+    "chunk_yasli_0003",
+    "yasli_besin_02_et_grubu"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Diyetin kolesterol miktarının ise 300 mg’ın altında tutulmasında yarar vardır (Bkz.  |  Salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir.  |  Etsiz sebze yemekleri için bu miktar 15 g olmalıdır.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Ambalajlı tüketime sunulan yiyecek ve içeceklerin ambalajlarının üzerinde yazılı olan etiket bilgisi okunarak toplam yağ, doymuş ve trans yağ ile kolesterol içerikleri daha düşük olan benzer besinler tercih edilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı Diyetle alınan günlük enerjinin yağlardan gelen katkısı %20 35, bunun %10’undan daha azının (%7 8) doymuş yağlardan, %1’inden azının ise trans yağlardan sağlanması gerekmektedir.",
+  "used_chunks": [
+    "chunk_000404",
+    "chunk_000394",
+    "chunk_000397",
+    "chunk_000398",
+    "chunk_000403",
+    "chunk_000395",
+    "chunk_000401",
+    "chunk_000399",
+    "chunk_000402",
+    "chunk_000409",
+    "chunk_000400",
+    "chunk_000396"
+  ],
+  "strict_chunks_count": 24,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_doymus_num_amt",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

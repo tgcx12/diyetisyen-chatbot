@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Ceviz, içinde bulunan Omega 3 yağ asitleri sayesinde kalbi korur  |  Kuruyemişler özellikle kalp hastalıklarının önlenmesinde önemli etkilere sahiptir  |  Yer fıstığı, ceviz, badem, fındık, fıstık, ay çekirdeği ve kabak çekirdeği kalbi koruyucu maddeler içerir  |  Günlük şeker tüketimi kontrol altında tutulmalıdır, çünkü fazla şeker kan kolesterolünü artırabilir  |  Az tuzlu ve az yağlı zeytinlerin tüketimi önerilir, ancak yağ ve tuz içeriği yüksek olduğu için dikkatli olunmalıdır",
+  "used_chunks": [
+    "kalp_2_4_14",
+    "chol_5_4_01",
+    "chunk_000408",
+    "kalp_2_4_13"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

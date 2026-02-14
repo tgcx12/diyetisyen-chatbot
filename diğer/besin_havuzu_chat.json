@@ -1,0 +1,4219 @@
+{ 
+    "foods": [
+    {
+      "besin_id": "SUT_01",
+      "besin_adi": "İnek Sütü (Tam Yağlı)",
+      "kategori": "Süt Ürünü",
+      "birim": "200 ml",
+      "kcal": 120,
+      "macros": {
+        "protein_g": 6.8,
+        "karbonhidrat_g": 9.4,
+        "yag_g": 6.6,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 240,
+        "fosfor_mg": 185,
+        "magnezyum_mg": 22,
+        "sodyum_mg": 88,
+        "potasyum_mg": 300,
+        "b12_mcg": 0.9
+      },
+      "food_tags": [
+        "sut_urunu",
+        "kalsiyum_tavan",
+        "kemik_gelisimi",
+        "cocuk_gelisimi",
+        "fosfor",
+        "b12_vitamini",
+        "magnezyum",
+        "boy_uzatma_destek"
+      ],
+      "avoid_tags": [
+        "laktoz",
+        "mide_asidi_uyarici",
+        "mukus_artirici",
+        "gaz_yapan",
+        "akne_tetikleyici"
+      ],
+      "besin_degerleri": {
+        "kalsiyum": "yuksek",
+        "fosfor": "orta",
+        "yag_turu": "doymus",
+        "sodyum": "dusuk"
+      }
+    },
+    {
+      "besin_id": "SUT_02",
+      "besin_adi": "İnek Sütü (Yarım Yağlı)",
+      "kategori": "Süt Ürünü",
+      "birim": "200 ml",
+      "kcal": 100,
+      "macros": {
+        "protein_g": 6.8,
+        "karbonhidrat_g": 9.6,
+        "yag_g": 3.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 244,
+        "fosfor_mg": 190,
+        "magnezyum_mg": 24,
+        "sodyum_mg": 90,
+        "potasyum_mg": 310
+      },
+      "food_tags": [
+        "sut_urunu",
+        "dusuk_yag",
+        "kalsiyum",
+        "kemik_gelisimi",
+        "fosfor"
+      ],
+      "avoid_tags": [
+        "laktoz",
+        "mukus_artirici"
+      ],
+      "besin_degerleri": {
+        "kalsiyum": "yuksek",
+        "yag_turu": "dusuk_doymus",
+        "sodyum": "dusuk"
+      }
+    },
+    {
+      "besin_id": "SUT_03",
+      "besin_adi": "Yoğurt (Yağlı)",
+      "kategori": "Süt Ürünü",
+      "birim": "200 gr",
+      "kcal": 114,
+      "macros": {
+        "protein_g": 7.0,
+        "karbonhidrat_g": 9.4,
+        "yag_g": 6.5,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 242,
+        "fosfor_mg": 190,
+        "magnezyum_mg": 24,
+        "potasyum_mg": 310,
+        "cinko_mg": 1.2
+      },
+      "food_tags": [
+        "sut_urunu",
+        "probiyotik",
+        "bagirsak_dostu",
+        "ishal_onleyici",
+        "kalsiyum",
+        "kemik_gelisimi",
+        "bagisiklik_guclendirici"
+      ],
+      "avoid_tags": [
+        "laktoz_orta"
+      ],
+      "besin_degerleri": {
+        "magnezyum": "orta",
+        "kalsiyum": "yuksek",
+        "probiyotik": "yuksek",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "PNR_01",
+      "besin_adi": "Beyaz Peynir",
+      "kategori": "Süt Ürünü",
+      "birim": "1 kibrit kutusu (30 gr)",
+      "kcal": 70,
+      "macros": {
+        "protein_g": 4.5,
+        "karbonhidrat_g": 0.8,
+        "yag_g": 5.4,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 145,
+        "fosfor_mg": 110,
+        "sodyum_mg": 240,
+        "cinko_mg": 0.9,
+        "magnezyum_mg": 5
+      },
+      "food_tags": [
+        "sut_urunu",
+        "peynir",
+        "hayvansal_protein",
+        "kalsiyum",
+        "fosfor",
+        "cinko_kaynagi",
+        "kemik_gelisimi",
+        "dis_sagligi"
+      ],
+      "avoid_tags": [
+        "laktoz_az",
+        "yuksek_sodyum",
+        "tansiyon_hassasiyeti",
+        "bobrek_yuku_orta"
+      ],
+      "besin_degerleri": {
+        "sodyum": "yuksek",
+        "protein": "orta",
+        "cinko": "orta",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "PNR_02",
+      "besin_adi": "Kaşar Peyniri",
+      "kategori": "Süt Ürünü",
+      "birim": "20 gr",
+      "kcal": 70,
+      "macros": {
+        "protein_g": 5.4,
+        "karbonhidrat_g": 0.3,
+        "yag_g": 5.2,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 160,
+        "fosfor_mg": 125,
+        "sodyum_mg": 160,
+        "potasyum_mg": 18
+      },
+      "food_tags": [
+        "sut_urunu",
+        "peynir",
+        "yuksek_yag",
+        "kalsiyum_yuksek",
+        "fosfor_yuksek",
+        "kemik_gelisimi",
+        "dis_sagligi"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "tansiyon_dusmani",
+        "kabizlik_riski",
+        "histamin_orta"
+      ],
+      "besin_degerleri": {
+        "kalsiyum": "cok_yuksek",
+        "fosfor": "yuksek",
+        "sodyum": "orta_yuksek",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "PNR_03",
+      "besin_adi": "Lor Peyniri (Yağsız)",
+      "kategori": "Süt Ürünü",
+      "birim": "100 gr",
+      "kcal": 85,
+      "macros": {
+        "protein_g": 13.0,
+        "karbonhidrat_g": 3.2,
+        "yag_g": 2.2,
+        "lif_g": 0
+      },
+      "micros": {
+        "fosfor_mg": 160,
+        "kalsiyum_mg": 90,
+        "sodyum_mg": 150,
+        "potasyum_mg": 100
+      },
+      "food_tags": [
+        "sut_urunu",
+        "yuksek_protein",
+        "sporcu_dostu",
+        "fosfor",
+        "dusuk_kalori",
+        "kas_onarimi",
+        "bobrek_dostu_protein"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "protein": "tavan",
+        "yag_turu": "dusuk_doymus",
+        "sodyum": "dusuk_orta"
+      }
+    },
+    {
+      "besin_id": "PNR_04",
+      "besin_adi": "Mozarella Peyniri",
+      "kategori": "Süt Ürünü",
+      "birim": "6 dilim (150 gr)",
+      "kcal": 510,
+      "macros": {
+        "protein_g": 33.0,
+        "karbonhidrat_g": 3.6,
+        "yag_g": 40.5,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 750,
+        "fosfor_mg": 530,
+        "sodyum_mg": 600
+      },
+      "food_tags": [
+        "sut_urunu",
+        "yuksek_yag",
+        "kalsiyum",
+        "fosfor",
+        "doymus_yag"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "yuksek_kalori",
+        "tansiyon_dusmani"
+      ],
+      "besin_degerleri": {
+        "yag": "yuksek",
+        "kalsiyum": "yuksek",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "PNR_05",
+      "besin_adi": "Parmesan Peyniri",
+      "kategori": "Süt Ürünü",
+      "birim": "6 dilim (180 gr)",
+      "kcal": 732,
+      "macros": {
+        "protein_g": 64.0,
+        "karbonhidrat_g": 7.0,
+        "yag_g": 46.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 2100,
+        "fosfor_mg": 1300,
+        "sodyum_mg": 2800,
+        "cinko_mg": 5.0
+      },
+      "food_tags": [
+        "sut_urunu",
+        "yogun_kalsiyum",
+        "fosfor_zengini",
+        "cinko_kaynagi",
+        "kemik_tavan"
+      ],
+      "avoid_tags": [
+        "yuksek_sodyum",
+        "histamin_yuksek",
+        "migren_tetikleyici",
+        "tiramin",
+        "bobrek_yuku_yuksek"
+      ],
+      "besin_degerleri": {
+        "protein": "ekstrem",
+        "sodyum": "tavan",
+        "kalsiyum": "rekor",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "PNR_06",
+      "besin_adi": "Labne Peyniri",
+      "kategori": "Süt Ürünü",
+      "birim": "100 gr",
+      "kcal": 210,
+      "macros": {
+        "protein_g": 5.5,
+        "karbonhidrat_g": 4.5,
+        "yag_g": 19.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 110,
+        "sodyum_mg": 320,
+        "potasyum_mg": 140
+      },
+      "food_tags": [
+        "sut_urunu",
+        "kremsi",
+        "kalsiyum",
+        "yumusak_icim"
+      ],
+      "avoid_tags": [
+        "laktoz",
+        "mide_bulantisi_tetikleyebilir"
+      ],
+      "besin_degerleri": {
+        "yag": "yuksek",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "TAH_01",
+      "besin_adi": "Tam Buğday Ekmeği",
+      "kategori": "Ekmek",
+      "birim": "1 dilim (25 gr)",
+      "kcal": 70,
+      "macros": {
+        "protein_g": 2.6,
+        "karbonhidrat_g": 12.0,
+        "yag_g": 0.8,
+        "lif_g": 1.9
+      },
+      "micros": {
+        "magnezyum_mg": 21,
+        "fosfor_mg": 53,
+        "potasyum_mg": 60,
+        "sodyum_mg": 120
+      },
+      "food_tags": [
+        "ekmek",
+        "tam_tahilli_ekmek",
+        "tahil",
+        "kompleks_kh",
+        "lif_yuksek",
+        "posa_yuksek",
+        "kh_orta",
+        "gi_orta",
+        "magnezyum",
+        "fosfor",
+        "kemik_gelisimi",
+        "kabizlik_dusmani"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "lekti̇n",
+        "bobrek_tasi_riski_oksalat"
+      ],
+      "besin_degerleri": {
+        "lif": "yuksek",
+        "magnezyum": "orta"
+      }
+    },
+    {
+      "besin_id": "TAH_02",
+      "besin_adi": "Beyaz Ekmek",
+      "kategori": "Ekmek",
+      "birim": "1 dilim (25 gr)",
+      "kcal": 70,
+      "macros": {
+        "protein_g": 2.0,
+        "karbonhidrat_g": 13.5,
+        "yag_g": 0.8,
+        "lif_g": 0.6
+      },
+      "micros": {
+        "sodyum_mg": 150,
+        "potasyum_mg": 30
+      },
+      "food_tags": [
+        "tahil",
+        "yuksek_gi",
+        "basit_kh",
+        "islenmis_tahil",
+        "ishal_dostu"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "diyabet_dusmani",
+        "kabizlik_yapici",
+        "mide_siskinligi"
+      ],
+      "besin_degerleri": {
+        "lif": "dusuk",
+        "gi": "yuksek"
+      }
+    },
+    {
+      "besin_id": "TAH_03",
+      "besin_adi": "Yulaf Ezmesi",
+      "kategori": "Tahıl",
+      "birim": "4 yk (40 gr)",
+      "kcal": 180,
+      "macros": {
+        "protein_g": 5.0,
+        "karbonhidrat_g": 26.0,
+        "yag_g": 3.0,
+        "lif_g": 4.5
+      },
+      "micros": {
+        "magnezyum_mg": 55,
+        "fosfor_mg": 160,
+        "cinko_mg": 1.2,
+        "demir_mg": 1.8
+      },
+      "food_tags": [
+        "tahil",
+        "lif_yuksek",
+        "beta_glukan",
+        "fosfor_yuksek",
+        "magnezyum_yuksek",
+        "cinko",
+        "kabizlik_dusmani",
+        "kalp_dostu",
+        "tokluk_hissi"
+      ],
+      "avoid_tags": [
+        "gluten_iz_miktarda",
+        "fitik_asit"
+      ],
+      "besin_degerleri": {
+        "lif": "tavan",
+        "magnezyum": "yuksek",
+        "gi": "dusuk"
+      }
+    },
+    {
+      "besin_id": "TAH_04",
+      "besin_adi": "Simit",
+      "kategori": "Hamur İşi",
+      "birim": "1 adet (80 gr)",
+      "kcal": 210,
+      "macros": {
+        "protein_g": 7.0,
+        "karbonhidrat_g": 45.0,
+        "yag_g": 4.5,
+        "lif_g": 2.0
+      },
+      "micros": {
+        "sodyum_mg": 400,
+        "bakir_mg": 0.2,
+        "magnezyum_mg": 30
+      },
+      "food_tags": [
+        "tahil",
+        "susam",
+        "yuksek_kalori",
+        "enerji_yuksek",
+        "bakir",
+        "magnezyum"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "yuksek_gi",
+        "tansiyon_dusmani_tuzlu",
+        "mide_siskinligi"
+      ],
+      "besin_degerleri": {
+        "kalori": "yuksek",
+        "gi": "yuksek"
+      }
+    },
+    {
+      "besin_id": "TAH_05",
+      "besin_adi": "Börek",
+      "kategori": "Hamur İşi",
+      "birim": "100 gr",
+      "kcal": 230,
+      "macros": {
+        "protein_g": 6.5,
+        "karbonhidrat_g": 28.0,
+        "yag_g": 10.5,
+        "lif_g": 1.2
+      },
+      "micros": {
+        "sodyum_mg": 550
+      },
+      "food_tags": [
+        "islenmis_gida",
+        "yuksek_yag",
+        "karbonhidrat",
+        "geleneksel"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "trans_yag_riski",
+        "mide_yanmasi",
+        "asidite_artirici"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "doymus_ve_trans_karisik",
+        "sodyum": "yuksek"
+      }
+    },
+    {
+      "besin_id": "YUM_01",
+      "besin_adi": "Yumurta (Haşlanmış/Omlet)",
+      "kategori": "Protein",
+      "birim": "1 adet (50 gr)",
+      "kcal": 70,
+      "macros": {
+        "protein_g": 6.3,
+        "karbonhidrat_g": 0.4,
+        "yag_g": 4.8,
+        "lif_g": 0
+      },
+      "micros": {
+        "cinko_mg": 0.6,
+        "fosfor_mg": 95,
+        "selenyum_mcg": 15.4,
+        "b12_mcg": 0.6,
+        "kolin_mg": 147
+      },
+      "food_tags": [
+        "protein",
+        "kahvalti_ana_protein",
+        "cinko_yuksek",
+        "fosfor",
+        "b12_vitamini",
+        "selenyum",
+        "tiroid_dostu",
+        "beyin_gelisimi",
+        "anne_sutu_kalitesinde",
+        "cocuk_gelisimi"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "safra_kesesi_hassasiyeti",
+        "alerjen_potansiyel"
+      ],
+      "besin_degerleri": {
+        "protein_kalitesi": "referans",
+        "cinko": "yuksek",
+        "yag_turu": "doymamis_agirlikli"
+      }
+    },
+    {
+      "besin_id": "ET_01",
+      "besin_adi": "Sucuk",
+      "kategori": "Et Ürünü",
+      "birim": "100 gr",
+      "kcal": 352,
+      "macros": {
+        "protein_g": 14.0,
+        "karbonhidrat_g": 2.0,
+        "yag_g": 32.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "sodyum_mg": 1250,
+        "potasyum_mg": 280,
+        "demir_mg": 1.8,
+        "cinko_mg": 3.2,
+        "fosfor_mg": 160
+      },
+      "food_tags": [
+        "islenmis_et",
+        "yuksek_yag",
+        "baharatli",
+        "demir",
+        "cinko_yuksek",
+        "fosfor",
+        "B12_vitamini"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "sodyum_yuksek",
+        "gastrit_dusmani",
+        "reflu_tetikleyici",
+        "kanserojen_risk_nitrat",
+        "tansiyon_dusmani",
+        "asiditik"
+      ],
+      "besin_degerleri": {
+        "sodyum": "tavan",
+        "yag_turu": "doymus",
+        "demir": "orta"
+      }
+    },
+    {
+      "besin_id": "ET_02",
+      "besin_adi": "Salam",
+      "kategori": "Et Ürünü",
+      "birim": "100 gr",
+      "kcal": 450,
+      "macros": {
+        "protein_g": 12.5,
+        "karbonhidrat_g": 3.5,
+        "yag_g": 42.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "sodyum_mg": 1100,
+        "fosfor_mg": 150,
+        "potasyum_mg": 210
+      },
+      "food_tags": [
+        "islenmis_et",
+        "yuksek_yag",
+        "fosfor",
+        "kolay_atistirmalik"
+      ],
+      "avoid_tags": [
+        "nitrat",
+        "sodyum_tavan",
+        "odem_yapici",
+        "asiditik",
+        "bobrek_yuku_yuksek",
+        "tansiyon_dusmani"
+      ],
+      "besin_degerleri": {
+        "sodyum": "tavan",
+        "yag_turu": "doymus",
+        "protein": "orta"
+      }
+    },
+    {
+      "besin_id": "ET_03",
+      "besin_adi": "Sosis",
+      "kategori": "Et Ürünü",
+      "birim": "100 gr",
+      "kcal": 322,
+      "macros": {
+        "protein_g": 11.0,
+        "karbonhidrat_g": 4.0,
+        "yag_g": 28.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "sodyum_mg": 950,
+        "fosfor_mg": 140,
+        "cinko_mg": 2.1
+      },
+      "food_tags": [
+        "islenmis_et",
+        "yuksek_yag",
+        "fosfor",
+        "yumusak_doku"
+      ],
+      "avoid_tags": [
+        "nitrat",
+        "islenmis_gida",
+        "mide_hassasiyeti",
+        "sodyum_yuksek",
+        "bobrek_yuku_orta"
+      ],
+      "besin_degerleri": {
+        "sodyum": "yuksek",
+        "yag_turu": "doymus"
+      }
+    },
+    {
+      "besin_id": "SEB_01",
+      "besin_adi": "Domates",
+      "kategori": "Sebze",
+      "birim": "1 adet (110 gr)",
+      "kcal": 25,
+      "macros": {
+        "protein_g": 1.0,
+        "karbonhidrat_g": 4.3,
+        "yag_g": 0.2,
+        "lif_g": 1.3
+      },
+      "micros": {
+        "potasyum_mg": 260,
+        "c_vitamini_mg": 15,
+        "magnezyum_mg": 12,
+        "likopen_mg": 3.0
+      },
+      "food_tags": [
+        "sebze",
+        "likopen",
+        "c_vitamini",
+        "potasyum",
+        "antioksidan",
+        "prostat_dostu",
+        "alkali_yapici"
+      ],
+      "avoid_tags": [
+        "reflu_tetikleyici",
+        "asidik",
+        "histamin_salgilatici",
+        "lekti̇n"
+      ],
+      "besin_degerleri": {
+        "potasyum": "yuksek",
+        "sodyum": "yok",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "SEB_02",
+      "besin_adi": "Salatalık",
+      "kategori": "Sebze",
+      "birim": "1 adet (120 gr)",
+      "kcal": 20,
+      "macros": {
+        "protein_g": 0.8,
+        "karbonhidrat_g": 3.2,
+        "yag_g": 0.1,
+        "lif_g": 0.6
+      },
+      "micros": {
+        "potasyum_mg": 170,
+        "magnezyum_mg": 15,
+        "k_vitamini_mcg": 19
+      },
+      "food_tags": [
+        "sebze",
+        "su_orani_yuksek",
+        "dusuk_kalori",
+        "odem_atici",
+        "mide_dostu",
+        "alkali"
+      ],
+      "avoid_tags": [
+        "gaz_yapabilir_kabuklu"
+      ],
+      "besin_degerleri": {
+        "su_orani": "tavan",
+        "sodyum": "dusuk"
+      }
+    },
+    {
+      "besin_id": "SEB_03",
+      "besin_adi": "Patates (Haşlanmış)",
+      "kategori": "Sebze",
+      "birim": "100 gr",
+      "kcal": 81,
+      "macros": {
+        "protein_g": 1.9,
+        "karbonhidrat_g": 18.2,
+        "yag_g": 0.1,
+        "lif_g": 2.1
+      },
+      "micros": {
+        "potasyum_mg": 380,
+        "magnezyum_mg": 22,
+        "c_vitamini_mg": 12,
+        "fosfor_mg": 45
+      },
+      "food_tags": [
+        "potasyum_yuksek",
+        "nisasta",
+        "c_vitamini",
+        "magnezyum",
+        "mide_dostu",
+        "alkali_yapici",
+        "ishal_diyeti"
+      ],
+      "avoid_tags": [
+        "yuksek_gi",
+        "bobrek_yuku_potasyum",
+        "diyabet_hassasiyeti"
+      ],
+      "besin_degerleri": {
+        "potasyum": "tavan",
+        "sodyum": "dusuk",
+        "nişasta": "yuksek"
+      }
+    },
+    {
+      "besin_id": "SEB_04",
+      "besin_adi": "Patates (Kızartma)",
+      "kategori": "Sebze / Kızartma",
+      "birim": "100 gr",
+      "kcal": 312,
+      "macros": {
+        "protein_g": 3.4,
+        "karbonhidrat_g": 41.0,
+        "yag_g": 15.0,
+        "lif_g": 3.8
+      },
+      "micros": {
+        "potasyum_mg": 450,
+        "sodyum_mg": 210
+      },
+      "food_tags": [
+        "yuksek_kalori",
+        "potasyum",
+        "nisasta",
+        "lezzetli_kacamak"
+      ],
+      "avoid_tags": [
+        "akrilamid",
+        "trans_yag_riski",
+        "gastrit_dusmani",
+        "karaciger_yaglanmasi",
+        "enflamasyon_artirici",
+        "yuksek_gi"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "doymus_ve_trans_karisik",
+        "gi": "tavan"
+      }
+    },
+    {
+      "besin_id": "SEB_05",
+      "besin_adi": "Yeşil Biber",
+      "kategori": "Sebze",
+      "birim": "100 gr",
+      "kcal": 20,
+      "macros": {
+        "protein_g": 0.9,
+        "karbonhidrat_g": 4.6,
+        "yag_g": 0.2,
+        "lif_g": 1.7
+      },
+      "micros": {
+        "c_vitamini_mg": 120,
+        "a_vitamini_iu": 370,
+        "magnezyum_mg": 10
+      },
+      "food_tags": [
+        "c_vitamini_tavan",
+        "a_vitamini",
+        "antioksidan",
+        "metabolizma_hizlandirici",
+        "dusuk_kalori"
+      ],
+      "avoid_tags": [
+        "gaz_yapan",
+        "mide_yanmasi_olasiligi",
+        "aci_ise_gastrit_tetikleyici"
+      ],
+      "besin_degerleri": {
+        "c_vitamini": "ekstrem",
+        "sodyum": "yok"
+      }
+    },
+    {
+      "besin_id": "SEB_06",
+      "besin_adi": "Maydanoz",
+      "kategori": "Sebze / Yeşillik",
+      "birim": "100 gr",
+      "kcal": 36,
+      "macros": {
+        "protein_g": 3.0,
+        "karbonhidrat_g": 6.3,
+        "yag_g": 0.8,
+        "lif_g": 3.3
+      },
+      "micros": {
+        "k_vitamini_mcg": 1640,
+        "c_vitamini_mg": 133,
+        "demir_mg": 6.2,
+        "kalsiyum_mg": 138,
+        "potasyum_mg": 550
+      },
+      "food_tags": [
+        "k_vitamini_tavan",
+        "demir_emilimi_destek",
+        "odem_atici",
+        "kan_temizleyici",
+        "karaciger_dostu",
+        "alkali"
+      ],
+      "avoid_tags": [
+        "bobrek_tasi_riski",
+        "oksalat_yuksek",
+        "hamilelikte_asiri_tuketim_dikkat"
+      ],
+      "besin_degerleri": {
+        "k_vitamini": "rekor",
+        "demir": "yuksek",
+        "potasyum": "yuksek"
+      }
+    },
+    {
+      "besin_id": "YEM_01",
+      "besin_adi": "Çiğ Ceviz",
+      "kategori": "Kuruyemiş",
+      "birim": "2 tam adet (10 gr)",
+      "kcal": 65,
+      "macros": {
+        "protein_g": 1.5,
+        "karbonhidrat_g": 1.4,
+        "yag_g": 6.5,
+        "lif_g": 0.7
+      },
+      "micros": {
+        "magnezyum_mg": 16,
+        "fosfor_mg": 35,
+        "cinko_mg": 0.3,
+        "potasyum_mg": 44,
+        "omega3_g": 0.9
+      },
+      "food_tags": [
+        "antioksidan",
+        "beyin_dostu",
+        "bitkisel_protein",
+        "cinko",
+        "cocuk_gelisimi",
+        "coklu_doymamis",
+        "damar_sagligi",
+        "fosfor",
+        "gi_dusuk",
+        "hafiza_guclendirici",
+        "hdl_artirma",
+        "hormon_dengeleyici",
+        "kh_dusuk",
+        "kuruyemis",
+        "ldl_kontrol",
+        "magnezyum_yuksek",
+        "omega3",
+        "saglikli_yag",
+        "scalable",
+        "sodyum_dusuk",
+        "yag"
+      ],
+      "avoid_tags": [
+        "alerjen_kuruyemis",
+        "bobrek_tasi_riski",
+        "oksalat_yuksek",
+        "yuksek_kalori"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "coklu_doymamis_omega3",
+        "magnezyum": "orta",
+        "omega3": "yuksek"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "2 tam"
+    },
+    {
+      "besin_id": "YEM_02",
+      "besin_adi": "Çiğ Badem",
+      "kategori": "Kuruyemiş",
+      "birim": "8 adet (10 gr)",
+      "kcal": 60,
+      "macros": {
+        "protein_g": 2.1,
+        "karbonhidrat_g": 2.2,
+        "yag_g": 5.0,
+        "lif_g": 1.3
+      },
+      "micros": {
+        "kalsiyum_mg": 26,
+        "magnezyum_mg": 27,
+        "fosfor_mg": 48,
+        "cinko_mg": 0.3,
+        "potasyum_mg": 70,
+        "e_vitamini_mg": 2.6
+      },
+      "food_tags": [
+        "alkali_yapici",
+        "cinko",
+        "cocuk_gelisimi",
+        "damar_sagligi",
+        "e_vitamini_zengini",
+        "fosfor",
+        "gi_dusuk",
+        "hdl_artirma",
+        "kalp_dostu",
+        "kalsiyum_kaynagi",
+        "kemik_gelisimi",
+        "kh_dusuk",
+        "kuruyemis",
+        "ldl_kontrol",
+        "lif_kaynagi",
+        "magnezyum_yuksek",
+        "scalable",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "yag"
+      ],
+      "avoid_tags": [
+        "alerjen_kuruyemis",
+        "bobrek_tasi_riski",
+        "fitik_asit",
+        "oksalat",
+        "yuksek_kalori"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "tekli_doymamis",
+        "kalsiyum": "orta",
+        "e_vitamini": "yuksek"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "8 adet"
+    },
+    {
+      "besin_id": "YEM_03",
+      "besin_adi": "Çiğ Fındık",
+      "kategori": "Kuruyemiş",
+      "birim": "8-10 adet (10 gr)",
+      "kcal": 63,
+      "macros": {
+        "protein_g": 1.5,
+        "karbonhidrat_g": 1.7,
+        "yag_g": 6.1,
+        "lif_g": 1.0
+      },
+      "micros": {
+        "magnezyum_mg": 16,
+        "fosfor_mg": 29,
+        "cinko_mg": 0.2,
+        "folat_mcg": 11,
+        "e_vitamini_mg": 1.5
+      },
+      "food_tags": [
+        "cinko",
+        "cocuk_gelisimi",
+        "damar_sagligi",
+        "e_vitamini",
+        "folat",
+        "fosfor",
+        "gi_dusuk",
+        "hdl_artirma",
+        "hucre_yenileyici",
+        "kan_yapici_destek",
+        "kh_dusuk",
+        "kuruyemis",
+        "ldl_kontrol",
+        "magnezyum",
+        "manganez",
+        "saglikli_yag",
+        "scalable",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "yag"
+      ],
+      "avoid_tags": [
+        "alerjen_kuruyemis",
+        "gastrit_tetikleyebilir_asiri_tuketim",
+        "yuksek_kalori"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "tekli_doymamis",
+        "folat": "orta",
+        "e_vitamini": "orta"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "10 adet"
+    },
+    {
+      "besin_id": "YAG_01",
+      "besin_adi": "Zeytin (Siyah/Yeşil Ortalama)",
+      "kategori": "Yağ",
+      "birim": "5 adet (yaklaşık 20 gr)",
+      "kcal": 48,
+      "macros": {
+        "protein_g": 0.2,
+        "karbonhidrat_g": 1.2,
+        "yag_g": 5.0,
+        "lif_g": 0.6
+      },
+      "micros": {
+        "sodyum_mg": 310,
+        "potasyum_mg": 2,
+        "demir_mg": 0.6,
+        "kalsiyum_mg": 11
+      },
+      "food_tags": [
+        "saglikli_yag",
+        "e_vitamini",
+        "antioksidan",
+        "tekli_doymamis_yag",
+        "demir",
+        "polifenol",
+        "alkali"
+      ],
+      "avoid_tags": [
+        "yuksek_sodyum",
+        "tansiyon_tetikleyici",
+        "odem_yapici",
+        "bobrek_yuku"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "tekli_doymamis_oleik_asit",
+        "sodyum": "yuksek",
+        "polifenol": "yuksek"
+      }
+    },
+    {
+      "besin_id": "YAG_02",
+      "besin_adi": "Tereyağ",
+      "kategori": "Yağ",
+      "birim": "1 yemek kaşığı (14 gr)",
+      "kcal": 105,
+      "macros": {
+        "protein_g": 0.1,
+        "karbonhidrat_g": 0.1,
+        "yag_g": 11.5,
+        "lif_g": 0
+      },
+      "micros": {
+        "vitamin_a_mcg": 100,
+        "sodyum_mg": 2,
+        "kalsiyum_mg": 3
+      },
+      "food_tags": [
+        "hayvansal_yag",
+        "a_vitamini",
+        "d_vitamini_kaynagi",
+        "doymus_yag",
+        "enerji"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "asiditik_yuksek"
+      ],
+      "besin_degerleri": {
+        "yag_turu": "doymus",
+        "a_vitamini": "orta",
+        "sodyum": "cok_dusuk"
+      }
+    },
+    {
+      "besin_id": "TAT_01",
+      "besin_adi": "Bal",
+      "kategori": "Tatlı",
+      "birim": "1 yemek kaşığı (21 gr)",
+      "kcal": 64,
+      "macros": {
+        "protein_g": 0.1,
+        "karbonhidrat_g": 17.3,
+        "yag_g": 0,
+        "lif_g": 0
+      },
+      "micros": {
+        "potasyum_mg": 11,
+        "sodyum_mg": 1,
+        "enzimler": "var"
+      },
+      "food_tags": [
+        "dogal_tatlandirici",
+        "enerji_kaynagi",
+        "antioksidan",
+        "basit_seker",
+        "bagisiklik_destek",
+        "enzim_kaynagi"
+      ],
+      "avoid_tags": [
+        "seker",
+        "diyabet",
+        "yuksek_gi",
+        "candida_besleyici",
+        "mide_eksimesi"
+      ],
+      "besin_degerleri": {
+        "seker_turu": "fruktoz_glukoz",
+        "gi": "yuksek",
+        "enzim": "aktif"
+      }
+    },
+    {
+      "besin_id": "TAT_02",
+      "besin_adi": "Reçel",
+      "kategori": "Tatlı",
+      "birim": "100 gr",
+      "kcal": 272,
+      "macros": {
+        "protein_g": 0.4,
+        "karbonhidrat_g": 68.0,
+        "yag_g": 0.1,
+        "lif_g": 1.1
+      },
+      "micros": {
+        "sodyum_mg": 12,
+        "potasyum_mg": 80
+      },
+      "food_tags": [
+        "meyve_sekeri",
+        "yuksek_kalori",
+        "enerji_kaynagi",
+        "basit_seker"
+      ],
+      "avoid_tags": [
+        "seker",
+        "diyabet",
+        "yuksek_gi",
+        "islenmis_gida",
+        "mide_yanmasi"
+      ],
+      "besin_degerleri": {
+        "seker": "cok_yuksek",
+        "gi": "tavan",
+        "islenmis_gida": "evet"
+      }
+    },
+    {
+      "besin_id": "MEY_011",
+      "besin_adi": "Muz",
+      "kategori": "Meyve",
+      "birim": "1 adet (orta boy)",
+      "gramaj": 100,
+      "kcal": 88,
+      "macros": {
+        "protein_g": 1.1,
+        "karbonhidrat_g": 22.8,
+        "yag_g": 0.3,
+        "lif_g": 2.6
+      },
+      "micros": {
+        "potasyum_mg": 358,
+        "magnezyum_mg": 27,
+        "c_vitamini_mg": 8.7,
+        "sodyum_mg": 1
+      },
+      "food_tags": [
+        "cocuk_gelisimi",
+        "gi_orta",
+        "ishal_kesici",
+        "kas_krampi_onleyici",
+        "kh_yuksek",
+        "kolay_sindirim",
+        "magnezyum",
+        "meyve",
+        "mutluluk_hormonu",
+        "potasyum_dostu",
+        "potasyum_tavan",
+        "spor_oncesi",
+        "tum_yil",
+        "yumusak"
+      ],
+      "avoid_tags": [
+        "bobrek_hassasiyeti_potasyum",
+        "kabizlik_yapici",
+        "yuksek_gi_olgunsa"
+      ],
+      "besin_degerleri": {
+        "potasyum": "tavan",
+        "gi": "orta_yuksek"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 adet"
+    },
+    {
+      "besin_id": "A006",
+      "besin_adi": "Leblebi (Sarı)",
+      "kategori": "Kurubaklagil",
+      "birim": "1 küçük çay bardağı",
+      "gramaj": 30,
+      "kcal": 110,
+      "macros": {
+        "protein_g": 5.8,
+        "karbonhidrat_g": 17.5,
+        "yag_g": 1.5,
+        "lif_g": 2.3
+      },
+      "micros": {
+        "magnezyum_mg": 25,
+        "sodyum_mg": 15,
+        "potasyum_mg": 240,
+        "demir_mg": 1.2
+      },
+      "food_tags": [
+        "baklagil",
+        "damar_sagligi",
+        "gi_orta",
+        "ishal_toparlayici",
+        "kh_orta",
+        "ldl_kontrol",
+        "lif_orta",
+        "lifli_beslenme",
+        "mide_asidini_alır",
+        "scalable",
+        "sodyum_dusuk",
+        "tahil_atistirmalik",
+        "tokluk_hissi"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici",
+        "kabizlik_riski_asiri_tuketim"
+      ],
+      "besin_degerleri": {
+        "protein": "orta",
+        "lif": "yuksek",
+        "sodyum": "dusuk"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 küçük çay bardağı"
+    },
+    {
+      "besin_id": "A007",
+      "besin_adi": "Yağsız Yoğurt (Sade)",
+      "kategori": "Süt Ürünü",
+      "birim": "1 kase",
+      "gramaj": 200,
+      "kcal": 110,
+      "macros": {
+        "protein_g": 10.0,
+        "karbonhidrat_g": 14.0,
+        "yag_g": 0.4,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 300,
+        "potasyum_mg": 380,
+        "fosfor_mg": 240,
+        "sodyum_mg": 110
+      },
+      "food_tags": [
+        "damar_sagligi",
+        "doymus_yag_dusuk",
+        "gi_dusuk",
+        "ishal_onleyici",
+        "kalsiyum",
+        "kemik_gelisimi",
+        "kh_orta",
+        "probiyotik",
+        "sodyum_orta",
+        "sut_urunu",
+        "yagsiz_sut_urunleri",
+        "yumusak"
+      ],
+      "avoid_tags": [
+        "laktoz"
+      ],
+      "besin_degerleri": {
+        "kalsiyum": "yuksek",
+        "probiyotik": "var",
+        "yag_turu": "yagsiz"
+      },
+      "ogun": [
+        "sabah",
+        "ara_1",
+        "öğle",
+        "ara_2",
+        "akşam"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 kase (200 g)"
+    },
+    {
+      "besin_id": "A008",
+      "besin_adi": "Kefir (Yarım Yağlı)",
+      "kategori": "Süt Ürünü",
+      "birim": "1 bardak",
+      "gramaj": 200,
+      "kcal": 100,
+      "macros": {
+        "protein_g": 6.8,
+        "karbonhidrat_g": 9.0,
+        "yag_g": 3.2,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 250,
+        "magnezyum_mg": 24,
+        "potasyum_mg": 300,
+        "fosfor_mg": 200
+      },
+      "food_tags": [
+        "bagisiklik_guclendirici",
+        "beyin_bagirsak_aksi",
+        "cocuk_gelisimi",
+        "damar_sagligi",
+        "doymus_yag_dusuk",
+        "gi_dusuk",
+        "kh_orta",
+        "probiyotik_tavan",
+        "sivi",
+        "sodyum_orta",
+        "sut_urunu",
+        "yagsiz_sut_urunleri"
+      ],
+      "avoid_tags": [
+        "laktoz_orta",
+        "mide_gurultusu"
+      ],
+      "besin_degerleri": {
+        "probiyotik": "cok_yuksek",
+        "kalsiyum": "yuksek"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2",
+        "yatarken"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "200 ml"
+    },
+    {
+      "besin_id": "A009",
+      "besin_adi": "Ayran (Tuzsuz)",
+      "kategori": "Süt Ürünü",
+      "birim": "1 bardak",
+      "gramaj": 250,
+      "kcal": 70,
+      "macros": {
+        "protein_g": 4.5,
+        "karbonhidrat_g": 6.2,
+        "yag_g": 3.0,
+        "lif_g": 0
+      },
+      "micros": {
+        "kalsiyum_mg": 180,
+        "sodyum_mg": 95,
+        "potasyum_mg": 250
+      },
+      "food_tags": [
+        "alkali",
+        "damar_sagligi",
+        "dehidrasyon_onleyici",
+        "doymus_yag_dusuk",
+        "gi_dusuk",
+        "kh_dusuk",
+        "sivi",
+        "sodyum_dusuk",
+        "sut_urunu",
+        "tansiyon_dostu",
+        "yagsiz_sut_urunleri"
+      ],
+      "avoid_tags": [
+        "laktoz_orta"
+      ],
+      "besin_degerleri": {
+        "sodyum": "dusuk",
+        "probiyotik": "orta"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 bardak (250 ml)"
+    },
+    {
+      "besin_id": "MEY_004",
+      "besin_adi": "Mandalina",
+      "kategori": "Meyve",
+      "birim": "1 adet (küçük boy)",
+      "gramaj": 100,
+      "kcal": 53,
+      "macros": {
+        "protein_g": 0.8,
+        "karbonhidrat_g": 13.3,
+        "yag_g": 0.3,
+        "lif_g": 1.8
+      },
+      "micros": {
+        "c_vitamini_mg": 26.7,
+        "a_vitamini_iu": 681,
+        "potasyum_mg": 166,
+        "kalsiyum_mg": 37,
+        "sodyum_mg": 2
+      },
+      "food_tags": [
+        "meyve",
+        "kis_meyvesi",
+        "c_vitamini",
+        "a_vitamini",
+        "kolay_sindirilir",
+        "bagisiklik",
+        "cocuk_gelisimi",
+        "hafif_atistirmalik"
+      ],
+      "avoid_tags": [
+        "asitli",
+        "reflu_tetikleyici"
+      ],
+      "besin_degerleri": {
+        "c_vitamini": "yuksek",
+        "potasyum": "orta",
+        "gi": "dusuk_orta"
+      }
+    },
+    {
+      "besin_id": "MEY_005",
+      "besin_adi": "Çilek",
+      "kategori": "Meyve",
+      "birim": "1 adet (orta boy)",
+      "gramaj": 15,
+      "kcal": 5,
+      "macros": {
+        "protein_g": 0.1,
+        "karbonhidrat_g": 1.1,
+        "yag_g": 0.0,
+        "lif_g": 0.3
+      },
+      "micros": {
+        "c_vitamini_mg": 8.8,
+        "potasyum_mg": 23,
+        "folat_mcg": 3.6,
+        "manganez_mg": 0.06
+      },
+      "food_tags": [
+        "meyve",
+        "yaz_meyvesi",
+        "ilkbahar_meyvesi",
+        "antioksidan",
+        "cilt_dostu",
+        "kemik_gelisimi",
+        "folat",
+        "dusuk_kalori"
+      ],
+      "avoid_tags": [
+        "alerjen_potansiyel",
+        "histamin_yuksek",
+        "kasinti_tetikleyici"
+      ],
+      "besin_degerleri": {
+        "c_vitamini": "yuksek",
+        "antioksidan": "yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_006",
+      "besin_adi": "Erik (Yeşil)",
+      "kategori": "Meyve",
+      "birim": "1 adet",
+      "gramaj": 20,
+      "kcal": 9,
+      "macros": {
+        "protein_g": 0.1,
+        "karbonhidrat_g": 2.3,
+        "yag_g": 0.0,
+        "lif_g": 0.3
+      },
+      "micros": {
+        "potasyum_mg": 31,
+        "c_vitamini_mg": 1.9,
+        "k_vitamini_mcg": 1.3
+      },
+      "food_tags": [
+        "meyve",
+        "ilkbahar_meyvesi",
+        "metabolizma_hizlandirici",
+        "alkali_yapici",
+        "dis_eti_sagligi",
+        "c_vitamini",
+        "kabizlik_dusmani"
+      ],
+      "avoid_tags": [
+        "asidik",
+        "mide_eksimesi"
+      ],
+      "besin_degerleri": {
+        "gi": "dusuk",
+        "asidite": "yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_007",
+      "besin_adi": "Kayısı (Taze)",
+      "kategori": "Meyve",
+      "birim": "1 adet",
+      "gramaj": 40,
+      "kcal": 19,
+      "macros": {
+        "protein_g": 0.6,
+        "karbonhidrat_g": 4.4,
+        "yag_g": 0.1,
+        "lif_g": 0.8
+      },
+      "micros": {
+        "a_vitamini_rae_mcg": 77,
+        "potasyum_mg": 104,
+        "c_vitamini_mg": 4,
+        "demir_mg": 0.2
+      },
+      "food_tags": [
+        "meyve",
+        "yaz_meyvesi",
+        "a_vitamini",
+        "potasyum_yuksek",
+        "kabizlik_dusmani",
+        "bagirsak_calistirici",
+        "goz_sagligi",
+        "demir_emilimi_destek"
+      ],
+      "avoid_tags": [
+        "ishal_doneminde_yasak",
+        "karin_agrisi_yapabilir"
+      ],
+      "besin_degerleri": {
+        "a_vitamini": "yuksek",
+        "potasyum": "orta_yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_008",
+      "besin_adi": "Karpuz",
+      "kategori": "Meyve",
+      "birim": "1 ince dilim (ay dilim)",
+      "gramaj": 300,
+      "kcal": 90,
+      "macros": {
+        "protein_g": 1.8,
+        "karbonhidrat_g": 22.5,
+        "yag_g": 0.5,
+        "lif_g": 1.2
+      },
+      "micros": {
+        "potasyum_mg": 336,
+        "likopen_mg": 13.5,
+        "magnezyum_mg": 30,
+        "c_vitamini_mg": 24,
+        "sitrulin_mg": 450
+      },
+      "food_tags": [
+        "meyve",
+        "yaz_meyvesi",
+        "su_deposu",
+        "likopen_zengini",
+        "odem_atici",
+        "bobrek_temizleyici",
+        "sitrulin",
+        "kas_agrisi_onleyici"
+      ],
+      "avoid_tags": [
+        "yuksek_gi",
+        "seker_yuksek",
+        "diyabet_dusmani",
+        "gece_tuketilmemeli"
+      ],
+      "besin_degerleri": {
+        "su_orani": "tavan",
+        "likopen": "yuksek",
+        "gi": "yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_009",
+      "besin_adi": "Kavun",
+      "kategori": "Meyve",
+      "birim": "1 orta dilim",
+      "gramaj": 200,
+      "kcal": 68,
+      "macros": {
+        "protein_g": 1.6,
+        "karbonhidrat_g": 16.2,
+        "yag_g": 0.4,
+        "lif_g": 1.8
+      },
+      "micros": {
+        "a_vitamini_rae_mcg": 338,
+        "potasyum_mg": 534,
+        "c_vitamini_mg": 73,
+        "sodyum_mg": 32
+      },
+      "food_tags": [
+        "meyve",
+        "yaz_meyvesi",
+        "su_deposu",
+        "a_vitamini",
+        "bagisiklik",
+        "potasyum",
+        "c_vitamini"
+      ],
+      "avoid_tags": [
+        "yuksek_gi",
+        "gaz_yapabilir",
+        "mide_gurultusu"
+      ],
+      "besin_degerleri": {
+        "potasyum": "yuksek",
+        "a_vitamini": "tavan",
+        "gi": "yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_010",
+      "besin_adi": "Nar",
+      "kategori": "Meyve",
+      "birim": "1 adet (küçük boy)",
+      "gramaj": 200,
+      "kcal": 166,
+      "macros": {
+        "protein_g": 3.4,
+        "karbonhidrat_g": 37.4,
+        "yag_g": 2.4,
+        "lif_g": 8.0
+      },
+      "micros": {
+        "potasyum_mg": 472,
+        "fosfor_mg": 72,
+        "c_vitamini_mg": 20,
+        "demir_mg": 0.6,
+        "polifenol_mg": 600
+      },
+      "food_tags": [
+        "meyve",
+        "kis_meyvesi",
+        "sonbahar_meyvesi",
+        "antioksidan_tavan",
+        "kan_yapici",
+        "kalp_damar_dostu",
+        "polifenol_zengini",
+        "hucre_yenileyici"
+      ],
+      "avoid_tags": [
+        "kabizlik_yapici",
+        "seker_yuksek",
+        "tansiyon_dusurebilir"
+      ],
+      "besin_degerleri": {
+        "lif": "cok_yuksek",
+        "antioksidan": "ekstrem",
+        "potasyum": "yuksek"
+      }
+    },
+    {
+      "besin_id": "MEY_011_2",
+      "besin_adi": "Greyfurt",
+      "kategori": "Meyve",
+      "birim": "1 adet (orta boy)",
+      "gramaj": 300,
+      "kcal": 126,
+      "macros": {
+        "protein_g": 2.3,
+        "karbonhidrat_g": 32.1,
+        "yag_g": 0.4,
+        "lif_g": 4.8
+      },
+      "micros": {
+        "c_vitamini_mg": 93,
+        "potasyum_mg": 417,
+        "magnezyum_mg": 27,
+        "a_vitamini_iu": 3450
+      },
+      "food_tags": [
+        "meyve",
+        "kis_meyvesi",
+        "yag_yakimi_destek",
+        "insulun_duzenleyici",
+        "karaciger_detoks",
+        "c_vitamini",
+        "antioksidan"
+      ],
+      "avoid_tags": [
+        "ilac_etkilesimi_yuksek",
+        "asitli",
+        "gastrit_dusmani",
+        "tansiyon_ilaci_etkilesimi"
+      ],
+      "besin_degerleri": {
+        "c_vitamini": "tavan",
+        "insulun_duyarliligi": "artirir"
+      }
+    },
+    {
+      "besin_id": "C001",
+      "besin_adi": "Mercimek Çorbası (Kremasız)",
+      "kategori": "Çorba",
+      "birim": "1 kepçe (150 ml)",
+      "kcal": 80,
+      "macros": {
+        "protein_g": 5.2,
+        "karbonhidrat_g": 13.5,
+        "yag_g": 1.1,
+        "lif_g": 3.4
+      },
+      "micros": {
+        "sodyum_mg": 210,
+        "potasyum_mg": 240,
+        "magnezyum_mg": 18,
+        "demir_mg": 1.2,
+        "fosfor_mg": 85
+      },
+      "food_tags": [
+        "baklagil",
+        "corba",
+        "damar_sagligi",
+        "gi_orta",
+        "ishal_dostu",
+        "kh_orta",
+        "kis_besini",
+        "ldl_kontrol",
+        "lif_yuksek",
+        "lifli_beslenme",
+        "scalable",
+        "sodyum_orta",
+        "unlu_corba"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici",
+        "mide_siskinligi"
+      ],
+      "besin_notu": "Kremasız ve süzme olmayan mercimek çorbası yüksek lifiyle damar dostudur.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "yok",
+        "lif": "yuksek"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere",
+        "haslama"
+      ],
+      "miktar": "1 kepçe (150 g)"
+    },
+    {
+      "besin_id": "C002",
+      "besin_adi": "Ezogelin Çorbası",
+      "kategori": "Çorba",
+      "birim": "1 kepçe (150 ml)",
+      "kcal": 85,
+      "macros": {
+        "protein_g": 4.8,
+        "karbonhidrat_g": 14.2,
+        "yag_g": 1.5,
+        "lif_g": 2.8
+      },
+      "micros": {
+        "sodyum_mg": 240,
+        "potasyum_mg": 190,
+        "magnezyum_mg": 15,
+        "demir_mg": 1.0
+      },
+      "food_tags": [
+        "baklagil",
+        "corba",
+        "damar_sagligi",
+        "enerji_verici",
+        "gi_orta",
+        "kh_orta",
+        "lif_orta",
+        "lifli_beslenme",
+        "scalable",
+        "sodyum_orta",
+        "tahil",
+        "unlu_corba"
+      ],
+      "avoid_tags": [
+        "baharatli",
+        "baklagil_gaz_yapici",
+        "mide_yanmasi"
+      ],
+      "besin_notu": "Baharatlı yapısı reflü ve gastrit hastalarında mide yanması yapabilir.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "az_yag",
+        "baharat": "yuksek"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "1 kepçe (150 g)"
+    },
+    {
+      "besin_id": "C003",
+      "besin_adi": "Tarhana Çorbası",
+      "kategori": "Çorba",
+      "birim": "1 kepçe (150 ml)",
+      "kcal": 90,
+      "macros": {
+        "protein_g": 3.8,
+        "karbonhidrat_g": 15.5,
+        "yag_g": 2.2,
+        "lif_g": 1.4
+      },
+      "micros": {
+        "sodyum_mg": 380,
+        "potasyum_mg": 120,
+        "kalsiyum_mg": 45,
+        "magnezyum_mg": 12
+      },
+      "food_tags": [
+        "bagisiklik_guclendirici",
+        "cocuk_gelisimi",
+        "corba",
+        "damar_sagligi",
+        "fermente_gida",
+        "gi_orta",
+        "kh_orta",
+        "kis_besini",
+        "lif_orta",
+        "lifli_beslenme",
+        "probiyotik_kaynagi",
+        "scalable",
+        "sodyum_orta",
+        "unlu_corba"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "sodyum_orta"
+      ],
+      "besin_notu": "Anadolu'nun probiyotik deposudur, çocukların bağışıklık ve kemik gelişimi için harikadır.",
+      "besin_degerleri": {
+        "sodyum": "orta_yuksek",
+        "probiyotik": "yuksek",
+        "yag_turu": "az_yag"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "1 kepçe (150 g)"
+    },
+    {
+      "besin_id": "C004",
+      "besin_adi": "Yayla Çorbası",
+      "kategori": "Çorba",
+      "birim": "1 kepçe (150 ml)",
+      "kcal": 95,
+      "macros": {
+        "protein_g": 4.5,
+        "karbonhidrat_g": 12.8,
+        "yag_g": 3.6,
+        "lif_g": 0.8
+      },
+      "micros": {
+        "sodyum_mg": 180,
+        "potasyum_mg": 140,
+        "kalsiyum_mg": 110,
+        "fosfor_mg": 95
+      },
+      "food_tags": [
+        "corba",
+        "damar_sagligi",
+        "gi_orta",
+        "ishal_onleyici",
+        "kalsiyum",
+        "kemik_gelisimi",
+        "kh_orta",
+        "scalable",
+        "sodyum_orta",
+        "sut_urunu",
+        "unlu_corba",
+        "yagsiz_sut_urunleri",
+        "yumusak",
+        "yumusak_icim"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "laktoz"
+      ],
+      "besin_notu": "Yoğurt içeriğiyle kalsiyum sağlar, ishal dönemlerinde toparlayıcıdır.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "kalsiyum": "yuksek",
+        "yag_turu": "doymus"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "1 kepçe (150 g)"
+    },
+    {
+      "besin_id": "C005",
+      "besin_adi": "Sebze Çorbası",
+      "kategori": "Çorba",
+      "birim": "1 kepçe (150 ml)",
+      "kcal": 60,
+      "macros": {
+        "protein_g": 1.8,
+        "karbonhidrat_g": 10.5,
+        "yag_g": 1.2,
+        "lif_g": 2.4
+      },
+      "micros": {
+        "sodyum_mg": 120,
+        "potasyum_mg": 260,
+        "magnezyum_mg": 22,
+        "c_vitamini_mg": 12
+      },
+      "food_tags": [
+        "alkali_yapici",
+        "corba",
+        "damar_sagligi",
+        "dusuk_kalori",
+        "gi_dusuk",
+        "kh_dusuk",
+        "ldl_kontrol",
+        "lifli_beslenme",
+        "odem_atici",
+        "posa_yuksek",
+        "scalable",
+        "sodyum_dusuk"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "En hafif çorbadır, ödem atmaya ve mideyi dinlendirmeye yardımcı olur.",
+      "besin_degerleri": {
+        "sodyum": "dusuk",
+        "yag_turu": "yok",
+        "alkali": "yuksek"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere",
+        "haslama"
+      ],
+      "miktar": "1 kepçe (150 g)"
+    },
+    {
+      "besin_id": "S001",
+      "besin_adi": "Taze Fasulye (Zeytinyağlı)",
+      "kategori": "Sebze",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 126,
+      "macros": {
+        "protein_g": 3.8,
+        "karbonhidrat_g": 14.5,
+        "yag_g": 7.2,
+        "lif_g": 6.4
+      },
+      "micros": {
+        "sodyum_mg": 110,
+        "potasyum_mg": 410,
+        "magnezyum_mg": 38,
+        "kalsiyum_mg": 65
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "yaz_meyvesi",
+        "sonbahar_meyvesi",
+        "lif_yuksek",
+        "gi_dusuk",
+        "tekli_doymamis_yag",
+        "ldl_kontrol",
+        "hdl_artirma"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Yaz ve sonbahar başının en hafif ve lifli yemeğidir.",
+      "besin_degerleri": {
+        "sodyum": "dusuk",
+        "yag_turu": "tekli_doymamis",
+        "lif": "yuksek"
+      }
+    },
+    {
+      "besin_id": "S002",
+      "besin_adi": "Kabak Yemeği",
+      "kategori": "Sebze",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 104,
+      "macros": {
+        "protein_g": 2.6,
+        "karbonhidrat_g": 9.8,
+        "yag_g": 7.0,
+        "lif_g": 3.2
+      },
+      "micros": {
+        "sodyum_mg": 95,
+        "potasyum_mg": 520,
+        "magnezyum_mg": 42,
+        "fosfor_mg": 70
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "yaz_meyvesi",
+        "su_orani_yuksek",
+        "odem_atici",
+        "bobrek_dostu",
+        "dusuk_kalori",
+        "gi_dusuk"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Böbrekleri yormaz, su atımını destekler, diyetlerin vazgeçilmezidir.",
+      "besin_degerleri": {
+        "sodyum": "dusuk",
+        "yag_turu": "tekli_doymamis",
+        "potasyum": "yuksek"
+      }
+    },
+    {
+      "besin_id": "S003",
+      "besin_adi": "Ispanak Yemeği",
+      "kategori": "Sebze",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 102,
+      "macros": {
+        "protein_g": 4.6,
+        "karbonhidrat_g": 8.2,
+        "yag_g": 6.8,
+        "lif_g": 4.8
+      },
+      "micros": {
+        "sodyum_mg": 160,
+        "potasyum_mg": 680,
+        "magnezyum_mg": 94,
+        "demir_mg": 3.4,
+        "kalsiyum_mg": 130
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "kis_meyvesi",
+        "ilkbahar_meyvesi",
+        "demir_kaynagi",
+        "magnezyum",
+        "k_vitamini",
+        "kan_yapici"
+      ],
+      "avoid_tags": [
+        "oksalat_yuksek",
+        "bobrek_tasi_riski"
+      ],
+      "besin_notu": "Yüksek demir içerir ancak oksalat nedeniyle böbrek taşı riski olanlar yoğurtla tüketmelidir.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "tekli_doymamis",
+        "magnezyum": "yuksek"
+      }
+    },
+    {
+      "besin_id": "S004",
+      "besin_adi": "Pırasa Yemeği",
+      "kategori": "Sebze",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 150,
+      "macros": {
+        "protein_g": 3.2,
+        "karbonhidrat_g": 22.4,
+        "yag_g": 6.5,
+        "lif_g": 4.2
+      },
+      "micros": {
+        "sodyum_mg": 140,
+        "potasyum_mg": 380,
+        "fosfor_mg": 64,
+        "magnezyum_mg": 28
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "kis_meyvesi",
+        "prebiyotik",
+        "kabizlik_dusmani",
+        "bagirsak_dostu",
+        "potasyum"
+      ],
+      "avoid_tags": [
+        "gaz_yapabilir"
+      ],
+      "besin_notu": "Bağırsak florasını besleyen harika bir kış sebzesidir.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "tekli_doymamis",
+        "potasyum": "orta_yuksek"
+      }
+    },
+    {
+      "besin_id": "S005",
+      "besin_adi": "Enginar Yemeği",
+      "kategori": "Sebze",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 170,
+      "macros": {
+        "protein_g": 6.2,
+        "karbonhidrat_g": 24.5,
+        "yag_g": 7.0,
+        "lif_g": 11.4
+      },
+      "micros": {
+        "sodyum_mg": 180,
+        "potasyum_mg": 510,
+        "cinko_mg": 1.2,
+        "magnezyum_mg": 82
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "ilkbahar_meyvesi",
+        "karaciger_dostu",
+        "detoks_etkisi",
+        "lif_yuksek",
+        "cinko_kaynagi"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Karaciğer enzimlerini düzenlemeye yardımcı olan en kıymetli bahar yemeğidir.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "tekli_doymamis",
+        "lif": "tavan"
+      }
+    },
+    {
+      "besin_id": "L001",
+      "besin_adi": "Kuru Fasulye (Etsiz/Sulu)",
+      "kategori": "Kurubaklagil",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 259,
+      "macros": {
+        "protein_g": 16.5,
+        "karbonhidrat_g": 42.0,
+        "yag_g": 4.2,
+        "lif_g": 14.8
+      },
+      "micros": {
+        "sodyum_mg": 320,
+        "potasyum_mg": 780,
+        "magnezyum_mg": 90,
+        "demir_mg": 4.8
+      },
+      "food_tags": [
+        "baklagil",
+        "bitkisel_protein",
+        "lif_tavan",
+        "tokluk_hissi",
+        "magnezyum",
+        "demir",
+        "potasyum"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici",
+        "mide_siskinligi"
+      ],
+      "besin_notu": "Bitkisel protein ve lif deposudur, uzun süre tok tutar.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "az_yag",
+        "protein": "yuksek"
+      }
+    },
+    {
+      "besin_id": "L002",
+      "besin_adi": "Nohut Yemeği (Etsiz/Sulu)",
+      "kategori": "Kurubaklagil",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 272,
+      "macros": {
+        "protein_g": 14.2,
+        "karbonhidrat_g": 44.5,
+        "yag_g": 6.4,
+        "lif_g": 12.2
+      },
+      "micros": {
+        "sodyum_mg": 280,
+        "potasyum_mg": 640,
+        "cinko_mg": 2.4,
+        "selenyum_mcg": 9.5,
+        "fosfor_mg": 290
+      },
+      "food_tags": [
+        "baklagil",
+        "baklagil_yemegi",
+        "bitkisel_protein",
+        "cinko_yuksek",
+        "damar_sagligi",
+        "fosfor",
+        "gi_orta",
+        "kemik_gelisimi",
+        "kh_orta",
+        "ldl_kontrol",
+        "lif_yuksek",
+        "lifli_beslenme",
+        "posa_yuksek",
+        "scalable",
+        "sodyum_orta",
+        "tiroid_dostu_selenyum"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici",
+        "lekti̇n"
+      ],
+      "besin_notu": "Çinko ve selenyum içeriğiyle hem bağışıklık hem tiroid dostudur.",
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "az_yag",
+        "cinko": "yuksek"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı"
+    },
+    {
+      "besin_id": "L003",
+      "besin_adi": "Yeşil Mercimek Yemeği",
+      "kategori": "Kurubaklagil",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 238,
+      "macros": {
+        "protein_g": 18.2,
+        "karbonhidrat_g": 38.4,
+        "yag_g": 3.8,
+        "lif_g": 16.5
+      },
+      "micros": {
+        "sodyum_mg": 190,
+        "potasyum_mg": 720,
+        "demir_mg": 5.8,
+        "folat_mcg": 180
+      },
+      "food_tags": [
+        "baklagil",
+        "baklagil_yemegi",
+        "cocuk_gelisimi",
+        "damar_sagligi",
+        "demir_yuksek",
+        "folat_kaynagi",
+        "gi_orta",
+        "kabizlik_dusmani",
+        "kan_yapici",
+        "kh_orta",
+        "ldl_kontrol",
+        "lif_yuksek",
+        "lifli_beslenme",
+        "posa_yuksek",
+        "scalable",
+        "sodyum_orta"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici",
+        "gaz_yapan"
+      ],
+      "besin_notu": "Et kadar güçlü demir ve folat sağlar, kansızlık çekenler için idealdir.",
+      "besin_degerleri": {
+        "sodyum": "dusuk_orta",
+        "yag_turu": "az_yag",
+        "demir": "yuksek"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı"
+    },
+    {
+      "besin_id": "E001",
+      "besin_adi": "Etli Kuru Fasulye",
+      "kategori": "Etli Yemek",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 396,
+      "macros": {
+        "protein_g": 28.0,
+        "karbonhidrat_g": 28.0,
+        "yag_g": 20.0,
+        "lif_g": 12.5
+      },
+      "micros": {
+        "demir_mg": 5.8,
+        "cinko_mg": 4.2,
+        "b12_mcg": 1.2,
+        "potasyum_mg": 850,
+        "sodyum_mg": 580
+      },
+      "food_tags": [
+        "et_yemegi",
+        "yuksek_protein",
+        "demir_tavan",
+        "cinko_yuksek",
+        "B12_vitamini",
+        "kemik_gelisimi"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "yuksek_kalori",
+        "purin_yuksek_bobrek",
+        "tansiyon_dikkat"
+      ],
+      "besin_notu": "Güçlü bir protein ve demir bombasıdır ancak böbrek ve tansiyon hastaları kontrollü tüketmelidir."
+    },
+    {
+      "besin_id": "E002",
+      "besin_adi": "Tas Kebabı",
+      "kategori": "Etli Yemek",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 382,
+      "macros": {
+        "protein_g": 32.0,
+        "karbonhidrat_g": 10.0,
+        "yag_g": 23.0,
+        "lif_g": 2.1
+      },
+      "micros": {
+        "b12_mcg": 2.8,
+        "cinko_mg": 5.4,
+        "demir_mg": 3.6,
+        "sodyum_mg": 480
+      },
+      "food_tags": [
+        "et_yemegi",
+        "saf_protein",
+        "B12_vitamini",
+        "cinko",
+        "kas_yapici",
+        "enerji_verici"
+      ],
+      "avoid_tags": [
+        "kolesterol",
+        "doymus_yag",
+        "mide_hazimsizlik"
+      ],
+      "besin_notu": "Kırmızı etin en proteinli formlarından biridir, kas gelişimi için çok değerlidir."
+    },
+    {
+      "besin_id": "E003",
+      "besin_adi": "Sulu Köfte",
+      "kategori": "Etli Yemek",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 360,
+      "macros": {
+        "protein_g": 26.0,
+        "karbonhidrat_g": 18.0,
+        "yag_g": 20.0,
+        "lif_g": 2.4
+      },
+      "micros": {
+        "b12_mcg": 1.8,
+        "demir_mg": 2.9,
+        "cinko_mg": 3.8,
+        "magnezyum_mg": 45
+      },
+      "food_tags": [
+        "et_yemegi",
+        "cocuk_gelisimi",
+        "hayvansal_protein",
+        "yumusak_posa",
+        "B12_vitamini"
+      ],
+      "avoid_tags": [
+        "gluten_kofte_harci",
+        "tansiyon_dusmani_sodyum"
+      ],
+      "besin_notu": "Çocukların en sevdiği ve gelişimi en iyi destekleyen sulu yemektir."
+    },
+    {
+      "besin_id": "T001",
+      "besin_adi": "Tavuklu Sebze Yemeği",
+      "kategori": "Tavuk",
+      "birim": "1 porsiyon (9 yemek kaşığı)",
+      "kcal": 272,
+      "macros": {
+        "protein_g": 30.0,
+        "karbonhidrat_g": 12.0,
+        "yag_g": 12.0,
+        "lif_g": 4.8
+      },
+      "micros": {
+        "cinko_mg": 2.1,
+        "b6_vitamini_mg": 0.6,
+        "potasyum_mg": 480,
+        "fosfor_mg": 210
+      },
+      "food_tags": [
+        "tavuk_yemegi",
+        "dusuk_yag",
+        "yuksek_protein",
+        "kolay_sindirilir",
+        "sporcu_dostu"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Kırmızı ete göre daha hafif bir protein kaynağıdır, mideyi yormaz."
+    },
+    {
+      "besin_id": "E001_N",
+      "besin_adi": "Izgara Tavuk Göğsü",
+      "kategori": "Et Grubu",
+      "birim": "1 porsiyon (150 gr)",
+      "kcal": 160,
+      "macros": {
+        "protein_g": 31.0,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 3.6,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "selenyum_mcg": 24.0,
+        "fosfor_mg": 260,
+        "potasyum_mg": 380,
+        "sodyum_mg": 75
+      },
+      "food_tags": [
+        "beyaz_et",
+        "damar_sagligi",
+        "doymus_yag_dusuk",
+        "dusuk_yag",
+        "et_grubu",
+        "gi_dusuk",
+        "kas_yapici",
+        "kh_dusuk",
+        "kolay_sindirim",
+        "ldl_kontrol",
+        "sodyum_dusuk",
+        "sporcu_dostu",
+        "tiroid_dostu",
+        "yuksek_protein"
+      ],
+      "avoid_tags": [
+        "yuksek_isi_akrilamid"
+      ],
+      "besin_notu": "Yağsız protein kaynağıdır, tiroid fonksiyonlarını destekleyen selenyum içerir.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "izgara"
+      ],
+      "miktar": "120-150 g",
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "düşük",
+        "yag_turu": "düşük doymuş"
+      }
+    },
+    {
+      "besin_id": "E003_N",
+      "besin_adi": "Yağsız Dana Eti (Haşlama)",
+      "kategori": "Et Grubu",
+      "birim": "1 porsiyon (120 gr)",
+      "kcal": 190,
+      "macros": {
+        "protein_g": 30.0,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 7.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "b12_mcg": 3.2,
+        "demir_mg": 4.1,
+        "cinko_mg": 6.8,
+        "fosfor_mg": 240
+      },
+      "food_tags": [
+        "B12_vitamini",
+        "cinko_yuksek",
+        "demir_tavan",
+        "doymus_yag_kisitlama",
+        "doymus_yag_orta",
+        "et_grubu",
+        "gi_dusuk",
+        "kan_yapici",
+        "kemik_gelisimi",
+        "kh_dusuk",
+        "kirmizi_et",
+        "sodyum_orta",
+        "yumusak",
+        "yumusak_doku"
+      ],
+      "avoid_tags": [
+        "bobrek_yuku_orta",
+        "gut_hastalari_dikkat",
+        "kolesterol",
+        "purin_yuksek"
+      ],
+      "besin_notu": "En yüksek demir ve B12 kaynağıdır; büyüme çağındaki çocuklar için temel gıdadır.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama"
+      ],
+      "miktar": "100-120 g",
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "orta",
+        "yag_turu": "doymuş (orta)"
+      }
+    },
+    {
+      "besin_id": "E004_N",
+      "besin_adi": "Izgara Köfte",
+      "kategori": "Et Grubu",
+      "birim": "4 küçük adet (120 gr)",
+      "kcal": 250,
+      "macros": {
+        "protein_g": 22.0,
+        "karbonhidrat_g": 4.0,
+        "yag_g": 16.0,
+        "lif_g": 0.8
+      },
+      "micros": {
+        "demir_mg": 2.4,
+        "cinko_mg": 4.2,
+        "sodyum_mg": 520
+      },
+      "food_tags": [
+        "cinko_kaynagi",
+        "cocuk_gelisimi",
+        "doymus_yag_kisitlama",
+        "doymus_yag_orta",
+        "et_grubu",
+        "gi_dusuk",
+        "hayvansal_protein",
+        "hizli_hazirlanis",
+        "kh_dusuk",
+        "kirmizi_et",
+        "sodyum_orta"
+      ],
+      "avoid_tags": [
+        "gluten_ekmek_ici",
+        "islenmis_et",
+        "tansiyon_dusmani_tuzlu"
+      ],
+      "besin_notu": "Ekmeksiz yapıldığında gluten içermez ancak dışarıda yenilenlerde sodyum yüksektir.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "izgara"
+      ],
+      "miktar": "4 küçük adet (~120 g)",
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "orta",
+        "yag_turu": "doymuş (orta)"
+      }
+    },
+    {
+      "besin_id": "F001_N",
+      "besin_adi": "Izgara Levrek / Çipura",
+      "kategori": "Balık",
+      "birim": "1 porsiyon (150 gr)",
+      "kcal": 215,
+      "macros": {
+        "protein_g": 28.0,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 11.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "omega3_mg": 850,
+        "iyot_mcg": 65.0,
+        "selenyum_mcg": 42.0,
+        "fosfor_mg": 280,
+        "potasyum_mg": 420
+      },
+      "food_tags": [
+        "balik",
+        "omega3",
+        "beyin_dostu",
+        "damar_sagligi",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "iyot_kaynagi",
+        "tiroid_dostu"
+      ],
+      "avoid_tags": [
+        "agir_metal_riski_dip_baligi"
+      ],
+      "besin_notu": "Hafif ve sindirimi kolaydır; tiroid için gereken iyot ve selenyumu sağlar."
+    },
+    {
+      "besin_id": "F003_N",
+      "besin_adi": "Somon (Izgara/Buğulama)",
+      "kategori": "Balık",
+      "birim": "1 porsiyon (120 gr)",
+      "kcal": 250,
+      "macros": {
+        "protein_g": 25.0,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 16.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "omega3_mg": 2200,
+        "d_vitamini_iu": 450,
+        "potasyum_mg": 540,
+        "magnezyum_mg": 35
+      },
+      "food_tags": [
+        "balik",
+        "beyin_gelisimi",
+        "coklu_doymamis",
+        "d_vitamini_kaynagi",
+        "damar_sagligi",
+        "eklem_sagligi",
+        "enflamasyon_dusmani",
+        "gi_dusuk",
+        "hdl_artirma",
+        "kalp_dostu",
+        "kh_dusuk",
+        "ldl_kontrol",
+        "omega3",
+        "omega3_tavan",
+        "sodyum_dusuk"
+      ],
+      "avoid_tags": [
+        "yuksek_kalori_yaglı_balık"
+      ],
+      "besin_notu": "Vücuttaki iltihabı azaltan en güçlü Omega-3 kaynaklarından biridir.",
+      "ogun": [
+        "akşam"
+      ],
+      "cooking_method": [
+        "izgara",
+        "bugulama"
+      ],
+      "miktar": "120 g",
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "düşük",
+        "yag_turu": "omega-3 (yüksek)"
+      }
+    },
+    {
+      "besin_id": "T001_N",
+      "besin_adi": "Sebzeli Bulgur Pilavı",
+      "kategori": "Tahıl",
+      "birim": "4 yemek kaşığı (100 gr)",
+      "kcal": 160,
+      "macros": {
+        "protein_g": 4.5,
+        "karbonhidrat_g": 32.0,
+        "yag_g": 1.8,
+        "lif_g": 5.2
+      },
+      "micros": {
+        "magnezyum_mg": 48,
+        "fosfor_mg": 120,
+        "b1_vitamini_mg": 0.2
+      },
+      "food_tags": [
+        "tahil",
+        "kompleks_kh",
+        "lif_yuksek",
+        "gi_orta",
+        "tokluk_hissi",
+        "B_vitamini",
+        "bagirsak_dostu"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "mide_siskinligi"
+      ],
+      "besin_notu": "Pirinç pilavına göre çok daha yüksek lifli ve kan şekerini dengeleyen bir seçenektir."
+    },
+    {
+      "besin_id": "T002_N",
+      "besin_adi": "Tam Buğday Makarna",
+      "kategori": "Tahıl",
+      "birim": "6 yemek kaşığı (120 gr)",
+      "kcal": 200,
+      "macros": {
+        "protein_g": 7.5,
+        "karbonhidrat_g": 39.0,
+        "yag_g": 1.2,
+        "lif_g": 5.8
+      },
+      "micros": {
+        "magnezyum_mg": 52,
+        "demir_mg": 1.8,
+        "fosfor_mg": 140
+      },
+      "food_tags": [
+        "damar_sagligi",
+        "enerji_kaynagi",
+        "gi_orta",
+        "kh_orta",
+        "kompleks_kh",
+        "lif_orta",
+        "lifli_beslenme",
+        "pilav_makarna",
+        "posa_yuksek",
+        "scalable",
+        "sodyum_dusuk",
+        "sporcu_dostu",
+        "tahil"
+      ],
+      "avoid_tags": [
+        "gluten",
+        "yuksek_kh"
+      ],
+      "besin_notu": "Yavaş sindirilir, antrenman öncesi enerji için idealdir.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama"
+      ],
+      "miktar": "6 yemek kaşığı",
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "H001_N",
+      "besin_adi": "Haşlanmış Brokoli / Karnabahar",
+      "kategori": "Sebze",
+      "birim": "1 kase (150 gr)",
+      "kcal": 60,
+      "macros": {
+        "protein_g": 4.2,
+        "karbonhidrat_g": 10.0,
+        "yag_g": 0.6,
+        "lif_g": 4.8
+      },
+      "micros": {
+        "c_vitamini_mg": 120,
+        "k_vitamini_mcg": 140,
+        "folat_mcg": 90,
+        "kalsiyum_mg": 65
+      },
+      "food_tags": [
+        "sebze",
+        "antioksidan_tavan",
+        "lif_yuksek",
+        "c_vitamini",
+        "alkali_yapici",
+        "karaciger_dostu",
+        "odem_atici"
+      ],
+      "avoid_tags": [
+        "goitrojen_tiroid_dikkat",
+        "gaz_yapan"
+      ],
+      "besin_notu": "Çiğ tüketildiğinde tiroidi baskılayabilir (goitrojen), ancak pişmiş hali karaciğer temizliğinde harikadır."
+    },
+    {
+      "besin_id": "H003_N",
+      "besin_adi": "Haşlanmış Kabak",
+      "kategori": "Sebze",
+      "birim": "1 kase (150 gr)",
+      "kcal": 45,
+      "macros": {
+        "protein_g": 1.8,
+        "karbonhidrat_g": 8.4,
+        "yag_g": 0.4,
+        "lif_g": 2.2
+      },
+      "micros": {
+        "potasyum_mg": 390,
+        "magnezyum_mg": 28,
+        "c_vitamini_mg": 24
+      },
+      "food_tags": [
+        "bobrek_dostu",
+        "damar_sagligi",
+        "dusuk_kalori",
+        "gi_dusuk",
+        "ishal_onleyici_haşlama",
+        "kh_dusuk",
+        "lif_orta",
+        "lifli_beslenme",
+        "mide_dostu",
+        "sebze",
+        "sebze_yemegi",
+        "sodyum_dusuk",
+        "su_deposu",
+        "yumusak",
+        "yumusak_posa"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Sindirimi en kolay sebzedir, böbrekleri yormadan sıvı atımı sağlar.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama",
+        "tencere"
+      ],
+      "miktar": "1 porsiyon (1 kase)",
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "Y001_N",
+      "besin_adi": "Az Yağlı Süt",
+      "kategori": "Süt Ürünü",
+      "birim": "1 bardak (200 ml)",
+      "kcal": 90,
+      "macros": {
+        "protein_g": 6.8,
+        "karbonhidrat_g": 9.6,
+        "yag_g": 2.4,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "kalsiyum_mg": 244,
+        "fosfor_mg": 190,
+        "b12_mcg": 0.8
+      },
+      "food_tags": [
+        "damar_sagligi",
+        "doymus_yag_dusuk",
+        "fosfor",
+        "gi_dusuk",
+        "kalsiyum",
+        "kemik_gelisimi",
+        "kh_orta",
+        "sivi",
+        "sodyum_dusuk",
+        "sut",
+        "sut_urunu",
+        "uyku_kalitesi",
+        "yagsiz_sut_urunleri"
+      ],
+      "avoid_tags": [
+        "laktoz",
+        "mide_asidi_uyarici",
+        "mukus_artirici"
+      ],
+      "besin_notu": "Gece içilen süt kalsiyum emilimini artırır ve melatonin desteği sağlar.",
+      "ogun": [
+        "yatarken"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 bardak (200 ml)",
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "düşük doymuş"
+      }
+    },
+    {
+      "besin_id": "Y002_N",
+      "besin_adi": "Cacık (Zeytinyağlı)",
+      "kategori": "Yan Ürün",
+      "birim": "1 kase (200 gr)",
+      "kcal": 85,
+      "macros": {
+        "protein_g": 6.0,
+        "karbonhidrat_g": 8.0,
+        "yag_g": 3.5,
+        "lif_g": 0.6
+      },
+      "micros": {
+        "kalsiyum_mg": 210,
+        "potasyum_mg": 320,
+        "sodyum_mg": 180
+      },
+      "food_tags": [
+        "bagirsak_dostu",
+        "damar_sagligi",
+        "fermente",
+        "gi_dusuk",
+        "kalsiyum",
+        "probiyotik",
+        "serinletici",
+        "sivi",
+        "sut_urunu",
+        "tansiyon_dostu",
+        "yagsiz_sut_urunleri",
+        "yan_urun",
+        "yumusak"
+      ],
+      "avoid_tags": [
+        "laktoz_orta"
+      ],
+      "besin_notu": "Zeytinyağı ve nane ile birleştiğinde mideyi ferahlatır ve tansiyonu dengeler.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 kase",
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "orta",
+        "yag_turu": "düşük doymuş"
+      }
+    },
+    {
+      "besin_id": "S005_N",
+      "besin_adi": "Mevsim Salata (Yağsız)",
+      "kategori": "Yan Ürün",
+      "birim": "1 porsiyon (150 gr)",
+      "kcal": 35,
+      "macros": {
+        "protein_g": 1.8,
+        "karbonhidrat_g": 6.5,
+        "yag_g": 0.3,
+        "lif_g": 3.8
+      },
+      "micros": {
+        "c_vitamini_mg": 45,
+        "k_vitamini_mcg": 120,
+        "potasyum_mg": 280
+      },
+      "food_tags": [
+        "alkali",
+        "antioksidan",
+        "c_vitamini",
+        "damar_sagligi",
+        "gi_dusuk",
+        "kh_dusuk",
+        "ldl_kontrol",
+        "lifli_beslenme",
+        "metabolizma_hizlandirici",
+        "posa_yuksek",
+        "salata",
+        "yan_urun"
+      ],
+      "avoid_tags": [
+        "asitli",
+        "asitli_limon_fazlaysa",
+        "gaz_yapan_marul"
+      ],
+      "besin_notu": "Mide hacmini doldurarak tokluk hissi sağlar ve alkali dengesini korur.",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 porsiyon",
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "I_002",
+      "besin_adi": "Ihlamur",
+      "kategori": "İçecek",
+      "birim": "1 kupa (250 ml)",
+      "kcal": 2,
+      "macros": {
+        "protein_g": 0.0,
+        "karbonhidrat_g": 0.5,
+        "yag_g": 0.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "antioksidan_flavonoid": "yuksek"
+      },
+      "food_tags": [
+        "antioksidan",
+        "bogaz_dostu",
+        "gi_dusuk",
+        "icecek",
+        "idrar_sokturucu",
+        "kafeinsiz",
+        "kh_dusuk",
+        "kis_icecegi",
+        "sakinlestirici",
+        "sivi"
+      ],
+      "avoid_tags": [
+        "asiri_tuketim_kalp_carpintisi"
+      ],
+      "besin_notu": "Geleneksel kış içeceğidir; göğsü yumuşatır ve ödem atımına yardımcı olur.",
+      "ogun": [
+        "sabah",
+        "ara_1",
+        "öğle",
+        "ara_2",
+        "akşam",
+        "yatarken"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 kupa"
+    },
+    {
+      "besin_id": "I_003",
+      "besin_adi": "Türk Kahvesi (Şekersiz)",
+      "kategori": "İçecek",
+      "birim": "1 fincan (70 ml)",
+      "kcal": 2,
+      "macros": {
+        "protein_g": 0.1,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 0.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "kafein_mg": 65,
+        "potasyum_mg": 115,
+        "magnezyum_mg": 7
+      },
+      "food_tags": [
+        "antioksidan",
+        "gi_dusuk",
+        "icecek",
+        "kafeinli",
+        "kafeinli_icecek",
+        "karaciger_dostu",
+        "kh_dusuk",
+        "metabolizma_hizlandirici",
+        "odaklanma_artirici",
+        "sivi"
+      ],
+      "avoid_tags": [
+        "kafein_hassasiyeti",
+        "kafeinli_icecek",
+        "reflu_tetikleyici",
+        "tansiyon_yukseltebilir",
+        "uykusuzluk_yapabilir"
+      ],
+      "besin_notu": "Günde 1-2 fincan karaciğer sağlığını destekler ancak reflüsü olanlarda mide yanması yapabilir.",
+      "besin_degerleri": {
+        "kafein": "orta",
+        "antioksidan": "yuksek"
+      },
+      "ogun": [
+        "sabah",
+        "ara_1",
+        "öğle",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 fincan"
+    },
+    {
+      "besin_id": "I_004",
+      "besin_adi": "Filtre Kahve (Şekersiz)",
+      "kategori": "İçecek",
+      "birim": "1 kupa (250 ml)",
+      "kcal": 2,
+      "macros": {
+        "protein_g": 0.3,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 0.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "kafein_mg": 95,
+        "potasyum_mg": 116,
+        "magnezyum_mg": 7
+      },
+      "food_tags": [
+        "gi_dusuk",
+        "icecek",
+        "idrar_sokturucu",
+        "kafein_yuksek",
+        "kafeinli_icecek",
+        "kh_dusuk",
+        "metabolizma_destek",
+        "sivi",
+        "yag_yakimi_yardimci"
+      ],
+      "avoid_tags": [
+        "dehidrasyon_riski",
+        "kafein_bagimliligi",
+        "kafeinli_icecek",
+        "mide_asidi_artirici"
+      ],
+      "besin_notu": "Yüksek kafein içeriği nedeniyle yanında mutlaka 1 bardak su ile tüketilmelidir.",
+      "besin_degerleri": {
+        "kafein": "yuksek",
+        "metabolizma": "hizlandirici"
+      },
+      "ogun": [
+        "sabah"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 kupa"
+    },
+    {
+      "besin_id": "I_005",
+      "besin_adi": "Papatya Çayı",
+      "kategori": "İçecek",
+      "birim": "1 kupa (250 ml)",
+      "kcal": 2,
+      "macros": {
+        "protein_g": 0.0,
+        "karbonhidrat_g": 0.5,
+        "yag_g": 0.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "apigenin": "yuksek",
+        "antioksidan_flavonoid": "var"
+      },
+      "food_tags": [
+        "icecek",
+        "kafeinsiz",
+        "mide_spazm_onleyici",
+        "sakinlestirici",
+        "gaz_sokturucu",
+        "uyku_kalitesi"
+      ],
+      "avoid_tags": [
+        "papatya_alerjisi"
+      ],
+      "besin_notu": "Mide duvarını yatıştırır, sindirim sistemi spazmlarını azaltarak rahat uyku sağlar.",
+      "besin_degerleri": {
+        "kafein": "yok",
+        "sakinlestirici_etki": "orta"
+      }
+    },
+    {
+      "besin_id": "I_006",
+      "besin_adi": "Melisa Çayı",
+      "kategori": "İçecek",
+      "birim": "1 kupa (250 ml)",
+      "kcal": 2,
+      "macros": {
+        "protein_g": 0.0,
+        "karbonhidrat_g": 0.4,
+        "yag_g": 0.0,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "rosmarinik_asit": "yuksek"
+      },
+      "food_tags": [
+        "icecek",
+        "kafeinsiz",
+        "kaygi_azaltici",
+        "uyku_kalitesi_artirici",
+        "kas_gevsetici",
+        "antiviral"
+      ],
+      "avoid_tags": [
+        "tiroid_ilaci_etkilesimi",
+        "hipotiroidi_dikkat"
+      ],
+      "besin_notu": "Anksiyete ve stres kaynaklı uykusuzluğa iyi gelir; tiroid değerlerini baskılayabileceği için hipotiroidi hastaları dikkat etmelidir.",
+      "besin_degerleri": {
+        "kafein": "yok",
+        "sakinlestirici_etki": "yuksek"
+      }
+    },
+    {
+      "besin_id": "L_005",
+      "besin_adi": "Bezelye (Taze/Sulu)",
+      "kategori": "Sulu Yemek",
+      "birim": "1 porsiyon (6 yemek kaşığı)",
+      "kcal": 150,
+      "macros": {
+        "protein_g": 8.0,
+        "karbonhidrat_g": 24.0,
+        "yag_g": 2.5,
+        "lif_g": 7.5
+      },
+      "micros": {
+        "folat_mcg": 95,
+        "c_vitamini_mg": 58,
+        "demir_mg": 2.2,
+        "potasyum_mg": 340
+      },
+      "food_tags": [
+        "sebze_yemegi",
+        "nisastali_sebze",
+        "bitkisel_protein",
+        "folat",
+        "cocuk_gelisimi",
+        "ilkbahar_besini"
+      ],
+      "avoid_tags": [
+        "yuksek_gi_patatesli_ise",
+        "gaz_yapabilir"
+      ],
+      "besin_notu": "Diğer sebzelere göre karbonhidratı daha yüksektir; çocuklarda boy uzamasını ve kan yapımını destekler.",
+      "besin_degerleri": {
+        "protein": "orta_yuksek",
+        "folat": "yuksek",
+        "lif": "yuksek"
+      }
+    },
+    {
+      "besin_id": "S_006_R",
+      "besin_adi": "Zeytinyağlı Enginar (Sadece Çanak)",
+      "kategori": "Sebze",
+      "birim": "1 adet (orta boy çanak)",
+      "gramaj": 120,
+      "kcal": 85,
+      "macros": {
+        "protein_g": 3.2,
+        "karbonhidrat_g": 10.5,
+        "yag_g": 4.5,
+        "lif_g": 6.8
+      },
+      "micros": {
+        "sinarin_mg": 12,
+        "cinko_mg": 0.6,
+        "potasyum_mg": 410,
+        "magnezyum_mg": 55
+      },
+      "food_tags": [
+        "damar_sagligi",
+        "detoks_etkisi",
+        "dusuk_kalori",
+        "gi_dusuk",
+        "karaciger_dostu",
+        "kh_orta",
+        "ldl_kontrol",
+        "lif_yuksek",
+        "safra_temizleyici",
+        "scalable",
+        "sebze",
+        "sebze_yemegi",
+        "zeytinyagi"
+      ],
+      "avoid_tags": [],
+      "besin_notu": "Garnitürsüz, sadece zeytinyağı ile pişmiş çanak formudur. Lif ve sinarin konsantrasyonu çok yüksektir.",
+      "besin_degerleri": {
+        "lif": "yuksek",
+        "detoks_etkisi": "tavan",
+        "sodyum": "dusuk"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı"
+    },
+    {
+      "besin_id": "E_005",
+      "besin_adi": "Tavuk Sote (Bol Sebzeli)",
+      "kategori": "Et Grubu",
+      "birim": "1 porsiyon (150 gr)",
+      "kcal": 215,
+      "macros": {
+        "protein_g": 26.0,
+        "karbonhidrat_g": 8.0,
+        "yag_g": 9.5,
+        "lif_g": 3.2
+      },
+      "micros": {
+        "b6_vitamini_mg": 0.7,
+        "selenyum_mcg": 22.0,
+        "potasyum_mg": 410
+      },
+      "food_tags": [
+        "beyaz_et",
+        "doymus_yag_dusuk",
+        "et_grubu",
+        "gi_dusuk",
+        "hafif_aksam_yemegi",
+        "kas_yapici",
+        "kh_dusuk",
+        "kolay_sindirim",
+        "metabolizma_destek",
+        "scalable",
+        "sebze",
+        "yuksek_protein"
+      ],
+      "avoid_tags": [
+        "islenmis_yag_fazlaysa"
+      ],
+      "besin_notu": "Sebzelerle piştiği için lif oranı artar ve proteinin emilimi kolaylaşır.",
+      "besin_degerleri": {
+        "protein": "yuksek",
+        "sindirim": "kolay"
+      },
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "sote",
+        "tava"
+      ],
+      "miktar": "150-180 g"
+    },
+    {
+      "besin_id": "E_006",
+      "besin_adi": "Dana Biftek / Sote (Yağsız)",
+      "kategori": "Et Grubu",
+      "birim": "1 porsiyon (120 gr)",
+      "kcal": 265,
+      "macros": {
+        "protein_g": 32.0,
+        "karbonhidrat_g": 0.0,
+        "yag_g": 14.5,
+        "lif_g": 0.0
+      },
+      "micros": {
+        "b12_mcg": 3.4,
+        "demir_mg": 4.2,
+        "cinko_mg": 7.5,
+        "sodyum_mg": 75
+      },
+      "food_tags": [
+        "kirmizi_et",
+        "demir_tavan",
+        "B12_vitamini",
+        "cinko_yuksek",
+        "kan_yapici",
+        "kemik_gelisimi"
+      ],
+      "avoid_tags": [
+        "purin_yuksek",
+        "kolesterol",
+        "gut_riski"
+      ],
+      "besin_notu": "Halsizlik ve kansızlık için en güçlü destekçidir; purin içeriği nedeniyle böbrek hastaları dikkat etmelidir.",
+      "besin_degerleri": {
+        "demir": "tavan",
+        "B12": "yuksek",
+        "protein": "tavan"
+      }
+    },
+    {
+      "besin_id": "A_012",
+      "besin_adi": "Çiğ Kabak Çekirdeği (Tuzsuz)",
+      "kategori": "Kuruyemiş",
+      "birim": "1 avuç içi (20 gr)",
+      "kcal": 115,
+      "macros": {
+        "protein_g": 6.0,
+        "karbonhidrat_g": 3.0,
+        "yag_g": 9.8,
+        "lif_g": 1.2
+      },
+      "micros": {
+        "magnezyum_mg": 118,
+        "cinko_mg": 1.6,
+        "demir_mg": 1.8,
+        "triptofan_mg": 110
+      },
+      "food_tags": [
+        "cinko_yuksek",
+        "cocuk_gelisimi",
+        "gi_dusuk",
+        "kh_dusuk",
+        "kuruyemis",
+        "ldl_kontrol",
+        "magnezyum_kaynak",
+        "magnezyum_yuksek",
+        "parazit_onleyici",
+        "prostat_sagligi",
+        "scalable",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "uyku_kalitesi"
+      ],
+      "avoid_tags": [
+        "yuksek_kalori_asiri_tuketim"
+      ],
+      "besin_notu": "Çinko ve magnezyum deposudur; gece yenildiğinde melatonin salgılanmasına yardımcı olur.",
+      "besin_degerleri": {
+        "magnezyum": "tavan",
+        "cinko": "yuksek",
+        "yag_turu": "coklu_doymamis"
+      },
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 avuç içi (~20 g)"
+    },
+    {
+      "besin_id": "KHB13",
+      "besin_adi": "Tam buğday ekmeği – 1 dilim (70 kcal)",
+      "kategori": "Ekmek",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 dilim",
+      "kcal": 70,
+      "food_tags": [
+        "ekmek",
+        "tam_tahilli_ekmek",
+        "tahil",
+        "kompleks_kh",
+        "lif_yuksek",
+        "posa_yuksek",
+        "kh_orta",
+        "gi_orta"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {}
+    },
+    {
+      "besin_id": "A001",
+      "besin_adi": "Elma",
+      "kategori": "Meyve",
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 orta boy",
+      "kcal": 70,
+      "food_tags": [
+        "meyve",
+        "kh_orta",
+        "gi_orta",
+        "lif_orta",
+        "posa_yuksek",
+        "yumusak",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "yok",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "A002",
+      "besin_adi": "Armut",
+      "kategori": "Meyve",
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 orta boy",
+      "kcal": 75,
+      "food_tags": [
+        "meyve",
+        "kh_orta",
+        "gi_orta",
+        "lif_orta",
+        "posa_yuksek",
+        "yumusak",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "yok",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "A003",
+      "besin_adi": "Portakal",
+      "kategori": "Meyve",
+      "ogun": [
+        "ara_1",
+        "ara_2"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 orta boy",
+      "kcal": 65,
+      "food_tags": [
+        "meyve",
+        "kh_orta",
+        "gi_orta",
+        "lif_orta",
+        "posa_yuksek",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [
+        "asitli"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "yok",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "C005_2",
+      "besin_adi": "Domates Çorbası (süt/kaşar eklenmeden)",
+      "kategori": "Çorba",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "1 kepçe (150 g)",
+      "kcal": 55,
+      "food_tags": [
+        "corba",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [
+        "asitli"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "L001_2",
+      "besin_adi": "Kuru Fasulye Yemeği (az yağlı)",
+      "kategori": "Kurubaklagil",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 260,
+      "food_tags": [
+        "baklagil",
+        "baklagil_yemegi",
+        "kh_orta",
+        "gi_orta",
+        "lif_yuksek",
+        "posa_yuksek",
+        "sodyum_orta",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "orta",
+        "yag_turu": "az yağ"
+      }
+    },
+    {
+      "besin_id": "L004",
+      "besin_adi": "Barbunya Yemeği (zeytinyağlı, sulu)",
+      "kategori": "Kurubaklagil",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 240,
+      "food_tags": [
+        "baklagil",
+        "baklagil_yemegi",
+        "kh_orta",
+        "gi_orta",
+        "lif_yuksek",
+        "posa_yuksek",
+        "tekli_doymamis",
+        "zeytinyagi",
+        "sodyum_dusuk",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "düşük",
+        "yag_turu": "zeytinyağı"
+      }
+    },
+    {
+      "besin_id": "S001_2",
+      "besin_adi": "Zeytinyağlı Taze Fasulye",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere",
+        "haslama"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 220,
+      "food_tags": [
+        "sebze_yemegi",
+        "posa_yuksek",
+        "lif_yuksek",
+        "gi_dusuk",
+        "kh_orta",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "zeytinyagi",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "zeytinyağı"
+      }
+    },
+    {
+      "besin_id": "S002_2",
+      "besin_adi": "Zeytinyağlı Kabak Yemeği",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere",
+        "haslama"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 160,
+      "food_tags": [
+        "sebze_yemegi",
+        "lif_orta",
+        "gi_dusuk",
+        "kh_dusuk",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "zeytinyagi",
+        "yumusak",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "zeytinyağı"
+      }
+    },
+    {
+      "besin_id": "S003_2",
+      "besin_adi": "Zeytinyağlı Pırasa",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 200,
+      "food_tags": [
+        "sebze_yemegi",
+        "lif_orta",
+        "gi_dusuk",
+        "kh_orta",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "zeytinyagi",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "zeytinyağı"
+      }
+    },
+    {
+      "besin_id": "S004_2",
+      "besin_adi": "Zeytinyağlı Bamya",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 180,
+      "food_tags": [
+        "sebze_yemegi",
+        "lif_orta",
+        "gi_dusuk",
+        "kh_dusuk",
+        "sodyum_dusuk",
+        "tekli_doymamis",
+        "zeytinyagi",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [
+        "asitli"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "zeytinyağı"
+      }
+    },
+    {
+      "besin_id": "E002_2",
+      "besin_adi": "Haşlanmış Tavuk (derisiz)",
+      "kategori": "Et Grubu",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama"
+      ],
+      "miktar": "120-150 g",
+      "kcal": 170,
+      "food_tags": [
+        "et_grubu",
+        "beyaz_et",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "doymus_yag_dusuk",
+        "yumusak",
+        "kolay_sindirim",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [
+        "et_suyu"
+      ],
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "düşük",
+        "yag_turu": "düşük doymuş"
+      }
+    },
+    {
+      "besin_id": "F001",
+      "besin_adi": "Izgara Levrek",
+      "kategori": "Balık",
+      "ogun": [
+        "akşam"
+      ],
+      "cooking_method": [
+        "izgara"
+      ],
+      "miktar": "120-150 g",
+      "kcal": 210,
+      "food_tags": [
+        "balik",
+        "omega3",
+        "coklu_doymamis",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "hafif",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "düşük",
+        "yag_turu": "omega-3"
+      }
+    },
+    {
+      "besin_id": "F002",
+      "besin_adi": "Fırında Çipura",
+      "kategori": "Balık",
+      "ogun": [
+        "akşam"
+      ],
+      "cooking_method": [
+        "firin"
+      ],
+      "miktar": "120-150 g",
+      "kcal": 220,
+      "food_tags": [
+        "balik",
+        "omega3",
+        "coklu_doymamis",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "ldl_kontrol",
+        "hdl_artirma",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "yok",
+        "sodyum": "düşük",
+        "yag_turu": "omega-3"
+      }
+    },
+    {
+      "besin_id": "T001_2",
+      "besin_adi": "Bulgur Pilavı (sebzeli)",
+      "kategori": "Tahıl",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere",
+        "haslama"
+      ],
+      "miktar": "4 yemek kaşığı",
+      "kcal": 160,
+      "food_tags": [
+        "tahil",
+        "kompleks_kh",
+        "kh_orta",
+        "gi_orta",
+        "lif_orta",
+        "sodyum_dusuk",
+        "pilav_makarna",
+        "bulgur",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi",
+        "scalable"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "orta",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "H001",
+      "besin_adi": "Haşlanmış Brokoli",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama",
+        "tencere"
+      ],
+      "miktar": "1 porsiyon (1 kase)",
+      "kcal": 55,
+      "food_tags": [
+        "sebze_yemegi",
+        "posa_yuksek",
+        "lif_yuksek",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "lifli_beslenme",
+        "ldl_kontrol",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "H002",
+      "besin_adi": "Haşlanmış Karnabahar",
+      "kategori": "Sebze",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "haslama",
+        "tencere"
+      ],
+      "miktar": "1 porsiyon (1 kase)",
+      "kcal": 60,
+      "food_tags": [
+        "sebze_yemegi",
+        "posa_yuksek",
+        "lif_orta",
+        "kh_dusuk",
+        "gi_dusuk",
+        "sodyum_dusuk",
+        "lifli_beslenme",
+        "damar_sagligi"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "glisemik_indeks": "düşük",
+        "sodyum": "düşük",
+        "yag_turu": "yok"
+      }
+    },
+    {
+      "besin_id": "Y004",
+      "besin_adi": "Tarçınlı Az Yağlı Süt",
+      "kategori": "Süt Ürünleri",
+      "ogun": [
+        "yatarken"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 bardak (200 ml)",
+      "kcal": 90,
+      "food_tags": [
+        "sut_urunu",
+        "sut",
+        "gi_dusuk",
+        "kh_orta",
+        "kan_sekeri_dengeleyici",
+        "yumusak",
+        "sivi",
+        "hafif"
+      ],
+      "avoid_tags": [
+        "laktoz_intoleransi"
+      ],
+      "comment": "Tarçın, gece boyunca kan şekeri dalgalanmalarını önlemeye yardımcı olur.",
+      "besin_degerleri": {
+        "sodyum": "dusuk",
+        "yag_turu": "dusuk_doymus"
+      }
+    },
+    {
+      "besin_id": "I005",
+      "besin_adi": "Rahatlatıcı Gece Çayı (Papatya veya Melisa)",
+      "kategori": "İçecek",
+      "ogun": [
+        "yatarken"
+      ],
+      "cooking_method": [
+        "hazir"
+      ],
+      "miktar": "1 kupa",
+      "kcal": 2,
+      "food_tags": [
+        "icecek",
+        "sivi",
+        "kafeinsiz",
+        "sakinlestirici",
+        "kh_dusuk",
+        "gi_dusuk"
+      ],
+      "avoid_tags": [],
+      "comment": "Uyku kalitesini artırır ve sindirimi rahatlatır.",
+      "besin_degerleri": {}
+    },
+    {
+      "besin_id": "L005",
+      "besin_adi": "Kıymalı Bezelye Yemeği (Patatessiz)",
+      "kategori": "Sulu Yemek",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 240,
+      "food_tags": [
+        "sebze",
+        "et_grubu",
+        "lif_yuksek",
+        "kh_orta",
+        "gi_orta",
+        "ldl_kontrol",
+        "potasyum_dostu",
+        "scalable"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "tekli_doymamis"
+      }
+    },
+    {
+      "besin_id": "E006",
+      "besin_adi": "Dana Et Sote (Yağsız Biftekten)",
+      "kategori": "Et Grubu",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "sote",
+        "tava"
+      ],
+      "miktar": "120-150 g",
+      "kcal": 265,
+      "food_tags": [
+        "et_grubu",
+        "kirmizi_et",
+        "doymus_yag_orta",
+        "doymus_yag_kisitlama",
+        "kh_dusuk",
+        "gi_dusuk",
+        "scalable"
+      ],
+      "avoid_tags": [
+        "kolesterol"
+      ],
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "doymus_yag_orta"
+      }
+    },
+    {
+      "besin_id": "S007",
+      "besin_adi": "Kıymalı Ispanak Yemeği",
+      "kategori": "Sulu Yemek",
+      "ogun": [
+        "öğle",
+        "akşam"
+      ],
+      "cooking_method": [
+        "tencere"
+      ],
+      "miktar": "6-8 yemek kaşığı",
+      "kcal": 195,
+      "food_tags": [
+        "sebze",
+        "et_grubu",
+        "potasyum_dostu",
+        "lif_orta",
+        "kh_dusuk",
+        "gi_dusuk",
+        "hafif",
+        "scalable"
+      ],
+      "avoid_tags": [],
+      "besin_degerleri": {
+        "sodyum": "orta",
+        "yag_turu": "az_yag"
+      }
+    }
+  ]
+}

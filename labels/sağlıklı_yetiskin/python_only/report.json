@@ -1,0 +1,43 @@
+{
+  "clauses_total": 106,
+  "clauses_mined": 34,
+  "final_pass": {
+    "dropped_unknown_tags": [],
+    "missing_evidence_tags": [],
+    "numeric_invalid_units": [],
+    "numeric_missing_limit_tag": [
+      "lif_orta"
+    ],
+    "dropped_unsupported_evidence": [],
+    "quote_reuse_pruned": [
+      {
+        "quote": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine bitkisel sıvı yağ",
+        "dropped": 2
+      }
+    ],
+    "evidence_per_tag_pruned": [
+      {
+        "tag": "baklagil",
+        "dropped": 3
+      },
+      {
+        "tag": "balik",
+        "dropped": 1
+      },
+      {
+        "tag": "sivi",
+        "dropped": 2
+      },
+      {
+        "tag": "hdl_artirma",
+        "dropped": 3
+      },
+      {
+        "tag": "az_yagli_sut_urunleri",
+        "dropped": 3
+      }
+    ],
+    "numeric_normalized": 13,
+    "dropped_numeric_empty": 0
+  }
+}

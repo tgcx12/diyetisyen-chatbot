@@ -1,0 +1,79 @@
+{
+  "prefer_tags": [
+    "zeytinyagi",
+    "fındık_yağı"
+  ],
+  "limit_tags": [
+    "doymus_yag_dusuk",
+    "doymus_yag_orta",
+    "doymus_yag_yuksek",
+    "kolesterol"
+  ],
+  "avoid_tags": [
+    "doymus_yag_kisitlama",
+    "yag",
+    "et_grubu",
+    "kirmizi_et",
+    "islenmis_et",
+    "yumurta",
+    "peynir",
+    "sut_urunu",
+    "yagsiz_sut_urunleri",
+    "laktoz",
+    "sodyum_yuksek"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "zeytinyagi",
+        "fındık_yağı"
+      ],
+      "limit": [
+        "doymus_yag_dusuk",
+        "doymus_yag_orta",
+        "kolesterol"
+      ],
+      "avoid": [
+        "doymus_yag_kisitlama",
+        "yag",
+        "et_grubu",
+        "kirmizi_et",
+        "islenmis_et",
+        "yumurta",
+        "peynir",
+        "sut_urunu",
+        "yagsiz_sut_urunleri",
+        "laktoz",
+        "sodyum_yuksek"
+      ]
+    },
+    "numeric_constraints": []
+  },
+  "rag_evidence": [
+    {
+      "chunk_id": null,
+      "related_tags": [],
+      "quote": "Doymuş yağlar (yağlı süt ürünleri ve bazı hayvansal ürünler) ile trans yağlar (işlenmiş gıdalar/margarinler) sınırlandırılmalıdır. Kolesterol içeriği yüksek gıdalar (yağlı hayvansal ürünler, yumurta, sakatat vb.) ölçülü tüketilmelidir."
+    },
+    {
+      "chunk_id": null,
+      "related_tags": [],
+      "quote": "Yağlı etler, sakatatlar (karaciğer, beyin vb.) ve işlenmiş et ürünleri (sucuk, salam, sosis) yüksek kolesterol içerir. Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır."
+    },
+    {
+      "chunk_id": null,
+      "related_tags": [],
+      "quote": "Tereyağı, sert margarinler, krema ve kaymak gibi doymuş yağlar kolesterolü yükseltir. Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır."
+    },
+    {
+      "chunk_id": null,
+      "related_tags": [],
+      "quote": "Kötü kolesterol (LDL), damar sertliğinin en önemli risk faktörüdür. İyi kolesterol (HDL) ise damar sertliğini önler. Besinlerle alınan zararlı yağlar karaciğerde LDL'ye dönüşür."
+    },
+    {
+      "chunk_id": null,
+      "related_tags": [],
+      "quote": "Zeytinyağı ve fındık yağı kötü kolesterolü düşürür. Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir."
+    }
+  ]
+}

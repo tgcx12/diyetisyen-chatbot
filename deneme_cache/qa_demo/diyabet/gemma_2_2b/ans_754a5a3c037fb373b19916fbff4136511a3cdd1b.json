@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Yumurta, tavuk eti veya hindi eti veya balık tercih edilmeli  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Sakatatların (karaciğer, beyin, böbrek gibi) kolesterol içeriğinin yüksek olduğu unutulmamalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Yemekler pişirilirken daha az tuz kullanılmalı",
+  "used_chunks": [
+    "t2p_4",
+    "dm_ek_05"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

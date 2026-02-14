@@ -1,0 +1,39 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "",
+  "used_chunks": [],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için baklagil tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "no_evidence"
+  },
+  "qspec": {
+    "id": "baklagil_1_num_amt",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

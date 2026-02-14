@@ -1,0 +1,45 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Doymuş yağların sınırlanması önerilmektedir  |  Tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır  |  İşlenmiş ürünlerde yüksek miktarda doymuş yağlar bulunabilir  |  Aşırı doymuş yağ, şeker ve sodyum tüketimi ciddi sağlık risklerini artırır  |  Kalp hastalığı, yüksek tansiyon ve tip 2 diyabet gibi kronik hastalıkları önlemek için daha az miktarlarda doymuş yağ ve sodyum tüketilmelidir",
+  "used_chunks": [
+    "chunk_000408",
+    "chunk_000393",
+    "genel_04_tuz_yag_seker",
+    "chunk_000390",
+    "chunk_000389",
+    "ht_dash_01"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için doymuş yağ tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus_num_freq",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

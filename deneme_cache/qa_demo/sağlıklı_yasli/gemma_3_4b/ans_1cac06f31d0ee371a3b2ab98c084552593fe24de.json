@@ -1,0 +1,42 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "Trans yağlardan kaçınılması  |  Paketli ve hazır ürünlerde bulunabilir  |  Unlu mamuller ve margarin gibi ürünlerde bulunabilir  |  Yaşlılarda sağlıklı beslenme için dikkat edilmesi gerekir  |  Besinlerin güvenli hazırlanması hijyen kurallarına dikkat etmeyi gerektir  |  Pişirme yöntemleri ve saklama koşulları önemlidir.",
+  "used_chunks": [
+    "yasli_saglikli_03_besin_hazirlama",
+    "yasli_ilke_04_hijyen",
+    "chunk_yasli_0001"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

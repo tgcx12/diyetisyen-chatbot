@@ -1,0 +1,45 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine.  |  bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı, mısırözü, soya, kanola yağı vb.) tercih edilmelidir.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Yemeklere ek tuz eklenmemeli ve tuzlu besinler sınırlandırılmalıdır.  |  Yaşlılarda Sağlıklı Beslenme İlkeleri  |  Aşırı tuz tüketimi hipertansiyon ve kalp damar hastalıkları riskini artırır.",
+  "used_chunks": [
+    "chunk_000593_01",
+    "c176",
+    "yasli_ilke_11_tuz",
+    "yasli_ilke_08_sivi"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

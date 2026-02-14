@@ -1,0 +1,42 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir",
+  "used_chunks": [
+    "chunk_000730"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için balık tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "exception",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+  },
+  "qspec": {
+    "id": "protein_balik_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

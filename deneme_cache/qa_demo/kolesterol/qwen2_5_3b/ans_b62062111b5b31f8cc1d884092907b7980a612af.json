@@ -1,0 +1,41 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "kurubaklagil  |  fasulye  |  mercimek",
+  "used_chunks": [
+    "kalp_2_4_12",
+    "kalp_2_4_11"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için baklagil tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_amt",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

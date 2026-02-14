@@ -1,0 +1,51 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Posa tüketim miktarı 35 gram/gün önerilir",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "ca_fiber_diet_patterns_5servings",
+    "c175b",
+    "c178",
+    "ca_diet_fv_tbsa",
+    "c173",
+    "ca_fiber_inflammation",
+    "ca_fiber_microbiota_bile_acids",
+    "ca_protective_fiber_def",
+    "c176",
+    "ca_folate_sources_reco",
+    "c177"
+  ],
+  "strict_chunks_count": 19,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için posa lif tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1_num_amt",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

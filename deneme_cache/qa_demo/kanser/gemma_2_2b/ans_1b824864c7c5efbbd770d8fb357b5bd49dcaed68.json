@@ -1,0 +1,43 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Tuzlu ve salamura gıdalar tüketimi, kanser gelişimini önlemede önemli bir rol oynar.  |  Zeytinyağı ve kabuklu yemişler gibi doymamış yağlar tüketmek, omega 3 yağ asitlerinin artması ile kanser riskini azaltır.  |  Bitkisel sıvı yağlar tercih edilmelidir.  |  İşlenmemiş gıdalar, meyveler ve sebzeler, zeytinyağ ve proteinler, kuru baklagiller, tam tahıllar ve kuruyemişlere odaklanarak sağlıklı bir diyet oluşturun.",
+  "used_chunks": [
+    "c176",
+    "ca_fat_recommendations",
+    "c175a",
+    "ca_fat_risk_cancers"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için tuz sodyum tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tuz_1_num_freq",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

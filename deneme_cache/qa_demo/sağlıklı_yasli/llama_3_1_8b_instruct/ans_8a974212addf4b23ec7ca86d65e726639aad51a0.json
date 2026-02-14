@@ -1,0 +1,42 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Buna karşın yumurta tüketiminin görece daha sık olduğu, et grubu (kırmızı et, tavuk, balık) tüketiminin değişkenlik gösterebildiği",
+  "used_chunks": [
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için kırmızı et tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

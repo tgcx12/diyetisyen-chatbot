@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Günlük doymuş yağ ve trans yağ alımı sınırlandırılmalıdır  |  Doymamış yağlar ve omega 3 içeren yiyecekler tercih edilmelidir  |  Diyetin kolesterol miktarının 300 mg’ın altında tutulmasında yarar vardır  |  Kolesterolü düşüren lifler (tam tahıllı ekmek, bulgur) tercih edilmelidir  |  Günlük şeker ve şekerli gıda tüketimi kontrol altında tutulmalıdır  |  Yumurta tüketimi, yağlı et ve süt ürünlerine göre daha az risklidir",
+  "used_chunks": [
+    "chunk_000398",
+    "chunk_000395",
+    "chunk_000404",
+    "chol_5_4_01",
+    "chunk_000394",
+    "chunk_000401",
+    "chol_5_5_01",
+    "chunk_000399",
+    "chunk_000400",
+    "chunk_000397",
+    "kalp_2_4_14",
+    "chunk_000406"
+  ],
+  "strict_chunks_count": 18,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "prefer_tags": [
+    "balik",
+    "hdl_artirma",
+    "kuruyemis",
+    "peynir"
+  ],
+  "limit_tags": [
+    "az_yagli_sut_urunleri",
+    "beyaz_et",
+    "et_suyu",
+    "meyve"
+  ],
+  "avoid_tags": [
+    "sodyum_yuksek"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "balik",
+        "hdl_artirma",
+        "kuruyemis",
+        "peynir"
+      ],
+      "limit": [
+        "az_yagli_sut_urunleri",
+        "beyaz_et",
+        "et_suyu",
+        "meyve"
+      ],
+      "avoid": [
+        "sodyum_yuksek"
+      ]
+    },
+    "numeric_constraints": [],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[peynir]",
+        "meal": "genel",
+        "tag": "peynir",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kuruyemis]",
+        "meal": "genel",
+        "tag": "kuruyemis",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[et_suyu]",
+        "meal": "genel",
+        "tag": "et_suyu",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[meyve]",
+        "meal": "genel",
+        "tag": "meyve",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[sodyum_yuksek]",
+        "meal": "genel",
+        "tag": "sodyum_yuksek",
+        "intent": "avoid"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Balık gibi sağlıklı yağ kaynakları tüketilmeli",
+      "chunk_id": "yasli_ilke_07_doymus_yag"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Balık gibi sağlıklı yağ kaynakları tüketilmeli",
+      "chunk_id": "yasli_ilke_07_doymus_yag"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Salamura ve turşu gibi tuzlu yiyecekler tüketmek yerine, sağlıklı seçenekler tercih edilmelidir",
+      "chunk_id": "chunk_yasli_0004"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Süt, yoğurt ve peynir gibi besinler düzenli tüketilmeli",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Yaşlılarda doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır.",
+      "chunk_id": "yasli_ilke_07_doymus_yag"
+    },
+    {
+      "related_tags": [
+        "peynir"
+      ],
+      "quote": "Süt, yoğurt ve peynir gibi besinler düzenli tüketilmeli",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "kuruyemis"
+      ],
+      "quote": "Yaşlılar için kuruyemiş ve kabuklu yemiş tüketimi önerilir",
+      "chunk_id": "chunk_yasli_0003"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Yaşlılarda doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır.",
+      "chunk_id": "yasli_ilke_07_doymus_yag"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Doymuş yağ tüketimi azaltılmalı ve aşırı yağlı besinlerden kaçınılmalıdır.",
+      "chunk_id": "yasli_ilke_07_doymus_yag"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.",
+      "chunk_id": "chunk_yasli_0004"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Yaşlılarda tuz/sodyum tüketimini düzenli olarak kontrol etmek önemlidir. Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.",
+      "chunk_id": "chunk_yasli_0004"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.",
+      "chunk_id": "chunk_yasli_0004"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Yaşlılarda tuz/sodyum tüketimini düzenli olarak kontrol etmek önemlidir. Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.",
+      "chunk_id": "chunk_yasli_0004"
+    },
+    {
+      "related_tags": [
+        "sodyum_yuksek"
+      ],
+      "quote": "Salamura ve turşu gibi tuzlu yiyecekler tüketmek yerine, sağlıklı seçenekler tercih edilmelidir",
+      "chunk_id": "chunk_yasli_0004"
+    }
+  ]
+}

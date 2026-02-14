@@ -1,0 +1,42 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+  "answer": "konserveler  |  tuzlu balıklar  |  sebze meyve  |  tam tahıl  |  sardalya  |  uskumru",
+  "used_chunks": [
+    "chunk_000418_2",
+    "chunk_000418_1",
+    "ht_dash_01"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için balık tüketimi nasıl olmalı ve hangi tür pişirme tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

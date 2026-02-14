@@ -1,0 +1,53 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Tuz alımının yetişkinlerde günde 5 g’ın altında (sodyum alımı günde 2 g’dan az) tutulması hipertansiyon, kalp hastalıkları ve inmeye karşı koruyucudur.  |  Dünya Sağlık Örgütü günlük tuz tüketiminin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlanmasını önermektedir.  |  Ülkemizde yapılan çalışmalarda tuz tüketimimizin Dünya Sağlık Örgütü’nün önerdiği değerin (<5 g tuz/2000 mg sodyum) üzerinde lduğu gösterilmiştir.  |  Ülkemizde yetişkinler arasında sodyum alımı önerilen değerin 2 katından fazladır (TBSA 2017 verilerine göre günlük tuz tüketimi ortalama 10.2±4.34 g).  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Tuz ve sodyum hedefi",
+  "used_chunks": [
+    "cvh_salt_1",
+    "not_18",
+    "ht_salt_01",
+    "chunk_000416",
+    "chunk_000417",
+    "chunk_000414",
+    "chunk_000391",
+    "chunk_000415",
+    "chunk_000393",
+    "chunk_000408",
+    "chunk_000769_b",
+    "dm_ek_06"
+  ],
+  "strict_chunks_count": 37,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için tuz sodyum tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tuz_1_num_amt",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

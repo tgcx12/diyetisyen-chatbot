@@ -1,0 +1,904 @@
+{
+  "prefer_tags": [
+    "az_yagli_sut_urunleri",
+    "bulgur",
+    "hdl_artirma",
+    "kompleks_kh",
+    "lifli_beslenme",
+    "meyve",
+    "scalable",
+    "sut_urunu",
+    "yagsiz_sut_urunleri"
+  ],
+  "limit_tags": [
+    "baklagil",
+    "beyaz_et",
+    "doymus_yag_kisitlama",
+    "doymus_yag_yuksek",
+    "et_grubu",
+    "kirmizi_et",
+    "salata",
+    "sodyum_orta",
+    "tekli_doymamis",
+    "trans_yag_riski",
+    "yumurta"
+  ],
+  "avoid_tags": [
+    "ekmek"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "az_yagli_sut_urunleri",
+        "bulgur",
+        "hdl_artirma",
+        "kompleks_kh",
+        "lifli_beslenme",
+        "meyve",
+        "scalable",
+        "sut_urunu",
+        "yagsiz_sut_urunleri"
+      ],
+      "limit": [
+        "baklagil",
+        "beyaz_et",
+        "doymus_yag_kisitlama",
+        "doymus_yag_yuksek",
+        "et_grubu",
+        "kirmizi_et",
+        "salata",
+        "sodyum_orta",
+        "tekli_doymamis",
+        "trans_yag_riski",
+        "yumurta"
+      ],
+      "avoid": [
+        "ekmek"
+      ]
+    },
+    "numeric_constraints": [
+      {
+        "tag": "baklagil",
+        "min_count": 2,
+        "max_count": 3,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada 2 3 kez kurubaklagil tüketin"
+      },
+      {
+        "tag": "baklagil",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": 0.0,
+        "max_grams": 5.0,
+        "unit": "kez",
+        "description": "sebze meyve tüketimine dikkat edin. haftada 2 3 kez kurubaklagil tüketin. yemeklerin %50'sini sebze ve meyve ile doldurun"
+      },
+      {
+        "tag": "balik",
+        "min_count": null,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada 2 kez yağlı balık (somon"
+      },
+      {
+        "tag": "balik",
+        "min_count": null,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada 2 kez yağlı balık tüketilmelidir"
+      },
+      {
+        "tag": "balik",
+        "min_count": null,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada 2 kez yağlı balık tüketmek iyi bir seçim"
+      },
+      {
+        "tag": "balik",
+        "min_count": null,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "tuzlu ve salamura ürünlerden kaçının. haftada 2 kez yağlı balık tüketin. zeytinyağı ve fındık yağı iyi bir seçenek"
+      },
+      {
+        "tag": "beyaz_et",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 150.0,
+        "unit": "gram",
+        "description": "beyaz et 150 gram ile sınırlandırılmalıdır"
+      },
+      {
+        "tag": "beyaz_et",
+        "min_count": null,
+        "max_count": 4,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "beyaz et tüketimi haftada 4 kez olmalı"
+      },
+      {
+        "tag": "beyaz_et",
+        "min_count": null,
+        "max_count": 4,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "beyaz et tüketimi ise 4 kez olmalı"
+      },
+      {
+        "tag": "beyaz_et",
+        "min_count": null,
+        "max_count": 4,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "beyaz et tüketiminin sıklığı ise haftada 4 kez olmalıdır"
+      },
+      {
+        "tag": "doymus_yag_yuksek",
+        "min_count": 2,
+        "max_count": 3,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "adet",
+        "description": "kalp damar hastalıkları olanlar ise haftada 2 3 kez bir adet tüketilebilir"
+      },
+      {
+        "tag": "kirmizi_et",
+        "min_count": null,
+        "max_count": 3,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada kırmızı et tüketimi 3 kez"
+      },
+      {
+        "tag": "kirmizi_et",
+        "min_count": null,
+        "max_count": 3,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "kırmızı et tüketiminin sıklığı haftada 3 kez"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 5.0,
+        "unit": "gram",
+        "description": "porsiyon başına posa/lif tüketim miktarı 5 gram olmalıdır"
+      },
+      {
+        "tag": "sebze",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 15.0,
+        "unit": "gram",
+        "description": "etsiz sebze yemekleri için 15 gram yağ gerekir"
+      },
+      {
+        "tag": "sebze",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 15.0,
+        "unit": "gram",
+        "description": "etsiz sebze yemekleri için bu miktar 15 g olmalıdır"
+      },
+      {
+        "tag": "sebze",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 15.0,
+        "unit": "gram",
+        "description": "etsiz sebze yemekleri için bu miktar 15 gram olmalıdır"
+      },
+      {
+        "tag": "sebze",
+        "min_count": 5,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon sebze meyve tüketin"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 2.0,
+        "max_grams": 15.0,
+        "unit": "gram",
+        "description": "15 g 2 tatlı kaşığı (5 g) 300 mg'ın altında salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 5.0,
+        "max_grams": 150.0,
+        "unit": "gram",
+        "description": "salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir"
+      },
+      {
+        "tag": "yag",
+        "min_count": 6,
+        "max_count": 8,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "%1'inden azının ise trans yağlardan sağlanması gerekmektedir"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 0.0,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "%10'undan daha azının (%7 8) doymuş yağlardan"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 60.0,
+        "unit": "gram",
+        "description": "günlük yağsız dana eti 60 gram"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 7.0,
+        "max_grams": 8.0,
+        "unit": "yuzde",
+        "description": "%7 8'inden azının ise trans yağlardan sağlamak önemlidir"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 20.0,
+        "max_grams": 35.0,
+        "unit": "yuzde",
+        "description": "günlük enerjinin %20 35'ini yağlardan elde edin"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 20.0,
+        "max_grams": 35.0,
+        "unit": "yuzde",
+        "description": "günlük yağ alımını %20 35 oranında doymuş yağlardan"
+      },
+      {
+        "tag": "yag",
+        "min_count": 2,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "doymuş yağ tüketim sıklığı haftada 2 kez önerilir"
+      },
+      {
+        "tag": "yumurta",
+        "min_count": 2,
+        "max_count": 3,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "adet",
+        "description": "yumurta tüketimi sağlıklı bireyler için günde bir adet önerilir. kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir"
+      },
+      {
+        "tag": "yumurta",
+        "min_count": 1,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "sağlıklı bireyler için haftada 1 2 kez yumurta tüketmek yeterlidir"
+      },
+      {
+        "tag": "yumurta",
+        "min_count": 1,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "yumurta haftada 1 2 kez"
+      },
+      {
+        "tag": "yumurta",
+        "min_count": 1,
+        "max_count": 2,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "yumurta haftada 1 2 kez yenmeli"
+      }
+    ],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[bulgur]",
+        "meal": "genel",
+        "tag": "bulgur",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kompleks_kh]",
+        "meal": "genel",
+        "tag": "kompleks_kh",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_kisitlama]",
+        "meal": "genel",
+        "tag": "doymus_yag_kisitlama",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[scalable]",
+        "meal": "genel",
+        "tag": "scalable",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kirmizi_et]",
+        "meal": "genel",
+        "tag": "kirmizi_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[kirmizi_et]",
+        "meal": "genel",
+        "tag": "kirmizi_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[tekli_doymamis]",
+        "meal": "genel",
+        "tag": "tekli_doymamis",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[et_grubu]",
+        "meal": "genel",
+        "tag": "et_grubu",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[yumurta]",
+        "meal": "genel",
+        "tag": "yumurta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_yuksek]",
+        "meal": "genel",
+        "tag": "doymus_yag_yuksek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[yumurta]",
+        "meal": "genel",
+        "tag": "yumurta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[sut_urunu]",
+        "meal": "genel",
+        "tag": "sut_urunu",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[lifli_beslenme]",
+        "meal": "genel",
+        "tag": "lifli_beslenme",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[yagsiz_sut_urunleri]",
+        "meal": "genel",
+        "tag": "yagsiz_sut_urunleri",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[salata]",
+        "meal": "genel",
+        "tag": "salata",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[baklagil]",
+        "meal": "genel",
+        "tag": "baklagil",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[meyve]",
+        "meal": "genel",
+        "tag": "meyve",
+        "intent": "prefer"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [
+    {
+      "text": "kırmızı et tüketimi haftada 3 gün olmalı ancak abartılmamalıdır",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "text": "haftada 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "text": "et tüketimi ve pişirme yöntemleri haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "text": "beyaz et tüketimini sınırlamak önemlidir. haftada 4 gün beyaz et tüketmek en iyisidir. izgara",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chunk_000400"
+    },
+    {
+      "text": "et tüketimini sınırlamak önemlidir. haftada 3 gün kırmızı et ve 4 gün beyaz et tüketmek en iyisidir",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chunk_000400"
+    },
+    {
+      "text": "haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "intent": "unmatched_numeric",
+      "chunk_id": "kalp_2_4_08"
+    },
+    {
+      "text": "haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "text": "Doğru yağlar tercih edilmeli",
+      "intent": "prefer",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "text": "Şekerli içeceklerin tüketimi azaltılmalı",
+      "intent": "limit",
+      "chunk_id": "chunk_000404"
+    }
+  ],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Tam tahıllı ekmek, pirinç yerine bulgur gibi sağlıklı seçenekler tercih edin",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Kolesterolü düşüren lifler (tam tahıllı ekmek, pirinç yerine bulgur) tüketin",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Tam tahıllı ekmek, pirinç yerine bulgur gibi sağlıklı seçenekler tercih edin",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Yumurta tüketimi sağlıklı bireyler için günde bir adet önerilir. Kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.",
+      "chunk_id": "chunk_000406"
+    },
+    {
+      "related_tags": [
+        "kompleks_kh"
+      ],
+      "quote": "Kolesterolü düşüren lifler (tam tahıllı ekmek, pirinç yerine bulgur) tüketin",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Günlük enerjinin %20 35'ini yağlardan elde edin",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_kisitlama"
+      ],
+      "quote": "%10'undan daha azının (%7 8) doymuş yağlardan, %1'inden azının ise trans yağlardan sağlanması gerekmektedir",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_kisitlama"
+      ],
+      "quote": "Bu nedenle, günlük yağ alımını %20 35 oranında doymuş yağlardan, %7 8'inden azının ise trans yağlardan sağlamak önemlidir",
+      "chunk_id": "chunk_000398"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "%10'undan daha azının (%7 8) doymuş yağlardan, %1'inden azının ise trans yağlardan sağlanması gerekmektedir",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Bu nedenle, günlük yağ alımını %20 35 oranında doymuş yağlardan, %7 8'inden azının ise trans yağlardan sağlamak önemlidir",
+      "chunk_id": "chunk_000398"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Örneğin, tam tahıllı ekmek yerine beyaz ekmek tüketmek ve pirinç yerine bulgur tercih etmek faydalı olabilir",
+      "chunk_id": "chunk_000398"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Haftada 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "related_tags": [
+        "scalable"
+      ],
+      "quote": "Haftada 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Haftada kırmızı et tüketimi 3 kez, beyaz et tüketimi ise 4 kez olmalı",
+      "chunk_id": "kalp_2_4_08"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Kırmızı et tüketiminin sıklığı haftada 3 kez, beyaz et tüketiminin sıklığı ise haftada 4 kez olmalıdır",
+      "chunk_id": "kalp_2_4_08"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir",
+      "chunk_id": "chunk_000402"
+    },
+    {
+      "related_tags": [
+        "et_grubu"
+      ],
+      "quote": "Günlük yağsız dana eti 60 gram, beyaz et 150 gram ile sınırlandırılmalıdır",
+      "chunk_id": "chol_5_3_01"
+    },
+    {
+      "related_tags": [
+        "yumurta"
+      ],
+      "quote": "Yumurta tüketimi sağlıklı bireyler için günde bir adet önerilir. Kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.",
+      "chunk_id": "chunk_000406"
+    },
+    {
+      "related_tags": [
+        "yumurta"
+      ],
+      "quote": "Sağlıklı bireyler günde bir adet yumurta tüketebilir. Kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet yumurta tüketebilir. yumurta",
+      "chunk_id": "chunk_000406"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_yuksek"
+      ],
+      "quote": "Yumurta tüketimi sağlıklı bireyler için günde bir adet, kalp damar hastalıkları olanlar ise haftada 2 3 kez bir adet tüketilebilir.",
+      "chunk_id": "chunk_000406"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Süt ve süt ürünleri tüketimi sağlıklı bireyler için önemlidir. Az yağlı süt ve ürünlerinin tercih edilmesi önerilir.",
+      "chunk_id": "chunk_000402"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Yetişkinlerde ve çocuklarda süt ve ürünlerinin tüketimini artırırken, daha az yağ içeren (yarım yağlı ya da yağsız süt ve ürünlerinin) tüketimi tercih edilmeli",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "sut_urunu"
+      ],
+      "quote": "Süt ve süt ürünleri tüketimi sağlıklı bireyler için önemlidir. Az yağlı süt ve ürünlerinin tercih edilmesi önerilir.",
+      "chunk_id": "chunk_000402"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "Tam tahıllı ekmek ve bulgur tüketimi önerilir.",
+      "chunk_id": "chol_5_5_01"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "beyaz ekmek yerine tam tahıllı ekmek",
+      "chunk_id": "chol_5_5_01"
+    },
+    {
+      "related_tags": [
+        "lifli_beslenme"
+      ],
+      "quote": "Baklagillerin sağlıklı beslenmeye katkı sağlaması için tercih edilmesi önerilir.",
+      "chunk_id": "kalp_2_4_12"
+    },
+    {
+      "related_tags": [
+        "yagsiz_sut_urunleri"
+      ],
+      "quote": "Yetişkinlerde ve çocuklarda süt ve ürünlerinin tüketimini artırırken, daha az yağ içeren (yarım yağlı ya da yağsız süt ve ürünlerinin) tüketimi tercih edilmeli",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "salata"
+      ],
+      "quote": "Etsiz sebze yemekleri için bu miktar 15 g olmalıdır",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "salata"
+      ],
+      "quote": "Etsiz sebze yemekleri için bu miktar 15 g olmalıdır",
+      "chunk_id": "chunk_000404"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Günde en az 5 porsiyon sebze meyve tüketin",
+      "chunk_id": "chol_5_5_01"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Günde en az 5 porsiyon sebze meyve tüketin",
+      "chunk_id": "chol_5_5_01"
+    },
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Haftada 2 3 kez kurubaklagil tüketin",
+      "chunk_id": "chol_5_5_01"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Doğal yağlar tercih edilmeli",
+      "chunk_id": "chunk_000404"
+    }
+  ],
+  "audit_log": [
+    {
+      "ts": "20260118_144934",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 47,
+      "after": 32
+    },
+    {
+      "ts": "20260118_144957",
+      "type": "patch_applied",
+      "added_numeric_constraints": 0,
+      "added_prefer": 0,
+      "added_limit": 0,
+      "added_avoid": 0
+    },
+    {
+      "ts": "20260118_144957",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 32,
+      "after": 32
+    },
+    {
+      "ts": "20260118_145049",
+      "type": "patch_applied",
+      "added_numeric_constraints": 0,
+      "added_prefer": 0,
+      "added_limit": 0,
+      "added_avoid": 0
+    },
+    {
+      "ts": "20260118_145049",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 32,
+      "after": 32
+    },
+    {
+      "ts": "20260118_145250",
+      "type": "patch_applied",
+      "added_numeric_constraints": 0,
+      "added_prefer": 0,
+      "added_limit": 0,
+      "added_avoid": 0
+    },
+    {
+      "ts": "20260118_145250",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 32,
+      "after": 32
+    },
+    {
+      "ts": "20260118_145358",
+      "type": "patch_applied",
+      "added_numeric_constraints": 0,
+      "added_prefer": 0,
+      "added_limit": 0,
+      "added_avoid": 0
+    },
+    {
+      "ts": "20260118_145359",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 32,
+      "after": 32
+    },
+    {
+      "ts": "20260118_145559",
+      "type": "patch_applied",
+      "added_numeric_constraints": 0,
+      "added_prefer": 0,
+      "added_limit": 0,
+      "added_avoid": 0
+    },
+    {
+      "ts": "20260118_145600",
+      "type": "numeric_constraints_tagfix_dedupe",
+      "before": 32,
+      "after": 32
+    }
+  ]
+}

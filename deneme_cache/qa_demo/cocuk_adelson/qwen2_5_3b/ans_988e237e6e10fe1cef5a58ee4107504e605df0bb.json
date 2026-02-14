@@ -1,0 +1,43 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Ebeveyn övgüyle ödüllendirmelidir  |  Tuz, yağ ve şeker tüketimi sınırlıdır  |  El yıkama alışkanlığı kazandırılmalıdır  |  Sağlıklı besin seçeneklerini erişilebilir kılarak desteklenmelidir",
+  "used_chunks": [
+    "ca_4",
+    "genel_04_tuz_yag_seker",
+    "genel_02_enerji_yuksek_besinler",
+    "ca_2",
+    "chunk_000372",
+    "genel_11_adolesan_bagimsizlik",
+    "genel_01_dengeli_beslenme",
+    "genel_06_hijyen_aliskanligi",
+    "okul_ergen_08_yaygin_sorunlar",
+    "ergen_07_onleme_yaklasimi",
+    "okul_ergen_05_psikososyal_etkiler",
+    "genel_03_ogun_atlama"
+  ],
+  "strict_chunks_count": 13,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

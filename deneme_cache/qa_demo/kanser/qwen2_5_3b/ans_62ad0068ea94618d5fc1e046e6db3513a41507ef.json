@@ -1,0 +1,45 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Protein: yumurtalar  |  Diyet kaynakları, yağlı balık, yumurta, meyve suları ve D vitamini eklenmiş besinlerde bulunmaktadır.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "ca_folate_sources_reco",
+    "ca_obesity_cancers_13plus",
+    "ca_fat_risk_cancers",
+    "ca_vitA_sources"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

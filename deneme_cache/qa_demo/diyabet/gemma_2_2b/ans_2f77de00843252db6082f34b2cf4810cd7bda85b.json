@@ -1,0 +1,51 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "Lif, posa ve tam tahıl tüketimini artırarak diyabet riskini azaltabilirsiniz  |  Günde en az 5 porsiyon sebze ve meyve tüketin ve kuru baklagiller sıkça (haftada 2 3 kez) tüketin  |  Eklenmiş şeker ve rafine tahıl tüketiminden kaçının  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı",
+  "used_chunks": [
+    "t2p_3",
+    "t2r_1",
+    "t2p_1",
+    "tbl37_2",
+    "t188",
+    "dm_ek_02",
+    "dm_4_6_01",
+    "dm_4_3_01",
+    "dm_ek_10",
+    "dm_ek_01",
+    "chunk_000427",
+    "ca_carbs_gi_tumor_findings"
+  ],
+  "strict_chunks_count": 15,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

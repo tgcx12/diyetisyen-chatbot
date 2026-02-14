@@ -1,0 +1,421 @@
+{
+  "domain": "hipertansiyon",
+  "model_key": "qwen2_5_3b",
+  "count": 35,
+  "items": [
+    {
+      "question": "hipertansiyon için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Tuz azaltımı  |  kalesi",
+      "used_chunks": [
+        "not_18",
+        "yasli_ilke_11_tuz",
+        "ht_lifestyle_01",
+        "cvh_salt_1",
+        "genel_04_tuz_yag_seker",
+        "ht_beverage_01",
+        "ht_info_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Tuz tüketimi sınırlandırılmalı  |  Tuz alımının yetişkinlerde günde 5 g'ın altında tutulması  |  Yüksek sodyum alımı istenmez  |  Yemeklere ek tuz eklenmemeli  |  Sofraya tuzluk konulmamalıdır.",
+      "used_chunks": [
+        "ht_lifestyle_01",
+        "not_18",
+        "dm_ek_06",
+        "cvh_salt_1",
+        "genel_04_tuz_yag_seker",
+        "yasli_ilke_11_tuz",
+        "ht_beverage_01",
+        "ht_salt_01",
+        "chunk_000416",
+        "ht_info_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "kırmızı et  |  tuzlu et  |  tuzlu yiyecekler  |  tamlayıcı besinler  |  bebekler  |  DASH diyeti",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "chunk_000421",
+        "ht_dash_01",
+        "tb_besin_tuz",
+        "cvh_dash_3"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kırmızı et  |  HAZIRANDA  |  1 2 kez  |  EVIDENCE",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "ht_dash_01",
+        "cvh_dash_3",
+        "chunk_000421",
+        "tb_besin_tuz"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Tuz tüketimi konusunda öneriler Balık konserveleri, tuzlanmış, tütsülenmiş ve/veya salamura edilmiş et ve balık ürünleri, Aromalı/aromasız, doğal/doğal olmayan mineralli içecekler, yüksek miktarda tuz içermeleri nedeniyle sınırlı tüketilmelidir.  |  Tuz tüketimi konusunda öneriler Hazır soslar (soya ve salata sosu, ketçap sos, barbekü sos, tartar sos, salsa sos, hardal, makarna sosu vb.), Atıştırmalık ürünler (cips, tahıl bazlı bar, meyve bazlı bar, ekstrüde ürünler, patlamış mısır vb.), Tuzlanmış kuruyemişler (fındık, fıstık, ceviz, badem, leblebi, kavurga, kabak ve ayçiçeği çekirdeği, her türlü çekirdek içi vb.), Turşu ve salamura (siyah ve yeşil zeytin, sebze turşuları) yiyecekler, Balık konserveleri, tuzlanmış, tütsülenmiş ve/veya salamura edilmiş et ve balık ürünleri, kırmızı et, yağ ve şekerli besinleri sınırlandırır.  |  Geleneksel olarak evlerde hazırlanan turşu, salça, tarhana, kurut, yaprak salamurası vb.  |  DASH: örüntü özeti (tuz/sodyum kısıtlı)",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "ht_dash_01",
+        "chunk_000421",
+        "cvh_dash_3",
+        "tb_besin_tuz"
+      ]
+    },
+    {
+      "question": "hipertansiyon için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "pişirme yöntemi  |  DASH diyeti örneği  |  Tavuk, DASH diyetinin örneğinde beyaz etten daha fazla tüketilmesi gereken bir yiyeç türüdür.",
+      "used_chunks": [
+        "ht_dash_01",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "ayda | 2 | 1 | hindi | tavuk",
+      "used_chunks": [
+        "ht_dash_01",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "tavuk | gram | 100",
+      "used_chunks": [
+        "ht_dash_01",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "konserveler  |  tuzlu balıklar  |  sebze meyve  |  tam tahıl  |  sardalya  |  uskumru",
+      "used_chunks": [
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "uskumru  |  sardalya",
+      "used_chunks": [
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Tuz tüketimi konusunda öneriler Balık konserveleri, tuzlanmış, tütsülenmiş ve/veya salamura edilmiş et ve balık ürünleri, Aromalı/aromasız, doğal/doğal olmayan mineralli içecekler, yüksek miktarda tuz içermeleri nedeniyle sınırlı tüketilmelidir.  |  Tuz tüketimi konusunda öneriler Hazır soslar (soya ve salata sosu, ketçap sos, barbekü sos, tartar sos, salsa sos, hardal, makarna sosu vb.), Atıştırmalık ürünler (cips, tahıl bazlı bar, meyve bazlı bar, ekstrüde ürünler, patlamış mısır vb.), Tuzlanmış kuruyemişler (fındık, fıstık, ceviz, badem, leblebi, kavurga, kabak ve ayçiçeği çekirdeği, her türlü çekirdek içi vb.), Turşu ve salamura (siyah ve yeşil zeytin, sebze turşuları) yiyecekler, Balık konserveleri, tuzlanmış, tütsülenmiş ve/veya salamura edilmiş et ve balık ürünleri, Sebze meyve, az yağlı/yağsız süt ürünleri, tam tahıllar, tavuk balık, kuru baklagil ve yağlı tohumları içerir.",
+      "used_chunks": [
+        "chunk_000418_2",
+        "chunk_000418_1",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "hipertansiyon için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "hipertansiyon için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "hipertansiyon için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "tuzsuz peynir  |  az yağlı salama  |  zeytin  |  DASH diyeti",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "chunk_000373",
+        "chunk_000389",
+        "ht_dash_01",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  tuzsuz ekmek/peynir gibi ürünler tercih edilebilir.  |  Sodyumu azaltmak için pratik kurallar  |  Günlük tuz tüketimi sınırlandırılmalı.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Hipertansiyon ve böbrek hastalıklarına sahip bireyler tuzsuz peynir çeşitlerini tercih etmelidir, yüksek tuz içeriğine sahip peynirler için de bir gece suda bekletilerek tuz miktarının azaltılması sağlanmalıdır.",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "chunk_000373",
+        "chunk_000389",
+        "cvh_dash_3",
+        "ht_dash_01",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  tuzsuz ekmek/peynir gibi ürünler tercih edilebilir.  |  Sodyumu azaltmak için pratik kurallar  |  Günlük tuz tüketimi sınırlandırılmalı.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Hipertansiyon ve böbrek hastalıklarına sahip bireyler tuzsuz peynir çeşitlerini tercih etmelidir, yüksek tuz içeriğine sahip peynirler için de bir gece suda bekletilerek tuz miktarının azaltılması sağlanmalıdır.",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "chunk_000373",
+        "chunk_000389",
+        "cvh_dash_3",
+        "ht_dash_01",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "DASH diyeti  |  Tam tahıl  |  Rafine  |  Sodyum  |  Kuru bakır  |  Yagli tohumlu",
+      "used_chunks": [
+        "chunk_000393",
+        "ht_dash_01",
+        "chunk_000389",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "kurubaklagil  |  mercimek  |  fasulye",
+      "used_chunks": [
+        "cvh_dash_3"
+      ]
+    },
+    {
+      "question": "hipertansiyon için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "günde 2 kez  |  ayda 8 kez  |  EVIDENCE içinde bulunamadı.",
+      "used_chunks": [
+        "cvh_dash_3"
+      ]
+    },
+    {
+      "question": "hipertansiyon için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "DASH: örüntü özeti (tuz/sodyum kısıtlı)  |  Özetle DASH diyeti daha az kırmızı et, daha fazla beyaz et, düşük yağlı süt ve ürünleri, tam tahıllar, sebze ve meyveler, kuru baklagiller ve yağlı tohumlar içeren sodyum/tuzdan kısıtlı bir örüntüdür.",
+      "used_chunks": [
+        "cvh_dash_3"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "tuzlu yemekler  |  zeytin  |  baharat  |  tuzsuz ekmek  |  zeytin salamurası  |  zeytin turşusu",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "chunk_000418_1",
+        "yasli_ilke_11_tuz",
+        "chunk_000420",
+        "cvh_salt_2",
+        "chunk_000424",
+        "cvh_dash_3"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kuruyemis  |  kabuklu yemiş  |  sodyum",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "yasli_ilke_11_tuz",
+        "chunk_000418_1",
+        "chunk_000420",
+        "chunk_000424",
+        "cvh_dash_3",
+        "cvh_salt_2"
+      ]
+    },
+    {
+      "question": "hipertansiyon için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kabuklu yemiş  |  yağlı tohum  |  kuruyemis  |  kuru baklagıllı",
+      "used_chunks": [
+        "ht_salt_01",
+        "chunk_000408",
+        "chunk_000418_1",
+        "yasli_ilke_11_tuz",
+        "chunk_000420",
+        "chunk_000424",
+        "cvh_dash_3",
+        "cvh_salt_2"
+      ]
+    },
+    {
+      "question": "hipertansiyon için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "doymuş  |  tereyağı  |  tercih  |  zeytinyağı",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000393",
+        "genel_04_tuz_yag_seker",
+        "chunk_000390",
+        "chunk_000389",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ve alkol tüketimi ilişkili sağlık risklerini destekleyen kanıtlar gözden geçirilmiştir.  |  Bu amaca sodyum, doymuş yağlar, ilave şekerler ve rafine tahıllar bakımından zengin yiyecekleri daha az tüketerek ve alkol tüketiminden sakınarak ulaşılabilinmektedir.  |  Temelde yatan önemli ilke, vücut ağırlığını yönetmek için günlük enerji alımını kontrol etme ve belirli kronik hastalık riskini artıran besin bileşenlerinin alımını sınırlama ihtiyacıdır.  |  Genel Beslenme Önerileri",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000393",
+        "genel_04_tuz_yag_seker",
+        "chunk_000390",
+        "chunk_000389",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ve alkol tüketimi ilişkili sağlık risklerini destekleyen kanıtlar gözden geçirilmiştir.  |  Bu amaca sodyum, doymuş yağlar, ilave şekerler ve rafine tahıllar bakımından zengin yiyecekleri daha az tüketerek ve alkol tüketiminden sakınarak ulaşılabilinmektedir.  |  Temelde yatan önemli ilke, vücut ağırlığını yönetmek için günlük enerji alımını kontrol etme ve belirli kronik hastalık riskini artıran besin bileşenlerinin alımını sınırlama ihtiyacıdır.  |  Genel Beslenme Önerileri",
+      "used_chunks": [
+        "chunk_000408",
+        "chunk_000393",
+        "genel_04_tuz_yag_seker",
+        "chunk_000390",
+        "chunk_000389",
+        "ht_dash_01"
+      ]
+    },
+    {
+      "question": "hipertansiyon için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "paketli  |  unlu mamul",
+      "used_chunks": [
+        "chunk_000390",
+        "chunk_000408",
+        "not_18",
+        "ht_beverage_01",
+        "chunk_000418_1",
+        "ht_salt_01",
+        "cvh_salt_2",
+        "not_16",
+        "chunk_000424",
+        "chunk_000421",
+        "chunk_000419",
+        "tb_besin_tuz"
+      ]
+    },
+    {
+      "question": "hipertansiyon için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "posali lif  |  DASH diyeti  |  tuz azaltımı  |  tam tahıl  |  doğal lezzet artırıcılar  |  sebze meyve",
+      "used_chunks": [
+        "ht_dash_01",
+        "ht_lifestyle_01",
+        "chunk_000418_1",
+        "chunk_000419",
+        "chunk_000389",
+        "cvh_dash_3",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yaşam tarzı (RAG bilgilendirme)  |  lifestyle  |  Yaşam tarzı değişiklikleri kan basıncını azaltmaya katkı sağlar: kilo kaybı, DASH diyeti, tuz azaltımı, fiziksel aktivite ve alkolün sınırlandırılması ile toplam düşüş artabilir.  |  Sebze meyve, az yağlı/yağsız süt ürünleri, tam tahıllar, tavuk balık, kuru baklagil ve yağlı tohumları içerir.  |  Potasyum, kalsiyum, magnezyum ve posa içeriği yüksektir.  |  Yemek hazırlama ve pişirme sırasında ilave edilen tuz ve sebzeli tuzların miktarı azaltılmalıdır.",
+      "used_chunks": [
+        "ht_lifestyle_01",
+        "ht_dash_01",
+        "chunk_000419",
+        "cvh_dash_3",
+        "chunk_000418_1",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "tam tahıl  |  1 porsiyon",
+      "used_chunks": [
+        "ht_dash_01",
+        "ht_lifestyle_01",
+        "chunk_000418_1",
+        "chunk_000419",
+        "cvh_dash_3",
+        "chunk_000389",
+        "cvh_dash_1"
+      ]
+    },
+    {
+      "question": "hipertansiyon için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "salamura  |  sodyum",
+      "used_chunks": [
+        "ht_salt_01",
+        "cvh_salt_1",
+        "not_18",
+        "chunk_000416",
+        "chunk_000417",
+        "chunk_000414",
+        "chunk_000391",
+        "chunk_000415",
+        "chunk_000393",
+        "chunk_000769_b",
+        "chunk_000408",
+        "chunk_000423"
+      ]
+    },
+    {
+      "question": "hipertansiyon için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "tuz/sodyum  |  5 g/gün",
+      "used_chunks": [
+        "cvh_salt_1",
+        "chunk_000416",
+        "not_18",
+        "ht_salt_01",
+        "chunk_000417",
+        "chunk_000414",
+        "chunk_000415",
+        "chunk_000391",
+        "chunk_000393",
+        "chunk_000769_b",
+        "chunk_000408",
+        "yasli_ilke_11_tuz"
+      ]
+    },
+    {
+      "question": "hipertansiyon için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Tuz alımının yetişkinlerde günde 5 g’ın altında (sodyum alımı günde 2 g’dan az) tutulması hipertansiyon, kalp hastalıkları ve inmeye karşı koruyucudur.  |  Dünya Sağlık Örgütü günlük tuz tüketiminin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlanmasını önermektedir.  |  Ülkemizde yapılan çalışmalarda tuz tüketimimizin Dünya Sağlık Örgütü’nün önerdiği değerin (<5 g tuz/2000 mg sodyum) üzerinde lduğu gösterilmiştir.  |  Ülkemizde yetişkinler arasında sodyum alımı önerilen değerin 2 katından fazladır (TBSA 2017 verilerine göre günlük tuz tüketimi ortalama 10.2±4.34 g).  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Tuz ve sodyum hedefi",
+      "used_chunks": [
+        "cvh_salt_1",
+        "not_18",
+        "ht_salt_01",
+        "chunk_000416",
+        "chunk_000417",
+        "chunk_000414",
+        "chunk_000391",
+        "chunk_000415",
+        "chunk_000393",
+        "chunk_000408",
+        "chunk_000769_b",
+        "dm_ek_06"
+      ]
+    },
+    {
+      "question": "hipertansiyon için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "İçecek ve özel uyarılar (RAG için)  |  beverage  |  Hazır besinlerde sodyum içeriği kontrol edilmeli.  |  maden suyu/soda seçiminde düşük sodyumlu seçenekler tercih edilmelidir.  |  Hipertansiyon riski dünya çapında önde gelen ölüm nedenlerinden biri olup, günlük fazla sodyum tüketimi tehlikeli olabilmektedir.  |  Dünya Sağlık Örgütü günlük tuz tüketiminin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlanmasını önermektedir.",
+      "used_chunks": [
+        "ht_beverage_01",
+        "chunk_000391",
+        "chunk_000390",
+        "genel_04_tuz_yag_seker",
+        "chunk_000393",
+        "chunk_000418_1",
+        "chunk_000418_2",
+        "chunk_000389",
+        "yasli_saglikli_07_su_tuz_seker",
+        "not_16",
+        "ht_dash_01",
+        "tb_besin_tuz"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+Tamam — senin mevcut motor mantığını (öğün şablonları + pick_best + gün sonu enerji ayarı) **LLM’e “prompt” olarak doğru aktarmanın** en iyi yolu şu:
+
+1. **LLM’den “yemek seçimi + porsiyon çarpanı” iste** (planlayıcı rolü)
+2. **Kuralların enforcement / validasyon / kalori tutturmayı** yine senin deterministic motorun yapsın (hakem rolü)
+
+Çünkü besin havuzun zaten çok zengin etiket/öğün/kategori içeriyor ve “icat etmesin” diye LLM’i sıkı bir şemaya kilitlemek gerekiyor.
+
+Aşağıda sana **kopyala-yapıştır prompt şablonu** + **hangi alanları besin havuzundan eklemen gerektiği** + **LLM’e kalori tutturmayı nasıl tarif edeceğin** var.
+
+---
+
+## 1) Besin havuzu şemanı LLM’e nasıl anlatmalısın?
+
+Senin `besin` öğelerin (her item) kabaca şu alanlara sahip: `besin_id`, `besin_adi`, `kategori`, `ogun` (liste), `miktar`, `kcal`, `food_tags`, `avoid_tags`, `besin_degerleri`. 
+
+Ayrıca havuzun `meta` kısmında porsiyon standartları ve “öğün seviye kural ipuçları” var (ekmek+pilav aynı öğünde olmasın gibi). 
+
+👉 LLM’e **tam DB’yi** basmak yerine her öğün için **kandidate set** üretip basman çok daha iyi (token + kalite).
+
+**Öneri:**
+
+* “Sabah” için `ogun` içinde `"sabah"` geçenleri,
+* “Ara Öğün” için `"ara_1"/"ara_2"/"ara"` geçenleri,
+* “Öğle/Akşam” için ilgili öğün token’ını geçenleri,
+* plus: senin motorun yaptığı gibi kategori/tag whitelist’leri ile daralt.
+
+---
+
+## 2) LLM çıktısını kilitle: sadece ID + porsiyon çarpanı
+
+Sen zaten `_portion_mult` ve `_portion_lock` mantığını kullanıyorsun (gün sonu ölçekleme ve/veya rule-based adjust). Bu yüzden LLM’den şu formatı iste:
+
+* Her öğün: seçilen item’lar
+* Her item: `besin_id` + `portion_mult` (örn 1.0, 0.5, 1.5)
+* Asla yeni besin ismi üretme
+* Asla havuz dışı ID kullanma
+
+---
+
+## 3) “Kalori tutturma”yı LLM’e nasıl tarif etmelisin?
+
+Senin yaklaşımın iki katman:
+
+* **Öğün inşası**: şablon (kahvaltı: tahıl+protein+sebze…)
+* **Gün sonu enerji ayarı**: hedefe göre porsiyon artır/azalt veya ekle/çıkar (sen bunu `day_end_adjust_by_energy_rules` ile yapıyorsun). 
+
+LLM tarafında bunu şöyle yaptırabilirsin:
+
+### A) “LLM sadece taslak plan üretir”
+
+Kalori tutmazsa sorun değil → senin motor ayarlar.
+
+### B) “LLM taslak + düzeltme adımı üretir”
+
+LLM önce taslağı üretir, sonra `delta = hedef - mevcut` ise “hangi öğünde hangi aksiyon yapılmalı” diye **1–3 adım** önerir:
+
+* increase_portion (scalable veya ekmek/meyve/kuruyemiş gibi)
+* decrease_portion
+* add (yoğurt/meyve/kuruyemiş gibi tek kalem)
+  Bu yaklaşım, senin energy band/step stratejine çok benzer.
+
+---
+
+## 4) Kopyala-yapıştır: SYSTEM prompt (sabit)
+
+Aşağıdaki SYSTEM prompt’u bir kere yaz, her istekte kullan:
+
+```text
+Sen bir “diyet planlayıcı”sın. Sana verilen BESİN HAVUZU içinden seçim yaparak 1 günlük menü oluşturacaksın.
+
+SERT KURALLAR:
+- SADECE verilen besin_id’leri kullan. Asla yeni besin üretme, isim uydurma.
+- Çıktı mutlaka JSON olacak ve şemaya uyacak.
+- Her seçilen item için portion_mult (0.5 / 1.0 / 1.5 / 2.0 gibi) ver.
+- food_tags ve avoid_tags kısıtlarına uy. Avoid listesinde olan bir etiketi taşıyan besini seçme.
+- Öğün eşleşmesi: Bir besin sadece kendi ogun alanında bulunan öğünlerde seçilebilir.
+- Öğün içi çakışma ipuçları: Aynı öğünde ekmek ile pilav/makarna veya baklagil_yemegi birlikte seçilmemeli (kural ipucu).
+- Amaç: Günlük hedef kaloriye mümkün olduğunca yaklaş (±50 kcal tolerans). Tutturamazsan “adjust_steps” alanında 1–3 düzeltme öner.
+
+ÖĞÜN ŞABLONLARI (özet):
+- Sabah: 1 tahıl/ekmek + 1 protein/süt ürünü + 1–2 sebze/yeşillik (+ düşük kalırsa ekstra tahıl veya süt ürünü).
+- Ara Öğün: tek seçim (meyve veya kuruyemiş veya süt ürünü veya “kombin” tek kalem).
+- Öğle/Akşam: 1 ana yemek (balık/beyaz_et/kirmizi_et/baklagil_yemegi/sebze_yemegi) + opsiyonel çorba + tek yan (salata veya yoğurt/cacık; balıkta salata tercih) + (uygunsa) tam tahıllı ekmek.
+- Yatarken: tek kalem süt/süt ürünü.
+
+ÇIKTI ŞEMASI (JSON):
+{
+  "kcal_target": int,
+  "meals": {
+    "Sabah": [{"besin_id": "...", "portion_mult": 1.0}],
+    "Ara Öğün 1": [...],
+    "Öğle": [...],
+    "Ara Öğün 2": [...],
+    "Akşam": [...],
+    "Yatarken": [...]
+  },
+  "kcal_estimate": int,
+  "adjust_steps": [
+    {"action":"increase_portion|decrease_portion|add|replace", "meal":"...", "target_tags_any":["..."], "note":"..."}
+  ],
+  "notes": ["kısa notlar"]
+}
+```
+
+Bu prompt, senin havuz meta’sındaki “meal_level_rules_hints” mantığıyla uyumlu. 
+
+---
+
+## 5) Kopyala-yapıştır: USER prompt (her çağrıda dinamik)
+
+Bunu her kullanıcı için dolduracaksın. Burada **Mifflin + %15 açık** hesaplarını da net ver:
+
+```text
+KULLANICI PROFİLİ
+- Cinsiyet: {male|female}
+- Yaş: {age}
+- Boy: {cm}
+- Kilo: {kg}
+- Aktivite katsayısı: {1.2|1.375|1.55|1.725|1.9}
+- Amaç: yağ kaybı
+- Formül: Mifflin-St Jeor ile BMR, sonra TDEE = BMR*aktivite
+- Kalori açığı: %15
+- Günlük hedef kcal: {kcal_target}  (bu değeri kullan)
+
+KISITLAR
+- prefer_tags (varsa): {["...","..."]}
+- avoid_tags (hastalık/alerji/ilaç vb.): {["...","..."]}
+
+ÖĞÜN KALORİ DAĞILIMI
+- Sabah: %25
+- Ara Öğün 1: %10
+- Öğle: %25
+- Ara Öğün 2: %10
+- Akşam: %20
+- Yatarken: %10
+
+BESİN HAVUZU (sadece bu listeden seç)
+- Sabah adayları: { ... kısa liste ... }
+- Ara öğün adayları: { ... kısa liste ... }
+- Öğle adayları: { ... kısa liste ... }
+- Akşam adayları: { ... kısa liste ... }
+- Yatarken adayları: { ... kısa liste ... }
+
+Not: Her aday öğe şu alanlara sahiptir: besin_id, besin_adi, kategori, kcal, miktar, ogun, food_tags, avoid_tags.
+Sadece besin_id ve portion_mult ile çıktı üret.
+```
+
+Besin adaylarını “kısa liste” derken: her item için şu kadar bilgi yeter:
+
+* `besin_id`, `besin_adi`, `kcal`, `food_tags` (ve gerekiyorsa `kategori`)
+  Çünkü senin havuzda bu alanlar zaten var. 
+
+---
+
+## 6) Pratik entegrasyon: “kandidat havuz” nasıl hazırlanır?
+
+Senin motorun zaten `food_in_meal(...)` gibi normalize edip öğün eşliyor. 
+LLM için de aynı yaklaşım:
+
+* `candidates_breakfast = foods.filter(ogun includes "sabah")`
+* `candidates_snack = foods.filter(ogun includes "ara_1"/"ara_2"/"ara")`
+* `candidates_lunch = foods.filter(ogun includes "öğle")`
+* `candidates_dinner = foods.filter(ogun includes "akşam")`
+* `candidates_sleep = foods.filter(ogun includes "yatarken")`
+
+Sonra her öğün listesinde:
+
+* avoid_tags’e çarpışanları çıkar
+* “yuksek_kalori” gibi istemediklerin varsa ayrıca çıkar (sen zaten item bazında `avoid_tags` tutuyorsun) 
+
+---
+
+## 7) En sağlam mimari: LLM = “taslak”, motor = “hakem”
+
+**Önerdiğim akış:**
+
+1. LLM → taslak menü (ID + portion_mult)
+2. Senin kod → doğrula / eksik öğünleri doldur / illegal kombinasyonları düzelt
+3. Senin `day_end_adjust_by_energy_rules` → hedefe yaklaştır 
+4. En sonda raporla
+
+Bu şekilde LLM “kural motoru” olmak zorunda kalmaz; senin deterministic sistemin her zaman son sözü söyler.
+
+---
+
+İstersen bir sonraki adım olarak ben:
+
+* senin `besin_havuzu_eski.normalized.json` içinden **örnek 1 günlük aday paket** çıkarıp,
+* yukarıdaki USER prompt formatında **gerçek doldurulmuş** bir prompt örneği yazayım (kısa ama çalışır).
+
+Bunun için sadece “örnek bir kullanıcı profili” (yaş/boy/kilo/cinsiyet/aktivite) ver; ben doğrudan çalışır örneği üreteyim.

@@ -1,0 +1,40 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yetişkinler için beyaz et tüketim miktarı konusunda genel öneriler bulunmamaktadır",
+  "used_chunks": [
+    "chunk_000593_01"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için beyaz et (tavuk hindi) tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+  "answer": "Tavuk veya hindi gibi beyaz etleri kızartma yerine ızgara veya fırında pişirme yöntemlerini tercih etmeli  |  Tavuk veya hindi derisi ve et üzerindeki yağlar uzaklaştırılmalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Yemekler pişirilirken daha az tuz kullanılmalı  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+  "used_chunks": [
+    "t2p_4",
+    "dm_ek_11"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için beyaz et (tavuk hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

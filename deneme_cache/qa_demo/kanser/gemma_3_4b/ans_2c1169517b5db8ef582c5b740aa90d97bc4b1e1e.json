@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Baklagil tüketimi, kolorektal kanser riskini azaltmada önemli bir rol oynar  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan ortalama 35 g/gün diyet posası önerilir  |  Besinlerden günde en az 25 g posa alınması, kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanmalıdır  |  Kuru mercimek, tam tahıllar ve yer fıstığı gibi folat açısından zengin baklagiller tüketmek önemlidir  |  Baklagiller, folat takviyesi olarak kabul edilebilir  |  Kuru baklagillerin tüketimi, diyet pozunda yeterli miktarda folat sağlamaya yardımcı olur.",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "kalp_2_4_12",
+    "ca_folate_sources_reco"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kanser baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

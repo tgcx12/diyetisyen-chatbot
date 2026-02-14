@@ -1,0 +1,41 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Tavuk ve hindi gibi beyaz etlerin tüketimi, bireysel ihtiyaçlara ve sağlık durumuna göre değişebilir  |  Et grubunda kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir  |  Genellikle haftada 1 2 kez tüketim önerilir  |  Ancak, bireysel tolerans ve sağlık durumu dikkate alınmalıdır  |  Beyaz et tüketimi, dengeli bir beslenme planı içerisinde değerlendirilmelidir.",
+  "used_chunks": [
+    "yasli_besin_02_et_grubu",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için beyaz et (tavuk hindi) tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

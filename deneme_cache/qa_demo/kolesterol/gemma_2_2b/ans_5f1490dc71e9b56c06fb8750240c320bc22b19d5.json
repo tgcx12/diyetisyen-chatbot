@@ -1,0 +1,42 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+  "answer": "Haftada 2 kez yağlı balık tüketmek iyi bir seçim  |  Zeytinyağı ve fındık yağı da kolesterolü düşürmeye yardımcı olabilir  |  Ceviz de kalbinizi korur",
+  "used_chunks": [
+    "chol_5_4_01",
+    "kalp_2_4_14",
+    "kalp_2_4_09"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için balık tüketimi nasıl olmalı ve hangi tür pişirme tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

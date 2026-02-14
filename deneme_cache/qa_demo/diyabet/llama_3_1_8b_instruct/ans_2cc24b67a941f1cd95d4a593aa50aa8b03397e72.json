@@ -1,0 +1,52 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, .  |  Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli, .  |  Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli, .  |  Yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli, .  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı, .  |  Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı.",
+  "used_chunks": [
+    "t2p_4",
+    "t2p_3",
+    "dm_ek_06",
+    "dm_4_6_01",
+    "dm_4_3_01",
+    "chunk_000393",
+    "dm_ek_04",
+    "genel_04_tuz_yag_seker",
+    "yasli_saglikli_07_su_tuz_seker",
+    "not_16",
+    "chunk_000390"
+  ],
+  "strict_chunks_count": 11,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için tuz sodyum tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tuz_1_num_freq",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

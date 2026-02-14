@@ -1,0 +1,148 @@
+{
+  "applied": [
+    {
+      "action": "increase_portion",
+      "meal": "sabah",
+      "kcal_budget": 285,
+      "selector": {
+        "must_have_any": [
+          "scalable",
+          "sebze"
+        ],
+        "must_not_have_any": [
+          "doymus_yag_yuksek"
+        ]
+      },
+      "swap_out_any": [],
+      "swap_in_any": [],
+      "reason": "Scale up portion size for breakfast meal"
+    },
+    {
+      "action": "add_item",
+      "meal": "öğle",
+      "kcal_budget": 410,
+      "selector": {
+        "must_have_any": [
+          "hdl_artirma",
+          "kompleks_kh"
+        ],
+        "must_not_have_any": []
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "az_yagli_sut_urunleri"
+      ],
+      "reason": "Add hdl_artirma and kompleks_kh items to lunch meal"
+    },
+    {
+      "action": "remove_item",
+      "meal": "akşam",
+      "kcal_budget": 250,
+      "selector": {
+        "must_have_any": [
+          "lifli_beslenme",
+          "posa_yuksek"
+        ],
+        "must_not_have_any": []
+      },
+      "swap_out_any": [
+        "peynir"
+      ],
+      "swap_in_any": [],
+      "reason": "Remove peynir item from dinner meal"
+    },
+    {
+      "action": "add_item",
+      "meal": "ara_1",
+      "kcal_budget": 65,
+      "selector": {
+        "must_have_any": [
+          "meyve"
+        ],
+        "must_not_have_any": []
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "az_yagli_sut_urunleri"
+      ],
+      "reason": "Add meyve item to snack meal"
+    }
+  ],
+  "skipped": [],
+  "final_kcal": 1255.0,
+  "iteration": 1,
+  "kcal_after": 1255.0,
+  "instruction": {
+    "strategy": "scale_up",
+    "goal_delta_kcal": 480,
+    "steps": [
+      {
+        "action": "increase_portion",
+        "meal": "sabah",
+        "kcal_budget": 285,
+        "selector": {
+          "must_have_any": [
+            "scalable",
+            "sebze"
+          ],
+          "must_not_have_any": [
+            "doymus_yag_yuksek"
+          ]
+        },
+        "swap_out_any": [],
+        "swap_in_any": [],
+        "reason": "Scale up portion size for breakfast meal"
+      },
+      {
+        "action": "add_item",
+        "meal": "öğle",
+        "kcal_budget": 410,
+        "selector": {
+          "must_have_any": [
+            "hdl_artirma",
+            "kompleks_kh"
+          ],
+          "must_not_have_any": []
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "az_yagli_sut_urunleri"
+        ],
+        "reason": "Add hdl_artirma and kompleks_kh items to lunch meal"
+      },
+      {
+        "action": "remove_item",
+        "meal": "akşam",
+        "kcal_budget": 250,
+        "selector": {
+          "must_have_any": [
+            "lifli_beslenme",
+            "posa_yuksek"
+          ],
+          "must_not_have_any": []
+        },
+        "swap_out_any": [
+          "peynir"
+        ],
+        "swap_in_any": [],
+        "reason": "Remove peynir item from dinner meal"
+      },
+      {
+        "action": "add_item",
+        "meal": "ara_1",
+        "kcal_budget": 65,
+        "selector": {
+          "must_have_any": [
+            "meyve"
+          ],
+          "must_not_have_any": []
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "az_yagli_sut_urunleri"
+        ],
+        "reason": "Add meyve item to snack meal"
+      }
+    ]
+  }
+}

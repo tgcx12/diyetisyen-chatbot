@@ -1,0 +1,51 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "kolesterol  |  doymuş",
+  "used_chunks": [
+    "chunk_000398",
+    "chunk_000404",
+    "chunk_000394",
+    "chol_5_4_01",
+    "chunk_000401",
+    "chunk_000395",
+    "chunk_000399",
+    "chunk_000402",
+    "chunk_000400",
+    "chunk_000406",
+    "chunk_000397",
+    "chunk_000403"
+  ],
+  "strict_chunks_count": 24,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus_num_freq",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

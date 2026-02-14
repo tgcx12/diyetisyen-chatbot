@@ -1,0 +1,44 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Haftada en az iki kez (300 500 g) balık tüketilmelidir.  |  Balıklar pişirilirken ızgara, fırında veya buharda pişirme yöntemleri kullanılmalı.  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.",
+  "used_chunks": [
+    "chunk_000599_02",
+    "yasli_ilke_07_doymus_yag",
+    "c176"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için balık tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_balik_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

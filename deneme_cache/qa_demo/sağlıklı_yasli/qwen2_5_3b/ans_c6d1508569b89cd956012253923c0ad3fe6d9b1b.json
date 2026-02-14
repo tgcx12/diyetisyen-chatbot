@@ -1,0 +1,42 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Yaşlılarda Besin Tüketimi  |  Kuru baklagiller ve yağlı tohumların tüketimi yaşlı bireylerde genellikle sınırlıdır.  |  kuru baklagillerin belirli aralıklarla tüketildiği belirtilir.",
+  "used_chunks": [
+    "yasli_besin_03_kuru_baklagil",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "invalid_output"
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

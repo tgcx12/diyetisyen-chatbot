@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Onkoloji için baklagil tüketim miktarı 35 gram/gün önerilir  |  Besinlerden günde en az 25 gram posa alınması önerilir  |  Baklagiller, folik asit açısından zengindir  |  Kuru baklagiller ve mercimek gibi besinler de önemli bir rol oynar  |  Sebzeler, meyveler ve kuru baklagiller de önemli bir rol oynar",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "kalp_2_4_12",
+    "ca_folate_sources_reco"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için baklagil tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_amt",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

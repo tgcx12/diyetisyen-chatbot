@@ -1,0 +1,49 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "Trans yağdan kaçınılmalı  |  Yemeklerde doymuş yağlar yerine bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı vb.) tercih edilmelidir.  |  Hazır paketli ürün tüketimi sınırlandırılmalı ve yağ ve şeker içeriği düşük olanlar seçilmelidir.  |  Şeker eklenmiş içeceklerden ve hazır paketli meyve sularından (şekeri olmayan) saklanmalı  |  Kızartma yerine fırında, haşlama, ızgara gibi yöntemler kullanılmalıdır.  |  Hazır paketli ürünleri tüketmeden önce etiket okuma alışkanlığı kazanılmalıdır.",
+  "used_chunks": [
+    "chunk_000593_01",
+    "chunk_000598_01",
+    "chunk_000592_04",
+    "chunk_000599_01",
+    "genel_10_ev_yemegi",
+    "chunk_000599_02",
+    "chunk_000592_03",
+    "yasli_saglikli_03_besin_hazirlama",
+    "chunk_000614_01",
+    "chunk_000615_01"
+  ],
+  "strict_chunks_count": 10,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

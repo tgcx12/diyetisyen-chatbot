@@ -1,0 +1,51 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Meyve suyu yerine meyve tüketimi önerilir  |  Ek şeker kaynaklarından kaçınmak önemlidir",
+  "used_chunks": [
+    "dm_ek_10",
+    "t2p_4",
+    "t2p_3",
+    "dm_4_6_01",
+    "dm_4_3_01",
+    "dm_ek_01",
+    "dm_ek_07",
+    "dm_ek_02",
+    "dm_4_4_02",
+    "dm_4_2_01",
+    "dm_4_1_01",
+    "dm_4_2_02"
+  ],
+  "strict_chunks_count": 48,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

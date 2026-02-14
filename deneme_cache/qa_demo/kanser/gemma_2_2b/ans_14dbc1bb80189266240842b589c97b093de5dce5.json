@@ -1,0 +1,41 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Onkoloji için beslenme genel olarak sağlıklı bir şekilde yapılmalı  |  Tekli doymamış yağlar, soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerinin tüketimi kanser gelişimini önlemeye yardımcı olur  |  5 porsiyon sebzemeyve, tam tahıl ve kepekli tahıllar tüketmek önemlidir",
+  "used_chunks": [
+    "c176",
+    "ca_fiber_diet_patterns_5servings",
+    "not_36",
+    "ca_nutrition_rel_1",
+    "akciger_kanseri_04",
+    "c175a",
+    "ca_folate_sources_reco",
+    "c178",
+    "ca_prev_1",
+    "ca_diet_factors_overview"
+  ],
+  "strict_chunks_count": 10,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+  "answer": "Kırmızı et tüketimi, özellikle işlenmiş etler kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Kırmızı et, kanatlı etler ve balıkların yüksek sıcaklıklarda pişirilmesiyle oluşan heterosiklik aminler (HA) kanser riskini artırabilir  |  İşlenmiş etlerdeki nitrat türevleri kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Kırmızı et tüketiminin olumlu ve olumsuz etkileri arasında, kırmızı et yemenin temel besin ihtiyacını karşılaması ve kanser riskini artırması arasında bir denge sağlanmalıdır  |  Tavada kızartma, mangalda pişirme ve fastfood yiyeceklerin pişirilmesi sırasında oluşan polisiklik aromatik hidrokarbonlar (PAH) ve akrilamit gibi karsinojenik bileşiklerden kaçınılmalıdır.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_additives_nitrate_example",
+    "ca_heterocyclic_amines",
+    "ca_redmeat_balance_note",
+    "ca_cooking_compounds_overview"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kırmızı et tüketimi nasıl olmalı ve hangi türlerden işlenmiş etlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

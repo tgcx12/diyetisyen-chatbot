@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Yemeklerde bitkisel sıvı yağlar tercih edilmeli  |  Kabuklu yemişler, zeytinyağı ve omega 3 yağ asitleri gibi sağlıklı yağlar tüketilmelidir",
+  "used_chunks": [
+    "chunk_000593_01",
+    "c176",
+    "yasli_ilke_11_tuz",
+    "yasli_ilke_08_sivi"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

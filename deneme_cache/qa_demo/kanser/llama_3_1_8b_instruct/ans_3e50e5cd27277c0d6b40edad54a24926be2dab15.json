@@ -1,0 +1,45 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Protein: alternatifler ve kırmızı et sınırı  |  kanser  |  Yağ içeriği yüksek et ve işlenmiş et tüketimi yerine alternatif protein kaynakları olan yumurta, balık, tavuk sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir.  |  Kırmızı et tüketiminin yetişkinlerde haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması gerektiği, işlenmiş etin çok azaltılması gerektiği belirtilmektedir.  |  Koruyucu diyet yaklaşımları: 5 porsiyon, tam tahıl örnekleri",
+  "used_chunks": [
+    "c176",
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_fiber_diet_patterns_5servings",
+    "ca_risk_reduction_1",
+    "not_35",
+    "ca_prev_1",
+    "akciger_kanseri_04",
+    "not_34",
+    "not_36",
+    "ca_nutrition_rel_1",
+    "c175a",
+    "c178"
+  ],
+  "strict_chunks_count": 15,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

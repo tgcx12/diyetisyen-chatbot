@@ -1,0 +1,46 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yaşam tarzı (RAG bilgilendirme)  |  lifestyle  |  Yaşam tarzı değişiklikleri kan basıncını azaltmaya katkı sağlar: kilo kaybı, DASH diyeti, tuz azaltımı, fiziksel aktivite ve alkolün sınırlandırılması ile toplam düşüş artabilir.  |  Sebze meyve, az yağlı/yağsız süt ürünleri, tam tahıllar, tavuk balık, kuru baklagil ve yağlı tohumları içerir.  |  Potasyum, kalsiyum, magnezyum ve posa içeriği yüksektir.  |  Yemek hazırlama ve pişirme sırasında ilave edilen tuz ve sebzeli tuzların miktarı azaltılmalıdır.",
+  "used_chunks": [
+    "ht_lifestyle_01",
+    "ht_dash_01",
+    "chunk_000419",
+    "cvh_dash_3",
+    "chunk_000418_1",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "invalid_output"
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Diyet kaynakları, yağlı balık, balık karaciğeri yağı ve yumurta gibi doğal olarak D vitamini, süt, meyve suları ve kahvaltılık gevrekler gibi D vitamini eklenmiş besinlerde bulunmaktadır.  |  Günlük beslenme ile D vitamini gereksinmesi karşılanmaz.",
+  "used_chunks": [
+    "ca_vitD_epid_sources"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

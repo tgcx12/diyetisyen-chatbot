@@ -1,0 +1,45 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Yumurtanın kanser riskini azaltmak için faydalı olabileceği belirtilmiştir  |  yumurta, balık ve tavuk gibi sağlıklı protein kaynakları tüketilmelidir  |  yumurta sarısı, yumurta sarısı ve yumurta gibi besinler, D vitamini içerir  |  Yumurtanın sağlıklı pişirme yöntemleri ile tüketilmesi önerilir",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "ca_folate_sources_reco",
+    "ca_obesity_cancers_13plus",
+    "ca_fat_risk_cancers",
+    "ca_vitA_sources"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

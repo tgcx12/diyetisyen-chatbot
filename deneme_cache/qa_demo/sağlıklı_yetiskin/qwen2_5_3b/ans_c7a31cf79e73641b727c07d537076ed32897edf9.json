@@ -1,0 +1,53 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Şeker eklenmiş içeceklerden sakınılmalı.  |  Hazır paketli meyve suyu kullanılacaksa %100 meyve suyu olmasına ve içerisinde eklenmiş şeker olmamasına dikkat edilmelidir.  |  meyve suyu yerine meyve tüketimi tercih edilmelidir.  |  Günlük tüketilen basit şeker miktarı, günlük alınan toplam enerjinin %10’unu geçmeyecek şekilde planlanmalıdır.  |  Basit şeker alımını azaltmak için eklenmiş şeker içeren hamur işi, tatlı, çikolata ve hazır paketli ürünlerin tüketimi azaltılmalıdır.  |  Yaşlı bireylerde kan şekeri kontrolü ve ağırlık yönetimi için şeker tüketimi sınırlandırılmalıdır.",
+  "used_chunks": [
+    "chunk_000592_04",
+    "chunk_000592_03",
+    "yasli_ilke_12_seker",
+    "genel_04_tuz_yag_seker",
+    "chunk_000598_01",
+    "chunk_000594_02",
+    "chunk_000592_01",
+    "yasli_saglikli_07_su_tuz_seker",
+    "yasli_ilke_07_doymus_yag",
+    "c176",
+    "genel_08_sekerli_icecekler",
+    "c175b"
+  ],
+  "strict_chunks_count": 16,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "exception",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

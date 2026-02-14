@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+  "answer": "Yağ içeriği yüksek et yerine yumurta, balık ve tavuk gibi alternatif protein kaynakları  |  sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Soğuk su balıkları, özellikle hamsi ve sardalya gibi, kanser gelişimini önlemeye yardımcı olur  |  Omega 3 yağ asitleri açısından zengin olan bu balıklar faydalıdır  |  Kırmızı et ve işlenmiş et tüketimi sınırlanmalıdır  |  Yüksek sıcaklıklarda pişirilen balıklar, özellikle tavada kızartma veya mangalda pişirme sırasında heterosiklik aminler oluşturabilir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "c176",
+    "ca_heterocyclic_amines",
+    "ca_pah_benzoapyrene_note"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için balık tüketimi nasıl olmalı ve hangi tür pişirme tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kanser balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

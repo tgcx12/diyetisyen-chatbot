@@ -1,0 +1,44 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler günlük beslenmede yer almalıdır.  |  Yaşlılarda Besin Tüketimi  |  Et, tavuk, balık ve yumurta grubunda yer alan besinlerin tüketimi yaşlı bireylerde değişkenlik gösterebilir.  |  Buna karşın yumurta tüketiminin görece daha sık olduğu, et grubu (kırmızı et, tavuk, balık) tüketiminin değişkenlik gösterebildiği.",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_besin_02_et_grubu",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

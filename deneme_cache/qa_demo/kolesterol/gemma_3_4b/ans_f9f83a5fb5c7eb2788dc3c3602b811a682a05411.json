@@ -1,0 +1,44 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "Günde en az 5 porsiyon sebze meyve ve haftada 2 3 kez kurubaklagil tüketilmelidir  |  Tam tahıllı ve posalı besinler tercih edilmeli, beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur gibi tam tahıl kaynakları tüketilmeli  |  Salatalara 150 g için 5 g yağ eklenmeli, etsiz sebze yemekleri için 15 g yağ eklenmeli  |  Lif, folik asit ve kanserden korunma açısından diyet lifi ve baklagiller önemli  |  Sarımsak ve kurubaklagiller bol miktarda potasyum, fosfor, selenyum ve A, C vitaminleri ile iyi bir bitkisel protein ve lif kaynağıdır  |  Yumurta haftada 1 2 kez haşlanmış veya yağsız tavada omlet şeklinde pişirilmelidir",
+  "used_chunks": [
+    "chol_5_5_01",
+    "chunk_000403",
+    "kalp_2_4_10",
+    "kalp_2_4_12",
+    "kalp_2_4_11"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

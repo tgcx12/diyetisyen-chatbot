@@ -1,0 +1,507 @@
+{
+  "prefer_tags": [
+    "baklagil",
+    "balik",
+    "beyaz_et",
+    "gi_orta",
+    "hdl_artirma",
+    "kirmizi_et",
+    "kompleks_kh",
+    "pilav_makarna",
+    "sodyum_orta"
+  ],
+  "limit_tags": [
+    "asitli",
+    "baklagil_gaz_yapici",
+    "coklu_doymamis",
+    "doymus_yag_orta",
+    "islenmis_et",
+    "kafeinli_icecek",
+    "posa_yuksek",
+    "scalable",
+    "tekli_doymamis"
+  ],
+  "avoid_tags": [
+    "trans_yag_riski"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "baklagil",
+        "balik",
+        "beyaz_et",
+        "gi_orta",
+        "hdl_artirma",
+        "kirmizi_et",
+        "kompleks_kh",
+        "pilav_makarna",
+        "sodyum_orta"
+      ],
+      "limit": [
+        "asitli",
+        "baklagil_gaz_yapici",
+        "coklu_doymamis",
+        "doymus_yag_orta",
+        "islenmis_et",
+        "kafeinli_icecek",
+        "posa_yuksek",
+        "scalable",
+        "tekli_doymamis"
+      ],
+      "avoid": [
+        "trans_yag_riski"
+      ]
+    },
+    "numeric_constraints": [
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": null,
+        "max_count": 5.0,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "5 porsiyon sebzemeyve"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 350.0,
+        "max_count": 500.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "kırmızı et tüketiminin haftada üç porsiyon (350 500 gram) sınırlanması önerilir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 3.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "yetişkinlerde beyaz et tüketimi haftada 3 porsiyon olarak önerilir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": 35050.0,
+        "unit": "gram",
+        "description": "kırmızı et tüketiminin haftada üç porsiyon (35050 g) sınırlanması önerilir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": null,
+        "max_count": 5.0,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "5 porsiyon sebze meyve"
+      },
+      {
+        "tag": "baklagil_gaz_yapici",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 35.0,
+        "unit": "gram",
+        "description": "onkoloji için baklagil tüketimi 35 gram/gün olmalı"
+      },
+      {
+        "tag": "baklagil_gaz_yapici",
+        "min_count": 3.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "onkoloji için baklagil tüketimi haftada en az 3 kez olmalı"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 25.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "besinlerden günde en az 25 gram posa alınması önerilir"
+      },
+      {
+        "tag": "scalable",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 35.0,
+        "unit": "gram",
+        "description": "onkoloji için baklagil tüketim miktarı 35 gram/gün önerilir"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 25.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "besinlerden günde en az 25 gram posa alınması önerilir"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 35.0,
+        "unit": "gram",
+        "description": "35 gram posa günlük ortalama alımı önerilir"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": 35.0,
+        "unit": "gram",
+        "description": "posa tüketim miktarı 35 gram/gün önerilir"
+      }
+    ],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[doymus_yag_orta]",
+        "meal": "genel",
+        "tag": "doymus_yag_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[coklu_doymamis]",
+        "meal": "genel",
+        "tag": "coklu_doymamis",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[tekli_doymamis]",
+        "meal": "genel",
+        "tag": "tekli_doymamis",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[gi_orta]",
+        "meal": "genel",
+        "tag": "gi_orta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kirmizi_et]",
+        "meal": "genel",
+        "tag": "kirmizi_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[islenmis_et]",
+        "meal": "genel",
+        "tag": "islenmis_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[baklagil]",
+        "meal": "genel",
+        "tag": "baklagil",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kompleks_kh]",
+        "meal": "genel",
+        "tag": "kompleks_kh",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[pilav_makarna]",
+        "meal": "genel",
+        "tag": "pilav_makarna",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[baklagil_gaz_yapici]",
+        "meal": "genel",
+        "tag": "baklagil_gaz_yapici",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[posa_yuksek]",
+        "meal": "genel",
+        "tag": "posa_yuksek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[scalable]",
+        "meal": "genel",
+        "tag": "scalable",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[coklu_doymamis]",
+        "meal": "genel",
+        "tag": "coklu_doymamis",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[scalable]",
+        "meal": "genel",
+        "tag": "scalable",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[asitli]",
+        "meal": "genel",
+        "tag": "asitli",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[kafeinli_icecek]",
+        "meal": "genel",
+        "tag": "kafeinli_icecek",
+        "intent": "limit"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [
+    {
+      "text": "350 500 gram",
+      "intent": "unmatched_numeric",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "text": "35050 g",
+      "intent": "unmatched_numeric",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    }
+  ],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "5 porsiyon sebzemeyve, tam tahıl ve kepekli tahıllar tüketmek önemlidir",
+      "chunk_id": "c176"
+    },
+    {
+      "related_tags": [
+        "coklu_doymamis"
+      ],
+      "quote": "Onkoloji için genel olarak sınırlandırılmalı ve kaçınılması gerekenler şunlardır: * Tekli doymamış yağlar ve soğuk su balıkları tüketimi artırın",
+      "chunk_id": "c176"
+    },
+    {
+      "related_tags": [
+        "coklu_doymamis"
+      ],
+      "quote": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar tercih edilmeli",
+      "chunk_id": "ca_fat_recommendations"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Onkoloji için genel olarak sınırlandırılmalı ve kaçınılması gerekenler şunlardır: * Tekli doymamış yağlar ve soğuk su balıkları tüketimi artırın",
+      "chunk_id": "c176"
+    },
+    {
+      "related_tags": [
+        "gi_orta"
+      ],
+      "quote": "Kırmızı et tüketiminin haftada üç porsiyon (350 500 gram) sınırlanması önerilir",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "gi_orta"
+      ],
+      "quote": "Yetişkinlerde beyaz et tüketimi haftada 3 porsiyon olarak önerilir.",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Kırmızı et tüketiminin haftada üç porsiyon (350 500 gram) sınırlanması önerilir",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Kırmızı et tüketiminin haftada üç porsiyon (35050 g) sınırlanması önerilir",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Yetişkinlerde beyaz et tüketimi haftada 3 porsiyon olarak önerilir.",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "islenmis_et"
+      ],
+      "quote": "Kırmızı et tüketiminin sınırlanması, işlenmiş et tüketimine azaltılması önerilir.",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Yumurtanın sağlıklı pişirme yöntemleri ile tüketilmesi önerilir",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar tercih edilmeli",
+      "chunk_id": "ca_fat_recommendations"
+    },
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Yağ içeriği yüksek et ve işlenmiş et tüketimi yerine alternatif protein kaynakları olan yumurta, balık, tavuk sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir.",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Yağ içeriği yüksek et ve işlenmiş et tüketimi yerine alternatif protein kaynakları olan yumurta, balık, tavuk sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir.",
+      "chunk_id": "ca_protein_alternatives_redmeat_limit"
+    },
+    {
+      "related_tags": [
+        "kompleks_kh"
+      ],
+      "quote": "5 porsiyon sebze meyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) tüketimi önerilir",
+      "chunk_id": "ca_fiber_diet_patterns_5servings"
+    },
+    {
+      "related_tags": [
+        "pilav_makarna"
+      ],
+      "quote": "5 porsiyon sebze meyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) tüketimi önerilir",
+      "chunk_id": "ca_fiber_diet_patterns_5servings"
+    },
+    {
+      "related_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "quote": "Onkoloji için baklagil tüketimi 35 gram/gün olmalı",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "baklagil_gaz_yapici"
+      ],
+      "quote": "Onkoloji için baklagil tüketimi haftada en az 3 kez olmalı.",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "posa_yuksek"
+      ],
+      "quote": "Besinlerden günde en az 25 gram posa alınması önerilir.",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "posa_yuksek"
+      ],
+      "quote": "Besinlerden günde en az 25 gram posa alınması önerilir",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "scalable"
+      ],
+      "quote": "Onkoloji için baklagil tüketim miktarı 35 gram/gün önerilir",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "scalable"
+      ],
+      "quote": "Posa tüketim miktarı 35 gram/gün önerilir",
+      "chunk_id": "ca_fiber_amounts_reco"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Onkoloji için trans yağdan kaçınılmalı mı",
+      "chunk_id": "ca_heterocyclic_amines"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "35 gram posa günlük ortalama alımı önerilir",
+      "chunk_id": "ca_fiber_diet_patterns_5servings"
+    },
+    {
+      "related_tags": [
+        "asitli"
+      ],
+      "quote": "Onkoloji için rafine şeker/şekerli içecek tüketimi azaltılmalı",
+      "chunk_id": "c176"
+    },
+    {
+      "related_tags": [
+        "kafeinli_icecek"
+      ],
+      "quote": "Onkoloji için rafine şeker/şekerli içecek tüketimi azaltılmalı",
+      "chunk_id": "c176"
+    }
+  ]
+}

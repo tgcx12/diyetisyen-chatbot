@@ -1,0 +1,43 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, .  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı, .  |  Badem, ceviz, zeytin ve zeytinyağı gibi kaynaklar uygun seçeneklerdir.",
+  "used_chunks": [
+    "t2p_3",
+    "dm_ek_04"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için kuruyemiş kabuklu yemiş tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_freq",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

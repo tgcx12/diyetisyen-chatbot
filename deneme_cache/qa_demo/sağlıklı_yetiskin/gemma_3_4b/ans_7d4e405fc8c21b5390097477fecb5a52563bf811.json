@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Dışarıda yemek yenildiğinde az yağlı seçenekler tercih edilmelidir  |  Günlük diyette doymuş yağı azaltmak için az yağlı süt ve ürünleri ile et ve ürünleri tercih edilmeli  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır  |  Hazır paketli ürün tüketimi sınırlandırılmalıdır. yağ ve şeker içeriği düşük olanlar tercih edilmelidir  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimi artırılarak posa alımı yükseltilmelidir  |  Toplam ve doymuş yağ ile kolesterol ve şeker alımı azaltılmalıdır.",
+  "used_chunks": [
+    "chunk_000601_01",
+    "chunk_000592_02",
+    "genel_04_tuz_yag_seker",
+    "chunk_000598_01",
+    "chunk_000594_01",
+    "chunk_000592_01",
+    "chunk_000608_01",
+    "chunk_000606_01",
+    "chunk_000605_01",
+    "chunk_000590_03",
+    "chunk_000609_01",
+    "chunk_000588_01"
+  ],
+  "strict_chunks_count": 13,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

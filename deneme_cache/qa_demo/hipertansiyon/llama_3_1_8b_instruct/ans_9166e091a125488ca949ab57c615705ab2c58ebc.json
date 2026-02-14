@@ -1,0 +1,47 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ve alkol tüketimi ilişkili sağlık risklerini destekleyen kanıtlar gözden geçirilmiştir.  |  Bu amaca sodyum, doymuş yağlar, ilave şekerler ve rafine tahıllar bakımından zengin yiyecekleri daha az tüketerek ve alkol tüketiminden sakınarak ulaşılabilinmektedir.  |  Temelde yatan önemli ilke, vücut ağırlığını yönetmek için günlük enerji alımını kontrol etme ve belirli kronik hastalık riskini artıran besin bileşenlerinin alımını sınırlama ihtiyacıdır.  |  Genel Beslenme Önerileri",
+  "used_chunks": [
+    "chunk_000408",
+    "chunk_000393",
+    "genel_04_tuz_yag_seker",
+    "chunk_000390",
+    "chunk_000389",
+    "ht_dash_01"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_doymus_num_amt",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

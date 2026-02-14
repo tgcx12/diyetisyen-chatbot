@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "uskumru  |  sardalya",
+  "used_chunks": [
+    "dm_ek_03",
+    "t2p_4"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için balık tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

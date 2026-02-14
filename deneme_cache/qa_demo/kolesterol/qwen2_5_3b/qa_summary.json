@@ -1,0 +1,395 @@
+{
+  "domain": "kolesterol",
+  "model_key": "qwen2_5_3b",
+  "count": 35,
+  "items": [
+    {
+      "question": "kolesterol için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Günlük Doymuş Yağ  |  Trans Yağ  |  Kolesterol Alımı  |  Omega 3  |  Şeker Tüketimi  |  Hayvansal Protein Seçimi",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000398",
+        "chol_5_5_01",
+        "chunk_000395",
+        "chol_5_4_01",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000400",
+        "chol_5_3_01",
+        "kalp_2_4_14",
+        "chunk_000399",
+        "chunk_000407"
+      ]
+    },
+    {
+      "question": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Günlük Doymuş Yağ  |  Trans Yağ  |  Kolesterol Alımı  |  Omega 3  |  Şeker Tüketimi  |  Kalp Koruma",
+      "used_chunks": [
+        "chunk_000398",
+        "chunk_000395",
+        "chunk_000404",
+        "chol_5_4_01",
+        "chunk_000394",
+        "chunk_000401",
+        "chol_5_5_01",
+        "chunk_000399",
+        "chunk_000400",
+        "chunk_000397",
+        "kalp_2_4_14",
+        "chunk_000406"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "kızartılmış et  |  işlenmiş et  |  kırmızı et  |  trans yağ  |  keçi eti  |  dana et",
+      "used_chunks": [
+        "chol_5_3_01",
+        "kalp_2_4_08",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kısıtlanmamalıdır",
+      "used_chunks": [
+        "kalp_2_4_08",
+        "chol_5_3_01",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır.  |  Et Tüketimi ve Pişirme Yöntemleri  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır.  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Hayvansal Protein Seçimi  |  Yağlı etler, sakatatlar (karaciğer, beyin vb.) ve işlenmiş et ürünleri (sucuk, salam, sosis) yüksek kolesterol içerir.",
+      "used_chunks": [
+        "chol_5_3_01",
+        "kalp_2_4_08",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "hayvansal protein  |  |  |  |  |  |  |  |  |  |  |  | |",
+      "used_chunks": [
+        "chunk_000400",
+        "kalp_2_4_08",
+        "chol_5_3_01",
+        "chunk_000401"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kolesterol  |  Haftada 3 gün kırmızı et, ayda 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır.",
+      "used_chunks": [
+        "kalp_2_4_08",
+        "chunk_000400",
+        "chol_5_3_01",
+        "chunk_000401"
+      ]
+    },
+    {
+      "question": "kolesterol için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır.  |  Et Tüketimi ve Pişirme Yöntemleri  |  Haftada 3 gün kırmızı et ve 4 gün beyaz et tüketilmeli ancak et miktarı abartılmamalıdır.  |  Kanatlı hayvanlar (tavuk, hindi, ördek, kaz vb.) derisi ayrılarak tüketilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Kırmızı ve beyaz etlerin görünür yağlarının satın alma, yemek hazırlama aşamasında ve tabaktan mümkün olabildiğince uzaklaştırılmalı, tüketiminden kaçınılmalıdır.",
+      "used_chunks": [
+        "chol_5_3_01",
+        "chunk_000400",
+        "chunk_000401",
+        "kalp_2_4_08"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "uskumru  |  kuru yemiş  |  fındık yağı  |  zeytinyağı  |  kuru yemesi  |  Omega 3",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kolesterol  |  Haftada 2 kez  |  uskumru  |  sardalya",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir.  |  Doymamış Yağlar ve Omega 3  |  Zeytinyağı ve fındık yağı kötü kolesterolü düşürür.  |  Omega 3, Vitaminler ve Şeker Tüketimi  |  Kuru yemişlerde ayrıca arginin amino asidi, magnezyum minerali ve E vitamini bulunur.  |  Ceviz, içinde bulunan Omega 3 yağ asitleri sayesinde kalbi korur.",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "kalp_2_4_09"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Sağlıklı bireyler tam yumurtayı günde bir adet, kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.  |  Yumurta haftada 1 2 kez yenmeli, haşlama veya yağsız tavada omlet biçiminde pişirilmelidir.  |  Kolesterolden zengin bir besin olmasına karşın yumurtanın kan kolesterolünü yükseltici etkisi yağlı et ve süt ve ürünlerinden daha az olduğu için sağlıklı bireylerin kolesterol içeriğinden dolayı yumurta tüketiminden kaçınmasına gerek yoktur.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Süt Ürünleri, Yumurta ve Antioksidanlar  |  Peynir, süt ve yoğurt az yağlı olanlardan seçilmelidir.",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "günde 1  |  haftada 2 3  |  ayda 4  |  yumurtalar  |  kolesterol  |  antioksidanlar",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kalp damar  |  1 yumurtadır  |  kolesterol  |  1 porsiyondur  |  2 3 yumurtadan  |  1 2 kez",
+      "used_chunks": [
+        "chunk_000406",
+        "kalp_2_4_10"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "yoğurt  |  peynir  |  salama  |  kavurma  |  don yağı  |  tereyağı",
+      "used_chunks": [
+        "chunk_000402",
+        "kalp_2_4_10",
+        "chunk_000395",
+        "chol_5_3_01",
+        "chunk_000406",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "yoğurt  |  peynir  |  kuyruk yağı  |  iç yağı  |  don yağ",
+      "used_chunks": [
+        "chunk_000402",
+        "kalp_2_4_10",
+        "chunk_000406",
+        "chunk_000395",
+        "chol_5_3_01",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "yumurtalar  |  yoğurt  |  peynir  |  salama  |  kuyruk yağı  |  don yağı",
+      "used_chunks": [
+        "chunk_000402",
+        "chol_5_3_01",
+        "chunk_000406",
+        "chunk_000395",
+        "kalp_2_4_10",
+        "chunk_000408",
+        "chol_5_2_01",
+        "chunk_000412"
+      ]
+    },
+    {
+      "question": "kolesterol için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "tam tahıl  |  rafine  |  pilav makarna",
+      "used_chunks": [
+        "chol_5_5_01"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Baklagiller aynı zamanda folik asit açısından zengindir.  |  Sarımsak ve Kurubaklagillerin Koruyucu Etkileri  |  baklagil  |  Sarımsak bol miktarda potasyum, fosfor, selenyum, A ve C vitaminleri ile 75 farklı kükürtlü madde içerir.  |  İyi bir bitkisel protein ve lif kaynağı olan kurubaklagiller bol tüketilmelidir.",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "gününde  |  HESAPLA  |  EVIDENCE HOŞLUK  |  kuru baklagil  |  fasulye",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kurubaklagil  |  fasulye  |  mercimek",
+      "used_chunks": [
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "kuruyemiş  |  yağlı tohum  |  tuzlu salamur  |  zeytinyağı  |  fındık yağı  |  zeytin",
+      "used_chunks": [
+        "kalp_2_4_14",
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kuruyemiş  |  kabuklu yemiş  |  yağlı tohum",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_14",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kuruyemis  |  kabuklu yemiş  |  yağlı tohum  |  1 porsiyon",
+      "used_chunks": [
+        "kalp_2_4_14",
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_13"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Günlük Doymuş Yağ ve Trans Yağ  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000398",
+        "chunk_000395",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000399",
+        "chunk_000401",
+        "chunk_000400",
+        "chunk_000402",
+        "chunk_000403",
+        "chunk_000396",
+        "chunk_000409"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kolesterol  |  doymuş",
+      "used_chunks": [
+        "chunk_000398",
+        "chunk_000404",
+        "chunk_000394",
+        "chol_5_4_01",
+        "chunk_000401",
+        "chunk_000395",
+        "chunk_000399",
+        "chunk_000402",
+        "chunk_000400",
+        "chunk_000406",
+        "chunk_000397",
+        "chunk_000403"
+      ]
+    },
+    {
+      "question": "kolesterol için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "doymuş  |  tereyağı",
+      "used_chunks": [
+        "chunk_000404",
+        "chunk_000394",
+        "chunk_000397",
+        "chunk_000398",
+        "chunk_000403",
+        "chunk_000395",
+        "chunk_000401",
+        "chunk_000399",
+        "chunk_000402",
+        "chunk_000409",
+        "chunk_000400",
+        "chunk_000396"
+      ]
+    },
+    {
+      "question": "kolesterol için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "trans yağdan kaçınılmalı  |  paketli unlardan, fast food ürünleri  |  margarin  |  patlımlı mısır  |  yetişkinlerde süt tüketimi azaltma",
+      "used_chunks": [
+        "chunk_000396",
+        "chunk_000394",
+        "chunk_000404",
+        "chunk_000395",
+        "chunk_000399",
+        "chunk_000409",
+        "chunk_000398",
+        "chunk_000401",
+        "chunk_000407",
+        "chunk_000400",
+        "chunk_000397",
+        "chunk_000402"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Günde en az 5 porsiyon sebze meyve ve haftada 2 3 kez kurubaklagil tüketilmelidir.  |  Etsiz sebze yemekleri için bu miktar 15 g olmalıdır.  |  Salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir.  |  Yumurta haftada 1 2 kez yenmeli, haşlama veya yağsız tavada omlet biçiminde pişirilmelidir.  |  Kolesterolü Düşüren Lifler  |  Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir.",
+      "used_chunks": [
+        "chol_5_5_01",
+        "chunk_000403",
+        "kalp_2_4_10",
+        "kalp_2_4_12",
+        "kalp_2_4_11"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kolesterol  |  1 ayda 2 3 kez lif  |  1 gün 5 porsiyon sebze meyve  |  150 g salata  |  1 kaşığı yağ",
+      "used_chunks": [
+        "chol_5_5_01",
+        "kalp_2_4_10",
+        "chunk_000403",
+        "kalp_2_4_12"
+      ]
+    },
+    {
+      "question": "kolesterol için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kolesterol  |  etsiz sebze yemekleri için 15 g  |  salatalar  |  yumurtalar  |  haftada 1 2 kez  |  haşlanmış",
+      "used_chunks": [
+        "chol_5_5_01",
+        "chunk_000403",
+        "kalp_2_4_10",
+        "kalp_2_4_12"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "sodyum  |  salamura  |  zeytin",
+      "used_chunks": [
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_07"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kolesterol  |  Haftada 2 kez  |  salamura  |  az yağlı  |  az tuzlu  |  zeytinyağı",
+      "used_chunks": [
+        "chol_5_4_01",
+        "kalp_2_4_07",
+        "chunk_000408"
+      ]
+    },
+    {
+      "question": "kolesterol için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "6 8 zeytin",
+      "used_chunks": [
+        "chol_5_4_01",
+        "chunk_000408",
+        "kalp_2_4_07"
+      ]
+    },
+    {
+      "question": "kolesterol için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Ambalajlı tüketime sunulan yiyecek ve içeceklerin ambalajlarının üzerinde yazılı olan etiket bilgisi okunarak toplam yağ, doymuş ve trans yağ ile kolesterol içerikleri daha düşük olan benzer besinler tercih edilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Omega 3, Vitaminler ve Şeker Tüketimi  |  Kuru yemişlerde ayrıca arginin amino asidi, magnezyum minerali ve E vitamini bulunur.  |  Günlük şeker ve şekerli gıda tüketimi kontrol altında tutulmalıdır.  |  Fazla miktarda tüketilen şeker, reçel, bal ve benzeri besinler kan kolesterolünün artmasına sebep olur.",
+      "used_chunks": [
+        "chunk_000404",
+        "kalp_2_4_14",
+        "chunk_000396",
+        "chol_5_4_01",
+        "kalp_2_4_09"
+      ]
+    }
+  ]
+}

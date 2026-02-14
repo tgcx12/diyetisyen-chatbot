@@ -1,0 +1,49 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  yemeklere tuz eklenmemeli, sofraya tuzluk konulmamalıdır.  |  Sodyumu azaltmak için pratik kurallar  |  Günlük tuz tüketimi sınırlandırılmalı.  |  Yüksek tuz içeren besinlerden uzak durulmalı.  |  paketli ürünlerde düşük sodyum ifadeleri tercih edilmeli.",
+  "used_chunks": [
+    "ht_salt_01",
+    "chunk_000408",
+    "chunk_000418_1",
+    "yasli_ilke_11_tuz",
+    "chunk_000420",
+    "cvh_salt_2",
+    "chunk_000424",
+    "cvh_dash_3"
+  ],
+  "strict_chunks_count": 11,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

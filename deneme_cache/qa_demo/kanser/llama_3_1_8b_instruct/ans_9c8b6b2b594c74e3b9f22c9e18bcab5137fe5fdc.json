@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Kırmızı et tüketiminin yetişkinlerde haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması gerektiği, işlenmiş etin çok azaltılması gerektiği belirtilmektedir.  |  Protein: alternatifler ve kırmızı et sınırı  |  kanser  |  Yağ içeriği yüksek et ve işlenmiş et tüketimi yerine alternatif protein kaynakları olan yumurta, balık, tavuk sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için beyaz et (tavuk hindi) tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

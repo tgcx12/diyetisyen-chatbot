@@ -1,0 +1,41 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Kuru baklagillerin yaşlı bireylerde sınırlı tüketimi genellikle önerilir  |  Kuru baklagiller belirli aralıklarla tüketilmeli  |  Baklagiller, özellikle de mercimek ve nohut gibi çeşitleri, yaşlılıkta beslenme planına dahil edilebilir  |  Bu baklagillerin tüketimi, sindirimi kolaylaştırmak için belirli aralıklarla yapılmalıdır  |  Kuru baklagillerin tüketimi, diyetisyen kontrolünde planlanmalıdır",
+  "used_chunks": [
+    "yasli_besin_03_kuru_baklagil",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

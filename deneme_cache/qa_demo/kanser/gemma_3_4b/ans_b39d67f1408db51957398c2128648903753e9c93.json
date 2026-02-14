@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Doymuş yağların tüketimi azaltılmalı  |  Zeytinyağı gibi bitkisel sıvı yağlar tercih edilmeli  |  Omega 3 yağ asitleri olan soğuk su balıkları ve fındık tüketimi artırılmalı  |  Kanser gelişimini önlemeye yardımcı olabilir  |  Yüksek miktarda hayvansal protein tüketimi doymuş yağ tüketimini artırabilir  |  Doymuş yağ tüketimi haftada birkaç kez azaltılmalıdır",
+  "used_chunks": [
+    "ca_fat_recommendations",
+    "c176",
+    "ca_protein_high_animal_note"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için doymuş yağ tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus_num_freq",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

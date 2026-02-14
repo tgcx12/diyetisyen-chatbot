@@ -1,0 +1,53 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Posa miktarı: 35 g/gün vs 15 g/gün ve öneri  |  kanser  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan sağlanan ortalama 35 g/gün diyet posasının ortalama 15 g/günlük posa alımı ile kıyaslandığında kolorektal kanser riskini azalttığı saptanmıştır.  |  Besinlerden günde en az 25 g posa alınması ve bunun da kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanması önerilmektedir.  |  Koruyucu diyet yaklaşımları: 5 porsiyon, tam tahıl örnekleri  |  Posa ve kanser ilişkisini ortaya koyan çalışmalarda kansere karşı koruyucu olan çoğu diyet yaklaşımında toplam 5 porsiyon sebzemeyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) olması gerektiği belirtilmektedir.",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "ca_fiber_diet_patterns_5servings",
+    "c175b",
+    "c178",
+    "ca_diet_fv_tbsa",
+    "c173",
+    "ca_fiber_inflammation",
+    "ca_fiber_microbiota_bile_acids",
+    "ca_protective_fiber_def",
+    "c176",
+    "ca_folate_sources_reco",
+    "c177"
+  ],
+  "strict_chunks_count": 19,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için posa lif tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "lif_1_num_amt",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

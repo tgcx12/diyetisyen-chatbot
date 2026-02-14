@@ -1,0 +1,46 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Süt ürünleri tüketimi az tuzlu ve az yağlı ibareli ürünler tercih edilmelidir  |  Tuzsuz ekmek/peynir gibi ürünler tercih edilebilir  |  Yüksek tuz içeren besinlerden uzak durulmalı  |  Paketli ürünlerde düşük sodyum ifadeleri tercih edilmeli  |  Konserve, tuzlanmış/tütsülenmiş et, hazır çorba ve bulyon kullanılmamalıdır  |  Tuz yerine limon, sirke ve baharat gibi tat vericiler kullanılabilir",
+  "used_chunks": [
+    "ht_salt_01",
+    "chunk_000408",
+    "chunk_000373",
+    "chunk_000389",
+    "ht_dash_01",
+    "cvh_dash_3",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

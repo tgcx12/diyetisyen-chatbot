@@ -1,0 +1,41 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "günde 2 kez  |  haftada 14 kez  |  ayda 35 kez",
+  "used_chunks": [
+    "genel_04_tuz_yag_seker",
+    "ergen_03_iyot_yetersizligi"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için tuz sodyum tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tuz_1_num_freq",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

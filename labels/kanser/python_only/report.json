@@ -1,0 +1,34 @@
+{
+  "clauses_total": 112,
+  "clauses_mined": 20,
+  "final_pass": {
+    "dropped_unknown_tags": [],
+    "missing_evidence_tags": [],
+    "numeric_invalid_units": [],
+    "numeric_missing_limit_tag": [
+      "lif_orta"
+    ],
+    "dropped_unsupported_evidence": [],
+    "quote_reuse_pruned": [],
+    "evidence_per_tag_pruned": [
+      {
+        "tag": "gi_orta",
+        "dropped": 1
+      },
+      {
+        "tag": "kirmizi_et",
+        "dropped": 2
+      },
+      {
+        "tag": "baklagil_gaz_yapici",
+        "dropped": 1
+      },
+      {
+        "tag": "posa_yuksek",
+        "dropped": 2
+      }
+    ],
+    "numeric_normalized": 12,
+    "dropped_numeric_empty": 0
+  }
+}

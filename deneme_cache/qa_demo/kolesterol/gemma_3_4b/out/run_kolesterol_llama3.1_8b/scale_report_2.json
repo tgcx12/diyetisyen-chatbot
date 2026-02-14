@@ -1,0 +1,142 @@
+{
+  "applied": [
+    {
+      "action": "add_item",
+      "meal": "sabah",
+      "kcal_budget": 465,
+      "selector": {
+        "must_have_any": [
+          "scalable",
+          "sebze"
+        ]
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "tahil"
+      ],
+      "reason": "Increase kcal in breakfast meal"
+    },
+    {
+      "action": "add_item",
+      "meal": "öğle",
+      "kcal_budget": 570,
+      "selector": {
+        "must_have_any": [
+          "scalable",
+          "sebze"
+        ]
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "tahil"
+      ],
+      "reason": "Increase kcal in lunch meal"
+    },
+    {
+      "action": "add_item",
+      "meal": "akşam",
+      "kcal_budget": 90,
+      "selector": {
+        "must_have_any": [
+          "scalable",
+          "sebze"
+        ]
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "tahil"
+      ],
+      "reason": "Increase kcal in dinner meal"
+    },
+    {
+      "action": "add_item",
+      "meal": "ara_1",
+      "kcal_budget": 130,
+      "selector": {
+        "must_have_any": [
+          "scalable",
+          "sebze"
+        ]
+      },
+      "swap_out_any": [],
+      "swap_in_any": [
+        "tahil"
+      ],
+      "reason": "Increase kcal in snack meal"
+    }
+  ],
+  "skipped": [],
+  "final_kcal": 1715.0,
+  "iteration": 2,
+  "kcal_after": 1715.0,
+  "instruction": {
+    "strategy": "scale_up",
+    "goal_delta_kcal": 235,
+    "steps": [
+      {
+        "action": "add_item",
+        "meal": "sabah",
+        "kcal_budget": 465,
+        "selector": {
+          "must_have_any": [
+            "scalable",
+            "sebze"
+          ]
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "tahil"
+        ],
+        "reason": "Increase kcal in breakfast meal"
+      },
+      {
+        "action": "add_item",
+        "meal": "öğle",
+        "kcal_budget": 570,
+        "selector": {
+          "must_have_any": [
+            "scalable",
+            "sebze"
+          ]
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "tahil"
+        ],
+        "reason": "Increase kcal in lunch meal"
+      },
+      {
+        "action": "add_item",
+        "meal": "akşam",
+        "kcal_budget": 90,
+        "selector": {
+          "must_have_any": [
+            "scalable",
+            "sebze"
+          ]
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "tahil"
+        ],
+        "reason": "Increase kcal in dinner meal"
+      },
+      {
+        "action": "add_item",
+        "meal": "ara_1",
+        "kcal_budget": 130,
+        "selector": {
+          "must_have_any": [
+            "scalable",
+            "sebze"
+          ]
+        },
+        "swap_out_any": [],
+        "swap_in_any": [
+          "tahil"
+        ],
+        "reason": "Increase kcal in snack meal"
+      }
+    ]
+  }
+}

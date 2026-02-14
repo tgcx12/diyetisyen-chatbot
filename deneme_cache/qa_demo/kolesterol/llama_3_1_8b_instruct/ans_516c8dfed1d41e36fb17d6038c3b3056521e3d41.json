@@ -1,0 +1,49 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Yumurta haftada 1 2 kez yenmeli, haşlama veya yağsız tavada omlet biçiminde pişirilmelidir.  |  Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır.  |  Sağlıklı bireyler tam yumurtayı günde bir adet, kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.  |  Özellikle yetişkinlerde ve çocuklarda süt ve ürünlerinin tüketimini artırırken, yetişkinlerde daha az yağ içeren (yarım yağlı ya da yağsız süt ve ürünlerinin) tüketimi tercih edilmeli/ teşvik edilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .",
+  "used_chunks": [
+    "chunk_000402",
+    "kalp_2_4_10",
+    "chunk_000395",
+    "chol_5_3_01",
+    "chunk_000406",
+    "chunk_000408",
+    "chol_5_2_01",
+    "chunk_000412"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

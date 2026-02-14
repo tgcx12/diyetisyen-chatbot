@@ -1,0 +1,490 @@
+QID: q01
+Q: Kolesterol yüksekliği olan bireylerde hangi yağ türleri tercih edilmelidir?
+topics: ['kolesterol', 'yag']
+auto_golds: ['chol_5_5_01', 'chol_5_1_01', 'chol_5_2_01']
+top_candidates:
+  - score= 23  id=chol_5_5_01  ana='kolesterolu dusuren lifler'  grp='kolesterol_lif'
+  - score= 22  id=chol_5_1_01  ana='ldl ve hdl kolesterol'  grp='kolesterol_genel'
+  - score= 21  id=chol_5_2_01  ana='kacinilmasi gereken yag kaynaklari'  grp='kolesterol_yasaklar'
+  - score= 20  id=chunk_000410  ana=''  grp='yag_kolesterol'
+  - score= 20  id=chunk_000411  ana=''  grp='yag_kolesterol'
+  - score= 20  id=chunk_000412  ana=''  grp='yag_kolesterol'
+  - score= 20  id=chunk_000413  ana=''  grp='yag_kolesterol'
+  - score= 19  id=chol_5_4_01  ana='doymamis yaglar ve omega-3'  grp='kolesterol_faydali'
+--------------------------------------------------------------------------------
+QID: q02
+Q: Kolesterol düzeyini artıran besin gruplarına üç örnek veriniz.
+topics: ['kolesterol', 'besin']
+auto_golds: ['chol_5_1_01', 'chunk_000708_a', 'chunk_000781_a']
+top_candidates:
+  - score= 22  id=chol_5_1_01  ana='ldl ve hdl kolesterol'  grp='kolesterol_genel'
+  - score= 19  id=chunk_000708_a  ana='fermente besinlerin saglik uzerine etkileri'  grp='fermente_besinler'
+  - score= 19  id=chunk_000781_a  ana='yeni besinler'  grp='yeni_besinler_pseudotahillar'
+  - score= 18  id=chunk_000702  ana='probiyotik fermente besinler'  grp='fermente_besinler'
+  - score= 18  id=chunk_000703  ana='probiyotikler ve fermente besinler arasindaki farklar'  grp='fermente_besinler'
+  - score= 18  id=chunk_000757  ana='geleneksel besinler'  grp='geleneksel_besinler'
+  - score= 18  id=chunk_000761  ana='pekmez cesitlerinin besin degeri'  grp='geleneksel_besinler'
+  - score= 18  id=chunk_000767  ana='tarhananin besin degeri'  grp='geleneksel_besinler'
+--------------------------------------------------------------------------------
+QID: q03
+Q: Kolesterol kontrolünde lif tüketiminin rolü nedir?
+topics: ['kolesterol', 'lif']
+auto_golds: ['chol_5_5_01', 'chol_5_1_01', 'chol_5_2_01']
+top_candidates:
+  - score= 25  id=chol_5_5_01  ana='kolesterolu dusuren lifler'  grp='kolesterol_lif'
+  - score= 18  id=chol_5_1_01  ana='ldl ve hdl kolesterol'  grp='kolesterol_genel'
+  - score= 13  id=chol_5_2_01  ana='kacinilmasi gereken yag kaynaklari'  grp='kolesterol_yasaklar'
+  - score= 13  id=chol_5_4_01  ana='doymamis yaglar ve omega-3'  grp='kolesterol_faydali'
+  - score= 12  id=kalp_2_4_12  ana='diyet lifi, folik asit ve kanserden korunma'  grp='lif'
+  - score= 10  id=chunk_000410  ana=''  grp='yag_kolesterol'
+  - score= 10  id=chunk_000411  ana=''  grp='yag_kolesterol'
+  - score= 10  id=chunk_000412  ana=''  grp='yag_kolesterol'
+--------------------------------------------------------------------------------
+QID: q04
+Q: Diyabetli bireylerde hangi karbonhidrat türleri sınırlandırılmalıdır?
+topics: ['diyabet', 'karbonhidrat']
+auto_golds: ['dm_ek_01', 'not_28', 'not_29']
+top_candidates:
+  - score= 20  id=dm_ek_01  ana='saglikli (kompleks) karbonhidratlar'  grp='oneriler_karbonhidrat'
+  - score= 13  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score= 13  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=dm_gen_2  ana='tip 2 diyabetin gorulme yasi ve cocuklarda artis'  grp='diyabet'
+  - score= 12  id=tbl37_1  ana='tablo 3.7. tip 2 diyabet risk anketi (1/3)'  grp='diyabet'
+  - score= 12  id=dm_riskdet_1  ana='3.2.3. tip 2 diyabet riskinin belirlenmesi'  grp='diyabet'
+  - score= 12  id=dm_prev_2  ana='dso planlari: diyabet ve obezite artisinin durdurulmasi hedefi'  grp='diyabet'
+  - score=  9  id=tbl37_3  ana='tablo 3.7. tip 2 diyabet risk anketi (3/3)'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q05
+Q: Diyabetli bireyler için önerilen kompleks karbonhidratlara üç örnek veriniz.
+topics: ['diyabet', 'karbonhidrat']
+auto_golds: ['dm_ek_01', 'not_28', 'not_29']
+top_candidates:
+  - score= 17  id=dm_ek_01  ana='saglikli (kompleks) karbonhidratlar'  grp='oneriler_karbonhidrat'
+  - score= 13  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score= 13  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=dm_gen_2  ana='tip 2 diyabetin gorulme yasi ve cocuklarda artis'  grp='diyabet'
+  - score= 12  id=tbl37_1  ana='tablo 3.7. tip 2 diyabet risk anketi (1/3)'  grp='diyabet'
+  - score= 12  id=dm_riskdet_1  ana='3.2.3. tip 2 diyabet riskinin belirlenmesi'  grp='diyabet'
+  - score= 12  id=dm_prev_2  ana='dso planlari: diyabet ve obezite artisinin durdurulmasi hedefi'  grp='diyabet'
+  - score= 10  id=tbl37_3  ana='tablo 3.7. tip 2 diyabet risk anketi (3/3)'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q06
+Q: Hipertansiyonu olan bireylerde sodyum tüketimi neden kısıtlanmalıdır?
+topics: ['hipertansiyon', 'sodyum']
+auto_golds: ['not_16', 'cvh_dash_3', 'ht_dash_01']
+top_candidates:
+  - score=  9  id=not_16  ana='besin etiketi okuma: porsiyon, seker, sodyum (diyetisyen notu)'  grp='genel_ipucu'
+  - score=  9  id=cvh_dash_3  ana='dash: oruntu ozeti (tuz/sodyum kisitli)'  grp='kardiyovaskuler_hastaliklar'
+  - score=  8  id=ht_dash_01  ana='dash diyeti neyi hedefler?'  grp='dash'
+  - score=  7  id=ht_info_01  ana='hipertansiyon nedir?'  grp='info'
+  - score=  5  id=chunk_000709_b  ana='fermente besinlerin saglik uzerine etkileri'  grp='fermente_besinler'
+  - score=  4  id=dm_ek_06  ana='tuz ve sodyum siniri'  grp='kacinma_tuz'
+  - score=  4  id=chunk_000667_05  ana=''  grp='ozel_durumlarda_beslenme'
+  - score=  4  id=chunk_000675_01  ana=''  grp='ozel_durumlarda_beslenme'
+--------------------------------------------------------------------------------
+QID: q07
+Q: Hipertansiyonda kaçınılması gereken hazır gıdalara üç örnek veriniz.
+topics: ['hipertansiyon', 'paketli_gida']
+auto_golds: ['tb_besin_tuz', 'chol_5_2_01']
+top_candidates:
+  - score= 10  id=tb_besin_tuz  ana='tamamlayici besinler'  grp='tamamlayici_beslenme'
+  - score=  9  id=chol_5_2_01  ana='kacinilmasi gereken yag kaynaklari'  grp='kolesterol_yasaklar'
+  - score=  5  id=ht_info_01  ana='hipertansiyon nedir?'  grp='info'
+  - score=  5  id=chunk_000458  ana=''  grp='islenmis_besinler'
+  - score=  4  id=ca_additives_nitrate_example  ana='ornek: nitrat turevleri ve islenmis et urunleri'  grp='kanser'
+  - score=  4  id=chunk_000411  ana=''  grp='yag_kolesterol'
+  - score=  4  id=tb_besin_islenmis_et  ana='tamamlayici besinler'  grp='tamamlayici_beslenme'
+  - score=  3  id=ht_dash_01  ana='dash diyeti neyi hedefler?'  grp='dash'
+--------------------------------------------------------------------------------
+QID: q08
+Q: Obezite tedavisinde enerji alımı nasıl düzenlenmelidir?
+topics: ['obezite', 'enerji']
+auto_golds: ['not_24', 'not_3', 'not_8']
+top_candidates:
+  - score= 22  id=not_24  ana='obezite tedavisinde davranis terapisi (diyetisyen notu)'  grp='genel_ipucu'
+  - score= 19  id=not_3  ana='bel cevresi artisi ve android tip obezite (diyetisyen notu)'  grp='obezite'
+  - score= 19  id=not_8  ana='boyun cevresi: abdominal obezite gostergesi ve esikler (diyetisyen not'  grp='obezite'
+  - score= 19  id=not_9  ana='obezitenin nedenleri: cok faktorlu yapi (diyetisyen notu)'  grp='obezite'
+  - score= 19  id=ob_2  ana='3.1.2. obezitenin saptanmasi'  grp='obezite'
+  - score= 19  id=ob_risk_3  ana='3.1.3. obezitenin nedenleri ve risk etmenleri'  grp='obezite'
+  - score= 19  id=tbl34_1  ana='tablo 3.4. obezitenin neden oldugu saglik sorunlari (1/2)'  grp='obezite'
+  - score= 19  id=tbl34_2  ana='tablo 3.4. obezitenin neden oldugu saglik sorunlari (2/2)'  grp='obezite'
+--------------------------------------------------------------------------------
+QID: q09
+Q: Obez bireylerde tercih edilmesi gereken pişirme yöntemleri nelerdir?
+topics: ['obezite', 'pisirme']
+auto_golds: ['chunk_000599_01', 'dm_ek_11', 'kalp_2_4_08']
+top_candidates:
+  - score= 26  id=chunk_000599_01  ana=''  grp='yetiskin_donem'
+  - score= 23  id=dm_ek_11  ana='kizartma yerine izgara/firin'  grp='pisirme_yontemi'
+  - score= 19  id=kalp_2_4_08  ana='et tuketimi ve pisirme yontemleri'  grp='pisirme_et'
+  - score= 19  id=c203a  ana=''  grp='sebze_meyveler'
+  - score= 19  id=chunk_000297  ana=''  grp='sebze_meyveler'
+  - score= 19  id=chunk_000599_02  ana=''  grp='yetiskin_donem'
+  - score= 18  id=c202c  ana=''  grp='sebze_meyveler'
+  - score= 17  id=yasli_ilke_04_hijyen  ana='yaslilarda saglikli beslenme i̇lkeleri'  grp='yasli_beslenme_ilkeleri'
+--------------------------------------------------------------------------------
+QID: q10
+Q: Kalp-damar hastalıklarından korunmada balık tüketiminin önemi nedir?
+topics: ['kalp', 'balik']
+auto_golds: ['dm_ek_03', 'c225c', 'c229c']
+top_candidates:
+  - score= 20  id=dm_ek_03  ana='balik ve omega-3'  grp='oneriler_balik'
+  - score= 16  id=c225c  ana=''  grp='balik_omega3'
+  - score= 16  id=c229c  ana=''  grp='balik_omega3'
+  - score= 16  id=chunk_000283  ana=''  grp='balik_omega3'
+  - score= 16  id=chunk_000378  ana=''  grp='balik_omega3'
+  - score= 15  id=kalp_2_4_01  ana='kalp damar hastaliklarinda beslenmenin temel i̇lkesi'  grp='genel_ilke'
+  - score= 15  id=c222d  ana=''  grp='balik_omega3'
+  - score= 15  id=c223a  ana=''  grp='balik_omega3'
+--------------------------------------------------------------------------------
+QID: q11
+Q: Omega-3 yağ asitlerinden zengin besinlere üç örnek veriniz.
+topics: ['omega3', 'yag']
+auto_golds: ['c222d', 'c223a', 'c225b']
+top_candidates:
+  - score= 14  id=c222d  ana=''  grp='balik_omega3'
+  - score= 14  id=c223a  ana=''  grp='balik_omega3'
+  - score= 14  id=c225b  ana=''  grp='balik_omega3'
+  - score= 14  id=c227b  ana=''  grp='balik_omega3'
+  - score= 14  id=c228b  ana=''  grp='balik_omega3'
+  - score= 14  id=c229c  ana=''  grp='balik_omega3'
+  - score= 14  id=c230b  ana=''  grp='balik_omega3'
+  - score= 14  id=chunk_000283  ana=''  grp='balik_omega3'
+--------------------------------------------------------------------------------
+QID: q12
+Q: Kanserden korunmada sebze ve meyve tüketimi neden önemlidir?
+topics: ['kanser', 'sebze_meyve']
+auto_golds: ['beslenme_1400_tahil_meyve', 'c205', 'c206']
+top_candidates:
+  - score= 20  id=beslenme_1400_tahil_meyve  ana='1400 kkal enerji - tahil, sebze ve meyve'  grp='tahil_sebze_meyve'
+  - score= 18  id=c205  ana=''  grp='sebze_meyveler'
+  - score= 18  id=c206  ana=''  grp='sebze_meyveler'
+  - score= 18  id=chunk_000300  ana=''  grp='sebze_meyveler'
+  - score= 18  id=chunk_000301  ana=''  grp='sebze_meyveler'
+  - score= 17  id=c207  ana=''  grp='sebze_meyveler'
+  - score= 17  id=chunk_000302  ana=''  grp='sebze_meyveler'
+  - score= 16  id=c204d  ana=''  grp='sebze_meyveler'
+--------------------------------------------------------------------------------
+QID: q13
+Q: Kanser riskini artırdığı belirtilen beslenme alışkanlıkları nelerdir?
+topics: ['kanser', 'beslenme']
+auto_golds: ['not_36', 'ca_nutrition_rel_1', 'cb_7_2_late_03']
+top_candidates:
+  - score= 28  id=not_36  ana='kanser onlemede akdeniz tarzi beslenme (diyetisyen notu)'  grp='kanser'
+  - score= 28  id=ca_nutrition_rel_1  ana='3.4.2. kanser ve beslenme iliskisi'  grp='kanser'
+  - score= 24  id=cb_7_2_late_03  ana='gec tamamlayici beslenmenin sakincalari'  grp='tamamlayici_beslenme'
+  - score= 21  id=akciger_kanseri_04  ana='akciger kanseri ve beslenme'  grp='akciger_kanseri'
+  - score= 21  id=c171c  ana=''  grp='kanser'
+  - score= 21  id=c172a  ana=''  grp='kanser'
+  - score= 20  id=ca_frying_association  ana='kizartma ile iliskilendirilen kanserler'  grp='kanser'
+  - score= 20  id=ca_childhood_bmi_assoc  ana='cocukluk bki̇: ergenlik/yetiskinlik kanserleri ile iliski'  grp='kanser'
+--------------------------------------------------------------------------------
+QID: q14
+Q: Tam tahıllı ürünlerin sağlık üzerindeki temel faydası nedir?
+topics: ['tahil', 'lif']
+auto_golds: ['chunk_000796', 'chunk_000797_b', 'chunk_000797_c']
+top_candidates:
+  - score= 20  id=chunk_000796  ana='pseudo-tahillarin saglik etkileri'  grp='pseudotahillarin_saglik_etkileri'
+  - score= 15  id=chunk_000797_b  ana='glutensiz beslenme ve colyak'  grp='pseudotahillarin_saglik_etkileri'
+  - score= 15  id=chunk_000797_c  ana='laktoz i̇ntoleransi ve bitkisel alternatifler'  grp='pseudotahillarin_saglik_etkileri'
+  - score= 13  id=chol_5_5_01  ana='kolesterolu dusuren lifler'  grp='kolesterol_lif'
+  - score= 13  id=chunk_000786  ana='pseudo-tahillar'  grp='yeni_besinler_pseudotahillar'
+  - score= 13  id=chunk_000797_d  ana='vejetaryen/vegan beslenme'  grp='pseudotahillarin_saglik_etkileri'
+  - score= 12  id=beslenme_1400_tahil_meyve  ana='1400 kkal enerji - tahil, sebze ve meyve'  grp='tahil_sebze_meyve'
+  - score= 12  id=beslenme_2800_tahil_sebze  ana='2800 kkal enerji - tahil ve sebze'  grp='tahil_sebze'
+--------------------------------------------------------------------------------
+QID: q15
+Q: Glisemik indeksi düşük besinlere üç örnek veriniz.
+topics: ['glisemik_indeks', 'karbonhidrat']
+auto_golds: ['dm_ek_01', 'chunk_000709_d']
+top_candidates:
+  - score= 12  id=dm_ek_01  ana='saglikli (kompleks) karbonhidratlar'  grp='oneriler_karbonhidrat'
+  - score= 12  id=chunk_000709_d  ana='fermente besinlerin saglik uzerine etkileri'  grp='fermente_besinler'
+  - score=  6  id=dm_ek_07  ana='yuksek gi̇ gidalardan kacinma'  grp='gi'
+  - score=  6  id=c254c  ana=''  grp='kuru_baklagiller'
+  - score=  5  id=chunk_000785_a  ana='kategori ornekleri ve teknoloji'  grp='yeni_besinler_pseudotahillar'
+  - score=  4  id=diet_2  ana='ketojenik diyet: kisa surede agirlik kaybi ve nedeni'  grp='obezite'
+  - score=  4  id=diet_4  ana='ketojenik diyet turleri: dusuk enerjili ve cok dusuk enerjili'  grp='obezite'
+  - score=  4  id=diet_vled_3  ana='cok dusuk enerjili diyetler: sonuc ve risk'  grp='obezite'
+--------------------------------------------------------------------------------
+QID: q16
+Q: Diyabette posa tüketimi neden teşvik edilir?
+topics: ['diyabet', 'posa']
+auto_golds: ['dm_prev_2', 'not_28', 'not_29']
+top_candidates:
+  - score= 13  id=dm_prev_2  ana='dso planlari: diyabet ve obezite artisinin durdurulmasi hedefi'  grp='diyabet'
+  - score= 12  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=dm_gen_2  ana='tip 2 diyabetin gorulme yasi ve cocuklarda artis'  grp='diyabet'
+  - score= 12  id=tbl37_1  ana='tablo 3.7. tip 2 diyabet risk anketi (1/3)'  grp='diyabet'
+  - score= 12  id=dm_riskdet_1  ana='3.2.3. tip 2 diyabet riskinin belirlenmesi'  grp='diyabet'
+  - score= 10  id=tbl37_3  ana='tablo 3.7. tip 2 diyabet risk anketi (3/3)'  grp='diyabet'
+  - score=  9  id=dm_riskdet_3  ana='findri̇sk puan yorumu: 10 yillik risk ve koruma programi esigi'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q17
+Q: Diyabetli bireylerin kaçınması gereken içeceklere örnek veriniz.
+topics: ['diyabet', 'icecek']
+auto_golds: ['not_29', 'not_28', 'dm_gen_2']
+top_candidates:
+  - score= 13  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=dm_gen_2  ana='tip 2 diyabetin gorulme yasi ve cocuklarda artis'  grp='diyabet'
+  - score= 12  id=tbl37_1  ana='tablo 3.7. tip 2 diyabet risk anketi (1/3)'  grp='diyabet'
+  - score= 12  id=dm_riskdet_1  ana='3.2.3. tip 2 diyabet riskinin belirlenmesi'  grp='diyabet'
+  - score= 12  id=dm_prev_2  ana='dso planlari: diyabet ve obezite artisinin durdurulmasi hedefi'  grp='diyabet'
+  - score= 10  id=tbl37_3  ana='tablo 3.7. tip 2 diyabet risk anketi (3/3)'  grp='diyabet'
+  - score= 10  id=dm_riskdet_3  ana='findri̇sk puan yorumu: 10 yillik risk ve koruma programi esigi'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q18
+Q: Hipertansiyon yönetiminde kilo kontrolünün önemi nedir?
+topics: ['hipertansiyon', 'kilo']
+auto_golds: ['ht_info_01']
+top_candidates:
+  - score=  9  id=ht_info_01  ana='hipertansiyon nedir?'  grp='info'
+  - score=  5  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score=  3  id=ht_dash_01  ana='dash diyeti neyi hedefler?'  grp='dash'
+  - score=  3  id=not_19  ana='saglikli kilo i̇cin yiyecek-i̇cecek karari (diyetisyen notu)'  grp='genel_ipucu'
+  - score=  3  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score=  3  id=tbl34_1  ana='tablo 3.4. obezitenin neden oldugu saglik sorunlari (1/2)'  grp='obezite'
+  - score=  3  id=t185  ana=''  grp='obezite'
+  - score=  3  id=c244b  ana=''  grp='d_vitamini'
+--------------------------------------------------------------------------------
+QID: q19
+Q: Hipertansiyonda önerilen süt ve süt ürünleri hangileridir?
+topics: ['hipertansiyon', 'sut_urunleri']
+auto_golds: ['c208a', 'chunk_000282', 'chunk_000303']
+top_candidates:
+  - score= 15  id=c208a  ana=''  grp='sut_urunleri'
+  - score= 15  id=chunk_000282  ana=''  grp='sut_urunleri'
+  - score= 15  id=chunk_000303  ana=''  grp='sut_urunleri'
+  - score= 15  id=chunk_000377  ana=''  grp='sut_urunleri'
+  - score= 14  id=c208c  ana=''  grp='sut_urunleri'
+  - score= 14  id=c209a  ana=''  grp='sut_urunleri'
+  - score= 13  id=c212c  ana=''  grp='sut_urunleri'
+  - score= 13  id=c213a  ana=''  grp='sut_urunleri'
+--------------------------------------------------------------------------------
+QID: q20
+Q: Kalp sağlığını korumak için kırmızı et tüketimi nasıl olmalıdır?
+topics: ['kalp', 'kirmizi_et']
+auto_golds: ['meddiet_redmeat']
+top_candidates:
+  - score=  9  id=meddiet_redmeat  ana='kirmizi et'  grp='kardiyovaskuler_hastaliklar'
+  - score=  6  id=ca_redmeat_balance_note  ana='kirmizi et miktari: olumlu/olumsuz denge gerekcesi'  grp='kanser'
+  - score=  5  id=kalp_2_4_01  ana='kalp damar hastaliklarinda beslenmenin temel i̇lkesi'  grp='genel_ilke'
+  - score=  5  id=kalp_2_4_13  ana='tahillar, kuruyemisler ve kalp sagligi'  grp='kuruyemis'
+  - score=  5  id=ht_dash_01  ana='dash diyeti neyi hedefler?'  grp='dash'
+  - score=  5  id=meddiet_fish  ana='balik ve deniz urunleri'  grp='kardiyovaskuler_hastaliklar'
+  - score=  5  id=meddiet_pattern_1  ana='akdeniz beslenme oruntusu: gunluk ve haftalik oneriler'  grp='kardiyovaskuler_hastaliklar'
+  - score=  4  id=kalp_2_4_03  ana='kalp sagligini korumak i̇cin genel oneriler'  grp='genel_oneriler'
+--------------------------------------------------------------------------------
+QID: q21
+Q: İşlenmiş et ürünlerinin sağlık üzerindeki olumsuz etkisi nedir?
+topics: ['islenmis_et', 'risk']
+auto_golds: ['ca_additives_nitrate_example', 'dm_4_2_03', 'meddiet_redmeat']
+top_candidates:
+  - score= 13  id=ca_additives_nitrate_example  ana='ornek: nitrat turevleri ve islenmis et urunleri'  grp='kanser'
+  - score= 12  id=dm_4_2_03  ana='tip 2 diyabet risk faktorleri'  grp='tip2_risk'
+  - score= 10  id=meddiet_redmeat  ana='kirmizi et'  grp='kardiyovaskuler_hastaliklar'
+  - score= 10  id=meddiet_pattern_1  ana='akdeniz beslenme oruntusu: gunluk ve haftalik oneriler'  grp='kardiyovaskuler_hastaliklar'
+  - score=  9  id=not_1  ana='bki̇ normal aralik ve saglik riski (diyetisyen notu)'  grp='obezite'
+  - score=  9  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score=  9  id=c258b  ana=''  grp='kuru_baklagiller'
+  - score=  9  id=chunk_000463  ana=''  grp='islenmis_besinler'
+--------------------------------------------------------------------------------
+QID: q22
+Q: Günlük su tüketiminin yeterli olması neden önemlidir?
+topics: ['su', 'genel_saglik']
+auto_golds: ['chunk_000474', 'chunk_000814_a', 'chunk_000491']
+top_candidates:
+  - score= 12  id=chunk_000474  ana=''  grp='anne_sutu_emzirme'
+  - score= 12  id=chunk_000814_a  ana='turk mutfagi ve surdurulebilirlik'  grp='surdurulebilir_beslenme'
+  - score= 10  id=chunk_000491  ana=''  grp='anne_sutu_emzirme'
+  - score= 10  id=chunk_000803  ana='surdurulebilir alisveris'  grp='surdurulebilir_beslenme'
+  - score=  9  id=c208a  ana=''  grp='sut_urunleri'
+  - score=  9  id=c208b  ana=''  grp='sut_urunleri'
+  - score=  9  id=c208c  ana=''  grp='sut_urunleri'
+  - score=  9  id=c209a  ana=''  grp='sut_urunleri'
+--------------------------------------------------------------------------------
+QID: q23
+Q: Şeker tüketimi fazla olan bireylerde hangi sağlık sorunları görülebilir?
+topics: ['seker', 'risk']
+auto_golds: ['dm_ek_10', 'dm_4_2_03', 'not_28']
+top_candidates:
+  - score= 19  id=dm_ek_10  ana='meyve suyu yerine meyve ve sekerli urunlerden kacinma'  grp='seker_azaltma'
+  - score= 13  id=dm_4_2_03  ana='tip 2 diyabet risk faktorleri'  grp='tip2_risk'
+  - score= 12  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score= 12  id=c244b  ana=''  grp='d_vitamini'
+  - score= 12  id=c245a  ana=''  grp='d_vitamini'
+  - score= 12  id=chunk_000339  ana=''  grp='d_vitamini'
+  - score= 12  id=chunk_000340  ana=''  grp='d_vitamini'
+  - score= 12  id=chunk_000427  ana=''  grp='seker_tuketimi'
+--------------------------------------------------------------------------------
+QID: q24
+Q: Sebze tüketiminin sindirim sistemi üzerindeki etkisi nedir?
+topics: ['sebze', 'sindirim']
+auto_golds: ['beslenme_1400_tahil_meyve', 'beslenme_2800_tahil_sebze', 'c201c']
+top_candidates:
+  - score= 18  id=beslenme_1400_tahil_meyve  ana='1400 kkal enerji - tahil, sebze ve meyve'  grp='tahil_sebze_meyve'
+  - score= 18  id=beslenme_2800_tahil_sebze  ana='2800 kkal enerji - tahil ve sebze'  grp='tahil_sebze'
+  - score= 14  id=c201c  ana=''  grp='sebze_meyveler'
+  - score= 14  id=c202a  ana=''  grp='sebze_meyveler'
+  - score= 14  id=c202b  ana=''  grp='sebze_meyveler'
+  - score= 14  id=c202c  ana=''  grp='sebze_meyveler'
+  - score= 14  id=c203a  ana=''  grp='sebze_meyveler'
+  - score= 14  id=c204b  ana=''  grp='sebze_meyveler'
+--------------------------------------------------------------------------------
+QID: q25
+Q: Protein ihtiyacını karşılamak için hayvansal olmayan kaynaklara üç örnek veriniz.
+topics: ['protein', 'baklagil']
+auto_golds: ['beslenme_1600_et_kurubaklagil', 'c248c', 'chunk_000344']
+top_candidates:
+  - score= 17  id=beslenme_1600_et_kurubaklagil  ana='1600 kkal enerji - protein kaynaklari'  grp='protein_grubu'
+  - score= 16  id=c248c  ana=''  grp='kuru_baklagiller'
+  - score= 16  id=chunk_000344  ana=''  grp='kuru_baklagiller'
+  - score= 13  id=c252d  ana=''  grp='kuru_baklagiller'
+  - score= 13  id=c253c  ana=''  grp='kuru_baklagiller'
+  - score= 13  id=chunk_000361  ana=''  grp='kuru_baklagiller'
+  - score= 12  id=chunk_000348  ana=''  grp='kuru_baklagiller'
+  - score= 11  id=c252e  ana=''  grp='kuru_baklagiller'
+--------------------------------------------------------------------------------
+QID: q26
+Q: Yüksek lifli diyetin bağırsak sağlığına katkısı nedir?
+topics: ['lif', 'bagirsak']
+auto_golds: ['kalp_2_4_12', 'chunk_000665_05', 'chol_5_5_01']
+top_candidates:
+  - score= 17  id=kalp_2_4_12  ana='diyet lifi, folik asit ve kanserden korunma'  grp='lif'
+  - score= 15  id=chunk_000665_05  ana=''  grp='ozel_durumlarda_beslenme'
+  - score= 10  id=chol_5_5_01  ana='kolesterolu dusuren lifler'  grp='kolesterol_lif'
+  - score=  9  id=c236b  ana=''  grp='diyet_posasi'
+  - score=  7  id=c236a  ana=''  grp='diyet_posasi'
+  - score=  4  id=dm_ek_07  ana='yuksek gi̇ gidalardan kacinma'  grp='gi'
+  - score=  4  id=dm_ek_10  ana='meyve suyu yerine meyve ve sekerli urunlerden kacinma'  grp='seker_azaltma'
+  - score=  4  id=ca_pah_benzoapyrene_note  ana='benzoapiren ve pah icerigi yuksek ornekler'  grp='kanser'
+--------------------------------------------------------------------------------
+QID: q27
+Q: Aşırı tuz tüketimi hangi sağlık sorunlarına yol açabilir?
+topics: ['tuz', 'hipertansiyon']
+auto_golds: []
+top_candidates:
+  - score=  6  id=ht_info_01  ana='hipertansiyon nedir?'  grp='info'
+  - score=  6  id=tbl34_1  ana='tablo 3.4. obezitenin neden oldugu saglik sorunlari (1/2)'  grp='obezite'
+  - score=  6  id=ca_heavy_metals_carcinogenic_note  ana='agir metaller: karsinojenite ve maruziyet kaynaklari'  grp='kanser'
+  - score=  6  id=chunk_000339  ana=''  grp='d_vitamini'
+  - score=  6  id=chunk_000373  ana=''  grp='sut_urunleri'
+  - score=  6  id=chunk_000796  ana='pseudo-tahillarin saglik etkileri'  grp='pseudotahillarin_saglik_etkileri'
+  - score=  5  id=kf_03  ana='kistik fibroziste tuz kaybi ve tedavi amaci'  grp='kistik_fibrozis'
+  - score=  5  id=cvh_dash_3  ana='dash: oruntu ozeti (tuz/sodyum kisitli)'  grp='kardiyovaskuler_hastaliklar'
+--------------------------------------------------------------------------------
+QID: q28
+Q: Sağlıklı beslenmede öğün atlamamanın önemi nedir?
+topics: ['ogun', 'metabolizma']
+auto_golds: []
+top_candidates:
+  - score=  5  id=cb_7_3_01  ana='tamamlayici besinlerde enerji yogunlugu'  grp='tamamlayici_beslenme'
+  - score=  4  id=yasli_saglikli_02_ogun  ana='yaslilarda saglikli beslenme onerileri'  grp='yasli_saglikli_beslenme'
+  - score=  3  id=dm_ek_01  ana='saglikli (kompleks) karbonhidratlar'  grp='oneriler_karbonhidrat'
+  - score=  3  id=not_19  ana='saglikli kilo i̇cin yiyecek-i̇cecek karari (diyetisyen notu)'  grp='genel_ipucu'
+  - score=  3  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score=  3  id=chunk_000578_01  ana=''  grp='okul_oncesi_donem_25_yas'
+  - score=  3  id=chunk_000697_01  ana=''  grp='beslenmede_guncel_konular'
+  - score=  3  id=chunk_000698_01  ana=''  grp='beslenmede_guncel_konular'
+--------------------------------------------------------------------------------
+QID: q29
+Q: Kalsiyumdan zengin besinlere üç örnek veriniz.
+topics: ['kalsiyum', 'sut_urunleri']
+auto_golds: ['c208a', 'chunk_000303', 'c208c']
+top_candidates:
+  - score= 13  id=c208a  ana=''  grp='sut_urunleri'
+  - score= 13  id=chunk_000303  ana=''  grp='sut_urunleri'
+  - score= 12  id=c208c  ana=''  grp='sut_urunleri'
+  - score= 12  id=c209a  ana=''  grp='sut_urunleri'
+  - score= 11  id=chunk_000282  ana=''  grp='sut_urunleri'
+  - score= 11  id=chunk_000377  ana=''  grp='sut_urunleri'
+  - score=  9  id=c212c  ana=''  grp='sut_urunleri'
+  - score=  9  id=c213a  ana=''  grp='sut_urunleri'
+--------------------------------------------------------------------------------
+QID: q30
+Q: D vitamini yetersizliğinin kemik sağlığı üzerindeki etkisi nedir?
+topics: ['d_vitamini', 'kemik']
+auto_golds: ['c244b', 'chunk_000339', 'chunk_000340']
+top_candidates:
+  - score= 29  id=c244b  ana=''  grp='d_vitamini'
+  - score= 29  id=chunk_000339  ana=''  grp='d_vitamini'
+  - score= 29  id=chunk_000340  ana=''  grp='d_vitamini'
+  - score= 25  id=c243b  ana=''  grp='d_vitamini'
+  - score= 25  id=c243c  ana=''  grp='d_vitamini'
+  - score= 25  id=c245a  ana=''  grp='d_vitamini'
+  - score= 24  id=c243d  ana=''  grp='d_vitamini'
+  - score= 24  id=c244a  ana=''  grp='d_vitamini'
+--------------------------------------------------------------------------------
+QID: q31
+Q: Sağlıklı bir diyetin temel bileşenlerinden ikisini sayınız.
+topics: ['saglikli_beslenme']
+auto_golds: ['yasli_saglikli_01_genel', 'yasli_saglikli_05_sebze_meyve', 'yasli_saglikli_02_ogun']
+top_candidates:
+  - score= 17  id=yasli_saglikli_01_genel  ana='yaslilarda saglikli beslenme onerileri'  grp='yasli_saglikli_beslenme'
+  - score= 14  id=yasli_saglikli_05_sebze_meyve  ana='yaslilarda saglikli beslenme onerileri'  grp='yasli_saglikli_beslenme'
+  - score= 13  id=yasli_saglikli_02_ogun  ana='yaslilarda saglikli beslenme onerileri'  grp='yasli_saglikli_beslenme'
+  - score=  5  id=chunk_000664_09  ana=''  grp='ozel_durumlarda_beslenme'
+  - score=  5  id=yasli_ilke_04_hijyen  ana='yaslilarda saglikli beslenme i̇lkeleri'  grp='yasli_beslenme_ilkeleri'
+  - score=  4  id=dm_ek_01  ana='saglikli (kompleks) karbonhidratlar'  grp='oneriler_karbonhidrat'
+  - score=  4  id=not_19  ana='saglikli kilo i̇cin yiyecek-i̇cecek karari (diyetisyen notu)'  grp='genel_ipucu'
+  - score=  4  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q32
+Q: Günlük lif alımının yetersiz olması hangi soruna yol açabilir?
+topics: ['lif', 'kabizlik']
+auto_golds: ['chol_5_5_01', 'kalp_2_4_12']
+top_candidates:
+  - score= 10  id=chol_5_5_01  ana='kolesterolu dusuren lifler'  grp='kolesterol_lif'
+  - score=  9  id=kalp_2_4_12  ana='diyet lifi, folik asit ve kanserden korunma'  grp='lif'
+  - score=  5  id=c243d  ana=''  grp='d_vitamini'
+  - score=  5  id=chunk_000339  ana=''  grp='d_vitamini'
+  - score=  4  id=c243c  ana=''  grp='d_vitamini'
+  - score=  3  id=safra_3_9_02  ana='kolesistit ve diyet'  grp='safra_kesesi'
+  - score=  3  id=c244a  ana=''  grp='d_vitamini'
+  - score=  3  id=chunk_000505  ana=''  grp='bebeklerde_vitamin_destegi'
+--------------------------------------------------------------------------------
+QID: q33
+Q: Enerji içeceklerinin aşırı tüketimi hangi riskleri taşır?
+topics: ['enerji_icecegi', 'risk']
+auto_golds: ['dm_4_2_03', 'diet_vled_3']
+top_candidates:
+  - score= 12  id=dm_4_2_03  ana='tip 2 diyabet risk faktorleri'  grp='tip2_risk'
+  - score=  9  id=diet_vled_3  ana='cok dusuk enerjili diyetler: sonuc ve risk'  grp='obezite'
+  - score=  5  id=not_1  ana='bki̇ normal aralik ve saglik riski (diyetisyen notu)'  grp='obezite'
+  - score=  5  id=not_5  ana='bel/kalca orani sinir degerleri ve risk (diyetisyen notu)'  grp='obezite'
+  - score=  5  id=not_28  ana='fazla kilo/obezitede tip 2 diyabet riski (diyetisyen notu)'  grp='diyabet'
+  - score=  5  id=not_29  ana='saglikli kilo diyabet riskini azaltir (diyetisyen notu)'  grp='diyabet'
+  - score=  5  id=tbl37_1  ana='tablo 3.7. tip 2 diyabet risk anketi (1/3)'  grp='diyabet'
+  - score=  5  id=dm_riskdet_1  ana='3.2.3. tip 2 diyabet riskinin belirlenmesi'  grp='diyabet'
+--------------------------------------------------------------------------------
+QID: q34
+Q: Sağlıklı yağ tüketimi için önerilen bitkisel yağ hangisidir?
+topics: ['zeytinyagi', 'yag']
+auto_golds: ['dm_ek_04', 'dm_ek_05', 'meddiet_oliveoil_1']
+top_candidates:
+  - score= 15  id=dm_ek_04  ana='i̇yi yaglar'  grp='oneriler_yag'
+  - score= 12  id=dm_ek_05  ana='doymus yag'  grp='kacinma_yag'
+  - score= 11  id=meddiet_oliveoil_1  ana='zeytin ve zeytinyagi'  grp='kardiyovaskuler_hastaliklar'
+  - score=  9  id=chunk_000410  ana=''  grp='yag_kolesterol'
+  - score=  9  id=chunk_000411  ana=''  grp='yag_kolesterol'
+  - score=  9  id=chunk_000412  ana=''  grp='yag_kolesterol'
+  - score=  9  id=chunk_000413  ana=''  grp='yag_kolesterol'
+  - score=  8  id=chol_5_4_01  ana='doymamis yaglar ve omega-3'  grp='kolesterol_faydali'
+--------------------------------------------------------------------------------
+QID: q35
+Q: Günlük sebze tüketiminin artırılması hangi kronik hastalık risklerini azaltır?
+topics: ['sebze', 'kronik_hastalik']
+auto_golds: ['beslenme_1400_tahil_meyve', 'beslenme_2800_tahil_sebze', 'c205']
+top_candidates:
+  - score= 20  id=beslenme_1400_tahil_meyve  ana='1400 kkal enerji - tahil, sebze ve meyve'  grp='tahil_sebze_meyve'
+  - score= 20  id=beslenme_2800_tahil_sebze  ana='2800 kkal enerji - tahil ve sebze'  grp='tahil_sebze'
+  - score= 15  id=c205  ana=''  grp='sebze_meyveler'
+  - score= 15  id=c206  ana=''  grp='sebze_meyveler'
+  - score= 15  id=c207  ana=''  grp='sebze_meyveler'
+  - score= 15  id=chunk_000300  ana=''  grp='sebze_meyveler'
+  - score= 15  id=chunk_000301  ana=''  grp='sebze_meyveler'
+  - score= 15  id=chunk_000302  ana=''  grp='sebze_meyveler'
+--------------------------------------------------------------------------------

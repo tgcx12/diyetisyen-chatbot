@@ -1,0 +1,53 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Diyetin kolesterol miktarının ise 300 mg’ın altında tutulmasında yarar vardır (Bkz.  |  Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir.  |  Sağlıklı bireyler tam yumurtayı günde bir adet, kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.  |  Salatalara bir porsiyon (150 g) için bir tatlı kaşığı (5 g) yağ eklenmesi yeterlidir.  |  Etsiz sebze yemekleri için bu miktar 15 g olmalıdır.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .",
+  "used_chunks": [
+    "chunk_000398",
+    "chunk_000404",
+    "chunk_000394",
+    "chol_5_4_01",
+    "chunk_000401",
+    "chunk_000395",
+    "chunk_000399",
+    "chunk_000402",
+    "chunk_000400",
+    "chunk_000406",
+    "chunk_000397",
+    "chunk_000403"
+  ],
+  "strict_chunks_count": 24,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için doymuş yağ tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_doymus_num_freq",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

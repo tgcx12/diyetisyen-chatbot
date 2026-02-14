@@ -1,0 +1,53 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "Günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek, nişastalı olmayan kökler ve yumrular (örneğin havuç, enginar, kereviz (kereviz kökü), şalgam, pancar) tüketmek kansere karşı koruyucu karbonhidrat, protein, yağ, vitamin, mineral, posa ve su alımının dengeli olmasına katkı sağlar.  |  Sebze ve meyvelerin mevsiminde tüketilmesine dikkat edilmeli ve günde en az 400 g sebze ve meyve tüketilmelidir.  |  meyve suyu yerine meyve tüketimi tercih edilmelidir.  |  Hazır paketli meyve suyu kullanılacaksa %100 meyve suyu olmasına ve içerisinde eklenmiş şeker olmamasına dikkat edilmelidir.  |  Şeker eklenmiş içeceklerden sakınılmalı.  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimi artırılarak posa alımı yükseltilmelidir.",
+  "used_chunks": [
+    "chunk_000592_04",
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_saglikli_05_sebze_meyve",
+    "c175b",
+    "c178",
+    "yasli_ilke_01_besin_cesitliligi",
+    "genel_01_dengeli_beslenme",
+    "chunk_000595_01",
+    "chunk_000594_01",
+    "yasli_ilke_06_tam_tahil",
+    "yasli_saglikli_06_tahil_yag",
+    "c176"
+  ],
+  "strict_chunks_count": 18,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

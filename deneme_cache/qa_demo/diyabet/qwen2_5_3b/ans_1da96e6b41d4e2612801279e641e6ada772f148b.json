@@ -1,0 +1,43 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Tuz kısıtlaması  |  Kızartma  |  Eklenmiş şeker  |  Sodyum tuzu  |  Doymuş yağlar",
+  "used_chunks": [
+    "dm_4_6_01",
+    "t2p_4",
+    "t2p_3",
+    "t2r_1",
+    "dm_4_3_01",
+    "t2p_1",
+    "t2p_2",
+    "not_30",
+    "dm_4_7_01",
+    "not_29",
+    "not_26",
+    "dm_riskdet_3"
+  ],
+  "strict_chunks_count": 13,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

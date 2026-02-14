@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Kolesterol seviyesini düşürmek için bazı sınırlamalar ve önlemler uygulanmalıdır  |  Günlük yağ alımı, özellikle doymuş ve trans yağlar, kolesterol seviyelerini yükseltebilir  |  Bu nedenle, günlük yağ alımını %20 35 oranında doymuş yağlardan, %7 8'inden azının ise trans yağlardan sağlamak önemlidir  |  Kolesterolü düşürmek için bazı besinler tercih edilmelidir  |  Örneğin, tam tahıllı ekmek yerine beyaz ekmek tüketmek ve pirinç yerine bulgur tercih etmek faydalı olabilir  |  Ayrıca, Omega 3 yağ asitleri bulunan fındık ve zeytinyağı gibi yağlar da kolesterolü düşürmeye yardımcı olabilir",
+  "used_chunks": [
+    "chunk_000398",
+    "chunk_000395",
+    "chunk_000404",
+    "chol_5_4_01",
+    "chunk_000394",
+    "chunk_000401",
+    "chol_5_5_01",
+    "chunk_000399",
+    "chunk_000400",
+    "chunk_000397",
+    "kalp_2_4_14",
+    "chunk_000406"
+  ],
+  "strict_chunks_count": 18,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

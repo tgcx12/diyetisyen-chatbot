@@ -1,0 +1,45 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Süt, yogurt veya peynir gibi süt ürünleri günlük beslenmede yer alabilir  |  Doymuş yağlar (yağlı süt ürünleri) sınırlandırılmalıdır  |  Dondurma ve şekerli sütler gibi yüksek şekerli süt ürünlerinden kaçınılmalı  |  Az yağlı süt ve yogurt tüketimi önerilir  |  Hamur işi ve sütlü tatlılar sınırlı tüketilmelidir",
+  "used_chunks": [
+    "t2p_3",
+    "t2p_4",
+    "dm_4_6_01",
+    "dm_ek_05",
+    "chunk_000433",
+    "chunk_000428"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1_num_amt",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

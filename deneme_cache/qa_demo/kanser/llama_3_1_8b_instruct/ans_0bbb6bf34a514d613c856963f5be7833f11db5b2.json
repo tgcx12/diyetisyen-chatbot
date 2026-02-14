@@ -1,0 +1,43 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Protein: hayvansal protein ve kanser sıklığı gözlemi  |  kanser  |  Protein: Aşırı et ve dolayısı ile hayvansal proteini çok tüketen ülkelerde meme, rahim, prostat, kalın bağırsak rektum, pankreas ve böbrek kanserleri, hayvansal proteini az tüketen ülkelerden daha fazla görülmektedir.",
+  "used_chunks": [
+    "c176",
+    "ca_protein_high_animal_note"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kuruyemiş kabuklu yemiş tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_freq",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+  "answer": "kızartılmış et  |  işlenmiş et  |  kırmızı et  |  trans yağ  |  keçi eti  |  dana et",
+  "used_chunks": [
+    "chol_5_3_01",
+    "kalp_2_4_08",
+    "chunk_000408"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için kırmızı et tüketimi nasıl olmalı ve hangi türlerden işlenmiş etlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

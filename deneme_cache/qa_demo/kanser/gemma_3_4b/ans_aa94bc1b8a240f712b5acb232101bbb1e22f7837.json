@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "Trans yağlar, tavada kızartma gibi yüksek sıcaklıklarda pişirme yöntemlerinde oluşur  |  kanser  |  Kızartma ile prostat, pankreas, akciğer, oral/faringeal, özofagus ve laringeal kanserler arasında bir ilişki olduğu bilinmektedir  |  Hazırlama yöntemine bağlı olarak bazı reaksiyonlar sonucu zararlı bileşikler oluşabilir  |  C vitamininden zengin sebze ve meyveler artırılmalı, kızartmalardan kaçınılmalıdır  |  Paketli ve hazır ürünlerde trans yağlar bulunabilir",
+  "used_chunks": [
+    "ca_heterocyclic_amines",
+    "akciger_kanseri_04",
+    "ca_frying_association",
+    "ca_additives_1",
+    "ca_cooking_compounds_overview"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "kanser trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "Posa tüketimi, kansere karşı koruyucu olabilir  |  35 gram posa günlük ortalama alımı önerilir  |  Yeşil yapraklı sebzeler, meyveler ve kuru baklagiller gibi besinler de önemlidir",
+  "used_chunks": [
+    "ca_fiber_diet_patterns_5servings",
+    "ca_fiber_amounts_reco",
+    "c178",
+    "c175b",
+    "ca_diet_fv_tbsa",
+    "c173",
+    "ca_vitD_epid_sources",
+    "c176",
+    "ca_fiber_inflammation",
+    "ca_fiber_microbiota_bile_acids",
+    "ca_folate_sources_reco",
+    "ca_protective_fiber_def"
+  ],
+  "strict_chunks_count": 20,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "kanser lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

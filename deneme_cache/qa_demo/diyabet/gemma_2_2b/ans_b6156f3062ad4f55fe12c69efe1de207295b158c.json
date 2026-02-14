@@ -1,0 +1,51 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Posa tüketimini arttırmak için 14 gram veya daha fazla posa almalısınız  |  Günde en az 5 porsiyon sebze ve meyve yenilmesi gerekir  |  Tam tahıl ürünleri, sebze, meyve, düşük yağlı süt ve et ürünleri tüketilmeli  |  Kabuğu ile yenilebilen meyveler kabuğu soyulmadan iyice yıkanmalı ve kabuğu ile tüketilmeli",
+  "used_chunks": [
+    "t2p_1",
+    "t2p_3",
+    "t188",
+    "tbl37_2",
+    "t2r_1",
+    "dm_ek_02",
+    "dm_4_6_01",
+    "dm_4_3_01",
+    "dm_ek_01",
+    "chunk_000427",
+    "dm_ek_10",
+    "ca_carbs_gi_tumor_findings"
+  ],
+  "strict_chunks_count": 15,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için posa lif tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1_num_amt",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

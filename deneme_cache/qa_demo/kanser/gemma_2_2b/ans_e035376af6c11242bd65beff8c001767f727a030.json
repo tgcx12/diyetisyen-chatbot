@@ -1,0 +1,40 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yetişkinlerde beyaz et tüketimi haftada 3 porsiyon olarak önerilir.  |  Tavuk ve hindi gibi alternatif protein kaynakları tüketmek de sağlıklıdır.  |  İşlenmiş et tüketimini azaltmak önemlidir.  |  Yumurta, balık ve tavuk gibi alternatif protein kaynakları tercih edilmelidir.  |  Kırmızı et tüketimine sınırlama uygulanmalıdır.  |  Protein tüketmek için sağlıklı pişirme yöntemleri kullanılmalıdır.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için beyaz et (tavuk hindi) tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

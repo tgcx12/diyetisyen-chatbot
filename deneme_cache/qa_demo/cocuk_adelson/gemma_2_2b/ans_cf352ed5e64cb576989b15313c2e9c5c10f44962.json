@@ -1,0 +1,41 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+  "answer": "Çocuk ve yetişkinler için tuz tüketimi sınırlandırılmalıdır  |  Tuzlu ürünlerden kaçınılmalı",
+  "used_chunks": [
+    "genel_04_tuz_yag_seker",
+    "ergen_03_iyot_yetersizligi"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için tuz sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tuz_1",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

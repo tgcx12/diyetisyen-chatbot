@@ -1,0 +1,40 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Çocuklar için doymuş yağ tüketim miktarı sınırlandırılmalı.  |  Beslenme uzmanları, çocukların sağlıklı büyümesi için doymuş yağ tüketimini azaltmaya öneriyor.  |  Doğru beslenmek için, çocuğun yaşına ve ihtiyaçlarına göre doğru yağlar seçilmelidir.  |  Çocuklarda doymuş yağ tüketimi sınırlandırılmalıdır.  |  Tereyağı, margarin gibi doymuş yağları çocukların yemeklerinde azaltmak önemlidir.  |  Zeytinyağı ise sağlıklı bir yağ kaynağıdır ve çocukların beslenmesinde kullanılmalıdır.",
+  "used_chunks": [
+    "genel_04_tuz_yag_seker"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus_num_amt",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

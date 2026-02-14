@@ -1,0 +1,40 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "DASH diyeti, kuru baklagiller ve yağlı tohumlar içeren sodyum/tuzdan kısıtlı bir örüntüdür  |  Kırmızı et tüketimini azaltmayı içerir  |  Tam tahıllar, sebzeler ve meyveler gibi sağlıklı besinleri vurgular  |  Düşük yağlı süt ürünleri de DASH diyetiyle uyumludur  |  Tuz/sodyum alımını sınırlamak hipertansiyonu yönetmede önemlidir",
+  "used_chunks": [
+    "cvh_dash_3"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

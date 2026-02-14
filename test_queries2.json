@@ -1,0 +1,234 @@
+[
+  {
+    "id": "Q01",
+    "query": "Hamileyim ve kolik ağrılarla birlikte kanlı ishal şikayetim var. Homeopatiye göre hangi bitki önerilir?",
+    "gold": {
+      "answer": "Achillea millefolium L. (Civanperçemi) önerilir.",
+      "must_have": ["achillea millefolium"]
+    }
+  },
+  {
+    "id": "Q02",
+    "query": "Emziriyorum; bebeğim kolikli ve çok öfkeli. Hangi bitki seçenek olabilir?",
+    "gold": {
+      "answer": "Matricaria chamomilla L. (Mayıs papatyası) önerilir.",
+      "must_have": ["matricaria chamomilla"]
+    }
+  },
+  {
+    "id": "Q03",
+    "query": "Hamileliğimin son iki haftasında doğumu kolaylaştırmak ve postpartum toparlanmaya yardımcı olmak için hangi bitki?",
+    "gold": {
+      "answer": "Leonurus cardiaca L. (Aslankuyruğu) önerilir.",
+      "must_have": ["leonurus cardiaca"]
+    }
+  },
+  {
+    "id": "Q04",
+    "query": "Menopozdayım; kanamam uzun ve fazla. Miktar/süreyi azaltmak için hangi bitkiyi ne zaman kullanmalıyım?",
+    "gold": {
+      "answer": "Alchemilla vulgaris; mensten önce günde damla formunda kullanılır.",
+      "must_have": ["alchemilla vulgaris", "damla"]
+    }
+  },
+  {
+    "id": "Q05",
+    "query": "Gebeliğin başındayım; bulantım var ve gestasyonel diyabet çıktı. Zencefil fayda sağlar mı?",
+    "gold": {
+      "answer": "Zingiber officinale bulantıda desteklenir ve kan şekeri üzerinde olumlu etkiler bildirilmiştir.",
+      "must_have": ["zingiber officinale", "bulantı"]
+    }
+  },
+  {
+    "id": "Q06",
+    "query": "Tekrarlayan idrar yolu enfeksiyonundan korunmak için hangi meyve suyu ve günlük ne kadar?",
+    "gold": {
+      "answer": "Vaccinium macrocarpon suyu profilakside kullanılır.",
+      "must_have": ["vaccinium macrocarpon", "ml"]
+    }
+  },
+  {
+    "id": "Q07",
+    "query": "Kurkumin/resveratrol gibi emilimi düşük maddelerin yararı nasıl artırılır ve kurkumin kaç kat artar?",
+    "gold": {
+      "answer": "Piperin ile kurkumin biyoyararlanımı yaklaşık 20 kat artar.",
+      "must_have": ["piperin", "20"]
+    }
+  },
+  {
+    "id": "Q08",
+    "query": "Brokoli/turpgillerdeki KKH hedefli fitokimyasal hangisi ve hangi enzimle nasıl oluşur?",
+    "gold": {
+      "answer": "Sülforafan; brokoli parçalandığında mirozinaz enzimiyle oluşur.",
+      "must_have": ["sülforafan", "mirozinaz"]
+    }
+  },
+  {
+    "id": "Q09",
+    "query": "Dendritik hücre olgunlaşmasını uyardığı belirtilen immunomodülatör mantar/bitkiler hangileri?",
+    "gold": {
+      "answer": "Ganoderma lucidum ve Echinacea purpurea.",
+      "must_have": ["ganoderma lucidum", "echinacea purpurea"]
+    }
+  },
+  {
+    "id": "Q10",
+    "query": "Biberiye: antikanser aktif bileşenler ve etkili olduğu kanser türleri nelerdir?",
+    "gold": {
+      "answer": "Karnosik asit ve karnosol gibi bileşenler antikanser etkilidir.",
+      "must_have": ["karnosik", "karnosol"]
+    }
+  },
+  {
+    "id": "Q11",
+    "query": "Resveratrolün biyoyararlanımı nasıl artırılır ve yaklaşık kaç kat artar?",
+    "gold": {
+      "answer": "Piperin ile resveratrol emilimi artar.",
+      "must_have": ["piperin", "resveratrol"]
+    }
+  },
+  {
+    "id": "Q12",
+    "query": "EGCG’den en iyi yararlanmak için tüketim zamanı nasıl olmalı ve hangi organ toksisitesine dikkat edilmeli?",
+    "gold": {
+      "answer": "EGCG aç karnına alınmalı ve karaciğer toksisitesine dikkat edilmelidir.",
+      "must_have": ["egcg", "karaciğer"]
+    }
+  },
+  {
+    "id": "Q13",
+    "query": "Hamileyim; boğaz ağrısı için adaçayı içmek istiyorum. Sakıncası var mı?",
+    "gold": {
+      "answer": "Gebelikte adaçayı önerilmez; tujon nedeniyle risklidir.",
+      "must_have": ["adaçayı", "tujon"]
+    }
+  },
+  {
+    "id": "Q20",
+    "query": "Doğum sonrası travma/hematom durumlarında homeopatide hangi bitki önerilir?",
+    "gold": {
+      "answer": "Arnica montana L. (Arnika).",
+      "must_have": ["arnica montana"]
+    }
+  },
+  {
+    "id": "Q21",
+    "query": "Emziren annelerde meme başı çatlağı ve yüzeysel yaralarda harici kullanımı güvenli bitki hangisi?",
+    "gold": {
+      "answer": "Calendula officinalis (Aynısafa) harici kullanımda güvenli kabul edilir.",
+      "must_have": ["calendula officinalis", "harici"]
+    }
+  },
+  {
+    "id": "Q22",
+    "query": "İlk trimesterde önerilmeyen; amenore/metrorajide bilinen Çin kökenli bitki hangisi?",
+    "gold": {
+      "answer": "Angelica sinensis (Çin melek otu).",
+      "must_have": ["angelica sinensis", "trimester"]
+    }
+  },
+  {
+    "id": "Q23",
+    "query": "Emzirmede prolaktin ve süt salınımını destekleyen Ayurveda kökenli bitki hangisi?",
+    "gold": {
+      "answer": "Asparagus racemosus (Shatavari).",
+      "must_have": ["asparagus racemosus", "prolaktin"]
+    }
+  },
+  {
+    "id": "Q24",
+    "query": "Mukozal kanamalarda kullanılan ama gebelikte kontrendike olan bitki hangisi?",
+    "gold": {
+      "answer": "Cephaelis ipecacuanha (İpeka).",
+      "must_have": ["cephaelis ipecacuanha", "gebelik"]
+    }
+  },
+  {
+    "id": "Q25",
+    "query": "Müsilaj nedeniyle ilaç emilimini geciktirebilen ve birlikte kullanımlarda aralık gerektiren bitki hangisi?",
+    "gold": {
+      "answer": "Althaea officinalis (Hatmi).",
+      "must_have": ["althaea officinalis", "müsilaj"]
+    }
+  },
+  {
+    "id": "Q26",
+    "query": "Uterus kontraksiyonlarını artırıcı ve postpartum kanamalarda kullanılan bitki hangisi?",
+    "gold": {
+      "answer": "Capsella bursa-pastoris (Çoban çantası).",
+      "must_have": ["capsella bursa-pastoris", "postpartum"]
+    }
+  },
+  {
+    "id": "Q27",
+    "query": "Balgamlı öksürükte kullanılan; 2 yaş altına uygun olmayan ve kodeinle birlikte verilmemesi gereken bitki hangisi?",
+    "gold": {
+      "answer": "Hedera helix (Sarmaşık).",
+      "must_have": ["hedera helix", "kodein"]
+    }
+  },
+  {
+    "id": "Q28",
+    "query": "Uzun süre kullanımında hipokalemi ve hipertansiyon yapabilen bitki hangisi?",
+    "gold": {
+      "answer": "Glycyrrhiza glabra (Meyan kökü).",
+      "must_have": ["glycyrrhiza glabra", "hipertansiyon"]
+    }
+  },
+  {
+    "id": "Q29",
+    "query": "Timokinon içeriğiyle antikanser etki gösterdiği belirtilen bitki hangisi?",
+    "gold": {
+      "answer": "Nigella sativa (Çörekotu).",
+      "must_have": ["nigella sativa", "timokinon"]
+    }
+  },
+  {
+    "id": "Q30",
+    "query": "Kurkumin biyoyararlanımını ~20 kat artıran doğal bileşen hangi bitkiden elde edilir?",
+    "gold": {
+      "answer": "Piper nigrum (Karabiber) — piperin içerir.",
+      "must_have": ["piper nigrum", "piperin"]
+    }
+  },
+  {
+    "id": "Q31",
+    "query": "Mirozinaz enzimi ile aktifleşen brokoli kaynaklı antikanser madde hangisi?",
+    "gold": {
+      "answer": "Sülforafan.",
+      "must_have": ["sülforafan", "mirozinaz"]
+    }
+  },
+  {
+    "id": "Q32",
+    "query": "Karnosik asit ve karnosol içeren, koruyucu antikanser etkili bitki hangisi?",
+    "gold": {
+      "answer": "Rosmarinus officinalis (Biberiye).",
+      "must_have": ["rosmarinus officinalis", "karnosol"]
+    }
+  },
+  {
+    "id": "Q33",
+    "query": "Uçucu yağındaki 1,8-sineol nedeniyle bebeklerde laringospazm riski oluşturan bitki hangisi?",
+    "gold": {
+      "answer": "Eucalyptus globulus (Ökaliptus).",
+      "must_have": ["eucalyptus globulus", "laringospazm"]
+    }
+  },
+  {
+    "id": "Q34",
+    "query": "Emmenagog etkisi nedeniyle gebelikte kontrendike olabilen ve demir emilimini etkileyebilen bitki hangisi?",
+    "gold": {
+      "answer": "Achillea millefolium (Civanperçemi).",
+      "must_have": ["achillea millefolium", "gebelik"]
+    }
+  },
+  {
+    "id": "Q35",
+    "query": "Üçüncü trimesterde venöz yetmezlikte güvenli dozda kullanıldığı bildirilen bitki hangisi?",
+    "gold": {
+      "answer": "Aesculus hippocastanum (Atkestanesi).",
+      "must_have": ["aesculus hippocastanum", "venöz"]
+    }
+}
+]

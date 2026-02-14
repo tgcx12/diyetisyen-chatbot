@@ -1,0 +1,46 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Ambalajlı tüketime sunulan yiyecek ve içeceklerin ambalajlarının üzerinde yazılı olan etiket bilgisi okunarak toplam yağ, doymuş ve trans yağ ile kolesterol içerikleri daha düşük olan benzer besinler tercih edilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Omega 3, Vitaminler ve Şeker Tüketimi  |  Kuru yemişlerde ayrıca arginin amino asidi, magnezyum minerali ve E vitamini bulunur.  |  Günlük şeker ve şekerli gıda tüketimi kontrol altında tutulmalıdır.  |  Fazla miktarda tüketilen şeker, reçel, bal ve benzeri besinler kan kolesterolünün artmasına sebep olur.",
+  "used_chunks": [
+    "chunk_000404",
+    "kalp_2_4_14",
+    "chunk_000396",
+    "chol_5_4_01",
+    "kalp_2_4_09"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "exception",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

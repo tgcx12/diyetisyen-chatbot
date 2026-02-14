@@ -1,0 +1,46 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Kırmızı et tüketiminin yetişkinlerde haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması gerektiği, işlenmiş etin çok azaltılması gerektiği belirtilmektedir.  |  Protein: alternatifler ve kırmızı et sınırı  |  kanser  |  Yağ içeriği yüksek et ve işlenmiş et tüketimi yerine alternatif protein kaynakları olan yumurta, balık, tavuk sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir.  |  Diyet kaynakları, yağlı balık, balık karaciğeri yağı ve yumurta gibi doğal olarak D vitamini, süt, meyve suları ve kahvaltılık gevrekler gibi D vitamini eklenmiş besinlerde bulunmaktadır.  |  Günlük beslenme ile D vitamini gereksinmesi karşılanmaz.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "c176",
+    "ca_heterocyclic_amines",
+    "ca_pah_benzoapyrene_note"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için balık tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "exception",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+  },
+  "qspec": {
+    "id": "protein_balik_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

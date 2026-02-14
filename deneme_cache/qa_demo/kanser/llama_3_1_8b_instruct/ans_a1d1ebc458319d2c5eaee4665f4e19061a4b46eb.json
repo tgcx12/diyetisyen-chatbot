@@ -1,0 +1,48 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "Koruyucu diyet yaklaşımları: 5 porsiyon, tam tahıl örnekleri  |  kanser  |  Posa ve kanser ilişkisini ortaya koyan çalışmalarda kansere karşı koruyucu olan çoğu diyet yaklaşımında toplam 5 porsiyon sebzemeyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) olması gerektiği belirtilmektedir.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Karbonhidratlar: batı diyetine geçiş ve olası mekanizma  |  Karbonhidratlar: Batı diyetine geçişle diyetteki karbonhidrat içeriği değişmiş, rafine şeker tüketimi, diyetin glisemik indeksi ve glisemik yükü artmıştır.",
+  "used_chunks": [
+    "ca_fiber_diet_patterns_5servings",
+    "c176",
+    "ca_carbs_western_transition",
+    "c175b",
+    "ca_fiber_amounts_reco",
+    "ca_folate_sources_reco",
+    "c175a"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

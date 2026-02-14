@@ -1,0 +1,15 @@
+Bu veri kümesinde, kolesterolle ilgili çeşitli konuların açıklamaları ve önerileri bulunmakta. Bu konulardan bazıları:
+
+*   Kolesterolü düşürmek için hangi besinlerin tüketilmesi gerektiği
+*   Kolesterolü artıran besinlerden kaçınılması gerekenler
+*   Kolesterol seviyesini etkileyen tuz ve yağ miktarları
+*   Kolesterolle ilgili öneriler ve tavsiyeler
+
+Bu veri kümesinde, kolesterolle ilgili çeşitli konuların açıklamaları ve önerileri bulunmakta. Bu konulardan bazıları:
+
+*   **Kolesterolü Düşürmek İçin Hangi Besinlerin Tüketilmesi Gerektiği**: Veri kümesinde, kolesterolü düşürmek için hangi besinlerin tüketilmesi gerektiği hakkında bilgi verilmektedir. Bu besinler arasında sebze ve meyveler, kurubaklagiller, tam tahıllı besinler gibi yer almaktadır.
+*   **Kolesterolü Artıran Besinlerden Kaçınılması Gerekenler**: Veri kümesinde, kolesterolü artıran besinlerden kaçınılması gerekenler hakkında bilgi verilmektedir. Bu besinler arasında yağlı etler, işlenmiş gıdalar, şekerli içecekler gibi yer almaktadır.
+*   **Kolesterol Seviyesini Etkileyen Tuz ve Yağ Miktarları**: Veri kümesinde, kolesterol seviyesini etkileyen tuz ve yağ miktarları hakkında bilgi verilmektedir. Bu konularda, tuz ve yağ tüketiminin azaltılması önerilmektedir.
+*   **Kolesterolle İlgili Öneriler ve Tavsiyeler**: Veri kümesinde, kolesterolle ilgili çeşitli öneriler ve tavsiyeler bulunmakta. Bu öneriler arasında haftada 2 kez yağlı balık tüketimi, günlük tuz ve yağ tüketiminin azaltılması gibi yer almaktadır.
+
+Bu veri kümesi, kolesterolle ilgili bilgi almak isteyenler için faydalı bir kaynak olabilir.

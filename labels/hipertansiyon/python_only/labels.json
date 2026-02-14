@@ -1,0 +1,416 @@
+{
+  "prefer_tags": [
+    "bulgur",
+    "ekmek",
+    "salata",
+    "sodyum_orta"
+  ],
+  "limit_tags": [
+    "asitli",
+    "et_suyu",
+    "hafif",
+    "hdl_artirma",
+    "kafeinli_icecek",
+    "sodyum_yuksek",
+    "tekli_doymamis"
+  ],
+  "avoid_tags": [
+    "islenmis_et",
+    "trans_yag_riski"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "bulgur",
+        "ekmek",
+        "salata",
+        "sodyum_orta"
+      ],
+      "limit": [
+        "asitli",
+        "et_suyu",
+        "hafif",
+        "hdl_artirma",
+        "kafeinli_icecek",
+        "sodyum_yuksek",
+        "tekli_doymamis"
+      ],
+      "avoid": [
+        "islenmis_et",
+        "trans_yag_riski"
+      ]
+    },
+    "numeric_constraints": [
+      {
+        "tag": "trans_yag_riski",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 5.0,
+        "max_grams": 7.0,
+        "unit": "yuzde",
+        "description": "besinler ile alınan sodyumun %75’inden fazlası paketlenmiş ve ev dışında tüketilen hazır besinlerden gelir"
+      },
+      {
+        "tag": "tekli_doymamis",
+        "min_count": 6.0,
+        "max_count": 8.0,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "adet",
+        "description": "salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir"
+      },
+      {
+        "tag": "sodyum_yuksek",
+        "min_count": 6.0,
+        "max_count": 8.0,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "adet",
+        "description": "salamura ve konserve zeytinler 6 8 adet içerir. tuzlu et ve balık ürünleri tüketimine dikkat etmek gerekir. kırmızı et tüketimini sınırlamak önemlidir"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": 3.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "posa tüketimi haftada en az 3 kez olmalı"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 2.0,
+        "unit": "gram",
+        "description": "sodyum alımı günde 2 g'dan az tutulmalıdır"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 5.0,
+        "unit": "gram",
+        "description": "tuz alımının yetişkinlerde günde 5 g’ın altında tutulması önerilir"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 2.0,
+        "unit": "gram",
+        "description": "sodyum alımı ise günde 2 g’dan az olmalıdır"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 2.0,
+        "unit": "gram",
+        "description": "sodyum alımının günlük ortalama 2 g'dan az tutulması önerilir"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 5.0,
+        "unit": "gram",
+        "description": "günlük tuz tüketimimizin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlandırılarak önerildiği belirtilmiştir"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": 2000.0,
+        "unit": "mg",
+        "description": "2000 mg sodyum"
+      }
+    ],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[tekli_doymamis]",
+        "meal": "genel",
+        "tag": "tekli_doymamis",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[sodyum_yuksek]",
+        "meal": "genel",
+        "tag": "sodyum_yuksek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[asitli]",
+        "meal": "genel",
+        "tag": "asitli",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[bulgur]",
+        "meal": "genel",
+        "tag": "bulgur",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[hafif]",
+        "meal": "genel",
+        "tag": "hafif",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[islenmis_et]",
+        "meal": "genel",
+        "tag": "islenmis_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[salata]",
+        "meal": "genel",
+        "tag": "salata",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[et_suyu]",
+        "meal": "genel",
+        "tag": "et_suyu",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[kafeinli_icecek]",
+        "meal": "genel",
+        "tag": "kafeinli_icecek",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hafif]",
+        "meal": "genel",
+        "tag": "hafif",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[islenmis_et]",
+        "meal": "genel",
+        "tag": "islenmis_et",
+        "intent": "avoid"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [
+    {
+      "text": "zeytinin porsiyonu 6 8 adet",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chunk_000408"
+    },
+    {
+      "text": "zeytinin bir porsiyonu 6 8 adet içerir",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chunk_000408"
+    }
+  ],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Besinler ile alınan sodyumun %75’inden fazlası paketlenmiş ve ev dışında tüketilen hazır besinlerden gelir",
+      "chunk_id": "not_18"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Trans yağdan kaçınılmalı mı",
+      "chunk_id": "chunk_000390"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Salamura yada konserve zeytinlerin bir porsiyonu 6 8 adet zeytin içermektedir.",
+      "chunk_id": "chunk_000408"
+    },
+    {
+      "related_tags": [
+        "sodyum_yuksek"
+      ],
+      "quote": "Salamura ve konserve zeytinler 6 8 adet içerir. Tuzlu et ve balık ürünleri tüketimine dikkat etmek gerekir. Kırmızı et tüketimini sınırlamak önemlidir.",
+      "chunk_id": "chunk_000408"
+    },
+    {
+      "related_tags": [
+        "sodyum_dusuk"
+      ],
+      "quote": "Paketli ürünlerde düşük sodyum ifadeleri tercih edilmeli",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "sodyum_dusuk"
+      ],
+      "quote": "Sodyum alımının günlük ortalama 2 g'dan az tutulması önerilir",
+      "chunk_id": "cvh_salt_1"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Paketli ürünlerde düşük sodyum ifadeleri tercih edilmeli",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Sodyum alımı günde 2 g'dan az tutulmalıdır",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "asitli"
+      ],
+      "quote": "Tuz yerine limon, sirke ve baharat gibi tat vericiler kullanılabilir",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "asitli"
+      ],
+      "quote": "Şekerli içecek tüketimi azaltılmalı",
+      "chunk_id": "ht_beverage_01"
+    },
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Tam tahıl tüketimi önerilir",
+      "chunk_id": "chunk_000393"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "Tam tahıl tüketimi önerilir",
+      "chunk_id": "chunk_000393"
+    },
+    {
+      "related_tags": [
+        "hafif"
+      ],
+      "quote": "Yemeklerin tuz eklenmesi yerine, tuzsuz veya az tuzlu seçenekleri tercih edin.",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "hafif"
+      ],
+      "quote": "Gazlı içecekler azaltılmalı veya tercih edilmemeli",
+      "chunk_id": "ht_beverage_01"
+    },
+    {
+      "related_tags": [
+        "islenmis_et"
+      ],
+      "quote": "Yemeklerin tuz eklenmesi yerine, tuzsuz veya az tuzlu seçenekleri tercih edin.",
+      "chunk_id": "ht_salt_01"
+    },
+    {
+      "related_tags": [
+        "islenmis_et"
+      ],
+      "quote": "Gazlı içecekler azaltılmalı veya tercih edilmemeli",
+      "chunk_id": "ht_beverage_01"
+    },
+    {
+      "related_tags": [
+        "salata"
+      ],
+      "quote": "Tuz alımının yetişkinlerde günde 5 g’ın altında tutulması önerilir",
+      "chunk_id": "cvh_salt_1"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Sodyum alımının günlük ortalama 2 g'dan az tutulması önerilir",
+      "chunk_id": "cvh_salt_1"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Dünya Sağlık Örgütü, günlük tuz tüketimimizin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlandırılarak önerildiği belirtilmiştir",
+      "chunk_id": "cvh_salt_1"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Dünya Sağlık Örgütü, günlük tuz tüketimimizin en fazla 5 g/gün (2000 mg sodyum) olarak sınırlandırılarak önerildiği belirtilmiştir",
+      "chunk_id": "cvh_salt_1"
+    },
+    {
+      "related_tags": [
+        "kafeinli_icecek"
+      ],
+      "quote": "Şekerli içecek tüketimi azaltılmalı",
+      "chunk_id": "ht_beverage_01"
+    }
+  ]
+}

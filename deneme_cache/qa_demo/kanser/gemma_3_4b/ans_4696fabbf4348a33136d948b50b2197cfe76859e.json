@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Kırmızı et tüketiminin haftada üç porsiyonla sınırlanması önerilir  |  Yağ içeriği yüksek et ve işlenmiş et yerine balık, uskumru, somon, sardalya gibi soğuk su balıkları tercih edilmelidir  |  Küçük balıklar hamsi gibi omega 3 yağ asitleri kanser gelişimini önlemeye yardımcı olur  |  Tavada kızartma, mangalda pişirme gibi yüksek sıcaklıklarda pişirme yöntemleri nedeniyle balıkta heterosiklik aminler oluşabilir  |  Kömür ateşinde pişirilen balıkların PAH içeriği yüksek olabilir  |  Balık tüketimi haftada birkaç kez önerilir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "c176",
+    "ca_heterocyclic_amines",
+    "ca_pah_benzoapyrene_note"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için balık tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

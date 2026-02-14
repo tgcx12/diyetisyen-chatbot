@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Ayrıca günlük tuz tüketiminin yüksek olabildiği ve bunun sağlık risklerini artırabileceği vurgulanır.  |  Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.  |  Aşırı tuz ve şeker tüketimi kronik hastalık riskini artırabilir.",
+  "used_chunks": [
+    "chunk_yasli_0004",
+    "yasli_saglikli_07_su_tuz_seker"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için tuz sodyum tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tuz_1_num_amt",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

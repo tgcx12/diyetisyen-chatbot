@@ -1,0 +1,407 @@
+{
+  "domain": "diyabet",
+  "model_key": "qwen2_5_3b",
+  "count": 35,
+  "items": [
+    {
+      "question": "diyabet için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Tuz kısıtlaması  |  Kızartma  |  Eklenmiş şeker  |  Sodyum tuzu  |  Doymuş yağlar",
+      "used_chunks": [
+        "dm_4_6_01",
+        "t2p_4",
+        "t2p_3",
+        "t2r_1",
+        "dm_4_3_01",
+        "t2p_1",
+        "t2p_2",
+        "not_30",
+        "dm_4_7_01",
+        "not_29",
+        "not_26",
+        "dm_riskdet_3"
+      ]
+    },
+    {
+      "question": "diyabet için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Tuz kısıtlaması  |  Kızartma yerine haşlama  |  Yumurta tercih edilmeli  |  Şeker içecekleri tercih edilmeli  |  Eklenmiş şeker azaltılmalı  |  Sodyum tuzu azaltılmalı",
+      "used_chunks": [
+        "dm_4_6_01",
+        "t2p_4",
+        "t2p_3",
+        "t2r_1",
+        "dm_4_3_01",
+        "dm_4_2_01",
+        "t2p_1",
+        "not_30",
+        "t2p_2",
+        "not_26",
+        "dm_prev_1",
+        "dm_4_7_01"
+      ]
+    },
+    {
+      "question": "diyabet için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı, .  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, .  |  Sakatatların (karaciğer, beyin, böbrek gibi) kolesterol içeriğinin yüksek olduğu unutulmamalı, .  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli, .  |  Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli, .  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli .",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "günde 3 kez  |  haftada 24 kez  |  ayda 72 kez  |  hindi eti",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı, .  |  Yeterli sıvı tüketimi için günlük en az 10 bardak (2 litre) su içilmeli, .  |  Et üzerindeki görünen yağların ve tavuk derisinin uzaklaştırılması önerilir.",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "ızgara pişirmesi  |  kolesterol  |  sardalya",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "haftada 2 kez  |  EVIDENCE",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "uskumru  |  sardalya",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "yumurta  |  yumurtasarı  |  yumurtasarıya  |  haşlama  |  ızgara pişirme  |  hindi eti",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "ayda | ayda",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kolesterol  |  yumurta  |  yumurtasarı  |  yumurtasarıyı",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "süt ürünleri  |  zeytinyağı  |  kepekli pirinç  |  meyve suyu",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Günde 1 2 kez  |  EVIDENCE",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "süt ürünleri  |  10 bardak  |  2 litre",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_4",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "tam tahil  |  tam buğday ekmeği  |  bulgur  |  zeytinyağı  |  kanola yağı  |  kepekli ekmek",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_01",
+        "dm_ek_02",
+        "dm_ek_07",
+        "chunk_000393"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Kuru baklagil  |  yumuşak margarin  |  zeytinyağı  |  fasulye  |  mercimek",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "haftada 2 3 kez  |  KESİN KURALLAR",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kuru baklagil 1 porsiyon  |  mercimek 1 yemek kaşı  |  nohut 1 adet  |  fasulye 1 kg",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, .  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı, .  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı, .  |  Posa içeriği düşük olan beyaz ekmek yerine tam buğday ekmeği, tam taneli tahıl ekmeği, kepekli ekmek, beyaz pirinç yerine kepekli pirinç veya bulgur, meyve suyu yerine meyve tüketilmeli, .  |  Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı.  |  İyi Yağlar",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kabuklu yemiş  |  kuruyemiş  |  kuru tohum  |  kuru yağlı tohum  |  kabuklu tohum  |  kabuklu yağlı tohum",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "kuruyemiş kabuklu yemiş",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "doymuş  |  zeytinyağı  |  tereyağı  |  margarin  |  kepekli pirinç  |  bulgur",
+      "used_chunks": [
+        "t2p_3",
+        "t2r_1",
+        "t2p_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "chunk_000390",
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "doymus  |  tereyağı  |  zeytinyağı  |  margarin",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_1",
+        "t2r_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "genel_04_tuz_yag_seker",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "doymus  |  tereyagi  |  porsiyon  |  gazakolay",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_1",
+        "t2r_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "chunk_000390",
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "diyabet için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "margarin  |  zeytinyağı  |  fındık yağı  |  kanola yağı  |  kepekli ekmek  |  tam buğday ekmeği",
+      "used_chunks": [
+        "dm_ek_05",
+        "dm_4_3_01",
+        "t2p_3",
+        "t2p_4",
+        "dm_ek_11",
+        "chunk_000390",
+        "chunk_000442_1",
+        "chunk_000426",
+        "not_16",
+        "chunk_000428",
+        "cvh_sugar_2"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "posali  |  tam taneli tahıl  |  kepekli pirinç  |  kuru baklagiller  |  fındık yağı  |  zeytinyağı",
+      "used_chunks": [
+        "t2p_3",
+        "t2r_1",
+        "t2p_1",
+        "tbl37_2",
+        "t188",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_10",
+        "dm_ek_01",
+        "chunk_000427",
+        "ca_carbs_gi_tumor_findings"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "kardiyovasküler  |  posali",
+      "used_chunks": [
+        "t2p_1",
+        "t2p_3",
+        "tbl37_2",
+        "t2r_1",
+        "t188",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_ek_10",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "ca_carbs_gi_tumor_findings",
+        "chunk_000427"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak ve gereksinimin en az yarısını tam taneli tahıllardan karşılamak 6.  |  Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı, .  |  Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli, .  |  Obez veya fazla kilolu (BKİ >25 kg/ m2) olan kişilerin, aşağıdaki risk etmenlerinden birine sahip olmaları halinde, daha genç yaşlardan itibaren ve daha sık (örneğin yılda 1 kez) araştırılmaları gerekir: .  |  Dislipidemikler (HDL kolesterol 35 mg/dL veya altında ya da trigliserid düzeyi 250 mg/dL veya üzerinde olan kişiler) .  |  *Küp şeker 330 mL gazlı ~ 35 g şeker içecek *Küp şeker 200 mL meyve suyu ~ 20 g şeker Şeker Tüketimi Buna göre yüksek şekerli yiyecekler 100 g’da 22.5 g’dan fazla ve düşük şekerli yiyecekler ise 100 g’da 5 g’dan az şeker içermektedir.",
+      "used_chunks": [
+        "t2p_1",
+        "t2p_3",
+        "t188",
+        "tbl37_2",
+        "t2r_1",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "chunk_000427",
+        "dm_ek_10",
+        "ca_carbs_gi_tumor_findings"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Tuz tüketimi sınırlandırılmalıdır",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000390",
+        "not_16"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "tuz/sodyum  |  kuru baklagiller",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "not_16",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "ktes 1  |  ktes 2  |  ktes 3  |  ktes 4  |  ktes 5  |  ktes 6",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "not_16",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "şekerli içecek  |  meyve suyu  |  tam tahıl  |  sebzeler  |  bitkisel yağlar  |  zeytinyağı",
+      "used_chunks": [
+        "dm_ek_10",
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "dm_ek_07",
+        "dm_ek_02",
+        "dm_4_4_02",
+        "dm_4_2_01",
+        "dm_4_1_01",
+        "dm_4_2_02"
+      ]
+    }
+  ]
+}

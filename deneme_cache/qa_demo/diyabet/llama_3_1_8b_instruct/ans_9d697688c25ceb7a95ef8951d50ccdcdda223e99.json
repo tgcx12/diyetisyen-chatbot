@@ -1,0 +1,46 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı, .  |  Posa içeriği düşük olan beyaz ekmek yerine tam buğday ekmeği, tam taneli tahıl ekmeği, kepekli ekmek, beyaz pirinç yerine kepekli pirinç veya bulgur, meyve suyu yerine meyve tüketilmeli, .  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden zengin bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı, .  |  Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı.  |  Beyaz ekmek/pirinç/şekerli gıdalar yerine tam tahıl, sebze, meyve ve kuru baklagiller tercih edilir.  |  önemli olan basit şeker yerine kompleks karbonhidrat seçmektir.",
+  "used_chunks": [
+    "t2p_3",
+    "dm_ek_01",
+    "dm_ek_02",
+    "dm_ek_07",
+    "chunk_000393"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

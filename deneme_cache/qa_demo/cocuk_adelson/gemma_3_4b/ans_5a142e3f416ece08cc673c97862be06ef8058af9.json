@@ -1,0 +1,41 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "Dışarıdan satın alınan ve hazır besinlerin tüketimi sınırlandırılmalıdır  |  Paketli ve hazır yiyeceklerde trans yağ bulunabilir  |  Trans yağ, margarin ve unlu mamuller gibi ürünlerde bulunabilir  |  Bu tür ürünler çocuklarda dikkatli tüketilmelidir  |  Sağlıklı beslenme için evde yemek hazırlamak önerilir  |  Ailece yemek hazırlama ve tüketme alışkanlığı teşvik edilmelidir",
+  "used_chunks": [
+    "genel_10_ev_yemegi",
+    "genel_09_aile_katilimi"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

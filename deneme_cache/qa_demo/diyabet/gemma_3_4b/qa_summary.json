@@ -1,0 +1,407 @@
+{
+  "domain": "diyabet",
+  "model_key": "gemma_3_4b",
+  "count": 35,
+  "items": [
+    {
+      "question": "diyabet için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Tuz kısıtlaması önemlidir  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli  |  Sakatatların kolesterol içeriğinin yüksek olduğu unutulmamalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "used_chunks": [
+        "dm_4_6_01",
+        "t2p_4",
+        "t2p_3",
+        "t2r_1",
+        "dm_4_3_01",
+        "t2p_1",
+        "t2p_2",
+        "not_30",
+        "dm_4_7_01",
+        "not_29",
+        "not_26",
+        "dm_riskdet_3"
+      ]
+    },
+    {
+      "question": "diyabet için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Tuz kısıtlaması önemlidir  |  Kızartma yerine haşlama ve ızgara tercih edilmeli  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Posa içeriği düşük ekmekler tercih edilmeli  |  Yağlar, özellikle bitkisel yağlar, dikkatli kullanılmalı  |  Diyet posası azlığı, doymuş yağlar ve sodyum tuzları fazla alınması diyabet gelişimine zemin hazırlar",
+      "used_chunks": [
+        "dm_4_6_01",
+        "t2p_4",
+        "t2p_3",
+        "t2r_1",
+        "dm_4_3_01",
+        "dm_4_2_01",
+        "t2p_1",
+        "not_30",
+        "t2p_2",
+        "not_26",
+        "dm_prev_1",
+        "dm_4_7_01"
+      ]
+    },
+    {
+      "question": "diyabet için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Tavuk veya hindi gibi beyaz etleri kızartma yerine ızgara veya fırında pişirme yöntemlerini tercih etmeli  |  Tavuk veya hindi derisi ve et üzerindeki yağlar uzaklaştırılmalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Yemekler pişirilirken daha az tuz kullanılmalı  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Beyaz et tüketimi, özellikle tavuk ve hindi, diyabet yönetimi için kolesterol içeriğini azaltmak amacıyla diğer protein kaynakları ile dengelenmelidir  |  Tavuk veya hindi eti, kırmızı et yerine tercih edilmelidir  |  Et üzerindeki yağlar ve deriler uzaklaştırılmalıdır  |  Beyaz et tüketimi haftada birkaç kez olabilir  |  Yeterli sıvı tüketimi, günlük en az 10 bardak su içmek önemlidir  |  Tavuk ve hindi tüketimi, sağlıklı bir diyabet diyetinin bir parçası olabilir.",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurta yerine tavuk veya hindi eti veya balık tercih edilmeli  |  Tavuk veya hindi eti tüketirken derisi ve yağları uzaklaştırılmalı  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Günlük en az 2 litre su içilmeli  |  Beyaz et tüketimi, özellikle de yağlı olanlar, diyabet yönetimi için sınırlı olmalıdır  |  Tavuk veya hindi gibi beyaz et tüketim miktarı porsiyon kontrolüyle belirlenmelidir",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_11"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Balık haftada en az 2 kez önerilir  |  omega 3 içerir  |  ızgara gibi daha hafif yöntemler tercih edilir  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Sakatatların kolesterol içeriği yüksek olduğu unutulmalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Balık haftada en az 2 kez önerilir  |  Omega 3 içerir  |  Kırmızı et yerine tavuk, hindi veya balık tercih edilmeli  |  Yeterli sıvı tüketimi için günlük en az 10 bardak su içilmeli  |  Somon, uskumru gibi balıklar faydalıdır",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Haftada en az 2 porsiyon balık tüketilmeli  |  Balık, özellikle somon, uskumru, sardalya ve hamsi gibi yağlı balıklar önerilir  |  Omega 3 yağ asitleri açısından zengindir  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Günlük en az 2 litre su tüketimi önerilir",
+      "used_chunks": [
+        "dm_ek_03",
+        "t2p_4"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Yumurta yenilen günlerde tavuk eti veya balık tercih edilmeli  |  Kızartma yerine haşlama ve ızgara pişirme önerilir  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Doymuş yağlar ve trans yağlar sınırlandırılmalıdır  |  Yemeklerde tuz kullanımından kaçınılmalı",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Kolesterol içeriği yüksek gıdalar (yağlı hayvansal ürünler, yumurta, sakatat vb.) ölçülü tüketilmelidir.",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli  |  Kolesterol içeriği yüksek besinlerden kaçınılmalı  |  Kolesterol içeriği yüksek gıdalar (yağlı hayvansal ürünler, yumurta, sakatat vb.) ölçülü tüketilmelidir.",
+      "used_chunks": [
+        "t2p_4",
+        "dm_ek_05"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli  |  Tuz kısıtlaması önemlidir  |  Şeker içeren besinler sınırlı tüketilmelidir  |  Doymuş yağlar (yağlı süt ürünleri) ve trans yağlar sınırlandırılmalıdır",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yarım yağlı veya yağsız süt ürünleri günlük beslenmede yer almalı  |  Kuru baklagiller haftada 2 3 kez tüketilmeli  |  Günde en az 5 porsiyon sebze ve meyve tüketilmeli  |  Doymuş yağ içeren süt ürünleri sınırlandırılmalıdır  |  Dondurma ve şekerli sütler gibi yüksek şekerli ürünlerden kaçınılmalı  |  Süt, yogurt veya peynir tüketimi, süt ürünlerinin çeşitliliğini sağlamak için haftada birkaç kez önerilir.",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Süt, yogurt veya peynir gibi süt ürünleri günlük beslenmede yer alabilir  |  Doymuş yağlar (yağlı süt ürünleri) sınırlandırılmalıdır  |  Dondurma ve şekerli sütler gibi yüksek şekerli süt ürünlerinden kaçınılmalı  |  Az yağlı süt ve yogurt tüketimi önerilir  |  Hamur işi ve sütlü tatlılar sınırlı tüketilmelidir",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_4",
+        "dm_4_6_01",
+        "dm_ek_05",
+        "chunk_000433",
+        "chunk_000428"
+      ]
+    },
+    {
+      "question": "diyabet için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Posa içeriği düşük olan beyaz ekmek yerine tam buğday ekmeği, tam taneli tahıl ekmeği, kepekli ekmek, beyaz pirinç yerine kepekli pirinç veya bulgur tercih edilmeli  |  Sebzeler, meyveler, kabuklu yemişler, kuru baklagiller ve tam tahıl ürünleri liften zengindir  |  Beyaz ekmek, beyaz pirinç, patates, fırınlanmış/tatlı/işlenmiş birçok ürün yüksek Gİ olabilir  |  Düşük/orta Gİ seçenekler tercih edilmeli  |  Sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınması sağlık risklerini destekler",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_01",
+        "dm_ek_02",
+        "dm_ek_07",
+        "chunk_000393"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Kuru baklagilleri haftada 2 3 kez tüketilmeli  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Zeytinyağı, fındık yağı veya kanola yağı gibi bitkisel yağlar tercih edilmeli  |  Yemeklere eklenen yağ miktarı azaltılmalı  |  Katı yağ yerine sıvı yağ kullanılmalı  |  Özellikle baklagil tüketimi önemlidir",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kuru baklagil tüketimi haftada 2 3 kez olmalı  |  Bu tüketim şekli diyabet yönetimi için önerilir  |  Kuru baklagiller, lif içeriği nedeniyle kan şekerini dengelemeye yardımcı olur  |  Baklagiller, özellikle mercimek ve nohut gibi çeşitleri, sağlıklı bir diyete dahil edilebilir  |  Kuru baklagillerin düzenli tüketimi, kan şeker kontrolüne katkıda bulunur  |  Bu tüketim sıklığı, baklagil tüketiminin faydalarını en üst düzeye çıkarmak için uygundur.",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kuru baklagil tüketimi haftada 2 3 kez önerilir  |  Bu, diyabet yönetimi için bir rehberdir  |  Kuru baklagillerin porsiyon miktarı belirtilmemiştir  |  Kuru baklagil tüketiminde bireysel ihtiyaçlar dikkate alınmalıdır  |  Mercimek, nohut ve fasulye gibi kuru baklagiller diyete dahil edilebilir  |  Baklagil tüketiminin, kan şekeri kontrolüne katkıda bulunabileceği düşünülmektedir.",
+      "used_chunks": [
+        "t2p_3"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Kabuklu yemiş tüketimi, özellikle badem, ceviz ve zeytin gibi kaynaklar uygun seçeneklerdir  |  Tekli ve çoklu doymamış yağlar tercih edilmeli  |  Tereyağ ve margarin yerine zeytinyağı, fındık yağı gibi bitkisel yağlar kullanılmalı  |  Günde en az 5 porsiyon sebze ve meyve tüketimi önerilir  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Yağlı tohum tüketimi, gereksinimlere uygun miktarlarda yapılmalı.",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Günde en az 5 porsiyon sebze ve meyve tüketimi önerilir  |  Badem, ceviz gibi kabuklu yemişler uygun seçeneklerdir  |  Kabuklu yemis tüketimi önerilir  |  Zeytin ve zeytinyağı da seçenekler arasındadır  |  Tekli doymamış yağlar, örneğin fındık yağı veya kanola yağı tüketimi önerilir  |  Kuruyemiş tüketim sıklığı bireysel ihtiyaçlara göre belirlenmelidir.",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günde en az 5 porsiyon sebze ve meyve ile birlikte  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı gibi tekli doymamış yağlar kullanılmalı  |  Badem, ceviz gibi kabuklu yemisler uygun seçeneklerdir.  |  Kabuklu yemis tüketim miktarı bireysel ihtiyaçlara göre ayarlanmalı  |  Yaagli tohum ve kabuklu yemisler diyetin bir parçası olabilir.  |  Porsiyonlar, bireysel ihtiyaçlara göre ayarlanmalıdır.",
+      "used_chunks": [
+        "t2p_3",
+        "dm_ek_04"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Doymuş yağ tüketimi sınırlandırılmalı, özellikle trans yağ içeren işlenmiş gıdalar ve margarinlerden kaçınılmalı  |  Tereyağı, zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağlar tercih edilmeli  |  Günlük enerjinin %10’undan azını doymuş yağlardan sağlamak hedeflenmeli  |  Fazla kilolu ve obez bireylerde vücut ağırlığında %7 10 oranında kaybı sağlamak ve günlük enerjinin %30’undan azını yağlardan karşılamak önemlidir  |  Diyet posasının az olması, doymuş yağların ve sodyum tuzlarının fazla alınması diyabet gelişimine zemin hazırlar  |  Sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ilişkili sağlık risklerini azaltmak gerekir.",
+      "used_chunks": [
+        "t2p_3",
+        "t2r_1",
+        "t2p_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "chunk_000390",
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Tereyağı, margarin yerine zeytinyağı, fındık yağı gibi bitkisel yağlar gereksinime uygun miktarlarda kullanılmalı  |  Günlük enerjinin %30’undan azını yağlardan karşılamak  |  Alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak  |  Kuru baklagiller haftada 2 3 kez tüketilmeli  |  Doymuş yağlardan zengin ve posa miktarı düşük beslenen kişiler diyabet gelişimine zemin hazırlar  |  Doymuş yağlar ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_1",
+        "t2r_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "genel_04_tuz_yag_seker",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük enerjinin %10’undan azını doymuş yağlardan sağlamak  |  Alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak  |  Doymuş yağlar (yağlı süt ürünleri ve bazı hayvansal ürünler) ile trans yağlar (işlenmiş gıdalar/margarinler) sınırlandırılmalıdır  |  Badem, ceviz, zeytin ve zeytinyağı gibi kaynaklar uygun seçeneklerdir  |  İşlenmiş fırınlanmış ve ticari olarak kızartılmış ürünlerde yüksek miktarda doymuş yağlar ve trans yağlar bulunabilmektedir  |  Diyet posasının az olması, doymuş yağların ve sodyum tuzlarının fazla alınması, vitamin yetersizlikleri ve çocukluk döneminde geçirilen ağır malnütrisyon pankreas harabiyetine neden olarak diyabet gelişimine zemin hazırlar.",
+      "used_chunks": [
+        "t2p_3",
+        "t2p_1",
+        "t2r_1",
+        "dm_ek_05",
+        "dm_ek_04",
+        "dm_4_3_01",
+        "chunk_000393",
+        "chunk_000390",
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "diyabet için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "trans yağdan kaçınılmalı, işlenmiş gıdalar/margarinler  |  Paketli ve hazır ürünlerde trans yağlar bulunabilir, özellikle kızartılmış ürünlerde ve bazı margarinlerde  |  Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı gibi tekli doymamış yağlar tercih edilmeli  |  Kızartma yerine ızgara veya fırınlama yöntemleri kullanılmalı  |  İşlenmiş fırınlanmış ve ticari olarak kızartılmış ürünlerde yüksek miktarda doymuş yağlar ve trans yağlar bulunabilmektedir  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "used_chunks": [
+        "dm_ek_05",
+        "dm_4_3_01",
+        "t2p_3",
+        "t2p_4",
+        "dm_ek_11",
+        "chunk_000390",
+        "chunk_000442_1",
+        "chunk_000426",
+        "not_16",
+        "chunk_000428",
+        "cvh_sugar_2"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Günde en az 5 porsiyon sebze ve meyve tüketilmeli  |  Kuru baklagiller haftada 2 3 kez tüketilmeli  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Posa içeriği düşük beyaz ekmek yerine tam buğday, kepekli veya bulgur tercih edilmeli  |  Tereyağ yerine zeytinyağı, fındık yağı gibi bitkisel yağlar kullanılmalı  |  Alınan her 1000 kkalori için 14g veya daha fazla posa tüketilmeli, tam tahıl ürünleri ile posa ihtiyacı karşılanmalı",
+      "used_chunks": [
+        "t2p_3",
+        "t2r_1",
+        "t2p_1",
+        "tbl37_2",
+        "t188",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_10",
+        "dm_ek_01",
+        "chunk_000427",
+        "ca_carbs_gi_tumor_findings"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Günde en az 5 porsiyon sebze ve meyve tüketimi  |  Haftada 2 3 kez kuru baklagiller tüketimi  |  Tam tahıl ürünleri, posalı sebze ve meyve tercih etmeli  |  Liften zengin gıdalar (sebze, meyve, kabuklu yemişler, tam tahıl) kan şekerini dengelemeye yardımcı olur  |  Posa içeriği yüksek tam tahıl tüketimi önerilir  |  Şekerli içeceklerden ve yüksek şekerli yiyeceklerden kaçınmak önemlidir.",
+      "used_chunks": [
+        "t2p_1",
+        "t2p_3",
+        "tbl37_2",
+        "t2r_1",
+        "t188",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_ek_10",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "ca_carbs_gi_tumor_findings",
+        "chunk_000427"
+      ]
+    },
+    {
+      "question": "diyabet için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak  |  tam tahıl ve posalı gıdalarla günlük lif ihtiyacının karşılanması önemlidir  |  Günde en az 5 porsiyon sebze ve meyve tüketilmesi önerilir  |  Kuru baklagiller haftada 2 3 kez tüketilmeli  |  Tam tahıl ürünleri, sebze, meyve ve düşük yağlı süt ürünleri tercih edilmeli  |  Liften zengin gıdalar kan şekerinin daha dengeli yükselmesine katkı verir",
+      "used_chunks": [
+        "t2p_1",
+        "t2p_3",
+        "t188",
+        "tbl37_2",
+        "t2r_1",
+        "dm_ek_02",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "chunk_000427",
+        "dm_ek_10",
+        "ca_carbs_gi_tumor_findings"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Tuz tüketimi sınırlandırılmalıdır  |  Yüksek sodyum alımı istenmez  |  Tuz kısıtlaması önemlidir  |  Diyet posasının az olması, doymuş yağların ve sodyum tuzlarının fazla alınması, vitamin yetersizlikleri diyabet gelişimine zemin hazırlar  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000390",
+        "not_16"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Tuz ve sodyum alımı azaltılmalı  |  Mümkünse tuzu azaltmak ve yüksek sodyumlu besinlerden kaçınmak gerekir  |  Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli  |  Günlük en az 10 bardak (2 litre) su içilmeli  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "not_16",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Tuz tüketimi sınırlandırılmalıdır  |  Mümkünse tuzu azaltmak ve yüksek sodyumlu besinlerden kaçınmak gerekir  |  Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır  |  Aşırı tuz ve şeker tüketimi kronik hastalık riskini artırabilir  |  Tuz tüketimi sınırlandırılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli  |  Badem, ceviz, zeytin ve zeytinyağı gibi kaynaklar uygun seçeneklerdir",
+      "used_chunks": [
+        "t2p_4",
+        "t2p_3",
+        "dm_ek_06",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "chunk_000393",
+        "dm_ek_04",
+        "genel_04_tuz_yag_seker",
+        "not_16",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000390"
+      ]
+    },
+    {
+      "question": "diyabet için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Meyve ve şekerli ürünlerden kaçınmak  |  Meyve suyu yerine lif içeriği yüksek meyve tercih edilmeli, bal, reçel ve marmelat gibi ek şeker kaynaklarından kaçınmak önerilir.  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli, eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı.  |  Kompleks karbonhidratlar (tam tahıl, sebze, meyve ve kuru baklagiller) tercih edilmeli  |  Liften zengin gıdalar (sebzeler, meyveler, kabuklu yemişler) kan şekerinin dengelenmesine yardımcı olur.",
+      "used_chunks": [
+        "dm_ek_10",
+        "t2p_4",
+        "t2p_3",
+        "dm_4_6_01",
+        "dm_4_3_01",
+        "dm_ek_01",
+        "dm_ek_07",
+        "dm_ek_02",
+        "dm_4_4_02",
+        "dm_4_2_01",
+        "dm_4_1_01",
+        "dm_4_2_02"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Gazlı içecekler ve enerji içecekleri azaltılmalı/tercihen içilmemeli.  |  İçecek ve özel uyarılar (RAG için)  |  beverage  |  Hazır besinlerde sodyum içeriği kontrol edilmeli. maden suyu/soda seçiminde düşük sodyumlu seçenekler tercih edilmelidir.  |  Tuz tüketimi sınırlandırılmalı, özellikle hazır soslar, atıştırmalıklar ve tuzlanmış kuruyemişler gibi ürünlerde dikkatli olunmalı.  |  Genel Beslenme Önerileri",
+  "used_chunks": [
+    "ht_beverage_01",
+    "chunk_000391",
+    "chunk_000390",
+    "genel_04_tuz_yag_seker",
+    "chunk_000393",
+    "chunk_000418_1",
+    "chunk_000418_2",
+    "chunk_000389",
+    "yasli_saglikli_07_su_tuz_seker",
+    "not_16",
+    "ht_dash_01",
+    "tb_besin_tuz"
+  ],
+  "strict_chunks_count": 12,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

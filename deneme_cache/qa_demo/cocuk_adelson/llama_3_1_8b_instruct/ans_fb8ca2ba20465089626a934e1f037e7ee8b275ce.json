@@ -1,0 +1,43 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Daha fazla sebze ve meyve yenilmelidir.  |  Günde 60 dakika fiziksel aktivite yapılmalıdır.  |  Ekran süresi günde 2 saat olarak sınırlandırılmalıdır.  |  Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.",
+  "used_chunks": [
+    "ca_4",
+    "genel_01_dengeli_beslenme"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

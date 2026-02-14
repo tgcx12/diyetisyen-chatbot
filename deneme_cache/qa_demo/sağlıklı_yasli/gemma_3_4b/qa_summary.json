@@ -1,0 +1,323 @@
+{
+  "domain": "sağlıklı_yasli",
+  "model_key": "gemma_3_4b",
+  "count": 35,
+  "items": [
+    {
+      "question": "yaşlı için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "yaşlı için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "yaşlı için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "Kırmızı et tüketimi değişkenlik gösterebilir  |  Kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir  |  İşlenmiş etlerden kaçınılmalıdır  |  Kırmızı et tüketimi için tavuk ve balık önerilir  |  Kırmızı et tüketimi görece daha az olabilir  |  Kırmızı et, kuzu gibi türlerden kaçınılmalıdır",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kırmızı et tüketimi değişkenlik gösterebilir  |  Kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir.",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kırmızı et tüketimi değişkenlik gösterebilir  |  Kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir.",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Tavuk ve hindi gibi beyaz etler, yaşlı bireylerin beslenmesinde yer alabilir  |  Pişirme yöntemleri olarak buhar, fırın veya az yağda pişirme önerilir  |  Kırmızı et tüketimi değişkenlik gösterebilir  |  Beyaz et tüketiminin, genel beslenme düzenine uygun olarak dengelenmesi önemlidir  |  Tavuk ve hindi gibi beyaz etler, protein ihtiyacını karşılamada yardımcı olabilir.",
+      "used_chunks": [
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Tavuk ve hindi gibi beyaz etlerin tüketimi, bireysel ihtiyaçlara ve sağlık durumuna göre değişebilir  |  Et grubunda kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir  |  Genellikle haftada 1 2 kez tüketim önerilir  |  Ancak, bireysel tolerans ve sağlık durumu dikkate alınmalıdır  |  Beyaz et tüketimi, dengeli bir beslenme planı içerisinde değerlendirilmelidir.",
+      "used_chunks": [
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Tavuk ve hindi gibi beyaz et tüketimi bireysel ihtiyaçlara göre ayarlanmalı  |  Genellikle 1 porsiyon 85 115 gram arasında olabilir  |  Kırmızı et yerine beyaz et tercih edilebilir  |  Beyaz et tüketiminin dengeli bir şekilde olması önemlidir  |  Tavuk ve hindi tüketiminde porsiyon kontrolü önerilir.",
+      "used_chunks": [
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Kırmızı et, tavuk, balık tüketimi değişkenlik gösterebilir  |  Balık tüketimi önerilir  |  Somon, uskumru, sardalya gibi yağlı balıklar tercih edilebilir  |  Hamsi gibi balıklar da tüketilebilir",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yaşlı bireylerde balık tüketimi, değişkenlik gösterebilir  |  Et grubu (kırmızı et, tavuk, balık) tüketimi değişkenlik gösterebilir  |  Haftada birkaç kez balık tüketimi önerilir  |  Balık, özellikle somon, uskumru gibi yağlı balıklar tercih edilmelidir  |  Hamsi gibi balıklar da beslenmede yer alabilir  |  Bitkisel yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Bitkisel yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Yaşlılarda et, tavuk, balık ve yumurta tüketimi değişkenlik gösterebilir  |  Yumurta tüketimi daha sık olabilir  |  Kırmızı et, tavuk, balık tüketimi değişkenlik gösterebilir  |  Balık tüketimi önerilir  |  Somon, uskumru, sardalya gibi balıklar tercih edilebilir.",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Yumurta, günlük beslenmede yer alabilir  |  Yaşlı bireylerde et tüketimi değişkenlik gösterebilir  |  Yumurta tüketimi, et tüketiminden daha sık olabilir  |  Yumurta sarısı tüketimi önerilir  |  Pişirme yöntemi olarak haşlama veya buharla pişirme tercih edilebilir.",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yumurta, günlük beslenmede yer almalıdır  |  Buna karşın yumurta tüketiminin görece daha sık olduğu belirtiliyor  |  Yaşlılarda besin tüketimi değişkenlik gösterebilir  |  Günlük beslenmede tahıllar, süt ve süt ürünleri, kuru baklagiller, sebze ve meyveler de yer almalıdır  |  Et grubu tüketimi değişkenlik gösterebilir  |  Yumurta tüketimi, et grubuna göre daha sık olabilir.",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "chunk_yasli_0003",
+        "yasli_besin_02_et_grubu"
+      ]
+    },
+    {
+      "question": "yaşlı için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurta, günlük beslenmede yer alabilir  |  Yaşlı bireylerde et, tavuk, balık ve yumurta grubunda yer alan besinlerin tüketimi değişkenlik gösterebilir  |  Yumurta tüketimi genellikle et tüketiminden daha sık olabilir  |  Porsiyon miktarı bireysel ihtiyaçlara göre belirlenmelidir  |  Yumurta sarisi tüketimi de düşünülebilir.",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_besin_02_et_grubu",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Süt ve süt ürünleri, günlük beslenmede yer almalıdır  |  Yaşlı bireylerde süt ve süt ürünleri tüketimi önerilen düzeylerin altında kalabilmektedir  |  Yaşlanmayla kemik kaybı artabileceğinden süt, yoğurt ve peynir gibi besinlerin tüketimi desteklenmelidir  |  Tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler günlük beslenmede yer almalıdır  |  Yaşlı Sağlığı ve Beslenme  |  Yaşlı bireylerde süt ve süt ürünlerinin düzenli tüketimi bazı gruplarda düşük düzeyde kalabilir",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_besin_01_sut",
+        "chunk_yasli_0003",
+        "yasli_ilke_10_kalsiyum"
+      ]
+    },
+    {
+      "question": "yaşlı için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Süt ve süt ürünleri, yaşlı bireylerin günlük beslenmesinde yer almalıdır  |  Yaşlılarda süt ve süt ürünleri tüketimi, önerilen düzeylerin altında kalabilmektedir  |  Yaşlanmayla kemik kaybı artabileceğinden süt, yoğurt ve peynir gibi besinlerin tüketimi desteklenmelidir  |  Günlük beslenmede tahıllar, süt ve süt ürünleri, yumurta, kuru baklagiller, sebze ve meyveler yer almalıdır  |  Haftada birkaç kez süt veya yoğurt tüketmek faydalı olabilir.",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_besin_01_sut",
+        "chunk_yasli_0003",
+        "yasli_ilke_10_kalsiyum"
+      ]
+    },
+    {
+      "question": "yaşlı için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Süt ve süt ürünleri tüketimi, günlük beslenmede yer almalıdır  |  Yaşlı bireylerde süt ve süt ürünleri tüketimi, önerilen düzeylerin altında kalabilmektedir  |  Yaşlılarda kemik kaybı artabileceğinden süt, yoğurt ve peynir gibi besinlerin tüketimi desteklenmelidir  |  Süt ve peynir gibi ürünler, özellikle az yağlı seçenekler tercih edilmelidir  |  Günlük beslenmede süt ve süt ürünlerinin çeşitliliği önemlidir  |  Yoğurt tüketimi, kalsiyum alımını destekler",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_besin_01_sut",
+        "chunk_yasli_0003",
+        "yasli_ilke_10_kalsiyum"
+      ]
+    },
+    {
+      "question": "yaşlı için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Tam tahıl ekmek ve diğer tahıllar yeterli miktarda tüketilmelidir  |  Yaş ilerledikçe tüketim miktarında azalma görülebilir  |  Tam tahıllar posa, vitamin ve mineral içerikleri sayesinde sindirim sağlığını destekler  |  Posanın artırılması için kurubaklagiller, sebzeler, meyveler ve tam tahıllar tüketilmeli  |  Bulgur, yulaf gibi tam tahiller önerilir  |  Kabızlık riskini azaltır",
+      "used_chunks": [
+        "yasli_saglikli_06_tahil_yag",
+        "yasli_besin_04_tahil",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_ilke_09_posa"
+      ]
+    },
+    {
+      "question": "yaşlı için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Kuru baklagillerin yaşlı bireylerde sınırlı tüketimi genellikle önerilir  |  Kuru baklagiller belirli aralıklarla tüketilmeli  |  Baklagiller, özellikle de mercimek ve nohut gibi çeşitleri, yaşlılıkta beslenme planına dahil edilebilir  |  Bu baklagillerin tüketimi, sindirimi kolaylaştırmak için belirli aralıklarla yapılmalıdır  |  Kuru baklagillerin tüketimi, diyetisyen kontrolünde planlanmalıdır",
+      "used_chunks": [
+        "yasli_besin_03_kuru_baklagil",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kuru baklagil tüketimi yaşlılarda genellikle sınırlıdır  |  Kuru baklagillerin belirli aralıklarla tüketildiği belirtilir  |  Baklagil tüketimi haftada birkaç kez önerilebilir  |  Bu, bireysel ihtiyaçlara ve toleransa bağlıdır  |  Kuru baklagillerin tüketim sıklığı hakkında kesin bir kılavuz yoktur  |  Yaşlı bireylerin tüketim alışkanlıklarını dikkatli bir şekilde değerlendirmeleri önemlidir",
+      "used_chunks": [
+        "yasli_besin_03_kuru_baklagil",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kuru baklagillerin tüketimi yaşlı bireylerde sınırlıdır  |  Kuru baklagiller belirli aralıklarla tüketilir  |  Porsiyon miktarı bireysel ihtiyaçlara göre ayarlanmalı  |  Genellikle 1 porsiyon yeterli olabilir  |  Baklagil tüketiminde dikkatli olmak önemlidir",
+      "used_chunks": [
+        "yasli_besin_03_kuru_baklagil",
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Kuruyemişlerin de tüketildiği  |  Yaşlılar için kuruyemiş tüketimi önerilir  |  Kabuklu yemişler, özellikle badem, ceviz ve fındık gibi yağlı tohumlar sağlıklı olabilir  |  Ancak, kuruyemişlerin aşırı tüketimi kilo alımına neden olabilir  |  Kuruyemişlerin kabukları çıkarılarak tüketilmesi önerilir  |  Kuruyemişlerden kaçınılması gerekenler arasında tuzlu veya şekerli olanlar bulunur.",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kuruyemişlerin de tüketildiği",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kuruyemişlerin de tüketildiği  |  Kabuklu yemişler, sağlıklı yaşlılar için iyi bir seçenektir  |  Bir porsiyon yaklaşık 30 gramdır  |  Kabuklu yemişler, sağlıklı yaşlılar için iyi bir atıştırmalık olabilir  |  Yaşlılar için kabuklu yemiş tüketimi günlük diyetin bir parçası olabilir  |  Kabuklu yemişler, sağlıklı yağlar ve lifler içerir.",
+      "used_chunks": [
+        "chunk_yasli_0003"
+      ]
+    },
+    {
+      "question": "yaşlı için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Doymuş yağdan zengin besinlerin fazla tüketimi kalp damar hastalıkları riskini artırabilir  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır  |  Tam tahıl ekmek ve diğer tahıllar yeterli miktarda tüketilmelidir  |  Zeytinyağı gibi bitkisel yağlar tercih edilebilir  |  Tereyağı yerine sağlıklı yağ kaynakları kullanılmalıdır",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_saglikli_06_tahil_yag"
+      ]
+    },
+    {
+      "question": "yaşlı için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yaşlılarda doymuş yağ tüketimi, kalp damar hastalıkları riskini azaltmak için azaltılmalıdır  |  Doymuş yağ tüketimi aşırı yağlı besinlerden kaçınılmalıdır  |  Doymuş yağdan zengin besinlerin fazla tüketimi önerilmez  |  Doymuş yağ tüketimi haftada birkaç kez sınırlı olmalıdır  |  Zeytinyağı gibi sağlıklı yağlar tercih edilmelidir  |  Doymuş yağ tüketimi genellikle günde bir veya iki kez sınırlandırılmalıdır",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_saglikli_06_tahil_yag"
+      ]
+    },
+    {
+      "question": "yaşlı için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Doymuş yağdan zengin besinlerin fazla tüketimi kalp damar hastalıkları riskini artırabilir  |  Doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır.  |  Yaşlılarda sağlıklı beslenme ilkeleri doğrultusunda doymuş yağ tüketimi azaltılmalıdır.  |  Tereyağı ve margarin gibi aşırı yağlı ürünlerden kaçınılmalıdır.  |  Zeytinyağı gibi sağlıklı yağlar tercih edilmelidir.  |  Doymuş yağ tüketim miktarı bireysel ihtiyaçlara göre belirlenmelidir.",
+      "used_chunks": [
+        "yasli_ilke_07_doymus_yag",
+        "yasli_saglikli_06_tahil_yag"
+      ]
+    },
+    {
+      "question": "yaşlı için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "Trans yağlardan kaçınılması  |  Paketli ve hazır ürünlerde bulunabilir  |  Unlu mamuller ve margarin gibi ürünlerde bulunabilir  |  Yaşlılarda sağlıklı beslenme için dikkat edilmesi gerekir  |  Besinlerin güvenli hazırlanması hijyen kurallarına dikkat etmeyi gerektir  |  Pişirme yöntemleri ve saklama koşulları önemlidir.",
+      "used_chunks": [
+        "yasli_saglikli_03_besin_hazirlama",
+        "yasli_ilke_04_hijyen",
+        "chunk_yasli_0001"
+      ]
+    },
+    {
+      "question": "yaşlı için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Tam tahıl ekmek ve diğer tahıllar yeterli miktarda tüketilmelidir  |  Ekmek ve tahıl grubu yaşlı bireylerin günlük beslenmesinde önemli yer tutar  |  Sebze ve meyveler bol ve çeşitli tüketilmelidir  |  Posa içeriği yüksek besinler sindirim sisteminin düzenli çalışmasını sağlar  |  Kuru baklagiller ve yağlı tohumların tüketimi sınırlıdır  |  Sebze ve meyveler vitamin, mineral ve posa açısından zengindir",
+      "used_chunks": [
+        "yasli_besin_04_tahil",
+        "chunk_yasli_0004",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_saglikli_05_sebze_meyve",
+        "yasli_ilke_01_besin_cesitliligi",
+        "yasli_saglikli_06_tahil_yag",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_ilke_09_posa",
+        "yasli_ilke_05_sebze_meyve",
+        "yasli_besin_05_sebze",
+        "yasli_besin_03_kuru_baklagil",
+        "yasli_besin_06_meyve"
+      ]
+    },
+    {
+      "question": "yaşlı için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yaşlı bireylerde sebze ve meyvelerin posa, vitamin ve mineral açısından zengin olması  |  Sebze ve meyvelerin günlük beslenmede bolca tüketilmesi önerilir  |  Posa içeriği yüksek besinler, sindirim sisteminin düzenli çalışmasını sağlar  |  Tam tahıl ekmek ve diğer tahıllar yeterli miktarda tüketilmelidir  |  Posa alımını artırmak için kurubaklagiller, sebzeler, meyveler ve tam tahıllar tüketilmeli",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_saglikli_05_sebze_meyve",
+        "yasli_ilke_01_besin_cesitliligi",
+        "yasli_besin_04_tahil",
+        "chunk_yasli_0004",
+        "yasli_ilke_09_posa",
+        "yasli_saglikli_06_tahil_yag",
+        "yasli_besin_05_sebze",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_ilke_05_sebze_meyve",
+        "yasli_besin_03_kuru_baklagil",
+        "yasli_besin_06_meyve"
+      ]
+    },
+    {
+      "question": "yaşlı için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yaşlı bireylerin günlük beslenmesinde posa içeriği yüksek besinler (kurubaklagiller, sebzeler, meyveler ve tam tahıl) tüketimi önerilir  |  Sebze ve meyveler günlük beslenmede mutlaka yer almalıdır  |  Posa içeriği yüksek besinler sindirim sisteminin düzenli çalışmasını sağlar  |  Tam tahıllar posa, vitamin ve mineral içerikleri sayesinde sindirim sağlığını destekler  |  Günlük beslenmede sebze ve meyvelere mutlaka yer verilmesi önerilir",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_saglikli_05_sebze_meyve",
+        "yasli_ilke_01_besin_cesitliligi",
+        "yasli_besin_04_tahil",
+        "chunk_yasli_0004",
+        "yasli_ilke_09_posa",
+        "yasli_saglikli_06_tahil_yag",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_ilke_05_sebze_meyve",
+        "yasli_besin_05_sebze",
+        "yasli_besin_03_kuru_baklagil",
+        "yasli_besin_06_meyve"
+      ]
+    },
+    {
+      "question": "yaşlı için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Tuz ve sodyum alımı azaltılmalı  |  Şeker tüketimi sınırlandırılmalıdır  |  Aşırı tuz ve şeker tüketimi kronik hastalık riskini artırabilir  |  Tuz tüketiminin yüksek olması sağlık risklerini artırabilir  |  Tuzlu ve salamura ürünlerden kaçınılmalı  |  Tursu tüketimi sınırlandırılmalıdır",
+      "used_chunks": [
+        "chunk_yasli_0004",
+        "yasli_saglikli_07_su_tuz_seker"
+      ]
+    },
+    {
+      "question": "yaşlı için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Tuz ve sodyum alımının yaşlılarda azaltılması önerilir  |  Aşırı tuzlu tüketim sağlık risklerini artırabilir  |  Şeker tüketimi de sınırlandırılmalıdır  |  Tuz ve sodyum alımını günlük olarak kontrol etmek önemlidir  |  Aşırı tuzlu tüketim, kronik hastalık riskini artırabilir  |  Tuzlu veya salamura tüketimini sınırlamak faydalı olabilir.",
+      "used_chunks": [
+        "chunk_yasli_0004",
+        "yasli_saglikli_07_su_tuz_seker"
+      ]
+    },
+    {
+      "question": "yaşlı için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günlük tuz ve sodyum alımının yaşlılarda azaltılması önerilir  |  Tuzlu ve salamura yiyeceklerden kaçınılmalıdır  |  Aşırı tuz tüketimi sağlık risklerini artırabilir  |  Şeker tüketimi de sınırlandırılmalıdır  |  Tuz ve sodyum alımını azaltmak, kronik hastalık riskini azaltır  |  Bu durum, tursu gibi tuzlu yiyeceklerin tüketimini azaltmayı da içerebilir.",
+      "used_chunks": [
+        "chunk_yasli_0004",
+        "yasli_saglikli_07_su_tuz_seker"
+      ]
+    },
+    {
+      "question": "yaşlı için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Yaşlı bireylerde kan şekeri kontrolü ve ağırlık yönetimi için şeker tüketimi sınırlandırılmalıdır  |  Tuz ve sodyum alımı azaltılmalı, şeker tüketimi sınırlandırılmalıdır.  |  Aşırı tuz ve şeker tüketimi kronik hastalık riskini artırabilir  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Et, tavuk, balık ve yumurta grubunda yer alan besinlerin tüketimi yaşlı bireylerde değişkenlik gösterebilir  |  Şekerli içeceklerden kaçınılmalı, şeker tüketimi azaltılmalı.",
+      "used_chunks": [
+        "yasli_ilke_12_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "yasli_ilke_07_doymus_yag",
+        "chunk_yasli_0003",
+        "yasli_besin_02_et_grubu"
+      ]
+    }
+  ]
+}

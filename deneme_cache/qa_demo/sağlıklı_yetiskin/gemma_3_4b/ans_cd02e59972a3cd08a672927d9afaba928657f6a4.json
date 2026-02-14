@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Öğünlerde enerji yoğunluğu düşük, besin değeri yüksek yiyecekler tercih edilmelidir  |  Günlük diyette doymuş yağı azaltmak için az yağlı süt ve ürünleri ile et ve ürünleri tercih edilmeli  |  Öğünlerde besin çeşitliliği sağlanmalı, protein, vitamin ve mineralden zengin besinler tercih edilmelidir  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimi artırılarak posa alımı yükseltilmelidir, glisemik indeksi düşük besinler tercih edilmelidir  |  Ana yemeklerde sebzelere yer verilmeli, ara öğünlerde de sebze ve meyveler tüketilmelidir  |  Düzenli yemek yeme alışkanlığı edinilmeli ve geç saatte yemek yemekten kaçınılmalıdır",
+  "used_chunks": [
+    "yasli_ilke_02_uc_ogun",
+    "chunk_000592_02",
+    "yasli_saglikli_02_ogun",
+    "chunk_000594_01",
+    "chunk_000588_01",
+    "chunk_000595_02",
+    "chunk_000589_01",
+    "chunk_000606_01",
+    "yasli_saglikli_03_besin_hazirlama",
+    "yasli_saglikli_04_besin_cesitliligi",
+    "genel_12_yasam_boyu_etki",
+    "genel_01_dengeli_beslenme"
+  ],
+  "strict_chunks_count": 14,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

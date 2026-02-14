@@ -1,0 +1,46 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+  "answer": "Şekerli içecek tüketiminin sınırlandırılması  |  kanser  |  Eklenen şekerler günlük enerji alımının %5 %10’undan daha azıyla sınırlandırılmalıdır.  |  Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla sınırlanması önerilir  |  İşlenmiş etlerin tüketimi azaltılmalıdır  |  Tavada kızartma, mangalda pişirme ve fastfood yiyeceklerin pişirilmesi gibi yüksek sıcaklıklarda pişirme yöntemlerinden kaçınılmalıdır",
+  "used_chunks": [
+    "c176",
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_carbs_western_transition",
+    "ca_heterocyclic_amines",
+    "c175b",
+    "ca_additives_1",
+    "ca_pah_benzoapyrene_note"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için rafine şeker şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kanser şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel"
+      },
+      {
+        "retry": false,
+        "query": "şeker seker şekerli içecek sekerli icecek gazlı gazli rafine eklenmiş şeker eklenmis seker reçel recel bal"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "seker_1",
+    "category": "tuz_seker",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

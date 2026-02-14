@@ -1,0 +1,45 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Ebeveynler çocuklarını yemek yerine övgüyle ödüllendirmelidir.  |  Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir.  |  Çocuklar yeterli ve dengeli beslenmeli, besin çeşitliliğini artırmak için her öğünde farklı besin gruplarından tüketmelidir.  |  Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.",
+  "used_chunks": [
+    "ca_4",
+    "genel_04_tuz_yag_seker",
+    "chunk_000730",
+    "genel_01_dengeli_beslenme",
+    "genel_02_enerji_yuksek_besinler",
+    "ergen_07_onleme_yaklasimi",
+    "okul_ergen_07_saglik_koruma",
+    "ca_2",
+    "genel_12_yasam_boyu_etki",
+    "genel_11_adolesan_bagimsizlik",
+    "okul_ergen_04_alismanliklar",
+    "okul_ergen_02_fiziksel_bilissel_gelisim"
+  ],
+  "strict_chunks_count": 12,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

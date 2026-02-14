@@ -1,0 +1,31 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+  "used_chunks": [],
+  "strict_chunks_count": 0,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "no_chunks"
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

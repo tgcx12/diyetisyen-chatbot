@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Günlük yağsız dana eti 60g, beyaz et 150g ile sınırlandırılmalıdır  |  Tavuk ve hindi gibi kanatlı hayvanlar derisiyle birlikte tüketilmelidir  |  Kırmızı ve beyaz etlerin görünür yağları uzaklaştırılmalıdır  |  Et tüketimi haftada 3 gün kırmızı et ve 4 gün beyaz etle sınırlı olmalıdır  |  Abartılı beyaz et tüketiminden kaçınılmalıdır  |  Beyaz et tüketimi, özellikle tavuk ve hindi gibi kaynaklardan dikkatli olmalıdır.",
+  "used_chunks": [
+    "chol_5_3_01",
+    "chunk_000400",
+    "chunk_000401",
+    "kalp_2_4_08"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için beyaz et (tavuk hindi) tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

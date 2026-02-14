@@ -1,0 +1,42 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yumurtanın yaşlılar için sağlıklı beslenmede önemli bir rolü vardır  |  Yaşlılarda yumurta tüketimi düzenli olarak yapılmalıdır  |  Yumurtaların sağlıklı beslenme için gerekli olan besin maddelerini içerir  |  Yumurta sarısı, yumurta sarısı ve yumurtanın sağlıklı beslenmede önemli bir rolü vardır  |  Yumurta tüketiminin yaşlılar için önerisi bulunmaktadır",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_besin_02_et_grubu",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için yumurta tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

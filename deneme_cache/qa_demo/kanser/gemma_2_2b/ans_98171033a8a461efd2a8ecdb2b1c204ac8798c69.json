@@ -1,0 +1,46 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "Tam tahıl ürünleri tüketmek, kanser riskini azaltmada önemli bir rol oynar  |  5 porsiyon sebze meyve, tam tahıl ve kepekli tahıllar (örneğin kahverengi pirinç, buğday, yulaf, arpa ve çavdar) tüketimi önerilir",
+  "used_chunks": [
+    "ca_fiber_diet_patterns_5servings",
+    "c176",
+    "ca_carbs_western_transition",
+    "c175b",
+    "ca_fiber_amounts_reco",
+    "ca_folate_sources_reco",
+    "c175a"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

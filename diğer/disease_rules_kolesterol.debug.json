@@ -1,0 +1,558 @@
+{
+  "domain": "kolesterol",
+  "query": "...",
+  "anchors": [
+    "kolesterol",
+    "hiperlipidemi",
+    "hiperkolesterolemi",
+    "yüksek kolesterol",
+    "hiper kolesterol",
+    "kardiyovaskuler",
+    "kardiyovasküler",
+    "kalp damar",
+    "kalp-damar",
+    "koroner",
+    "ateroskleroz",
+    "kalp hastalik",
+    "kalp hastalık",
+    "kardiyovasküler hastalıklardan korunmak için genel ilkeler"
+  ],
+  "biomarkers": [
+    "ldl",
+    "hdl",
+    "trigliserid",
+    "trigliserit",
+    "lipid"
+  ],
+  "params": {
+    "max_chunks": 12,
+    "max_chunk_chars": 900,
+    "use_all_relevant": true,
+    "llm_batch_size": 10,
+    "model": "llama3.1:8b-instruct-q4_K_M"
+  },
+  "candidates_count": 18,
+  "chosen_chunks_count": 16,
+  "chosen_chunks_preview": [
+    {
+      "chunk_id": "chol_5_5_01",
+      "topic_group": "kolesterol_lif",
+      "ana_baslik": "Kolesterolü Düşüren Lifler",
+      "content": "Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir. Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir."
+    },
+    {
+      "chunk_id": "chol_5_2_01",
+      "topic_group": "kolesterol_yasaklar",
+      "ana_baslik": "Kaçınılması Gereken Yağ Kaynakları",
+      "content": "Tereyağı, sert margarinler, krema ve kaymak gibi doymuş yağlar kolesterolü yükseltir. Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır."
+    },
+    {
+      "chunk_id": "kalp_2_4_06",
+      "topic_group": "takip",
+      "ana_baslik": "Stres, Klinik Takip ve Genetik Risk",
+      "content": "Stresli bir yaşantı varsa stres azaltılmaya ve kontrol altına alınmaya çalışılmalıdır. Kan şekerine, tansiyona, kolesterol ile trigliserid düzeyinize belirli aralıklarla bakılmalıdır. Ailede kalp hastalığından erken ölümler varsa, zaman zaman doktor kontrolünden geçilmelidir."
+    },
+    {
+      "chunk_id": "kalp_2_4_12",
+      "topic_group": "lif",
+      "ana_baslik": "Diyet Lifi, Folik Asit ve Kanserden Korunma",
+      "content": "Bu koruyucu maddelerden biri diyet lifidir. Diyet lifinin yüksek tansiyonu ve kötü kolesterolü düşürdüğü, kan şekerini dengelediği, kabızlığı ve kalın bağırsak kanserini önlediği belirlenmiştir. Baklagiller aynı zamanda folik asit açısından zengindir. Folik asit kalp hastalığında risk faktörlerinden biri olan homosisteini kontrol altında tutar."
+    },
+    {
+      "chunk_id": "kalp_2_4_13",
+      "topic_group": "kuruyemis",
+      "ana_baslik": "Tahıllar, Kuruyemişler ve Kalp Sağlığı",
+      "content": "Kuruyemişler özellikle kalp hastalıklarının önlenmesinde önemli etkilere sahiptir. Yer fıstığı, ceviz, badem, fındık, fıstık, ay çekirdeği ve kabak çekirdeği kalbi koruyucu maddeler içerir. Kuru yemişlerde bulunan tekli ve çoklu doymamış yağ asitleri ve bitkisel steroller kolesterolü düşürür."
+    },
+    {
+      "chunk_id": "meddiet_pattern_1",
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "Akdeniz beslenme örüntüsü: günlük ve haftalık öneriler",
+      "content": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon sert kabuklu yemişler tüketilmesi, haftada 2-4 porsiyon yumurta, en az 2 porsiyon kuru baklagiller ve en az 2 porsiyon balık ve deniz ürünleri ile 2 porsiyon beyaz et (tavuk, hindi) yenmesi, kırmızı etlerin haftada en fazla 2 porsiyon, işlenmiş etlerin ise en fazla 1 porsiyon, tüketilmesi önerilmektedir."
+    },
+    {
+      "chunk_id": "tbl34_1",
+      "topic_group": "obezite",
+      "ana_baslik": "Tablo 3.4. Obezitenin neden olduğu sağlık sorunları (1/2)",
+      "content": "--- Tablo 3.4. Obezitenin neden olduğu sağlık sorunları ---\n|:----------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|\n| SOLUNUM                                                                                                               | ENDOKRİN-METABOLİK                                                                                                   |\n| • Akciğer hipoventilasyonu (havalanma eksikliği) • Horlama • Uyku apnesi                                              | • İnsülin direnci • Tip-2 Diabetes Mellitus • Dislipidemi • Metabolik sendrom                                        |\n| KARDİYOVASKÜLER                                                                                                    "
+    },
+    {
+      "chunk_id": "t185",
+      "topic_group": "obezite",
+      "ana_baslik": null,
+      "content": "Tablo 3.4 – Obezitenin neden olduğu sağlık sorunları\nKolonlar: SOLUNUM | ENDOKRİN-METABOLİK\n\nSatırlar:\n- SOLUNUM=• Akciğer hipoventilasyonu (havalanma eksikliği) • Horlama • Uyku apnesi; ENDOKRİN-METABOLİK=• İnsülin direnci • Tip-2 Diabetes Mellitus • Dislipidemi • Metabolik sendrom\n- SOLUNUM=KARDİYOVASKÜLER; ENDOKRİN-METABOLİK=KAS-İSKELET SİSTEMİ\n- SOLUNUM=• Aterosklerozis • Konjestif kalp yetmezliği • Koroner arter hastalığı • Periferik damar hastalıkları • Hipertansiyon; ENDOKRİN-METABOLİK=• Osteoartrit • Osteoporoz • Gut\n- SOLUNUM=GASTROİNTESTİNAL; ENDOKRİN-METABOLİK=DERİ\n- SOLUNUM=• Reflü • Hiatel herni (mide fıtığı) • Karaciğer yağlanması • Safra kesesi taşları; ENDOKRİN-METABOLİK=• Enfeksiyonlar\n- SOLUNUM=GENİTO-ÜRİNER; ENDOKRİN-METABOLİK=KANSER\n- SOLUNUM=• Gebelik toksemisi • Endometrium kanseri • Kısırlık • Adet düzensizliği; ENDOKRİN-METABOLİK=• Obez erkeklerde: kolon, rektum, "
+    },
+    {
+      "chunk_id": "c225c",
+      "topic_group": "balik_omega3",
+      "ana_baslik": null,
+      "content": "Kalp hastalıkları riskini azaltmak için haftada bir ila iki porsiyon (150-300 g pişmiş) balık tüketilmesi önerilmektedir."
+    },
+    {
+      "chunk_id": "cvh_whodiet_1",
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "3.3.1. Genel bilgi (Devam)",
+      "content": "3.3.1. Genel bilgi (Devam)\nDünya Sağlık Örgütü 2015 yılında “Sağlıklı Diyet” bileşenleri yayınlamış ve bu önerileri 2018 yılında güncellemiştir."
+    },
+    {
+      "chunk_id": "meddiet_vegfruit",
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "Sebze ve meyveler",
+      "content": "Akdeniz tipi beslenmede yer alan ortak özellikler şunlardır: • Sebze ve meyveler: Vitaminler, mineraller, antioksidanlar ve posa kaynağıdırlar. Ayrıca zeytinyağı ile pişirilerek ya da üzerine zeytinyağı gezdirilerek yararlılığı artırılabilir. Salata gibi çiğ sebzeler de sağlıklı seçeneklerdir."
+    },
+    {
+      "chunk_id": "cvh_dash_3",
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "DASH: örüntü özeti (tuz/sodyum kısıtlı)",
+      "content": "Özetle DASH diyeti daha az kırmızı et, daha fazla beyaz et, düşük yağlı süt ve ürünleri, tam tahıllar, sebze ve meyveler, kuru baklagiller ve yağlı tohumlar içeren sodyum/tuzdan kısıtlı bir örüntüdür."
+    },
+    {
+      "chunk_id": "dm_ek_05",
+      "topic_group": "kacinma_yag",
+      "ana_baslik": "Doymuş Yağ",
+      "content": "Doymuş yağlar (yağlı süt ürünleri ve bazı hayvansal ürünler) ile trans yağlar (işlenmiş gıdalar/margarinler) sınırlandırılmalıdır. Kolesterol içeriği yüksek gıdalar (yağlı hayvansal ürünler, yumurta, sakatat vb.) ölçülü tüketilmelidir."
+    },
+    {
+      "chunk_id": "ht_dash_01",
+      "topic_group": "dash",
+      "ana_baslik": "DASH diyeti neyi hedefler?",
+      "content": "DASH diyeti; hipertansiyonu önlemek ve tedavide kullanılan bir beslenme planıdır. Sebze-meyve, az yağlı/yağsız süt ürünleri, tam tahıllar, tavuk-balık, kuru baklagil ve yağlı tohumları içerir; kırmızı et, yağ ve şekerli besinleri sınırlandırır. Potasyum, kalsiyum, magnezyum ve posa içeriği yüksektir; doymuş yağ asidi, kolesterol ve sodyum içeriği düşüktür. (Not: Protein/fosfor/potasyumu yüksek olduğu için kronik böbrek hastalığında önerilmeyebilir.)"
+    },
+    {
+      "chunk_id": "c255b",
+      "topic_group": "kuru_baklagiller",
+      "ana_baslik": null,
+      "content": "Diyet posası içeriğinin artırılması kabızlık, obezite, diyabet, kalp hastalıkları ve bazı kanserlerin önlenmesine katkı sağlar."
+    },
+    {
+      "chunk_id": "chunk_000505",
+      "topic_group": "bebeklerde_vitamin_destegi",
+      "ana_baslik": null,
+      "content": "Demir eksikliği, bebekler arasında sık rastlanan bir halk sağlığı sorunudur. Anne sütünün demir içeriği düşük olmakla birlikte biyoyararlılığı yüksektir. Bu nedenle miyadında doğan ve ilk 6 ay sadece anne sütü ile beslenen sağlıklı bebeklerde demir eksikliği gelişmesi beklenen bir durum değildir. Bununla beraber annede demir eksikliği olması, bebeğin yetersiz demir deposu ile doğması, göbek kordonunun geç kesilmesi, ilk 6 ay sadece anne sütü ile beslenmenin mümkün olmaması, tamamlayıcı besinlerin zamanında başlanmaması veya çeşit ve miktar olarak uygun olmaması, bebeğin hızlı büyümesi ve enfeksiyonların sık olması gibi nedenlerle 0–1 yaş döneminde demir eksikliği sık görülmektedir. Türkiye’de 2004 yılından bu yana T.C. Sağlık Bakanlığı tarafından “Emzirmenin Korunması, Özendirilmesi, Desteklenmesi ile Demir Yetersizliği Anemisinin Önlenmesi ve Kontrolü Programı: Demir Gibi Türkiye” kapsa"
+    }
+  ],
+  "top_scored_candidates_preview": [
+    {
+      "id": "chol_5_5_01",
+      "score": 19,
+      "topic_group": "kolesterol_lif",
+      "ana_baslik": "Kolesterolü Düşüren Lifler"
+    },
+    {
+      "id": "chol_5_2_01",
+      "score": 17,
+      "topic_group": "kolesterol_yasaklar",
+      "ana_baslik": "Kaçınılması Gereken Yağ Kaynakları"
+    },
+    {
+      "id": "kalp_2_4_06",
+      "score": 13,
+      "topic_group": "takip",
+      "ana_baslik": "Stres, Klinik Takip ve Genetik Risk"
+    },
+    {
+      "id": "kalp_2_4_12",
+      "score": 11,
+      "topic_group": "lif",
+      "ana_baslik": "Diyet Lifi, Folik Asit ve Kanserden Korunma"
+    },
+    {
+      "id": "kalp_2_4_13",
+      "score": 11,
+      "topic_group": "kuruyemis",
+      "ana_baslik": "Tahıllar, Kuruyemişler ve Kalp Sağlığı"
+    },
+    {
+      "id": "meddiet_pattern_1",
+      "score": 10,
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "Akdeniz beslenme örüntüsü: günlük ve haftalık öneriler"
+    },
+    {
+      "id": "tbl34_1",
+      "score": 10,
+      "topic_group": "obezite",
+      "ana_baslik": "Tablo 3.4. Obezitenin neden olduğu sağlık sorunları (1/2)"
+    },
+    {
+      "id": "t185",
+      "score": 10,
+      "topic_group": "obezite",
+      "ana_baslik": null
+    },
+    {
+      "id": "c225c",
+      "score": 10,
+      "topic_group": "balik_omega3",
+      "ana_baslik": null
+    },
+    {
+      "id": "cvh_whodiet_1",
+      "score": 8,
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "3.3.1. Genel bilgi (Devam)"
+    },
+    {
+      "id": "meddiet_vegfruit",
+      "score": 8,
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "Sebze ve meyveler"
+    },
+    {
+      "id": "cvh_dash_3",
+      "score": 8,
+      "topic_group": "kardiyovaskuler_hastaliklar",
+      "ana_baslik": "DASH: örüntü özeti (tuz/sodyum kısıtlı)"
+    },
+    {
+      "id": "dm_ek_05",
+      "score": 8,
+      "topic_group": "kacinma_yag",
+      "ana_baslik": "Doymuş Yağ"
+    },
+    {
+      "id": "ht_dash_01",
+      "score": 8,
+      "topic_group": "dash",
+      "ana_baslik": "DASH diyeti neyi hedefler?"
+    },
+    {
+      "id": "c255b",
+      "score": 8,
+      "topic_group": "kuru_baklagiller",
+      "ana_baslik": null
+    },
+    {
+      "id": "chunk_000505",
+      "score": 8,
+      "topic_group": "bebeklerde_vitamin_destegi",
+      "ana_baslik": null
+    },
+    {
+      "id": "not_33",
+      "score": 5,
+      "topic_group": "kardiyovaskuler",
+      "ana_baslik": "KVH’tan Korunmada Beslenme Örüntüleri: Akdeniz, DASH, Fleksitaryen (Diyetisyen Notu)"
+    },
+    {
+      "id": "diet_vled_2",
+      "score": 5,
+      "topic_group": "obezite",
+      "ana_baslik": "Çok düşük enerjili diyetlerin olası yan etkileri"
+    }
+  ],
+  "tag_vocab_count": 47,
+  "tag_vocab_sample": [
+    "meyve",
+    "balik",
+    "bulgur",
+    "tahil",
+    "posa_yuksek",
+    "sodyum_dusuk",
+    "lif_yuksek",
+    "az_yagli_sut_urunleri",
+    "zeytinyagi",
+    "yumurta",
+    "baklagil",
+    "sebze",
+    "tam_yagli_sut_urunleri",
+    "trans_yag_riski",
+    "sodyum_yuksek",
+    "tam_yagli",
+    "gi_yuksek",
+    "tekli_doymamis",
+    "coklu_doymamis",
+    "omega3",
+    "kuruyemis",
+    "doymus_yag_yuksek",
+    "doymus_yag_dusuk",
+    "islenmis_et",
+    "kirmizi_et",
+    "beyaz_et",
+    "sodyum_orta",
+    "kolesterol",
+    "az_yagli",
+    "akrilamid",
+    "baklagil_yemegi",
+    "doymus_yag_orta",
+    "ekmek",
+    "et_suyu",
+    "gi_dusuk",
+    "gi_orta",
+    "kh_dusuk",
+    "kh_orta",
+    "kh_yuksek",
+    "kompleks_kh",
+    "lif_dusuk",
+    "lif_orta",
+    "lifli_beslenme",
+    "peynir",
+    "pilav_makarna",
+    "sut_urunu",
+    "yagsiz_sut_urunleri"
+  ],
+  "deterministic_numeric_added": {
+    "numeric_constraints": [
+      {
+        "tag": "sebze",
+        "period_days": 1,
+        "min_count": 5
+      },
+      {
+        "tag": "meyve",
+        "period_days": 1,
+        "min_count": 5
+      },
+      {
+        "tag": "baklagil",
+        "period_days": 7,
+        "min_count": 2,
+        "max_count": 4
+      },
+      {
+        "tag": "balik",
+        "period_days": 7,
+        "min_count": 150,
+        "max_count": 300
+      }
+    ],
+    "evidence_items": [
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "sebze"
+        ],
+        "quote": "Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "meyve"
+        ],
+        "quote": "Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "baklagil"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "c225c",
+        "related_tags": [
+          "balik"
+        ],
+        "quote": "Kalp hastalıkları riskini azaltmak için haftada bir ila iki porsiyon (150-300 g pişmiş) balık tüketilmesi önerilmektedir"
+      }
+    ]
+  },
+  "auto_rule_tagging_added": {
+    "prefer": [
+      "az_yagli",
+      "balik",
+      "bulgur",
+      "islenmis_et",
+      "lif_yuksek",
+      "lifli_beslenme",
+      "omega3",
+      "posa_yuksek",
+      "yumurta",
+      "zeytinyagi"
+    ],
+    "limit": [
+      "az_yagli_sut_urunleri",
+      "baklagil",
+      "beyaz_et",
+      "gi_yuksek",
+      "kirmizi_et",
+      "meyve",
+      "sebze",
+      "sodyum_yuksek",
+      "tahil",
+      "trans_yag_riski"
+    ],
+    "avoid": [
+      "doymus_yag_yuksek",
+      "peynir",
+      "sut_urunu",
+      "tam_yagli",
+      "tam_yagli_sut_urunleri"
+    ],
+    "evidence_items": [
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "gi_yuksek"
+        ],
+        "quote": "Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "tahil"
+        ],
+        "quote": "Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "bulgur"
+        ],
+        "quote": "Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "sebze"
+        ],
+        "quote": "Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "meyve"
+        ],
+        "quote": "Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_5_01",
+        "related_tags": [
+          "baklagil"
+        ],
+        "quote": "Günde en az 5 porsiyon sebze-meyve ve haftada 2-3 kez kurubaklagil tüketilmelidir"
+      },
+      {
+        "chunk_id": "chol_5_2_01",
+        "related_tags": [
+          "doymus_yag_yuksek"
+        ],
+        "quote": "Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır"
+      },
+      {
+        "chunk_id": "chol_5_2_01",
+        "related_tags": [
+          "sut_urunu"
+        ],
+        "quote": "Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır"
+      },
+      {
+        "chunk_id": "chol_5_2_01",
+        "related_tags": [
+          "peynir"
+        ],
+        "quote": "Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır"
+      },
+      {
+        "chunk_id": "chol_5_2_01",
+        "related_tags": [
+          "tam_yagli_sut_urunleri"
+        ],
+        "quote": "Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır"
+      },
+      {
+        "chunk_id": "chol_5_2_01",
+        "related_tags": [
+          "tam_yagli"
+        ],
+        "quote": "Tam yağlı süt ve peynir ürünlerinden kaçınılmalıdır"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "sebze"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "meyve"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "balik"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "omega3"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "beyaz_et"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "kirmizi_et"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "islenmis_et"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "gi_yuksek"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      },
+      {
+        "chunk_id": "meddiet_pattern_1",
+        "related_tags": [
+          "tahil"
+        ],
+        "quote": "Akdeniz beslenme örüntüsünde her gün en az 5 porsiyon çeşitli renklerde sebze (patates sebze olarak sayılmamaktadır) ve meyve tüketilmesi, 1-2 porsiyon tam tahıl yenilmesi, tercihen az yağlı olmak üzere her gün 2 porsiyon süt ve ürünleri, ayrıca 1-2 porsiyon s"
+      }
+    ]
+  },
+  "llm_raw_preview": "{\n  \"prefer_tags\": [\"sebze\", \"meyve\"],\n  \"limit_tags\": [\"kirmizi_et\", \"baklagil\"],\n  \"avoid_tags\": [\"doymus_yaglar\", \"tam_yagli_sut_peyniri\"],\n  \"daily_porsiyonlar\": {\n    \"sebze_meyve\": 5,\n    \"kurubaklagil\": 2,\n    \"balik_deniz_urunleri\": 2,\n    \"yumurta\": 2,\n    \"tam_tahil\": 1,\n    \"sert_kabuklu_yemisler\": 1\n  },\n  \"haftalık_porsiyonlar\": {\n    \"kirmizi_et\": 2,\n    \"işlenmiş_et\": 1\n  }\n}",
+  "final_output_preview": {
+    "prefer_tags": [
+      "balik",
+      "bulgur",
+      "posa_yuksek",
+      "lifli_beslenme",
+      "lif_yuksek",
+      "omega3",
+      "zeytinyagi"
+    ],
+    "limit_tags": [
+      "meyve",
+      "kirmizi_et",
+      "tahil",
+      "trans_yag_riski",
+      "sodyum_yuksek",
+      "gi_yuksek",
+      "az_yagli_sut_urunleri",
+      "beyaz_et",
+      "baklagil",
+      "sebze"
+    ],
+    "avoid_tags": [
+      "tam_yagli_sut_urunleri",
+      "sut_urunu",
+      "doymus_yag_yuksek",
+      "tam_yagli",
+      "peynir"
+    ],
+    "rag_evidence_count": 37,
+    "numeric_constraints_count": 2
+  }
+}

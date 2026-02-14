@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+  "answer": "Kabuklu yemiş tüketimi, özellikle badem, ceviz ve zeytin gibi kaynaklar uygun seçeneklerdir  |  Tekli ve çoklu doymamış yağlar tercih edilmeli  |  Tereyağ ve margarin yerine zeytinyağı, fındık yağı gibi bitkisel yağlar kullanılmalı  |  Günde en az 5 porsiyon sebze ve meyve tüketimi önerilir  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı  |  Yağlı tohum tüketimi, gereksinimlere uygun miktarlarda yapılmalı.",
+  "used_chunks": [
+    "t2p_3",
+    "dm_ek_04"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için kuruyemiş kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

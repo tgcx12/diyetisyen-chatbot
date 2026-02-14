@@ -1,0 +1,40 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Çocukların sağlıklı beslenmesi için kuruyemiş ve kabuklu yemiş tüketim miktarı konusunda genel öneriler bulunmaktadır.  |  Önemli noktalar  |  Çocuklar, okulda öğünlerini sağlıklı bir şekilde tüketmelidir.  |  Kuruyemiş ve kabuklu yemiş gibi besinler, çocukların enerji seviyelerini yükseltebilir.  |  Öğünlerin çeşitliliği ve dengeli beslenme alışkanlığı önemlidir.",
+  "used_chunks": [
+    "okul_ergen_06_okulun_rolu"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için kuruyemiş kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_amt",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

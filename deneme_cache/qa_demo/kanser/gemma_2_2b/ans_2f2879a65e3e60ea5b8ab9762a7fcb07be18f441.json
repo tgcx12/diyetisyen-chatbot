@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Kırmızı et tüketimi, kolorektal kanser riski ile ilişkilidir  |  Örneğin, işlenmiş et ürünleri nitrat türevi bileşikleri içerir ve bu da kolon kanseri riskini artırmaktadır",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_redmeat_balance_note",
+    "ca_additives_nitrate_example",
+    "ca_heterocyclic_amines",
+    "ca_cooking_compounds_overview"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kırmızı et tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

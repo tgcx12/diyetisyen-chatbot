@@ -1,0 +1,44 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Haftada 2 kez yağlı balık (somon, uskumru vb.) tüketilmelidir.  |  Doymamış Yağlar ve Omega 3  |  Zeytinyağı ve fındık yağı kötü kolesterolü düşürür.  |  Omega 3, Vitaminler ve Şeker Tüketimi  |  Kuru yemişlerde ayrıca arginin amino asidi, magnezyum minerali ve E vitamini bulunur.  |  Ceviz, içinde bulunan Omega 3 yağ asitleri sayesinde kalbi korur.",
+  "used_chunks": [
+    "chol_5_4_01",
+    "kalp_2_4_14",
+    "kalp_2_4_09"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için balık tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_balik_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

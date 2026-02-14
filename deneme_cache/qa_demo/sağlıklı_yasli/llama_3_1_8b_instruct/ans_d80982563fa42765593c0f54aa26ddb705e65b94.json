@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yaşlılarda Sağlıklı Beslenme İlkeleri  |  Doymuş yağdan zengin besinlerin fazla tüketimi kalp damar hastalıkları riskini artırabilir.  |  Doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır.",
+  "used_chunks": [
+    "yasli_ilke_07_doymus_yag",
+    "yasli_saglikli_06_tahil_yag"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için doymuş yağ tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_doymus_num_freq",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

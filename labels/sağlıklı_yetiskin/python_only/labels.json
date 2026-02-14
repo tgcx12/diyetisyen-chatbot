@@ -1,0 +1,672 @@
+{
+  "prefer_tags": [
+    "baklagil",
+    "bulgur",
+    "ekmek",
+    "gi_orta",
+    "hafif",
+    "hdl_artirma",
+    "kirmizi_et",
+    "omega3",
+    "sivi",
+    "sut_urunu",
+    "tekli_doymamis"
+  ],
+  "limit_tags": [
+    "az_yagli_sut_urunleri",
+    "balik",
+    "beyaz_et",
+    "doymus_yag_kisitlama",
+    "doymus_yag_orta",
+    "islenmis_et",
+    "kolesterol",
+    "salata",
+    "sodyum_orta",
+    "trans_yag_riski",
+    "yag",
+    "yumurta"
+  ],
+  "avoid_tags": [
+    "et_suyu",
+    "meyve"
+  ],
+  "meal_pattern_rules": {
+    "logical_rules": {
+      "prefer": [
+        "baklagil",
+        "bulgur",
+        "ekmek",
+        "gi_orta",
+        "hafif",
+        "hdl_artirma",
+        "kirmizi_et",
+        "omega3",
+        "sivi",
+        "sut_urunu",
+        "tekli_doymamis"
+      ],
+      "limit": [
+        "az_yagli_sut_urunleri",
+        "balik",
+        "beyaz_et",
+        "doymus_yag_kisitlama",
+        "doymus_yag_orta",
+        "islenmis_et",
+        "kolesterol",
+        "salata",
+        "sodyum_orta",
+        "trans_yag_riski",
+        "yag",
+        "yumurta"
+      ],
+      "avoid": [
+        "et_suyu",
+        "meyve"
+      ]
+    },
+    "numeric_constraints": [
+      {
+        "tag": "beyaz_et",
+        "min_count": 2.0,
+        "max_count": 3.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "yetişkinler için beyaz et tüketimi haftada 2 3 kez önerilir"
+      },
+      {
+        "tag": "balik",
+        "min_count": 300.0,
+        "max_count": 500.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "yetişkinler için haftada en az iki kez 300 500 gram balık tüketimi önerilir"
+      },
+      {
+        "tag": "balik",
+        "min_count": 300.0,
+        "max_count": 500.0,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "haftada en az iki kez (300 500 g) balık tüketilmelidir"
+      },
+      {
+        "tag": "yumurta",
+        "min_count": 2.0,
+        "max_count": null,
+        "period_days": 7,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "kez",
+        "description": "yetişkinler için yumurta tüketimi haftada 2 kez önerilir"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 1.0,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "ortalama olarak 1 porsiyon (2 adet) önerilir"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 0.0,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "günlük enerji ihtiyacının %10'unu aşmamalıdır"
+      },
+      {
+        "tag": "doymus_yag_kisitlama",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 0.0,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "günlük alınan doymuş yağ miktarı toplam enerjinin %10’unu aşmamalıdır"
+      },
+      {
+        "tag": "yag",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 0.0,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "günlük enerji miktarının %10'unu aşmamalıdır"
+      },
+      {
+        "tag": "sodyum_orta",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 0.0,
+        "max_grams": 1.0,
+        "unit": "yuzde",
+        "description": "toplam enerjinin %10'unu aşmamalıdır"
+      },
+      {
+        "tag": "salata",
+        "min_count": null,
+        "max_count": null,
+        "period_days": null,
+        "min_grams": 400.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "meyve ve sebze tüketimi en az 400 gram olmalı"
+      },
+      {
+        "tag": "lif_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "yetişkinler için posa tüketimi günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek"
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "min_count": 5.0,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": null,
+        "max_grams": null,
+        "unit": "porsiyon",
+        "description": "günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek"
+      },
+      {
+        "tag": "salata",
+        "min_count": null,
+        "max_count": null,
+        "period_days": 1,
+        "min_grams": 400.0,
+        "max_grams": null,
+        "unit": "gram",
+        "description": "günde en az 400 g sebze ve meyve tüketilmelidir"
+      }
+    ],
+    "engine_rules": [
+      {
+        "rule": "[genel]=[baklagil]",
+        "meal": "genel",
+        "tag": "baklagil",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[sivi]",
+        "meal": "genel",
+        "tag": "sivi",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[beyaz_et]",
+        "meal": "genel",
+        "tag": "beyaz_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hdl_artirma]",
+        "meal": "genel",
+        "tag": "hdl_artirma",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[omega3]",
+        "meal": "genel",
+        "tag": "omega3",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[balik]",
+        "meal": "genel",
+        "tag": "balik",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[hafif]",
+        "meal": "genel",
+        "tag": "hafif",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[islenmis_et]",
+        "meal": "genel",
+        "tag": "islenmis_et",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[yumurta]",
+        "meal": "genel",
+        "tag": "yumurta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kolesterol]",
+        "meal": "genel",
+        "tag": "kolesterol",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[yumurta]",
+        "meal": "genel",
+        "tag": "yumurta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[gi_orta]",
+        "meal": "genel",
+        "tag": "gi_orta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[kirmizi_et]",
+        "meal": "genel",
+        "tag": "kirmizi_et",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[yag]",
+        "meal": "genel",
+        "tag": "yag",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[az_yagli_sut_urunleri]",
+        "meal": "genel",
+        "tag": "az_yagli_sut_urunleri",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[sut_urunu]",
+        "meal": "genel",
+        "tag": "sut_urunu",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[bulgur]",
+        "meal": "genel",
+        "tag": "bulgur",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[ekmek]",
+        "meal": "genel",
+        "tag": "ekmek",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[meyve]",
+        "meal": "genel",
+        "tag": "meyve",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[tekli_doymamis]",
+        "meal": "genel",
+        "tag": "tekli_doymamis",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_kisitlama]",
+        "meal": "genel",
+        "tag": "doymus_yag_kisitlama",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[sodyum_orta]",
+        "meal": "genel",
+        "tag": "sodyum_orta",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[trans_yag_riski]",
+        "meal": "genel",
+        "tag": "trans_yag_riski",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[et_suyu]",
+        "meal": "genel",
+        "tag": "et_suyu",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[meyve]",
+        "meal": "genel",
+        "tag": "meyve",
+        "intent": "avoid"
+      },
+      {
+        "rule": "[genel]=[salata]",
+        "meal": "genel",
+        "tag": "salata",
+        "intent": "limit"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_orta]",
+        "meal": "genel",
+        "tag": "doymus_yag_orta",
+        "intent": "prefer"
+      },
+      {
+        "rule": "[genel]=[doymus_yag_orta]",
+        "meal": "genel",
+        "tag": "doymus_yag_orta",
+        "intent": "limit"
+      }
+    ]
+  },
+  "energy_rules": {
+    "scale_up_order": [],
+    "scale_down_order": [],
+    "locks": []
+  },
+  "recommendations": [
+    {
+      "text": "300 500 g",
+      "intent": "unmatched_numeric",
+      "chunk_id": "chunk_000599_02"
+    },
+    {
+      "text": "2 adet",
+      "intent": "unmatched_numeric",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "text": "Sebzeler ve meyvelerin mevsiminde tüketilmesi önerilir.",
+      "intent": "prefer",
+      "chunk_id": "c175b"
+    }
+  ],
+  "rag_evidence": [
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Öğünlerde besin çeşitliliği sağlanmalı, enerji içeriği yüksek ancak besin değeri düşük gıdalar yerine protein, vitamin ve mineralden zengin besinler tercih edilmelidir",
+      "chunk_id": "yasli_ilke_02_uc_ogun"
+    },
+    {
+      "related_tags": [
+        "baklagil"
+      ],
+      "quote": "Yemeklerde doymuş yağları yerine bitkisel sıvı yağlar kullanın.",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Öğünlerde besin çeşitliliği sağlanmalı, enerji içeriği yüksek ancak besin değeri düşük gıdalar yerine protein, vitamin ve mineralden zengin besinler tercih edilmelidir",
+      "chunk_id": "yasli_ilke_02_uc_ogun"
+    },
+    {
+      "related_tags": [
+        "balik"
+      ],
+      "quote": "Yetişkinler için haftada en az iki kez 300 500 gram balık tüketimi önerilir",
+      "chunk_id": "chunk_000599_02"
+    },
+    {
+      "related_tags": [
+        "sivi"
+      ],
+      "quote": "Yemeklerde doymuş yağları yerine bitkisel sıvı yağlar kullanın.",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "sivi"
+      ],
+      "quote": "Yemeklerde bitkisel sıvı yağlar tercih edilmeli",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Yetişkinler için beyaz et tüketimi haftada 2 3 kez önerilir.",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "beyaz_et"
+      ],
+      "quote": "Yetişkinler için doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır",
+      "chunk_id": "chunk_000592_01"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine sağlıklı yağlar tercih edilmelidir.",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "hdl_artirma"
+      ],
+      "quote": "Yumurtanın sağlıklı bir beslenme programına dahil edilmesi önerilir.",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine sağlıklı yağlar tercih edilmelidir.",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "az_yagli_sut_urunleri"
+      ],
+      "quote": "Az yağlı süt ve ürünlerin tercih edilmesi önerilir",
+      "chunk_id": "chunk_000592_02"
+    },
+    {
+      "related_tags": [
+        "omega3"
+      ],
+      "quote": "Yetişkinler için haftada en az iki kez 300 500 gram balık tüketimi önerilir",
+      "chunk_id": "chunk_000599_02"
+    },
+    {
+      "related_tags": [
+        "hafif"
+      ],
+      "quote": "Balıklar pişirilirken ızgara, fırında veya buharda pişirme yöntemleri kullanılmalı.",
+      "chunk_id": "chunk_000599_02"
+    },
+    {
+      "related_tags": [
+        "islenmis_et"
+      ],
+      "quote": "Balıklar pişirilirken ızgara, fırında veya buharda pişirme yöntemleri kullanılmalı.",
+      "chunk_id": "chunk_000599_02"
+    },
+    {
+      "related_tags": [
+        "yumurta"
+      ],
+      "quote": "Yetişkinler için yumurta tüketimi önerilir",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "yumurta"
+      ],
+      "quote": "Yetişkinler için yumurta tüketimi haftada 2 kez önerilir",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "kolesterol"
+      ],
+      "quote": "Yetişkinler için yumurta tüketimi önerilir",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "kolesterol"
+      ],
+      "quote": "Yetişkinler için yumurta tüketimi haftada 2 kez önerilir",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "gi_orta"
+      ],
+      "quote": "Yetişkinler için günlük yumurta tüketimi, ortalama olarak 1 porsiyon (2 adet) önerilir.",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Yetişkinler için günlük yumurta tüketimi, ortalama olarak 1 porsiyon (2 adet) önerilir.",
+      "chunk_id": "yasli_saglikli_04_besin_cesitliligi"
+    },
+    {
+      "related_tags": [
+        "kirmizi_et"
+      ],
+      "quote": "Yetişkinler için posa alımı, günlük beslenmede önemli bir rol oynar. Sebzeler ve meyvelerin mevsiminde tüketilmesi önerilir.",
+      "chunk_id": "c175b"
+    },
+    {
+      "related_tags": [
+        "yag"
+      ],
+      "quote": "Süt ve süt ürünleri tüketim miktarı, günlük enerji ihtiyacının %10'unu aşmamalıdır",
+      "chunk_id": "chunk_000592_02"
+    },
+    {
+      "related_tags": [
+        "yag"
+      ],
+      "quote": "Yetişkinler için doymuş yağ tüketim sıklığı, günlük enerji miktarının %10'unu aşmamalıdır",
+      "chunk_id": "chunk_000592_01"
+    },
+    {
+      "related_tags": [
+        "sut_urunu"
+      ],
+      "quote": "Az yağlı süt ve ürünlerin tercih edilmesi önerilir",
+      "chunk_id": "chunk_000592_02"
+    },
+    {
+      "related_tags": [
+        "bulgur"
+      ],
+      "quote": "Tam tahıl ekmek tüketimi önerilir",
+      "chunk_id": "yasli_saglikli_06_tahil_yag"
+    },
+    {
+      "related_tags": [
+        "ekmek"
+      ],
+      "quote": "Tam tahıl ekmek tüketimi önerilir",
+      "chunk_id": "yasli_saglikli_06_tahil_yag"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Şeker ve şeker ilaveli besinler ile pastane ürünleri kullanımı azaltılmalı",
+      "chunk_id": "yasli_saglikli_06_tahil_yag"
+    },
+    {
+      "related_tags": [
+        "meyve"
+      ],
+      "quote": "Meyve suyu yerine meyve tüketimi tercih edilmelidir",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "tekli_doymamis"
+      ],
+      "quote": "Yemeklerde doymuş yağlar yerine zeytinyağı ve kabuklu yemişler tüketin",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_kisitlama"
+      ],
+      "quote": "Günlük alınan doymuş yağ miktarı toplam enerjinin %10’unu aşmamalıdır",
+      "chunk_id": "chunk_000592_01"
+    },
+    {
+      "related_tags": [
+        "sodyum_orta"
+      ],
+      "quote": "Yetişkinler için doymuş yağ tüketim miktarı, toplam enerjinin %10'unu aşmamalıdır.",
+      "chunk_id": "chunk_000592_01"
+    },
+    {
+      "related_tags": [
+        "trans_yag_riski"
+      ],
+      "quote": "Hazır paketli ürün tüketimi sınırlandırılmalı",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "et_suyu"
+      ],
+      "quote": "Meyve suyu yerine meyve tüketimi tercih edilmelidir",
+      "chunk_id": "chunk_000593_01"
+    },
+    {
+      "related_tags": [
+        "salata"
+      ],
+      "quote": "Meyve ve sebze tüketimi en az 400 gram olmalı",
+      "chunk_id": "chunk_000592_04"
+    },
+    {
+      "related_tags": [
+        "salata"
+      ],
+      "quote": "Günde en az 400 g sebze ve meyve tüketilmelidir.",
+      "chunk_id": "c175b"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Yetişkinler için posa alımı, günlük beslenmede önemli bir rol oynar. Sebzeler ve meyvelerin mevsiminde tüketilmesi önerilir.",
+      "chunk_id": "c175b"
+    },
+    {
+      "related_tags": [
+        "doymus_yag_orta"
+      ],
+      "quote": "Günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek, nişastalı olmayan kökler ve yumrular (örneğin havuç, enginar, kereviz (kereviz kökü), şalgam, pancar) tüketmek kansere karşı koruyucu.",
+      "chunk_id": "c175b"
+    }
+  ]
+}

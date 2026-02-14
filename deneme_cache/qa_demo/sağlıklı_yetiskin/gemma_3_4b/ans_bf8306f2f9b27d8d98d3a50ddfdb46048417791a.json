@@ -1,0 +1,40 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+  "answer": "Bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı vb.) tercih edilmelidir  |  Tavuk ve hindi gibi beyaz etleri pişirirken bitkisel yağlar kullanılmalıdır  |  Doymuş yağların yerine bitkisel yağlar kullanmak sağlıklı bir seçenektir  |  Pişirme yöntemleri arasında kızartma, ızgara ve fırınlama yer alabilir  |  Beyaz et tüketimini sağlıklı bir şekilde yapabilmek için bitkisel yağlar kullanın  |  Hindistan cevizi yağı yerine bitkisel yağlar kullanın",
+  "used_chunks": [
+    "chunk_000593_01"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için beyaz et (tavuk hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yaşlılarda besin tüketimi değişken olabilir. Et, tavuk ve balık gibi besinlerin tüketimi yaşlı bireylerde değişebilir. Yumurta tüketimi daha sık olur.  |  Et, tavuk ve balık gibi besinler tüketiminin değişkenliği yaşlı bireylere göre farklılık gösterebilir.  |  Yumurtanın tüketim miktarı daha sık olduğu bilinmektedir.  |  Et grubu (kırmızı et, tavuk, balık) tüketimi de değişkenlik gösterebilir.  |  Bu nedenle, yaşlı bireylerin beslenme ihtiyaçlarına göre beyaz et tüketiminin ne kadar olmalı sorusuna kesin bir cevap vermek mümkün değildir.",
+  "used_chunks": [
+    "yasli_besin_02_et_grubu",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için beyaz et (tavuk hindi) tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

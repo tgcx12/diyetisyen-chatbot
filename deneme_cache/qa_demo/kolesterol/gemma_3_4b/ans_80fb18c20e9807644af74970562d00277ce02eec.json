@@ -1,0 +1,47 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yarım yağlı veya yağsız süt ve süt ürünleri tercih edilmelidir  |  Peynir, süt ve yogurt az yağlı olanlardan seçilmelidir  |  Yumurta haftada 1 2 kez haşlanmış veya yağsız tavada omlet biçiminde pişirilmelidir  |  Yağlı etlerden ve salamuralardan kaçınılmalıdır  |  Az tuzlu ve az yağlı ibareli salamura yada konserve zeytinler tüketilebilir  |  Süt ve süt ürünlerinin tüketimi, özellikle yetişkinlerde azaltılmalıdır",
+  "used_chunks": [
+    "chunk_000402",
+    "chol_5_3_01",
+    "chunk_000406",
+    "chunk_000395",
+    "kalp_2_4_10",
+    "chunk_000408",
+    "chol_5_2_01",
+    "chunk_000412"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1_num_amt",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

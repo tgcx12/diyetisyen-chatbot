@@ -1,0 +1,45 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Tuz kısıtlaması önemlidir.  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, .  |  Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı, .  |  Sakatatların (karaciğer, beyin, böbrek gibi) kolesterol içeriğinin yüksek olduğu unutulmamalı, .  |  Yarım yağlı veya yağsız süt ürünleri tercih edilmeli, .  |  Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçilmeli, .",
+  "used_chunks": [
+    "dm_4_6_01",
+    "t2p_4",
+    "t2p_3",
+    "t2r_1",
+    "dm_4_3_01",
+    "dm_4_2_01",
+    "t2p_1",
+    "not_30",
+    "t2p_2",
+    "not_26",
+    "dm_prev_1",
+    "dm_4_7_01"
+  ],
+  "strict_chunks_count": 18,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

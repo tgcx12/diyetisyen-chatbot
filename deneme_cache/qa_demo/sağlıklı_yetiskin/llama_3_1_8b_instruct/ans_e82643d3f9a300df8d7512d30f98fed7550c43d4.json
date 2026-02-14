@@ -1,0 +1,48 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yaşlılarda Sağlıklı Beslenme İlkeleri  |  Aşırı tuz tüketimi hipertansiyon ve kalp damar hastalıkları riskini artırır.  |  Yemeklere ek tuz eklenmemeli ve tuzlu besinler sınırlandırılmalıdır.  |  Tuz, tuzlanmış besin ve tuz içeriği yüksek besinlerin (turşu, salamura besinler, zeytin vb.) tüketimi azaltılmalı.  |  yemeğin tadına bakmadan tuz ilavesi yapılmamalıdır.  |  Kullanılan tuzun iyotlu tuz olmasına dikkat edilmelidir.",
+  "used_chunks": [
+    "yasli_ilke_11_tuz",
+    "chunk_000602_01",
+    "yasli_saglikli_07_su_tuz_seker",
+    "genel_04_tuz_yag_seker",
+    "chunk_000593_01",
+    "c175a",
+    "chunk_000616_01"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için tuz sodyum tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tuz_1_num_freq",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

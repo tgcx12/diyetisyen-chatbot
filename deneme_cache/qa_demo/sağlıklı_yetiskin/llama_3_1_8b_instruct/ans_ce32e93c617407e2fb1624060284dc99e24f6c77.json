@@ -1,0 +1,49 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "Toplam ve doymuş yağ ile kolesterol ve şeker alımı azaltılmalıdır.  |  Günlük diyette doymuş yağı azaltmak için az yağlı süt ve ürünleri ile et ve ürünleri tercih edilmeli.  |  Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine.  |  bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı, mısırözü, soya, kanola yağı vb.) tercih edilmelidir.  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir.  |  Genel Beslenme Önerileri",
+  "used_chunks": [
+    "chunk_000592_01",
+    "chunk_000592_02",
+    "chunk_000593_01",
+    "yasli_ilke_07_doymus_yag",
+    "genel_04_tuz_yag_seker",
+    "yasli_saglikli_06_tahil_yag",
+    "c176",
+    "chunk_000613_01"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

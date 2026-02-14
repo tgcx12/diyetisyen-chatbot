@@ -1,0 +1,43 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+  "answer": "Yaşam tarzı (RAG bilgilendirme)  |  lifestyle  |  Yaşam tarzı değişiklikleri kan basıncını azaltmaya katkı sağlar: kilo kaybı, DASH diyeti, tuz azaltımı, fiziksel aktivite ve alkolün sınırlandırılması ile toplam düşüş artabilir.  |  Sodyumun Kaynağı ve Hipertansiyon Riski (Diyetisyen Notu)  |  ÖNEMLİ DİYETİSYEN NOTU (not18): Besinler ile alınan sodyumun (tuz) %75’inden fazlası paketlenmiş ve ev dışında tüketilen hazır besinlerden gelir.  |  Fazla sodyum (tuz) alımı hipertansiyon geliştirme riskini artırır.",
+  "used_chunks": [
+    "ht_lifestyle_01",
+    "not_18",
+    "dm_ek_06",
+    "cvh_salt_1",
+    "genel_04_tuz_yag_seker",
+    "yasli_ilke_11_tuz",
+    "ht_beverage_01",
+    "ht_salt_01",
+    "chunk_000416",
+    "ht_info_01"
+  ],
+  "strict_chunks_count": 10,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_2",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,1636 @@
+# -*- coding: utf-8 -*-
+"""
+generate_disease_rules_local_ollama.py
+
+LOCAL (Ollama) sürüm:
+- Groq API yok.
+- Model: llama3.1:8b-instruct-q4_K_M (default)
+- RERANK YOK: retrieve_chunks / vector index kullanılmaz.
+- Chunk payload SADECE: chunk_id, topic_group, ana_baslik, content
+- use_all_relevant + llm_batch_size ile sliding window batching + merge
+
+Çalıştırma örneği:
+python generate_disease_rules_local_ollama.py --domain kolesterol --query "..." --use_all_relevant --llm_batch_size 10
+"""
+
+import os
+import re
+import json
+import time
+import random
+import argparse
+from typing import Any, Dict, List, Set, Optional, Tuple
+
+import requests
+
+# =============================
+# CONFIG (OLLAMA)
+# =============================
+OLLAMA_URL = "http://localhost:11434/api/chat"
+DEFAULT_MODEL = "llama3.1:8b-instruct-q4_K_M"
+
+DEFAULT_TAG_DICTS_PATH = r"C:\Users\user\Desktop\diyetisyen_llm\tag_dicts.json"
+DEFAULT_OUT_DIR = r"C:\Users\user\Desktop\diyetisyen_llm"
+DEFAULT_RAG_JSON_PATH = r"C:\Users\user\Desktop\diyetisyen_llm\merged_all_rag_standardized.json"
+
+DEFAULT_ALIASES = {
+    "tip2": {
+        "anchors": ["tip2", "tip 2", "t2", "tip ii", "tip-2", "diyabet", "diabetes", "type 2", "type2"],
+        "biomarkers": ["glukoz", "hba1c", "insulin", "insülin"],
+    },
+    "tip1": {
+        "anchors": ["tip1", "tip 1", "t1", "tip i", "tip-1", "diyabet", "diabetes", "type 1", "type1"],
+        "biomarkers": ["glukoz", "hba1c", "insulin", "insülin"],
+    },
+    "kolesterol": {
+        "anchors": [
+            "kolesterol",
+            "hiperlipidemi",
+            "hiperkolesterolemi",
+            "yüksek kolesterol",
+            "hiper kolesterol",
+
+            "kardiyovaskuler",
+            "kardiyovasküler",
+            "kalp damar",
+            "kalp-damar",
+            "koroner",
+            "ateroskleroz",
+            "kalp hastalik",
+            "kalp hastalık",
+
+            "kardiyovasküler hastalıklardan korunmak için genel ilkeler",
+        ],
+        "biomarkers": ["ldl", "hdl", "trigliserid", "trigliserit", "lipid"],
+    },
+}
+
+DOMAIN_TOPIC_GROUP_PREFIX = {
+    "kolesterol": ["kolesterol_"],
+}
+
+NOISE_KEYWORDS = [
+    "digoksin", "antidepresan", "warfarin", "metformin", "insulin", "insülin",
+    "ilac", "ilaç", "farmak", "emilim", "doz", "tablet", "kapsul", "ampul", "enjeksiyon",
+    "iv", "intravenoz", "subkutan", "sc", "im", "protokol", "order", "reçete", "recete",
+]
+
+CLINICAL_SETTING_KEYWORDS = [
+    "yoğun bakım", "yogun bakim", "intensive care", "icu",
+    "yanik", "yanık", "burn",
+    "kemoterapi", "radyoterapi", "onkoloji",
+    "diyaliz", "dializ",
+    "parenteral", "enteral", "ng", "peg", "kateter", "ventilat",
+]
+
+FOOD_SIGNAL_RE = re.compile(
+    r"(ekmek|tam tahil|tam tahıl|bulgur|pirin[cç]|makarna|pilav|sebze|meyve|"
+    r"kurubaklagil|kuru baklagil|baklagil|mercimek|nohut|fasulye|"
+    r"et\b|tavuk|hindi|bal[iı]k|yumurta|sakatat|"
+    r"s[uü]t|yo[gğ]urt|kefir|ayran|peynir|"
+    r"ya[gğ]|zeytinyag|margarin|tereya[gğ]|krema|kaymak|"
+    r"kuruyemi[sş]|ceviz|badem|f[iı]nd[iı]k|"
+    r"tuz|sodyum|şeker|seker|re[cç]el|bal|trans|doymu[sş]|"
+    r"tam yagli|tam yağlı|az yagli|az yağlı|yagsiz|yağsız|light)",
+    re.IGNORECASE
+)
+
+# =============================
+# IO / NORMALIZE
+# =============================
+def norm_plain(s: str) -> str:
+    s = (s or "").lower().strip()
+    s = s.replace("ı", "i").replace("ş", "s").replace("ğ", "g").replace("ü", "u").replace("ö", "o").replace("ç", "c")
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+def safe_load_json(path: str) -> Any:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def safe_dump_json(obj: Any, path: str) -> None:
+    out_dir = os.path.dirname(path)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+
+def clean_json_text(s: str) -> str:
+    s = (s or "").strip()
+    if s.startswith("```"):
+        s = re.sub(r"^```(\w+)?", "", s).strip()
+        if s.endswith("```"):
+            s = s[:-3].strip()
+    return s
+
+# =============================
+# OLLAMA CHAT (LOCAL)
+# =============================
+def ollama_chat(model: str, system: str, user: str,
+                temperature: float = 0.0, max_retries: int = 4) -> str:
+    """
+    Ollama /api/chat kullanır.
+    JSON output için: format="json" gönderiyoruz.
+    """
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user},
+        ],
+        "stream": False,
+        "format": "json",
+        "options": {
+            "temperature": float(temperature),
+        }
+    }
+
+    last_err = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            r = requests.post(OLLAMA_URL, json=payload, timeout=300)
+            if r.ok:
+                j = r.json()
+                # Ollama: {"message": {"role":"assistant","content":"..."}}
+                return (j.get("message", {}) or {}).get("content", "") or ""
+            last_err = f"Ollama HTTP {r.status_code}: {r.text}"
+        except Exception as e:
+            last_err = str(e)
+
+        sleep_s = min(8, 2 ** attempt) + random.random()
+        print(f"[WARN] Ollama çağrısı başarısız: {last_err} | {sleep_s:.1f}s bekleyip retry ({attempt}/{max_retries})")
+        time.sleep(sleep_s)
+
+    raise RuntimeError(f"Ollama chat başarısız: {last_err}")
+
+# =============================
+# TAG DICTS
+# =============================
+def load_tag_dicts(tag_dicts_path: str) -> Dict[str, str]:
+    data = safe_load_json(tag_dicts_path)
+    if isinstance(data, dict) and "tags" in data and isinstance(data["tags"], dict):
+        tags = data["tags"]
+    elif isinstance(data, dict):
+        tags = data
+    else:
+        raise ValueError("tag_dicts.json formatı beklenmeyen. dict olmalı.")
+    out: Dict[str, str] = {}
+    for k, v in tags.items():
+        if not isinstance(k, str) or not k.strip():
+            continue
+        out[k.strip()] = (v if isinstance(v, str) else str(v)).strip()
+    return out
+
+# =============================
+# ALIASES
+# =============================
+def build_aliases(domain: str, extra: Optional[str]) -> Tuple[List[str], List[str]]:
+    d = domain.lower().strip()
+    obj = DEFAULT_ALIASES.get(d, {"anchors": [domain], "biomarkers": []})
+    anchors = list(dict.fromkeys([x.strip() for x in obj.get("anchors", []) if x.strip()]))
+    biomarkers = list(dict.fromkeys([x.strip() for x in obj.get("biomarkers", []) if x.strip()]))
+
+    if extra:
+        for a in extra.split(","):
+            aa = a.strip()
+            if aa and aa not in anchors:
+                anchors.append(aa)
+    return anchors, biomarkers
+
+def chunk_text(c: Dict[str, Any]) -> str:
+    return f"{c.get('doc_id','')} {c.get('ana_baslik','')} {c.get('section','')} {c.get('topic_group','')} {c.get('content','')}"
+
+def anchor_hit_in_chunk(c: Dict[str, Any], anchors: List[str]) -> bool:
+    txt = norm_plain(chunk_text(c))
+    return any(norm_plain(a) in txt for a in anchors)
+
+# =============================
+# RULE / NUMERIC DETECTORS
+# =============================
+RULE_RE = re.compile(
+    r"(%|\bmg\b|\bg\b|\bgr\b|\bgram\b|\bml\b|\bkcal\b|"
+    r"\bhaftada\b|\bgunde\b|\bgünde\b|\bgun\b|\bgün\b|\bkez\b|"
+    r"en az|en fazla|"
+    r"porsiyon|adet|dilim|kase|"
+    r"sinir|sınır|kisit|kısıt|yasak|"
+    r"tuketilmemeli|tüketilmemeli|kacin|kaçın|"
+    r"oner|öner|tercih edilmeli|azalt|artir|artır|sınırlandırılmalı|sinirlandirilmali|"
+    r"ile sinirlandir|ile sınırlandır|ile sınırlandırıl)",
+    re.IGNORECASE
+)
+
+NUMERIC_HINT_RE = re.compile(
+    r"\b(gunde|günde|haftada|ayda)\b|\b(en\s*az|en\s*fazla)\b|\b(\d+)\s*(porsiyon|adet|kez|g|gr|gram)\b",
+    re.IGNORECASE
+)
+
+def is_food_actionable_chunk(c: Dict[str, Any]) -> bool:
+    txt = (c.get("content") or "")
+    return bool(FOOD_SIGNAL_RE.search(txt)) or bool(NUMERIC_HINT_RE.search(txt))
+
+def is_rule_candidate(c: Dict[str, Any]) -> bool:
+    t = norm_plain(f"{c.get('ana_baslik','')} {c.get('section','')} {c.get('topic_group','')} {c.get('content','')}")
+    if len(t) < 40:
+        return False
+    return bool(RULE_RE.search(t)) or bool(NUMERIC_HINT_RE.search(t))
+
+def is_noisy_med_chunk(c: Dict[str, Any]) -> bool:
+    low = norm_plain(chunk_text(c))
+    return any(norm_plain(x) in low for x in NOISE_KEYWORDS)
+
+def clinical_setting_hits(c: Dict[str, Any]) -> int:
+    low = norm_plain(chunk_text(c))
+    hits = 0
+    for kw in CLINICAL_SETTING_KEYWORDS:
+        if norm_plain(kw) in low:
+            hits += 1
+    return hits
+
+# =============================
+# SIMPLE RETRIEVAL (JSON içinden) - RERANK YOK
+# =============================
+def simple_retrieve_from_json(all_chunks: List[Dict[str, Any]], anchors: List[str], biomarkers: List[str]) -> List[Dict[str, Any]]:
+    a_anc = [norm_plain(x) for x in anchors]
+    a_bio = [norm_plain(x) for x in biomarkers]
+    a_all = a_anc + a_bio
+
+    hits_topic: List[Dict[str, Any]] = []
+    hits_doc: List[Dict[str, Any]] = []
+    hits_title: List[Dict[str, Any]] = []
+    hits_content: List[Dict[str, Any]] = []
+
+    for c in all_chunks:
+        tg = norm_plain(c.get("topic_group") or "")
+        doc = norm_plain(c.get("doc_id") or "")
+        ana = norm_plain(c.get("ana_baslik") or "")
+        sec = norm_plain(c.get("section") or "")
+        cont = norm_plain(c.get("content") or "")
+
+        if any(x in tg for x in a_anc):
+            hits_topic.append(c)
+        elif any(x in doc for x in a_anc):
+            hits_doc.append(c)
+        elif any(x in ana or x in sec for x in a_anc):
+            hits_title.append(c)
+        elif any(x in cont for x in a_all):
+            hits_content.append(c)
+
+    ordered = hits_topic + hits_doc + hits_title + hits_content
+    uniq: Dict[str, Dict[str, Any]] = {}
+    for c in ordered:
+        cid = c.get("id")
+        if cid and str(cid) not in uniq:
+            uniq[str(cid)] = c
+    return list(uniq.values())
+
+# =============================
+# CHEAP SCORE (sadece sıralama)
+# =============================
+def cheap_relevance_score(query: str, anchors: List[str], biomarkers: List[str], c: Dict[str, Any]) -> int:
+    q_words = set([w for w in norm_plain(query).split() if len(w) >= 4])
+    txt = norm_plain(chunk_text(c))
+    score = 0
+
+    if any(norm_plain(a) in txt for a in anchors):
+        score += 6
+    if any(norm_plain(b) in txt for b in biomarkers):
+        score += 2
+
+    hits = sum(1 for w in q_words if w in txt)
+    score += min(5, hits)
+
+    if RULE_RE.search(txt):
+        score += 2
+    if NUMERIC_HINT_RE.search(txt):
+        score += 2
+
+    if is_noisy_med_chunk(c):
+        score -= 9
+
+    cs = clinical_setting_hits(c)
+    if cs >= 2 and not any(norm_plain(a) in txt for a in anchors):
+        score -= 12
+    elif cs == 1 and not any(norm_plain(a) in txt for a in anchors):
+        score -= 5
+
+    if not is_food_actionable_chunk(c):
+        score -= 3
+
+    return score
+
+# =============================
+# TAG VOCAB (USEFUL SUBSET)
+# =============================
+RULE_USEFUL_TAGS: Set[str] = {
+    "gi_dusuk", "gi_orta", "gi_yuksek",
+    "kh_dusuk", "kh_orta", "kh_yuksek",
+    "kompleks_kh",
+    "lif_yuksek", "lif_orta", "lif_dusuk", "posa_yuksek", "lifli_beslenme",
+    "sodyum_dusuk", "sodyum_orta", "sodyum_yuksek",
+    "doymus_yag_dusuk", "doymus_yag_orta", "doymus_yag_yuksek", "trans_yag_riski",
+    "zeytinyagi", "tekli_doymamis", "coklu_doymamis",
+    "balik", "omega3", "beyaz_et", "kirmizi_et",
+    "islenmis_et", "et_suyu",
+    "tahil", "bulgur", "ekmek", "baklagil", "baklagil_yemegi", "hamur_isi", "pilav_makarna",
+    "sebze", "meyve", "kuruyemis",
+    "sut_urunu", "yagsiz_sut_urunleri", "peynir",
+    "akrilamid",
+    "kolesterol",
+    "yumurta",
+    "sakatat",
+
+    # --- Yeni (tag_dicts'te varsa otomatik devreye girer) ---
+    "tam_yagli_sut_urunleri",
+    "az_yagli_sut_urunleri",
+    "tam_yagli",
+    "az_yagli",
+}
+
+def filter_vocab_to_rule_useful(vocab_all: Set[str]) -> Set[str]:
+    v = vocab_all.intersection(RULE_USEFUL_TAGS)
+    return v if v else vocab_all
+
+# =============================
+# KEYWORD -> TAG (fallback)
+# =============================
+KEYWORD_TO_TAG = {
+    "tuz": ("sodyum_dusuk", "sodyum_yuksek"),
+    "sodyum": ("sodyum_dusuk", "sodyum_yuksek"),
+    "tuzlu": (None, "sodyum_yuksek"),
+    "seker": (None, "gi_yuksek"),
+    "şeker": (None, "gi_yuksek"),
+    "tatli": (None, "gi_yuksek"),
+    "tatlı": (None, "gi_yuksek"),
+    "beyaz ekmek": (None, "gi_yuksek"),
+    "pirinc": (None, "gi_yuksek"),
+    "pirinç": (None, "gi_yuksek"),
+    "meyve suyu": (None, "gi_yuksek"),
+    "lif": ("lif_yuksek", None),
+    "posa": ("posa_yuksek", None),
+    "baklagil": ("baklagil", None),
+    "kurubaklagil": ("baklagil", None),
+    "kuru baklagil": ("baklagil", None),
+    "sebze": ("sebze", None),
+    "meyve": ("meyve", None),
+    "tam tahil": ("tahil", None),
+    "tam tahıl": ("tahil", None),
+    "bulgur": ("bulgur", None),
+    "trans": (None, "trans_yag_riski"),
+    "margarin": (None, "trans_yag_riski"),
+    "zeytinyagi": ("zeytinyagi", None),
+    "zeytinyağı": ("zeytinyagi", None),
+    "balik": ("balik", None),
+    "balık": ("balik", None),
+    "omega-3": ("omega3", None),
+    "omega 3": ("omega3", None),
+    "yumurta": ("yumurta", None),
+    "sakatat": (None, "sakatat"),
+    "karaciger": (None, "sakatat"),
+    "karaciğer": (None, "sakatat"),
+    "beyin": (None, "sakatat"),
+    "dalak": (None, "sakatat"),
+    "bobrek": (None, "sakatat"),
+    "böbrek": (None, "sakatat"),
+    "yurek": (None, "sakatat"),
+    "yürek": (None, "sakatat"),
+
+    # --- Yeni: tam yağlı / az yağlı ifadeleri (tag_dicts'te varsa çıkar) ---
+    "tam yagli": (None, "tam_yagli_sut_urunleri"),
+    "tam yağlı": (None, "tam_yagli_sut_urunleri"),
+    "kaymak": (None, "tam_yagli_sut_urunleri"),
+    "krema": (None, "tam_yagli_sut_urunleri"),
+
+    "az yagli": ("az_yagli_sut_urunleri", None),
+    "az yağlı": ("az_yagli_sut_urunleri", None),
+    "yağsız": ("az_yagli_sut_urunleri", None),
+    "yagsiz": ("az_yagli_sut_urunleri", None),
+    "light": ("az_yagli_sut_urunleri", None),
+
+    # opsiyonel genel tag'ler (çok sıkı değil, ama süt bağlamı ister)
+    "tam yağlı süt": (None, "tam_yagli"),
+    "tam yagli sut": (None, "tam_yagli"),
+    "az yağlı süt": ("az_yagli", None),
+    "az yagli sut": ("az_yagli", None),
+}
+
+def extract_tags_deterministic(text: str, vocab: Set[str]) -> Tuple[Set[str], Set[str], Set[str]]:
+    low = norm_plain(text)
+    prefer: Set[str] = set()
+    avoid: Set[str] = set()
+    for kw, (p, a) in KEYWORD_TO_TAG.items():
+        if norm_plain(kw) in low:
+            if p and p in vocab:
+                prefer.add(p)
+            if a and a in vocab:
+                avoid.add(a)
+    prefer = {t for t in prefer if t not in avoid}
+    limit: Set[str] = set()
+    return prefer, limit, avoid
+
+# =============================
+# TEMPLATE
+# =============================
+ALLOWED_TOP_KEYS = {
+    "dataset", "disease",
+    "prefer_tags", "limit_tags", "avoid_tags",
+    "meal_pattern_tags",
+    "disease_food_tag_descriptions",
+    "meal_pattern_tag_descriptions",
+    "meal_pattern_rules",
+    "energy_rules",
+    "rag_evidence",
+    "new_tags",
+}
+
+def build_empty_template(domain: str) -> Dict[str, Any]:
+    return {
+        "dataset": f"disease_rules_{domain}",
+        "disease": {"disease_id": domain.upper(), "name": domain},
+        "prefer_tags": [],
+        "limit_tags": [],
+        "avoid_tags": [],
+        "meal_pattern_tags": [],
+        "disease_food_tag_descriptions": {},
+        "meal_pattern_tag_descriptions": {},
+        "meal_pattern_rules": {"logical_rules": {"prefer": [], "limit": [], "avoid": []}, "numeric_constraints": []},
+        "energy_rules": {"scale_up_order": [], "scale_down_order": [], "locks": []},
+        "rag_evidence": [],
+        "new_tags": []
+    }
+
+def normalize_string_list(x: Any) -> List[str]:
+    if not isinstance(x, list):
+        return []
+    out: List[str] = []
+    for a in x:
+        if isinstance(a, str):
+            s = a.strip()
+            if s:
+                out.append(s)
+    seen = set()
+    res = []
+    for t in out:
+        if t not in seen:
+            seen.add(t)
+            res.append(t)
+    return res
+
+def prune_to_template_keys(out: Dict[str, Any], template: Dict[str, Any]) -> Dict[str, Any]:
+    pruned = {k: out[k] for k in out.keys() if k in ALLOWED_TOP_KEYS}
+    for k, v in template.items():
+        if k not in pruned:
+            pruned[k] = v
+    return pruned
+
+# =============================
+# TAG SUPPORT + GUARDS
+# =============================
+MEAT_CONTEXT_RE = re.compile(r"\b(et|dana|kuzu|tavuk|hindi|balik|balık|kirmizi et|kırmızı et|beyaz et)\b", re.I)
+DAIRY_CONTEXT_RE = re.compile(r"\b(sut|süt|yogurt|yoğurt|kefir|ayran|peynir|kaymak|krema)\b", re.I)
+
+TAG_SUPPORT_PATTERNS: Dict[str, List[str]] = {
+    "sebze": ["sebze"],
+    "meyve": ["meyve", "sebze-meyve", "meyve-sebze"],
+
+    "lif_yuksek": ["lif", "liften zengin", "posa", "pektin"],
+    "posa_yuksek": ["posa", "lif"],
+    "lifli_beslenme": ["lif", "posa", "lifli"],
+
+    "zeytinyagi": ["zeytinyagi", "zeytinya"],
+    "tekli_doymamis": ["tekli doymamis", "tekli doymam", "oleik"],
+    "coklu_doymamis": ["coklu doymamis", "coklu doymam", "omega"],
+
+    "balik": ["balik", "balık"],
+    "omega3": ["omega-3", "omega 3", "omega3", "somon", "uskumru", "balik", "balık"],
+
+    "beyaz_et": ["beyaz et", "tavuk", "hindi"],
+    "kirmizi_et": ["kirmizi et", "kırmızı et", "dana", "kuzu"],
+    "islenmis_et": ["islenmis et", "işlenmiş et", "sucuk", "salam", "sosis"],
+    "et_suyu": ["et suyu", "bulyon", "bouillon"],
+
+    "trans_yag_riski": ["trans", "margarin"],
+    "doymus_yag_yuksek": ["doymus", "doymuş", "tereyag", "tereyağ", "kaymak", "krema", "tam yag", "tam yağ", "tam yagli", "tam yağlı"],
+    "doymus_yag_dusuk": ["az yag", "az yağlı", "az yagli", "yağsız süt", "yagsiz sut", "az yağlı süt", "az yagli sut"],
+
+    "sodyum_yuksek": ["tuz", "sodyum", "tuzlu"],
+    "sodyum_dusuk": ["tuzu azalt", "tuz azalt", "tuz kisit", "tuz kısıt", "dusuk sodyum", "düşük sodyum"],
+
+    "gi_yuksek": ["seker", "şeker", "beyaz ekmek", "pirinc", "pirinç", "recel", "reçel", "bal"],
+
+    "tahil": ["tam tahil", "tam tahıl", "tahil", "yulaf", "bulgur"],
+    "bulgur": ["bulgur"],
+    "baklagil": ["baklagil", "kurubaklagil", "kuru baklagil", "mercimek", "nohut", "fasulye"],
+
+    "kuruyemis": ["badem", "ceviz", "findik", "fındık", "kuruyemis", "kuruyem"],
+    "yumurta": ["yumurta"],
+    "sakatat": ["sakatat", "karaciger", "karaciğer", "beyin", "dalak", "bobrek", "böbrek", "yurek", "yürek"],
+
+    "akrilamid": ["akrilamid", "kizartma", "kızartma", "yanmis", "yanmış"],
+    "kolesterol": ["kolesterol", "hiperkolester", "hiperlipid", "ldl", "hdl", "trigliserid"],
+
+    "yagsiz_sut_urunleri": ["yagsiz", "yağsız", "az yagli", "az yağlı", "light"],
+    "sut_urunu": ["sut", "süt", "yogurt", "yoğurt", "kefir", "ayran", "peynir", "kaymak", "krema"],
+    "peynir": ["peynir"],
+
+    # --- Yeni: tam yağlı / az yağlı süt ürünleri tag'leri (tag_dicts'te varsa otomatik) ---
+    "tam_yagli_sut_urunleri": ["tam yag", "tam yağ", "tam yagli", "tam yağlı", "tam yağlı süt", "tam yağlı yoğurt", "tam yağlı peynir", "kaymak", "krema"],
+    "az_yagli_sut_urunleri": ["az yag", "az yağ", "az yagli", "az yağlı", "yagsiz", "yağsız", "light", "dusuk yag", "düşük yağ"],
+
+    # opsiyonel genel
+    "tam_yagli": ["tam yag", "tam yağ", "tam yagli", "tam yağlı"],
+    "az_yagli": ["az yag", "az yağ", "az yagli", "az yağlı", "yagsiz", "yağsız", "light"],
+}
+
+def quote_supports_tag(tag: str, quote: str) -> bool:
+    q = quote or ""
+    qn = norm_plain(q)
+    pats = TAG_SUPPORT_PATTERNS.get(tag, [])
+    if not pats:
+        return False
+
+    # Bazı tag'lerde et bağlamı false-positive guard
+    if tag in {"yagsiz_sut_urunleri", "doymus_yag_dusuk"} and MEAT_CONTEXT_RE.search(qn):
+        return False
+
+    # Süt ürünü bağlamı zorunlu: "az yağlı" her yerde geçebilir; süt ürünleri için şart koşuyoruz
+    if tag in {"tam_yagli_sut_urunleri", "az_yagli_sut_urunleri"}:
+        if not any(norm_plain(p) in qn for p in pats):
+            return False
+        return bool(DAIRY_CONTEXT_RE.search(qn))
+
+    # Genel "tam_yagli/az_yagli" tag'leri de süt bağlamı istesin (çok spesifikleşmesin diye)
+    if tag in {"tam_yagli", "az_yagli"}:
+        if not any(norm_plain(p) in qn for p in pats):
+            return False
+        return bool(DAIRY_CONTEXT_RE.search(qn))
+
+    if tag == "yagsiz_sut_urunleri":
+        if not any(norm_plain(p) in qn for p in pats):
+            return False
+        return bool(DAIRY_CONTEXT_RE.search(qn))
+
+    if tag == "doymus_yag_dusuk":
+        return any(norm_plain(p) in qn for p in pats)
+
+    return any(norm_plain(p) in qn for p in pats)
+
+def best_supporting_snippet(tag: str, quote: str, max_len: int = 240) -> str:
+    q = (quote or "").strip()
+    if not q:
+        return ""
+    parts = re.split(r"[.\n;]+", q)
+    for p in parts:
+        p = p.strip()
+        if not p:
+            continue
+        if quote_supports_tag(tag, p):
+            return p if len(p) <= max_len else p[:max_len]
+    return q if len(q) <= max_len else q[:max_len]
+
+def supported_tags_in_quote(quote: str, vocab_set: Set[str]) -> List[str]:
+    out: List[str] = []
+    for t in TAG_SUPPORT_PATTERNS.keys():
+        if t in vocab_set and quote_supports_tag(t, quote or ""):
+            out.append(t)
+    seen = set()
+    res = []
+    for t in out:
+        if t not in seen:
+            seen.add(t)
+            res.append(t)
+    return res
+
+# =============================
+# SELECTION
+# =============================
+def domain_topic_boost(domain: str, c: Dict[str, Any]) -> int:
+    d = domain.lower().strip()
+    tg = norm_plain(c.get("topic_group") or "")
+    boosts = DOMAIN_TOPIC_GROUP_PREFIX.get(d, [])
+    if any(tg.startswith(norm_plain(p)) for p in boosts):
+        return 6
+    return 0
+
+def domain_doc_boost(domain: str, c: Dict[str, Any]) -> int:
+    # Genel kullanım için çok az domain-özel kalsın; gerekmedikçe artırma.
+    d = domain.lower().strip()
+    doc = norm_plain(c.get("doc_id") or "")
+    ana = norm_plain(c.get("ana_baslik") or "")
+    if d == "kolesterol":
+        if "kalp" in doc or "damar" in doc:
+            return 3
+        if "kardiyovaskuler hastaliklardan korunmak icin genel ilkeler" in ana:
+            return 5
+    return 0
+
+def allowed_chunk(c: Dict[str, Any], anchors: List[str]) -> bool:
+    if is_noisy_med_chunk(c):
+        return False
+    cs = clinical_setting_hits(c)
+    if cs >= 2 and not anchor_hit_in_chunk(c, anchors):
+        return False
+    if cs >= 3:
+        return False
+    if not is_food_actionable_chunk(c):
+        return False
+    return True
+
+def pack_for_llm(c: Dict[str, Any], max_chunk_chars: int) -> Dict[str, Any]:
+    return {
+        "chunk_id": str(c.get("id") or "").strip(),
+        "topic_group": c.get("topic_group"),
+        "ana_baslik": c.get("ana_baslik"),
+        "content": (c.get("content") or "")[:max_chunk_chars],
+    }
+
+def select_all_relevant_chunks(
+    candidates: List[Dict[str, Any]],
+    domain: str,
+    query: str,
+    anchors: List[str],
+    biomarkers: List[str],
+    max_chunk_chars: int,
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    scored: List[Tuple[int, Dict[str, Any]]] = []
+    for c in candidates:
+        s = cheap_relevance_score(query, anchors, biomarkers, c)
+        s += domain_topic_boost(domain, c)
+        s += domain_doc_boost(domain, c)
+        scored.append((s, c))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+
+    scored_debug: List[Dict[str, Any]] = []
+    for s, c in scored[:200]:
+        scored_debug.append({
+            "id": c.get("id"),
+            "score": s,
+            "topic_group": c.get("topic_group"),
+            "ana_baslik": c.get("ana_baslik"),
+        })
+
+    chosen: List[Dict[str, Any]] = []
+    seen_ids: Set[str] = set()
+
+    for s, c in scored:
+        if not allowed_chunk(c, anchors):
+            continue
+        cid = c.get("id")
+        if not cid:
+            continue
+        sid = str(cid)
+        if sid in seen_ids:
+            continue
+        chosen.append(pack_for_llm(c, max_chunk_chars))
+        seen_ids.add(sid)
+
+    return chosen, scored_debug
+
+def select_chosen_chunks(
+    candidates: List[Dict[str, Any]],
+    domain: str,
+    query: str,
+    anchors: List[str],
+    biomarkers: List[str],
+    max_chunks: int,
+    max_chunk_chars: int,
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    scored: List[Tuple[int, Dict[str, Any]]] = []
+    for c in candidates:
+        s = cheap_relevance_score(query, anchors, biomarkers, c)
+        s += domain_topic_boost(domain, c)
+        s += domain_doc_boost(domain, c)
+        scored.append((s, c))
+
+    scored.sort(key=lambda x: x[0], reverse=True)
+
+    scored_debug: List[Dict[str, Any]] = []
+    for s, c in scored[:200]:
+        scored_debug.append({
+            "id": c.get("id"),
+            "score": s,
+            "topic_group": c.get("topic_group"),
+            "ana_baslik": c.get("ana_baslik"),
+        })
+
+    chosen: List[Dict[str, Any]] = []
+    per_topic: Dict[str, int] = {}
+    numeric_added = False
+
+    # 1) numeric garanti
+    for s, c in scored:
+        if len(chosen) >= max_chunks:
+            break
+        if not allowed_chunk(c, anchors):
+            continue
+        txt = norm_plain(f"{c.get('content','')} {c.get('ana_baslik','')}")
+        if NUMERIC_HINT_RE.search(txt):
+            tg = norm_plain(c.get("topic_group") or "none")
+            per_topic[tg] = per_topic.get(tg, 0) + 1
+            chosen.append(pack_for_llm(c, max_chunk_chars))
+            numeric_added = True
+            break
+
+    # 2) doldur
+    for s, c in scored:
+        if len(chosen) >= max_chunks:
+            break
+        if not allowed_chunk(c, anchors):
+            continue
+        cid = str(c.get("id") or "")
+        if any(x.get("chunk_id") == cid for x in chosen):
+            continue
+        tg = norm_plain(c.get("topic_group") or "none")
+        if per_topic.get(tg, 0) >= 2:
+            continue
+        chosen.append(pack_for_llm(c, max_chunk_chars))
+        per_topic[tg] = per_topic.get(tg, 0) + 1
+
+    # 3) numeric yoksa tekrar dene
+    if not numeric_added:
+        for s, c in scored:
+            if len(chosen) >= max_chunks:
+                break
+            if not allowed_chunk(c, anchors):
+                continue
+            txt = norm_plain(f"{c.get('content','')} {c.get('ana_baslik','')}")
+            if NUMERIC_HINT_RE.search(txt):
+                cid = str(c.get("id") or "")
+                if any(x.get("chunk_id") == cid for x in chosen):
+                    continue
+                chosen.append(pack_for_llm(c, max_chunk_chars))
+                break
+
+    return chosen, scored_debug
+
+# =============================
+# PROMPTS
+# =============================
+def build_system_prompt() -> str:
+    return (
+        "SEN UZMAN BİR DİYETİSYEN VE VERİ ANALİSTİSİN. Görevin, karmaşık beslenme metinlerini hatasız bir şekilde yapılandırılmış verilere dönüştürmektir.\n\n"
+        "SADECE JSON döndür. Başka hiçbir açıklama metni yazma.\n\n"
+        "GÖREV:\n"
+        "RAG_CHUNKS içeriğini, TAG_VOCAB etiketlerini kullanarak klinik bir beslenme profiline dönüştür.\n\n"
+        "ÇOK KRİTİK KURALLAR:\n"
+        "1) SADECE RAG_CHUNKS içinde AÇIKÇA geçen ifadeleri kullan. Genel diyet bilgilerini EKLEME.\n"
+        "2) Tag seçimi SADECE TAG_VOCAB içinden yapılmalıdır.\n"
+        "3) ÇAKIŞMA ÖNLEME: Aynı tag sadece bir sınıfta olabilir. Öncelik sırası: avoid > limit > prefer.\n"
+        "4) KANIT ZORUNLULUĞU: Her tag ve kural için rag_evidence içinde mutlaka birebir quote (alıntı) olmalıdır.\n"
+        "5) NUMERİK EŞLEŞTİRME VE GENİŞLETME: Metinde geçen porsiyon, sıklık (her gün, haftada X) ve miktar bilgilerini ASLA ATLAMADAN 'numeric_constraints' içine işle.\n\n"
+        "DİYETİSYEN ANALİZ MANTIĞI (ADIM ADIM):\n"
+        "- Adım 1 (Zaman Periyodu): 'Her gün' -> period_days: 1, 'Haftada' -> period_days: 7, 'Ayda' -> period_days: 30.\n"
+        "- Adım 2 (Yön tayini): 'En az/Alt sınır' -> min_count, 'En fazla/Sınır/Üst limit' -> max_count.\n"
+        "- Adım 3 (İstisna Yakalama): Parantez içindeki 'hariç/sayılmaz' ifadelerini yakala ve ilgili gıdayı 'avoid' (kaçınılmalı) sınıfına ata.\n\n"
+        "ÖRNEK UYGULAMA:\n"
+        "- 'Günde en az 5 porsiyon sebze (patates hariç)' -> sebze: {min_count: 5, period: 1, prefer}, patates: {avoid}.\n"
+        "- 'Haftada 2-4 yumurta' -> yumurta: {min_count: 2, max_count: 4, period: 7, limit}.\n\n"
+        "SINIFLAR:\n"
+        "- prefer: Klinik olarak teşvik edilenler (Örn: 'en az' denenler).\n"
+        "- limit: Porsiyon kontrolü gerekenler (Örn: 'en fazla', 'X kez' denenler).\n"
+        "- avoid: Yasaklananlar, hariç tutulanlar ve 'sayılmayan' gıdalar.\n\n"
+        "ÇIKTI ŞEMASI:\n"
+        "{\n"
+        "  \"prefer_tags\": [],\n"
+        "  \"limit_tags\": [],\n"
+        "  \"avoid_tags\": [],\n"
+        "  \"meal_pattern_rules\": {\n"
+        "    \"logical_rules\": {\"prefer\": [], \"limit\": [], \"avoid\": []},\n"
+        "    \"numeric_constraints\": [\n"
+        "      {\n"
+        "        \"tag\": \"...\",\n"
+        "        \"min_count\": null,\n"
+        "        \"max_count\": null,\n"
+        "        \"period_days\": null,\n"
+        "        \"unit\": \"porsiyon/adet/gram\",\n"
+        "        \"description\": \"Klinik porsiyon tanımı (Örn: Haftada 2-4 porsiyon)\"\n"
+        "      }\n"
+        "    ]\n"
+        "  },\n"
+        "  \"rag_evidence\": [\n"
+        "    {\"chunk_id\":\"...\", \"related_tags\":[\"tag\"], \"quote\":\"...\"}\n"
+        "  ]\n"
+        "}\n\n"
+        "DİKKAT: 'limit_tags' içine eklediğin her besinin, eğer metinde sayısı/sıklığı varsa, numeric_constraints içinde de karşılığı olmalıdır. Aksi takdirde analiz eksik sayılır."
+    )
+
+def build_user_payload(domain: str, query: str,
+                       tag_vocab: List[str], tag_meanings: Dict[str, str],
+                       chunks: List[Dict[str, Any]]) -> str:
+    return json.dumps(
+        {
+            "domain": domain,
+            "query": query,
+            "TAG_VOCAB": tag_vocab,
+            "TAG_MEANINGS": tag_meanings,
+            "RAG_CHUNKS": chunks,
+        },
+        ensure_ascii=False,
+    )
+
+# =============================
+# NUMERIC EXTRACTION (deterministic)
+# =============================
+FOODWORD_TO_TAG = [
+    (["sebze", "sebze-meyve", "meyve-sebze"], "sebze"),
+    (["meyve", "sebze-meyve", "meyve-sebze"], "meyve"),
+    (["baklagil", "kurubaklagil", "kuru baklagil", "mercimek", "nohut", "fasulye"], "baklagil"),
+    (["tam tahil", "tam tahıl", "tahil", "yulaf"], "tahil"),
+    (["bulgur"], "bulgur"),
+    (["yumurta"], "yumurta"),
+    (["sakatat", "karaciger", "karaciğer", "beyin", "bobrek", "böbrek", "yurek", "yürek", "dalak"], "sakatat"),
+    (["sucuk", "salam", "sosis", "islenmis et", "işlenmiş et"], "islenmis_et"),
+    (["kirmizi et", "kırmızı et", "dana", "kuzu"], "kirmizi_et"),
+    (["beyaz et", "tavuk", "hindi"], "beyaz_et"),
+    (["balik", "balık", "somon", "uskumru"], "balik"),
+    (["zeytinyag", "zeytinyağ"], "zeytinyagi"),
+    (["et suyu", "bulyon"], "et_suyu"),
+    (["tuz", "sodyum"], "sodyum_yuksek"),
+
+    # --- Yeni: numeric cümlelerde de yakalanabilsin (tag_dicts'te varsa çalışır) ---
+    (["tam yağlı", "tam yagli", "kaymak", "krema"], "tam_yagli_sut_urunleri"),
+    (["az yağlı", "az yagli", "yağsız", "yagsiz", "light"], "az_yagli_sut_urunleri"),
+]
+
+def guess_tags_from_sentence(sentence: str, vocab_set: Set[str]) -> List[str]:
+    s = norm_plain(sentence)
+    found: List[str] = []
+    for kws, tag in FOODWORD_TO_TAG:
+        if tag in vocab_set and any(norm_plain(k) in s for k in kws):
+            found.append(tag)
+
+    if ("sebze-meyve" in s) or ("meyve-sebze" in s):
+        if "sebze" in vocab_set and "sebze" not in found:
+            found.append("sebze")
+        if "meyve" in vocab_set and "meyve" not in found:
+            found.append("meyve")
+
+    out: List[str] = []
+    seen = set()
+    for t in found:
+        if t not in seen:
+            seen.add(t)
+            out.append(t)
+    return out
+
+RE_FREQ_RANGE = re.compile(r"\b(haftada|gunde|günde|ayda)\b[^0-9]{0,30}(\d+)\s*[-–]\s*(\d+)\s*(adet|kez|porsiyon)?", re.IGNORECASE)
+RE_FREQ_SINGLE = re.compile(r"\b(haftada|gunde|günde|ayda)\b[^0-9]{0,30}(\d+)\s*(adet|kez|porsiyon)\b", re.IGNORECASE)
+RE_MIN_PORSION = re.compile(r"\b(gunde|günde)\b[^0-9]{0,30}(en\s*az)\s*(\d+)\s*(porsiyon)\b", re.IGNORECASE)
+RE_MAX_PORSION = re.compile(r"\b(gunde|günde)\b[^0-9]{0,30}(en\s*fazla)\s*(\d+)\s*(porsiyon)\b", re.IGNORECASE)
+
+RE_TAG_GRAM: List[Tuple[str, re.Pattern]] = [
+    ("kirmizi_et", re.compile(r"(dana|kirmizi et|kırmızı et|kuzu)[^0-9]{0,25}(\d+)\s*(g|gr|gram)\b", re.I)),
+    ("beyaz_et",  re.compile(r"(beyaz et|tavuk|hindi)[^0-9]{0,25}(\d+)\s*(g|gr|gram)\b", re.I)),
+    ("balik",     re.compile(r"(balik|balık|somon|uskumru)[^0-9]{0,25}(\d+)\s*(g|gr|gram)\b", re.I)),
+]
+
+def freq_to_period_days(freq: str) -> int:
+    f = norm_plain(freq)
+    if "hafta" in f:
+        return 7
+    if "ay" in f:
+        return 30
+    return 1
+
+def extract_limit_numeric_constraints_from_chunks(
+    chosen: List[Dict[str, Any]],
+    vocab_set: Set[str]
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+    """
+    chosen: LLM paketli objeler (chunk_id, content...)
+    """
+    ncs: List[Dict[str, Any]] = []
+    evs: List[Dict[str, Any]] = []
+
+    def add_nc(nc: Dict[str, Any], cid: str, tag: str, quote: str) -> None:
+        if nc not in ncs:
+            ncs.append(nc)
+            evs.append({"chunk_id": cid, "related_tags": [tag], "quote": quote[:260]})
+
+    for ch in chosen:
+        cid = str(ch.get("chunk_id") or "").strip()
+        content = ch.get("content") or ""
+        if not cid or not content:
+            continue
+
+        sentences = re.split(r"[.\n;]+", content)
+        for sent in sentences:
+            s = sent.strip()
+            if len(s) < 15:
+                continue
+
+            low = norm_plain(s)
+            if not any(x in low for x in ["sinir", "sınır", "en fazla", "kisit", "kısıt", "haftada", "gunde", "günde", "ayda", "gunluk", "günlük", "en az", "porsiyon"]):
+                continue
+
+            tags_in_sent = guess_tags_from_sentence(s, vocab_set)
+            if not tags_in_sent:
+                continue
+
+            mp = RE_MIN_PORSION.search(s)
+            if mp:
+                period = 1
+                min_p = int(mp.group(3))
+                for tag in tags_in_sent:
+                    if tag in {"sebze", "meyve"}:
+                        add_nc({"tag": tag, "period_days": period, "min_count": min_p}, cid, tag, s)
+                continue
+
+            mxp = RE_MAX_PORSION.search(s)
+            if mxp:
+                period = 1
+                max_p = int(mxp.group(3))
+                for tag in tags_in_sent:
+                    add_nc({"tag": tag, "period_days": period, "max_count": max_p}, cid, tag, s)
+                continue
+
+            m = RE_FREQ_RANGE.search(s)
+            if m:
+                freq, a, b = m.group(1), m.group(2), m.group(3)
+                period = freq_to_period_days(freq)
+                a_i, b_i = int(a), int(b)
+                mn, mx = (a_i, b_i) if a_i <= b_i else (b_i, a_i)
+
+                target_tags = ["baklagil"] if ("baklagil" in tags_in_sent) else tags_in_sent
+                for tag in target_tags:
+                    add_nc({"tag": tag, "period_days": period, "min_count": mn, "max_count": mx}, cid, tag, s)
+                continue
+
+            m2 = RE_FREQ_SINGLE.search(s)
+            if m2:
+                freq, a = m2.group(1), m2.group(2)
+                period = freq_to_period_days(freq)
+                max_count = int(a)
+                target_tags = ["baklagil"] if ("baklagil" in tags_in_sent) else tags_in_sent
+                for tag in target_tags:
+                    add_nc({"tag": tag, "period_days": period, "max_count": max_count}, cid, tag, s)
+                continue
+
+            if ("sinir" in low or "sınır" in low):
+                period = 1 if ("gunluk" in low or "günlük" in low) else None
+                for tag, rgx in RE_TAG_GRAM:
+                    if tag not in vocab_set:
+                        continue
+                    mm = rgx.search(s)
+                    if not mm:
+                        continue
+                    grams = int(mm.group(2))
+                    obj: Dict[str, Any] = {"tag": tag, "max_grams": grams}
+                    if period is not None:
+                        obj["period_days"] = period
+                    add_nc(obj, cid, tag, s)
+
+    return ncs, evs
+
+# =============================
+# AUTO TAGGING
+# =============================
+PREFER_CUES = ["en az", "tercih edil", "oneril", "öneril", "tuketilmel", "tüketilmel", "yer veril", "artir", "artır"]
+AVOID_CUES  = ["kacin", "kaçın", "tuketilmem", "tüketilmem", "yasak", "yer verilmem", "mümkünse hiç"]
+LIMIT_CUES  = ["sinir", "sınır", "kisit", "kısıt", "en fazla", "azalt", "haftada", "gunde", "günde", "ayda", "porsiyon"]
+
+def classify_rule_from_quote(quote: str) -> str:
+    q = norm_plain(quote)
+    if any(norm_plain(x) in q for x in AVOID_CUES):
+        return "avoid"
+    if any(norm_plain(x) in q for x in PREFER_CUES):
+        return "prefer"
+    if any(norm_plain(x) in q for x in LIMIT_CUES):
+        return "limit"
+    return "prefer"
+
+def auto_add_tags_from_chosen(
+    chosen: List[Dict[str, Any]],
+    vocab_set: Set[str],
+) -> Tuple[Set[str], Set[str], Set[str], List[Dict[str, Any]]]:
+    pref, lim, avo = set(), set(), set()
+    evs: List[Dict[str, Any]] = []
+
+    for ch in chosen:
+        cid = str(ch.get("chunk_id") or "").strip()
+        text = ch.get("content") or ""
+        if not cid or not text:
+            continue
+
+        sentences = re.split(r"[.\n;]+", text)
+        for sent in sentences:
+            quote = sent.strip()
+            if len(quote) < 20:
+                continue
+            if not (RULE_RE.search(quote) or NUMERIC_HINT_RE.search(quote)):
+                continue
+            if not (FOOD_SIGNAL_RE.search(quote) or NUMERIC_HINT_RE.search(quote)):
+                continue
+
+            supported = supported_tags_in_quote(quote, vocab_set)
+            if not supported:
+                continue
+
+            rule_class = classify_rule_from_quote(quote)
+            if rule_class == "avoid":
+                avo.update(supported)
+            elif rule_class == "limit":
+                lim.update(supported)
+            else:
+                pref.update(supported)
+
+            for t in supported[:10]:
+                evs.append({"chunk_id": cid, "related_tags": [t], "quote": quote[:260]})
+
+    lim -= avo
+    pref -= (avo | lim)
+    return pref, lim, avo, evs
+
+# =============================
+# VALIDATION HELPERS
+# =============================
+def normalize_class_lists(prefer: List[str], limit: List[str], avoid: List[str]) -> Tuple[List[str], List[str], List[str]]:
+    avoid_set = set(avoid)
+    limit = [t for t in limit if t not in avoid_set]
+    limit_set = set(limit)
+    prefer = [t for t in prefer if t not in avoid_set and t not in limit_set]
+    return prefer, limit, avoid
+
+def quote_contains_number(quote: str, n: int) -> bool:
+    q = norm_plain(quote)
+    return str(n) in q
+
+def normalize_string_list_safe(x: Any) -> List[str]:
+    return normalize_string_list(x)
+
+def build_support_index(cleaned_ev: List[Dict[str, Any]]) -> Dict[str, List[str]]:
+    idx: Dict[str, List[str]] = {}
+    for e in cleaned_ev:
+        q = (e.get("quote") or "").strip()
+        if not q:
+            continue
+        for t in normalize_string_list_safe(e.get("related_tags")):
+            idx.setdefault(t, []).append(q)
+    return idx
+
+def split_evidence_per_tag(evs: List[Dict[str, Any]], vocab_set: Set[str]) -> List[Dict[str, Any]]:
+    out: List[Dict[str, Any]] = []
+    seen = set()
+
+    for e in evs:
+        if not isinstance(e, dict):
+            continue
+        cid = str(e.get("chunk_id") or "").strip()
+        quote = (e.get("quote") or "").strip()
+        if not cid or not quote:
+            continue
+        rel = normalize_string_list_safe(e.get("related_tags"))
+        rel = [t for t in rel if t in vocab_set]
+        rel = [t for t in rel if quote_supports_tag(t, quote)]
+        if not rel:
+            continue
+
+        for t in rel:
+            snip = best_supporting_snippet(t, quote)
+            if not snip:
+                continue
+            key = (cid, t, snip)
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append({"chunk_id": cid, "related_tags": [t], "quote": snip})
+
+    return out
+
+def validate_and_clean_llm_output(
+    out: Dict[str, Any],
+    vocab_set: Set[str],
+    chosen_chunks: List[Dict[str, Any]],
+    domain: str,
+) -> Dict[str, Any]:
+    chunk_ids = set(str(c.get("chunk_id")) for c in chosen_chunks if c.get("chunk_id"))
+
+    prefer = [t for t in normalize_string_list_safe(out.get("prefer_tags")) if t in vocab_set]
+    limit  = [t for t in normalize_string_list_safe(out.get("limit_tags")) if t in vocab_set]
+    avoid  = [t for t in normalize_string_list_safe(out.get("avoid_tags")) if t in vocab_set]
+    prefer, limit, avoid = normalize_class_lists(prefer, limit, avoid)
+
+    out["prefer_tags"], out["limit_tags"], out["avoid_tags"] = prefer, limit, avoid
+
+    ev = out.get("rag_evidence")
+    if not isinstance(ev, list):
+        ev = []
+
+    tmp: List[Dict[str, Any]] = []
+    for e in ev:
+        if not isinstance(e, dict):
+            continue
+        cid = str(e.get("chunk_id") or "").strip()
+        if not cid or cid not in chunk_ids:
+            continue
+        quote = (e.get("quote") or "").strip()
+        if not quote:
+            continue
+        tmp.append(e)
+
+    cleaned_ev = split_evidence_per_tag(tmp, vocab_set)
+    out["rag_evidence"] = cleaned_ev
+    support_idx = build_support_index(cleaned_ev)
+
+    if "meal_pattern_rules" not in out or not isinstance(out["meal_pattern_rules"], dict):
+        out["meal_pattern_rules"] = {"logical_rules": {"prefer": [], "limit": [], "avoid": []}, "numeric_constraints": []}
+    mpr = out["meal_pattern_rules"]
+    if "logical_rules" not in mpr or not isinstance(mpr["logical_rules"], dict):
+        mpr["logical_rules"] = {"prefer": [], "limit": [], "avoid": []}
+    if "numeric_constraints" not in mpr or not isinstance(mpr["numeric_constraints"], list):
+        mpr["numeric_constraints"] = []
+
+    lr = mpr["logical_rules"]
+    lr_prefer = [t for t in normalize_string_list_safe(lr.get("prefer")) if t in vocab_set]
+    lr_limit  = [t for t in normalize_string_list_safe(lr.get("limit")) if t in vocab_set]
+    lr_avoid  = [t for t in normalize_string_list_safe(lr.get("avoid")) if t in vocab_set]
+    lr_prefer, lr_limit, lr_avoid = normalize_class_lists(lr_prefer, lr_limit, lr_avoid)
+    mpr["logical_rules"] = {"prefer": lr_prefer, "limit": lr_limit, "avoid": lr_avoid}
+
+    allowed_keys = {"period_days", "min_count", "max_count", "max_grams", "max_portions"}
+    cleaned_ncs: List[Dict[str, Any]] = []
+
+    for cns in mpr["numeric_constraints"]:
+        if not isinstance(cns, dict):
+            continue
+        tag = cns.get("tag")
+        if not isinstance(tag, str) or tag not in vocab_set:
+            continue
+
+        keys_present = [k for k in cns.keys() if k in allowed_keys]
+        if not keys_present:
+            continue
+
+        nums: List[int] = []
+        ok = True
+        for k in keys_present:
+            v = cns.get(k)
+            if not isinstance(v, int):
+                ok = False
+                break
+            nums.append(int(v))
+        if not ok:
+            continue
+
+        tag_quotes = support_idx.get(tag, [])
+        if not tag_quotes:
+            continue
+
+        found_single = False
+        for q in tag_quotes:
+            if all(quote_contains_number(q, n) for n in nums):
+                found_single = True
+                break
+        if not found_single:
+            continue
+
+        clean_obj: Dict[str, Any] = {"tag": tag}
+        for k in keys_present:
+            clean_obj[k] = int(cns[k])
+        cleaned_ncs.append(clean_obj)
+
+    mpr["numeric_constraints"] = cleaned_ncs
+    out["meal_pattern_rules"] = mpr
+
+    def tag_has_supported_quote(tag: str) -> bool:
+        qs = support_idx.get(tag, [])
+        if not qs:
+            return False
+        return any(quote_supports_tag(tag, q) for q in qs)
+
+    out["prefer_tags"] = [t for t in out["prefer_tags"] if tag_has_supported_quote(t)]
+    out["limit_tags"]  = [t for t in out["limit_tags"]  if tag_has_supported_quote(t)]
+    out["avoid_tags"]  = [t for t in out["avoid_tags"]  if tag_has_supported_quote(t)]
+
+    lr2 = out["meal_pattern_rules"]["logical_rules"]
+    lr2["prefer"] = [t for t in lr2.get("prefer", []) if tag_has_supported_quote(t)]
+    lr2["limit"]  = [t for t in lr2.get("limit", [])  if tag_has_supported_quote(t)]
+    lr2["avoid"]  = [t for t in lr2.get("avoid", [])  if tag_has_supported_quote(t)]
+    lr2["prefer"], lr2["limit"], lr2["avoid"] = normalize_class_lists(lr2["prefer"], lr2["limit"], lr2["avoid"])
+    out["meal_pattern_rules"]["logical_rules"] = lr2
+
+    out["prefer_tags"], out["limit_tags"], out["avoid_tags"] = normalize_class_lists(
+        out["prefer_tags"], out["limit_tags"], out["avoid_tags"]
+    )
+    return out
+
+# =============================
+# MERGE HELPERS
+# =============================
+def merge_llm_into_template(template: Dict[str, Any], decision: Dict[str, Any]) -> Dict[str, Any]:
+    out = dict(template)
+    if isinstance(decision, dict):
+        for k in ["prefer_tags", "limit_tags", "avoid_tags", "meal_pattern_rules", "rag_evidence"]:
+            if k in decision:
+                out[k] = decision.get(k)
+
+    if "meal_pattern_rules" not in out or not isinstance(out["meal_pattern_rules"], dict):
+        out["meal_pattern_rules"] = {"logical_rules": {"prefer": [], "limit": [], "avoid": []}, "numeric_constraints": []}
+    if "logical_rules" not in out["meal_pattern_rules"] or not isinstance(out["meal_pattern_rules"]["logical_rules"], dict):
+        out["meal_pattern_rules"]["logical_rules"] = {"prefer": [], "limit": [], "avoid": []}
+    if "numeric_constraints" not in out["meal_pattern_rules"] or not isinstance(out["meal_pattern_rules"]["numeric_constraints"], list):
+        out["meal_pattern_rules"]["numeric_constraints"] = []
+    if "rag_evidence" not in out or not isinstance(out["rag_evidence"], list):
+        out["rag_evidence"] = []
+    return out
+
+def merge_decisions(base_out: Dict[str, Any], decision: Dict[str, Any]) -> Dict[str, Any]:
+    if not isinstance(decision, dict):
+        return base_out
+
+    for k in ["prefer_tags", "limit_tags", "avoid_tags"]:
+        base_out[k] = normalize_string_list(
+            list(set(normalize_string_list_safe(base_out.get(k))) | set(normalize_string_list_safe(decision.get(k))))
+        )
+
+    d_mpr = decision.get("meal_pattern_rules")
+    if isinstance(d_mpr, dict):
+        b_mpr = base_out.setdefault(
+            "meal_pattern_rules",
+            {"logical_rules": {"prefer": [], "limit": [], "avoid": []}, "numeric_constraints": []}
+        )
+
+        d_lr = d_mpr.get("logical_rules") or {}
+        b_lr = b_mpr.setdefault("logical_rules", {"prefer": [], "limit": [], "avoid": []})
+        for kk in ["prefer", "limit", "avoid"]:
+            b_lr[kk] = normalize_string_list(
+                list(set(normalize_string_list_safe(b_lr.get(kk))) | set(normalize_string_list_safe(d_lr.get(kk))))
+            )
+
+        d_nc = d_mpr.get("numeric_constraints") or []
+        if isinstance(d_nc, list):
+            b_nc = b_mpr.setdefault("numeric_constraints", [])
+            seen = set(json.dumps(x, sort_keys=True, ensure_ascii=False) for x in b_nc if isinstance(x, dict))
+            for x in d_nc:
+                if not isinstance(x, dict):
+                    continue
+                sx = json.dumps(x, sort_keys=True, ensure_ascii=False)
+                if sx not in seen:
+                    b_nc.append(x)
+                    seen.add(sx)
+
+    d_ev = decision.get("rag_evidence") or []
+    if isinstance(d_ev, list):
+        b_ev = base_out.setdefault("rag_evidence", [])
+        seen_ev = set(
+            (e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+            for e in b_ev if isinstance(e, dict)
+        )
+        for e in d_ev:
+            if not isinstance(e, dict):
+                continue
+            key = (e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+            if key not in seen_ev:
+                b_ev.append(e)
+                seen_ev.add(key)
+
+    return base_out
+
+# =============================
+# DOMAIN SEED
+# =============================
+def seed_tags_for_domain(domain: str) -> List[str]:
+    # Seed sadece başlangıç vocab’unu zenginleştirir; "genel amaçlı" kalması için minimal.
+    # Domain bazlı seed’ler opsiyonel.
+    d = domain.lower().strip()
+    if d == "kolesterol":
+        return [
+            "zeytinyagi","tekli_doymamis","coklu_doymamis",
+            "balik","omega3",
+            "lif_yuksek","posa_yuksek",
+            "sebze","meyve","kuruyemis",
+            "tahil","bulgur","baklagil",
+            "doymus_yag_yuksek","doymus_yag_dusuk","trans_yag_riski",
+            "islenmis_et","kirmizi_et","beyaz_et",
+            "sodyum_yuksek","sodyum_dusuk","sodyum_orta",
+            "gi_yuksek",
+            "yumurta","sakatat",
+            "kolesterol",
+
+            # yeni (tag_dicts'te varsa)
+            "tam_yagli_sut_urunleri",
+            "az_yagli_sut_urunleri",
+            "tam_yagli",
+            "az_yagli",
+        ]
+    return []
+
+# =============================
+# NUMERIC -> LIMIT WINS
+# =============================
+def force_numeric_tags_into_limit(out: Dict[str, Any]) -> None:
+    ncs = out.get("meal_pattern_rules", {}).get("numeric_constraints", []) or []
+    nc_tags = set()
+    for nc in ncs:
+        if isinstance(nc, dict) and isinstance(nc.get("tag"), str):
+            nc_tags.add(nc["tag"])
+    if not nc_tags:
+        return
+
+    out["prefer_tags"] = [t for t in out.get("prefer_tags", []) if t not in nc_tags]
+    out["avoid_tags"]  = [t for t in out.get("avoid_tags", [])  if t not in nc_tags]
+    out["limit_tags"]  = normalize_string_list(list(set(out.get("limit_tags", [])) | nc_tags))
+
+    lr = out.get("meal_pattern_rules", {}).get("logical_rules", {}) or {}
+    lr_pref = [t for t in normalize_string_list_safe(lr.get("prefer")) if t not in nc_tags]
+    lr_avo  = [t for t in normalize_string_list_safe(lr.get("avoid"))  if t not in nc_tags]
+    lr_lim  = normalize_string_list(list(set(normalize_string_list_safe(lr.get("limit"))) | nc_tags))
+    lr_pref, lr_lim, lr_avo = normalize_class_lists(lr_pref, lr_lim, lr_avo)
+    out["meal_pattern_rules"]["logical_rules"] = {"prefer": lr_pref, "limit": lr_lim, "avoid": lr_avo}
+
+# =============================
+# MAIN
+# =============================
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--domain", required=True)
+    ap.add_argument("--query", required=True)
+
+    ap.add_argument("--tag_dicts", default=DEFAULT_TAG_DICTS_PATH)
+    ap.add_argument("--out_dir", default=DEFAULT_OUT_DIR)
+    ap.add_argument("--rag_json_path", default=DEFAULT_RAG_JSON_PATH)
+
+    ap.add_argument("--max_chunks", type=int, default=12)
+    ap.add_argument("--max_chunk_chars", type=int, default=900)
+    ap.add_argument("--max_vocab", type=int, default=140)
+    ap.add_argument("--max_meanings", type=int, default=140)
+
+    ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--aliases_extra", default=None)
+
+    ap.add_argument("--use_all_relevant", action="store_true",
+                    help="max_chunks sınırını kaldırır; filtreyi geçen tüm relevant chunk'ları seçer (LLM batch önerilir).")
+    ap.add_argument("--llm_batch_size", type=int, default=10,
+                    help="use_all_relevant modunda LLM'e kaç chunk birden gitsin (batch).")
+
+    args = ap.parse_args()
+
+    model = (args.model or DEFAULT_MODEL).strip()
+    print("Using local Ollama model:", model)
+
+    domain = args.domain.strip()
+    anchors, biomarkers = build_aliases(domain, args.aliases_extra)
+
+    tag_meanings_all = load_tag_dicts(args.tag_dicts)
+    vocab_all: Set[str] = set(tag_meanings_all.keys())
+    vocab_useful = filter_vocab_to_rule_useful(vocab_all)
+
+    all_chunks = safe_load_json(args.rag_json_path)
+    if not isinstance(all_chunks, list):
+        raise SystemExit("merged_all_rag_standardized.json formatı list[...] olmalı.")
+
+    # Kandidatlar: JSON içinden anchor/biomarker yakalananlar + rule_candidate ağırlıklı
+    base = simple_retrieve_from_json(all_chunks, anchors, biomarkers)
+
+    # hard filter
+    base2: List[Dict[str, Any]] = []
+    for c in base:
+        if is_noisy_med_chunk(c):
+            continue
+        cs = clinical_setting_hits(c)
+        if cs >= 2 and not anchor_hit_in_chunk(c, anchors):
+            continue
+        if cs >= 3:
+            continue
+        base2.append(c)
+    base = base2
+
+    base_rules = [c for c in base if is_rule_candidate(c)]
+    if len(base_rules) < 10:
+        base_rules = base[:200]
+
+    candidates = base_rules
+
+    # selection
+    if args.use_all_relevant:
+        chosen, scored_debug = select_all_relevant_chunks(
+            candidates=candidates,
+            domain=domain,
+            query=args.query,
+            anchors=anchors,
+            biomarkers=biomarkers,
+            max_chunk_chars=args.max_chunk_chars,
+        )
+    else:
+        chosen, scored_debug = select_chosen_chunks(
+            candidates=candidates,
+            domain=domain,
+            query=args.query,
+            anchors=anchors,
+            biomarkers=biomarkers,
+            max_chunks=args.max_chunks,
+            max_chunk_chars=args.max_chunk_chars,
+        )
+
+    print("chosen_chunks_count:", len(chosen))
+
+    # vocab build
+    seed = seed_tags_for_domain(domain)
+    joined_text = "\n\n".join(
+        [f"[{c.get('chunk_id')}] {c.get('ana_baslik','')} {c.get('topic_group','')}\n{c.get('content','')}" for c in chosen]
+    )
+    det_prefer, _, det_avoid = extract_tags_deterministic(joined_text, vocab_useful)
+
+    cand_vocab = list(dict.fromkeys(list(det_prefer) + list(det_avoid) + seed))
+    cand_vocab = [t for t in cand_vocab if t in vocab_useful]
+    if not cand_vocab:
+        cand_vocab = list(sorted(vocab_useful))[: args.max_vocab]
+    if len(cand_vocab) < args.max_vocab:
+        rest = [t for t in sorted(vocab_useful) if t not in set(cand_vocab)]
+        cand_vocab.extend(rest[: max(0, args.max_vocab - len(cand_vocab))])
+
+    tag_vocab = cand_vocab[: args.max_vocab]
+    vocab_set = set(tag_vocab)
+
+    tag_meanings = {t: tag_meanings_all.get(t, "") for t in tag_vocab}
+    if len(tag_meanings) > args.max_meanings:
+        keys = list(tag_meanings.keys())[: args.max_meanings]
+        tag_meanings = {k: tag_meanings[k] for k in keys}
+
+    template = build_empty_template(domain)
+    system = build_system_prompt()
+
+    decision: Dict[str, Any] = {
+        "prefer_tags": [],
+        "limit_tags": [],
+        "avoid_tags": [],
+        "meal_pattern_rules": {"logical_rules": {"prefer": [], "limit": [], "avoid": []}, "numeric_constraints": []},
+        "rag_evidence": [],
+    }
+
+    raw_out = ""
+
+    # LLM call (batch)
+    if args.use_all_relevant:
+        bs = max(1, int(args.llm_batch_size))
+        for i in range(0, len(chosen), bs):
+            batch = chosen[i:i+bs]
+            payload = build_user_payload(domain, args.query, tag_vocab, tag_meanings, batch)
+            resp = ollama_chat(model, system, payload, temperature=0.0)
+            if not raw_out and resp:
+                raw_out = resp
+            try:
+                d = json.loads(clean_json_text(resp)) if resp else {}
+                if isinstance(d, dict):
+                    decision = merge_decisions(decision, d)
+            except Exception as e:
+                print("[WARN] Batch JSON parse edilemedi:", str(e))
+                continue
+    else:
+        payload = build_user_payload(domain, args.query, tag_vocab, tag_meanings, chosen)
+        raw_out = ollama_chat(model, system, payload, temperature=0.0)
+        try:
+            d = json.loads(clean_json_text(raw_out)) if raw_out else {}
+            decision = d if isinstance(d, dict) else {}
+        except Exception as e:
+            print("[WARN] LLM JSON parse edilemedi:", str(e))
+            decision = {}
+
+    # merge + whitelist
+    out = merge_llm_into_template(template, decision)
+    out = prune_to_template_keys(out, template)
+
+    out["prefer_tags"] = normalize_string_list(out.get("prefer_tags"))
+    out["limit_tags"]  = normalize_string_list(out.get("limit_tags"))
+    out["avoid_tags"]  = normalize_string_list(out.get("avoid_tags"))
+
+    # deterministic numeric -> merge BEFORE validate
+    det_ncs, det_evs = extract_limit_numeric_constraints_from_chunks(chosen, vocab_set)
+    if det_ncs:
+        existing = out.get("meal_pattern_rules", {}).get("numeric_constraints", []) or []
+        seen = set(json.dumps(x, sort_keys=True, ensure_ascii=False) for x in existing if isinstance(x, dict))
+        for nc in det_ncs:
+            k = json.dumps(nc, sort_keys=True, ensure_ascii=False)
+            if k not in seen:
+                existing.append(nc)
+                seen.add(k)
+        out["meal_pattern_rules"]["numeric_constraints"] = existing
+
+    if det_evs:
+        existing_ev = out.get("rag_evidence", []) or []
+        seen_ev = set((e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+                      for e in existing_ev if isinstance(e, dict))
+        for e in det_evs:
+            key = (e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+            if key not in seen_ev:
+                existing_ev.append(e)
+                seen_ev.add(key)
+        out["rag_evidence"] = existing_ev
+
+    # AUTO tagging
+    auto_pref, auto_lim, auto_avo, auto_evs = auto_add_tags_from_chosen(chosen, vocab_set)
+    out["prefer_tags"] = normalize_string_list(list(set(out.get("prefer_tags", [])) | auto_pref))
+    out["limit_tags"]  = normalize_string_list(list(set(out.get("limit_tags", []))  | auto_lim))
+    out["avoid_tags"]  = normalize_string_list(list(set(out.get("avoid_tags", []))  | auto_avo))
+
+    if auto_evs:
+        existing_ev = out.get("rag_evidence", []) or []
+        seen_ev2 = set((e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+                       for e in existing_ev if isinstance(e, dict))
+        for e in auto_evs:
+            key2 = (e.get("chunk_id"), e.get("quote"), tuple(e.get("related_tags", [])))
+            if key2 not in seen_ev2:
+                existing_ev.append(e)
+                seen_ev2.add(key2)
+        out["rag_evidence"] = existing_ev
+
+    # validate/clean
+    out = validate_and_clean_llm_output(out, vocab_set, chosen, domain)
+
+    # numeric wins
+    force_numeric_tags_into_limit(out)
+
+    # (İsteğe bağlı genel sadeleştirme) Eğer "tam_yagli_sut_urunleri" varsa ve "sut_urunu" da avoid'ta ise,
+    # gereksiz genelliği azaltmak için sut_urunu'nu düşürebilirsin. Varsayılan kapalı bıraktım.
+    # if "tam_yagli_sut_urunleri" in set(out.get("avoid_tags", [])):
+    #     out["avoid_tags"] = [t for t in out.get("avoid_tags", []) if t != "sut_urunu"]
+
+    # final logical_rules sync
+    lr = out.get("meal_pattern_rules", {}).get("logical_rules", {}) or {}
+    lr_pref = set(normalize_string_list(lr.get("prefer")))
+    lr_lim  = set(normalize_string_list(lr.get("limit")))
+    lr_avo  = set(normalize_string_list(lr.get("avoid")))
+
+    lr_pref |= set(out.get("prefer_tags", []))
+    lr_lim  |= set(out.get("limit_tags", []))
+    lr_avo  |= set(out.get("avoid_tags", []))
+
+    lr_pref, lr_lim, lr_avo = normalize_class_lists(list(lr_pref), list(lr_lim), list(lr_avo))
+    out["meal_pattern_rules"]["logical_rules"] = {"prefer": lr_pref, "limit": lr_lim, "avoid": lr_avo}
+
+    # descriptions
+    desc = out.get("disease_food_tag_descriptions")
+    if not isinstance(desc, dict):
+        desc = {}
+        out["disease_food_tag_descriptions"] = desc
+    for t in sorted(set(out.get("prefer_tags", []) + out.get("limit_tags", []) + out.get("avoid_tags", []))):
+        if t not in desc:
+            desc[t] = tag_meanings_all.get(t, "")
+
+    # energy_rules
+    er = out.get("energy_rules")
+    if not isinstance(er, dict):
+        er = dict(template["energy_rules"])
+    er["scale_up_order"] = list(out.get("prefer_tags", []))
+    er["scale_down_order"] = list(out.get("avoid_tags", [])) + [
+        t for t in out.get("limit_tags", []) if t not in set(out.get("avoid_tags", []))
+    ]
+    if "locks" not in er or not isinstance(er.get("locks"), list):
+        er["locks"] = []
+    out["energy_rules"] = er
+
+    out["meal_pattern_tags"] = []
+
+    out_path = os.path.join(args.out_dir, f"disease_rules_{domain}.json")
+    safe_dump_json(out, out_path)
+
+    debug_path = os.path.join(args.out_dir, f"disease_rules_{domain}.debug.json")
+    debug_obj = {
+        "domain": domain,
+        "query": args.query,
+        "anchors": anchors,
+        "biomarkers": biomarkers,
+        "params": {
+            "max_chunks": args.max_chunks,
+            "max_chunk_chars": args.max_chunk_chars,
+            "use_all_relevant": bool(args.use_all_relevant),
+            "llm_batch_size": int(args.llm_batch_size),
+            "model": model,
+        },
+        "candidates_count": len(candidates),
+        "chosen_chunks_count": len(chosen),
+        "chosen_chunks_preview": chosen[:40],
+        "top_scored_candidates_preview": scored_debug[:40],
+        "tag_vocab_count": len(tag_vocab),
+        "tag_vocab_sample": tag_vocab[:50],
+        "deterministic_numeric_added": {
+            "numeric_constraints": det_ncs,
+            "evidence_items": det_evs[:20],
+        },
+        "auto_rule_tagging_added": {
+            "prefer": sorted(list(auto_pref))[:50],
+            "limit": sorted(list(auto_lim))[:50],
+            "avoid": sorted(list(auto_avo))[:50],
+            "evidence_items": auto_evs[:20],
+        },
+        "llm_raw_preview": clean_json_text(raw_out)[:1500] if raw_out else "",
+        "final_output_preview": {
+            "prefer_tags": out.get("prefer_tags", []),
+            "limit_tags": out.get("limit_tags", []),
+            "avoid_tags": out.get("avoid_tags", []),
+            "rag_evidence_count": len(out.get("rag_evidence", [])),
+            "numeric_constraints_count": len(out.get("meal_pattern_rules", {}).get("numeric_constraints", []) or []),
+        }
+    }
+    safe_dump_json(debug_obj, debug_path)
+
+    print("OK:", out_path)
+    print("DEBUG:", debug_path)
+    print("prefer_tags:", out.get("prefer_tags", []))
+    print("limit_tags :", out.get("limit_tags", []))
+    print("avoid_tags :", out.get("avoid_tags", []))
+    print("rag_evidence_count:", len(out.get("rag_evidence", [])))
+    print("numeric_constraints_count:", len(out.get("meal_pattern_rules", {}).get("numeric_constraints", []) or []))
+
+if __name__ == "__main__":
+    main()

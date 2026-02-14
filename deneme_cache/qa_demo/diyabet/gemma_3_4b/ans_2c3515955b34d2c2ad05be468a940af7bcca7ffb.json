@@ -1,0 +1,45 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli  |  Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli  |  Tuz kısıtlaması önemlidir  |  Şeker içeren besinler sınırlı tüketilmelidir  |  Doymuş yağlar (yağlı süt ürünleri) ve trans yağlar sınırlandırılmalıdır",
+  "used_chunks": [
+    "t2p_4",
+    "t2p_3",
+    "dm_4_6_01",
+    "dm_ek_05",
+    "chunk_000433",
+    "chunk_000428"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

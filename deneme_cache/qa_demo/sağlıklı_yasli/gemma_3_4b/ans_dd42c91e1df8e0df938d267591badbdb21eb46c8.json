@@ -1,0 +1,41 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "Doymuş yağdan zengin besinlerin fazla tüketimi kalp damar hastalıkları riskini artırabilir  |  Bitkisel sıvı yağlar ve balık gibi sağlıklı yağ kaynakları tercih edilmelidir  |  Doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır  |  Tam tahıl ekmek ve diğer tahıllar yeterli miktarda tüketilmelidir  |  Zeytinyağı gibi bitkisel yağlar tercih edilebilir  |  Tereyağı yerine sağlıklı yağ kaynakları kullanılmalıdır",
+  "used_chunks": [
+    "yasli_ilke_07_doymus_yag",
+    "yasli_saglikli_06_tahil_yag"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

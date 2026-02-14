@@ -1,0 +1,40 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Kabuklu yemişler, zeytinyağı gibi sağlıklı yağlar tüketilmelidir.  |  Omega 3 yağ asitleri tüketmek kanser riskini azaltmaya yardımcı olabilir.  |  Zeytinyağı ve kabuklu yemişler gibi sağlıklı yağlar tüketilmelidir.  |  Kanser riskini azaltmak için omega 3 yağ asitlerini tüketmek önemlidir.  |  Omega 3 yağ asitleri tüketmek kanser gelişimini önlemeye yardımcı olabilir.",
+  "used_chunks": [
+    "c176"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kuruyemiş kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_amt",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

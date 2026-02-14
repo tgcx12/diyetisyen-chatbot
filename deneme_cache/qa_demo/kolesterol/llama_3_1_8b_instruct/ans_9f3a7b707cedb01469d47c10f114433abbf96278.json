@@ -1,0 +1,53 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Ambalajlı besinlerde bulunan trans yağ asidi miktarına sınır getirilmekle birlikte yağda ve fırında yapılan kızartmalar, bazı unlu mamuller, fast food besinler ile patlamış mısır vb.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı Diyetle alınan günlük enerjinin yağlardan gelen katkısı %20 35, bunun %10’undan daha azının (%7 8) doymuş yağlardan, %1’inden azının ise trans yağlardan sağlanması gerekmektedir.  |  Diyetin kolesterol miktarının ise 300 mg’ın altında tutulmasında yarar vardır (Bkz.  |  Ambalajlı tüketime sunulan yiyecek ve içeceklerin ambalajlarının üzerinde yazılı olan etiket bilgisi okunarak toplam yağ, doymuş ve trans yağ ile kolesterol içerikleri daha düşük olan benzer besinler tercih edilmelidir.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı Diyette fazla miktarda toplam yağ, doymuş yağ, trans yağ ve kolesterol tüketimi başta kalp ve damar hastalıkları, diyabet, obezite, kanser vb.",
+  "used_chunks": [
+    "chunk_000396",
+    "chunk_000394",
+    "chunk_000404",
+    "chunk_000395",
+    "chunk_000399",
+    "chunk_000409",
+    "chunk_000398",
+    "chunk_000401",
+    "chunk_000407",
+    "chunk_000400",
+    "chunk_000397",
+    "chunk_000402"
+  ],
+  "strict_chunks_count": 20,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

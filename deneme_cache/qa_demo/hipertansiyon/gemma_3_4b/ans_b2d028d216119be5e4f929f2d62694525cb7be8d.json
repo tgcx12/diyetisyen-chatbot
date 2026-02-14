@@ -1,0 +1,45 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "DASH diyeti, tam tahıl, sebze ve meyve tüketimini artırmayı ve tuz alımını azaltmayı içerir  |  Posalı gıdalar, DASH diyeti için önemlidir  |  Tuz tüketimini azaltmak, hipertansiyonu kontrol altında tutmak için önemlidir  |  Posali lif, DASH diyeti ile birlikte tüketildiğinde kan basıncını düşürmeye yardımcı olabilir  |  Posali lifin tüketimi, günlük olarak çeşitli tam tahıl ve sebze ile desteklenmelidir",
+  "used_chunks": [
+    "ht_lifestyle_01",
+    "ht_dash_01",
+    "chunk_000419",
+    "cvh_dash_3",
+    "chunk_000418_1",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için posa lif tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1_num_freq",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

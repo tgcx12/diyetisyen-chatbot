@@ -1,0 +1,11 @@
+{
+  "base_url": "http://localhost:11434",
+  "model": "llama3.1:8b",
+  "condition": "kolesterol",
+  "qa_summary_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\kolesterol\\gemma_3_4b\\qa_summary.json",
+  "labels_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\labels_output\\kolesterol\\python_only\\labels.json",
+  "labels_root": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\labels_output",
+  "foods_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\besin_havuzu_eski.normalized.json",
+  "tag_dicts_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\tag_dicts.json",
+  "pdfs_used": []
+}

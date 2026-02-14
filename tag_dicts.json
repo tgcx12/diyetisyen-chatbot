@@ -1,0 +1,669 @@
+{
+  "tags": {
+    "asitli": "Asidik yiyecek/içecek (reflü-gastrit hassasiyetini tetikleyebilir). Domates/salça/turşu/limon vb. kategori işareti.",
+    "baklagil": "Kurubaklagil grubu (mercimek, nohut, fasulye vb.). Lif ve bitkisel protein kaynağı.",
+    "baklagil_yemegi": "Kurubaklagilden yapılan ana yemek (kuru fasulye/nohut/mercimek yemeği).",
+    "baklagil_gaz_yapici": "Baklagillerin bazı kişilerde gaz/şişkinlik yapabilmesi uyarısı; hassasiyette kaçın/azalt.",
+    "balik": "Balık/deniz ürünü ana protein grubu.",
+    "beyaz_et": "Beyaz et (tavuk/hindi) grubu; genelde daha düşük doymuş yağlı protein alternatifi.",
+    "bulgur": "Bulgur (tam tahıl bazlı) karbonhidrat kaynağı.",
+    "coklu_doymamis": "Çoklu doymamış yağ asitleri baskın (omega-3/6). Yağ türü işareti.",
+    "tekli_doymamis": "Tekli doymamış yağ baskın (zeytinyağı/avokado vb.). Yağ türü işareti.",
+    "omega3": "Omega-3 içeriği belirgin (özellikle yağlı balık/keten/ceviz vb.).",
+    "zeytinyagi": "Zeytinyağı kullanımı/temeli (tekli doymamış yağ kaynağı).",
+    "corba": "Çorba kategorisi (öğün başlangıcı/ana öğün destek).",
+    "unlu_corba": "Un/tahıl içeren çorba (tarhana/ezogelin gibi); karbonhidrat içeriği daha belirgin.",
+    "damar_sagligi": "Kardiyometabolik destek etiketi: genel olarak LDL/HDL hedefleriyle uyumlu seçim (genel bir 'uygun' işareti).",
+    "ldl_kontrol": "LDL (kötü kolesterol) kontrolüne destek olacak profil: lif/yağ türü/işlenmişlik açısından daha uygun.",
+    "hdl_artirma": "HDL (iyi kolesterol) destekleyici profil: zeytinyağı/omega-3 gibi sağlıklı yağlarla uyumlu.",
+    "doymus_yag_dusuk": "Doymuş yağ oranı düşük (daha 'hafif' yağ profili).",
+    "doymus_yag_orta": "Doymuş yağ orta seviyede (porsiyon/denge önemli).",
+    "doymus_yag_yuksek": "Doymuş yağ yüksek (kalp-damar/kolesterol hedeflerinde sınırlanmalı).",
+    "doymus_yag_kisitlama": "Doymuş yağ kısıtlaması gereken durumda dikkat/limit etiketi (kural motoru için uyarı).",
+    "yag": "Genel 'yağlı/yağ içeriği belirgin' işareti (doymuş yağ orta-yüksek olanlarda veya enerji yoğun gıdalarda).",
+    "ekmek": "Ekmek alt kategorisi (tahıl bazlı).",
+    "tahil": "Tahıl grubu (ekmek, yulaf, bulgur vb.) karbonhidrat kaynağı.",
+    "pilav_makarna": "Pilav/makarna tipi nişasta ağırlıklı yemekler (porsiyon ve GI önemli).",
+    "kh_dusuk": "Karbonhidrat düşük (diyabet/kan şekeri yönetimine daha uygun).",
+    "kh_orta": "Karbonhidrat orta (porsiyonla yönetilir).",
+    "kh_yuksek": "Karbonhidrat yüksek (kan şekeri kontrolünde porsiyon/alternatif önemli).",
+    "kompleks_kh": "Kompleks karbonhidrat (tam tahıl/lifli yapı); rafineye göre daha dengeli.",
+    "gi_dusuk": "Glisemik indeks düşük: kan şekerini daha yavaş yükseltir.",
+    "gi_orta": "Glisemik indeks orta: porsiyon ve eşlik eden lif/protein/yağ ile dengelenir.",
+    "gi_yuksek": "Glisemik indeks yüksek: kan şekerini hızlı yükseltebilir; diyabette sınırlanır/kaçınılır (özellikle avoid).",
+    "lif_dusuk": "Lif düşük (tokluk/kan şekeri/bağırsak açısından zayıf).",
+    "lif_orta": "Lif orta seviye.",
+    "lif_yuksek": "Lif yüksek: tokluk, bağırsak sağlığı ve glisemik kontrol için destekleyici.",
+    "posa_yuksek": "Posa/selüloz yüksek (lifli yapı, sindirim ve tokluk desteği).",
+    "lifli_beslenme": "Lif odaklı beslenmeye uygun seçenek (genel 'lif hedefi' işareti).",
+    "et_grubu": "Et/protein ana öğün kategorisi (tavuk/dana vb.).",
+    "kirmizi_et": "Kırmızı et (dana/kuzu). Doymuş yağ/kolesterol hedeflerinde porsiyon ve sıklık önemli.",
+    "islenmis_et": "İşlenmiş et (sucuk/salam/sosis). Tuz/nitrit/doymuş yağ nedeniyle genelde sınırlanır (food veya avoid bağlamına göre).",
+    "yumurta": "Yumurta kategorisi (protein kaynağı); kolesterol hassasiyeti olanlarda porsiyon önemli.",
+    "peynir": "Peynir kategorisi (süt ürünü); tuz ve doymuş yağ seviyesi türüne göre değişir.",
+    "sut_urunu": "Süt ve süt ürünleri genel kategorisi.",
+    "yagsiz_sut_urunleri": "Yağsız/az yağlı süt ürünleri (doymuş yağ daha düşük).",
+    "laktoz": "Laktoz içeren ürün uyarısı (intolerans varsa kaçın).",
+    "laktoz_intoleransi": "Laktoz intoleransı olan kişiler için belirgin uyarı etiketi.",
+    "kolesterol": "Kolesterol hassasiyeti uyarısı (yumurta/sakatat/yağlı peynir/işlenmiş et gibi).",
+    "sodyum_dusuk": "Sodyum (tuz) düşük: hipertansiyon/ödem riskinde daha uygun.",
+    "sodyum_orta": "Sodyum orta: toplam günlük tuzla dengelenir.",
+    "sodyum_yuksek": "Sodyum yüksek: hipertansiyon/ödem/böbrek yükünde kaçın/limit (özellikle avoid).",
+    "trans_yag_riski": "Trans yağ riski (kızartma/ultra işlenmiş). Kardiyometabolik hedeflerde kaçın.",
+    "akrilamid": "Yüksek ısıda kızartma/yanma ile oluşan risk (patates kızartması vb.); mümkünse kaçın/azalt.",
+    "nitrat": "İşlenmiş etlerde nitrat/nitrit uyarısı (sucuk/salam/sosis).",
+    "histamin_orta": "Histamin duyarlılığı olanlarda orta risk (olgun peynir vb.).",
+    "oksalat_yuksek": "Oksalat yüksek: böbrek taşı riski olanlarda dikkat/kaçın.",
+    "reflu_tetikleyici": "Reflü/gastrit şikayetlerini tetikleyebilecek seçenek uyarısı (asitli/baharat/kafein vb.).",
+    "baharatli": "Baharatlı: reflü/gastritte rahatsızlık verebilir; hassasiyette kaçın/azalt.",
+    "kafeinli_icecek": "Kafein içeren içecek (kahve/çay/enerji içeceği). Reflü/çarpıntı/uyku hassasiyetinde sınırlanır.",
+    "kafeinsiz": "Kafeinsiz seçenek (kafein hassasiyeti olanlara uygun).",
+    "sivi": "Sıvı form (içecek/ayran/kefir/çorba bazen).",
+    "hafif": "Görece hafif/düşük yağlı veya sindirimi kolay seçenek (genel işaret).",
+    "kolay_sindirim": "Sindirmesi görece kolay (yağ ve lif çok yüksek değil; mide hassasiyetine daha uygun).",
+    "kuruyemis": "Kuruyemiş grubu (badem/fındık/ceviz). Enerji yoğun; porsiyon önemli.",
+    "meyve": "Meyve kategorisi (doğal şeker + lif; GI/kh ile birlikte değerlendirilir).",
+    "salata": "Salata/çiğ sebze ağırlıklı tabak (genelde düşük kcal, lifli); isterse 'sebze' altında birleştirilebilir.",
+    "scalable": "Porsiyon/ölçeklenebilir: öğün planında miktarı artır-azaltmaya uygun seçenek etiketi.",
+    "sebze": "Sebze kategorisi.",
+    "sebze_yemegi": "Sebzeden yapılan ana yemek (zeytinyağlı/kıymalı vb.).",
+    "yuksek_kalori": "Enerji yoğun: kilo/enerji hedeflerinde porsiyon kontrolü gerekir.",
+    "protein_yuksek": "Protein yüksek (tokluk ve kas korunumu için destek).",
+    "et_suyu": "Et suyu/bulyon bazlı: sodyum/purin yükü nedeniyle bazı durumlarda kaçın (özellikle avoid).",
+    "tam_yagli_sut_urunleri": "Tam yağlı süt ürünleri (tam yağlı süt/yoğurt/peynir/kaymak/krema). Kolesterol hedefinde kaçın/çok sınırla.",
+    "az_yagli_sut_urunleri": "Az yağlı süt ürünleri (az yağlı süt/yoğurt vb.). Doymuş yağ azaltımı için daha uygun seçenek."
+  },
+
+    "domains": {
+    "kolesterol": {
+      "aliases": [
+        "kolesterol",
+        "dislipidemi",
+        "hiperkolesterolemi",
+        "ldl yüksekliği",
+        "hdl düşüklüğü",
+        "trigliserid yüksekliği",
+        "hiperlipidemi"
+      ],
+      "anchors": [
+        "kolesterol",
+        "kolestrol",
+        "ldl",
+        "hdl",
+        "trigliserid",
+        "dislipidemi",
+        "hiperkolesterolemi",
+        "hiperlipidemi"
+      ],
+      "exclude_if_only": [
+        "hipertansiyon",
+        "yüksek tansiyon",
+        "tansiyon",
+        "diyabet",
+        "diabetes",
+        "böbrek",
+        "bobrek",
+        "çölyak",
+        "colyak",
+        "kanser",
+        "onkoloji",
+        "tiroid",
+        "koah",
+        "copd",
+        "astım",
+        "astim",
+        "vejeteryan",
+        "vegan"
+      ],
+      "shared_context": {
+        "allow_shared_domains": [
+          "kardiyovaskuler_ortak"
+        ],
+        "notes": "Kolesterol içeriği kardiyovasküler ortak içerikle kesişebilir; ancak kolesterol anchor'ı olmayan veya başka hastalık anchor'ı baskın olan sorgular elenmelidir."
+      },
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "hipertansiyon",
+          "diyabet",
+          "bobrek",
+          "coelyak_gluten",
+          "kanser",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "sağlıklı_yasli",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "chol_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Kolesterol domain'indeyken üretilen her retrieval query en az 1 kolesterol anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "chol_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir domain'in anchor'larını içeriyorsa kolesterol domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          },
+          {
+            "id": "chol_q_allow_kardiyo_shared_only_with_anchor",
+            "type": "allow_shared_context_only_if_anchor_present",
+            "description": "Kardiyovasküler ortak bağlamdan retrieval yapılabilir ama query mutlaka kolesterol anchor'ı taşımalı.",
+            "apply_to": "retrieval_query",
+            "shared_domain": "kardiyovaskuler_ortak",
+            "must_contain_any_from": "SELF.anchors"
+          }
+        ]
+      },
+      "notes": "Kolesterol/dislipidemi odaklı içerik. Kardiyovasküler ortak içerikten yararlanabilir; ancak hipertansiyon/diyabet gibi diğer hastalık odaklı sorgular üretilmemelidir."
+    },
+
+    "kardiyovaskuler_ortak": {
+      "aliases": [
+        "kardiyovasküler hastalıklar",
+        "kalp damar",
+        "kalp-damar",
+        "kalp sağlığı",
+        "koroner",
+        "ateroskleroz"
+      ],
+      "anchors": [
+        "kardiyovasküler",
+        "kardiyovaskuler",
+        "kalp damar",
+        "kalp-damar",
+        "kalp sağlığı",
+        "koroner",
+        "ateroskleroz"
+      ],
+      "exclude_if_only": [],
+      "notes": "Ortak bağlam domain'i. Tek başına hedef domain seçilmez; kolesterol/hipertansiyon gibi domainler seçildikten sonra ek retrieval havuzu olarak kullanılabilir."
+    },
+
+    "hipertansiyon": {
+      "aliases": [
+        "hipertansiyon",
+        "yüksek tansiyon",
+        "tansiyon yüksekliği",
+        "hipertansif",
+        "kan basıncı yüksekliği"
+      ],
+      "anchors": [
+        "hipertansiyon",
+        "tansiyon",
+        "yüksek tansiyon",
+        "kan basıncı",
+        "kan basinci",
+        "sodyum",
+        "tuz",
+        "dahş",
+        "dash"
+      ],
+      "exclude_if_only": [
+        "kolesterol",
+        "kolestrol",
+        "ldl",
+        "hdl",
+        "trigliserid",
+        "dislipidemi",
+        "hiperkolesterolemi",
+        "diyabet",
+        "diabetes",
+        "çölyak",
+        "colyak",
+        "kanser",
+        "tiroid",
+        "koah",
+        "astım",
+        "astim",
+        "vegan",
+        "vejeteryan"
+      ],
+      "shared_context": {
+        "allow_shared_domains": [
+          "kardiyovaskuler_ortak"
+        ],
+        "notes": "Hipertansiyon içeriği kardiyovasküler ortak içerikle kesişebilir; ancak hipertansiyon anchor'ı olmayan veya kolesterol gibi başka domain anchor'ı baskın olan sorgular elenmelidir."
+      },
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "diyabet",
+          "bobrek",
+          "coelyak_gluten",
+          "kanser",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "sağlıklı_yasli",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "htn_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Hipertansiyon domain'indeyken üretilen her retrieval query en az 1 hipertansiyon anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "htn_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir domain'in anchor'larını içeriyorsa hipertansiyon domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          },
+          {
+            "id": "htn_q_allow_kardiyo_shared_only_with_anchor",
+            "type": "allow_shared_context_only_if_anchor_present",
+            "description": "Kardiyovasküler ortak bağlamdan retrieval yapılabilir ama query mutlaka hipertansiyon anchor'ı taşımalı.",
+            "apply_to": "retrieval_query",
+            "shared_domain": "kardiyovaskuler_ortak",
+            "must_contain_any_from": "SELF.anchors"
+          }
+        ]
+      },
+      "notes": "Tuz/sodyum, DASH benzeri öneriler, tansiyon kontrolü."
+    },
+
+    "diyabet": {
+      "aliases": [
+        "diyabet",
+        "tip 1 diyabet",
+        "tip 2 diyabet",
+        "gestasyonel diyabet",
+        "şeker",
+        "seker"
+      ],
+      "anchors": [
+        "diyabet",
+        "diabetes",
+        "kan şekeri",
+        "kan sekeri",
+        "glukoz",
+        "hb a1c",
+        "hba1c",
+        "a1c",
+        "glisemik indeks",
+        "hiperglisemi",
+        "hipoglisemi"
+      ],
+      "exclude_if_only": [
+        "kolesterol",
+        "kolestrol",
+        "hipertansiyon",
+        "tansiyon",
+        "çölyak",
+        "colyak",
+        "kanser",
+        "tiroid",
+        "koah",
+        "astım",
+        "astim",
+        "vejeteryan",
+        "vegan"
+      ],
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "hipertansiyon",
+          "bobrek",
+          "coelyak_gluten",
+          "kanser",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "sağlıklı_yasli",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "dm_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Diyabet domain'indeyken üretilen her retrieval query en az 1 diyabet anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "dm_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir domain'in anchor'larını içeriyorsa diyabet domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          }
+        ]
+      },
+      "notes": "Kan şekeri, glukoz regülasyonu ve diyabete özgü metabolik kontrol."
+    },
+
+    "kanser": {
+      "aliases": [
+        "onkoloji",
+        "kanser",
+        "kemoterapi",
+        "radyoterapi",
+        "akciğer kanseri",
+        "akciger kanseri"
+      ],
+      "anchors": [
+        "kanser",
+        "onkoloji",
+        "kemoterapi",
+        "radyoterapi",
+        "akciğer",
+        "akciger"
+      ],
+      "exclude_if_only": [
+        "kolesterol",
+        "hipertansiyon",
+        "diyabet",
+        "çölyak",
+        "tiroid",
+        "sağlıklı_yetiskin",
+        "sağlıklı_yasli",
+        "cocuk_ergen",
+        "yaşlı beslenmesi",
+        "vejeteryan",
+        "vegan"
+      ],
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "hipertansiyon",
+          "diyabet",
+          "bobrek",
+          "coelyak_gluten",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "sağlıklı_yasli",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "ca_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Kanser domain'indeyken üretilen her retrieval query en az 1 kanser anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "ca_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir domain'in anchor'larını içeriyorsa kanser domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          }
+        ]
+      },
+      "notes": "Kanserde beslenme/yan etki yönetimi; klinik bağlamlar içerebilir."
+    },
+
+    "sağlıklı_yetiskin": {
+      "aliases": [
+        "yetişkin",
+        "normal birey",
+        "genel beslenme",
+        "sağlıklı beslenme",
+        "saglikli beslenme"
+      ],
+      "anchors": [
+        "sağlıklı yetişkin",
+        "saglikli yetiskin",
+        "sağlıklı beslenme",
+        "saglikli beslenme",
+        "genel beslenme"
+      ],
+      "exclude_if_only": [
+        "diyabet",
+        "diabetes",
+        "hipertansiyon",
+        "tansiyon",
+        "kolesterol",
+        "ldl",
+        "hdl",
+        "kanser",
+        "onkoloji",
+        "çölyak",
+        "colyak",
+        "böbrek",
+        "bobrek",
+        "yaşlı",
+        "yaşlı beslenmesi",
+        "vejeteryan",
+        "vegan"
+
+      ],
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "hipertansiyon",
+          "diyabet",
+          "kanser",
+          "bobrek",
+          "coelyak_gluten",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yasli",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "adult_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Sağlıklı yetişkin domain'indeyken üretilen her retrieval query en az 1 sağlıklı yetişkin anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "adult_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir hastalık/kısıt domain'inin anchor'larını içeriyorsa sağlıklı yetişkin domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          }
+        ]
+      },
+      "notes": "Hastalık spesifik olmayan genel sağlıklı beslenme önerileri."
+    },
+
+    "sağlıklı_yasli": {
+      "aliases": [
+        "yaşlı",
+        "yaşlı beslenmesi",
+        "yasli beslenmesi",
+        "geriatrik beslenme",
+        "geriatrik"
+      ],
+      "anchors": [
+        "sağlıklı yaşlı",
+        "saglikli yasli",
+        "yaşlı beslenmesi",
+        "yasli beslenmesi",
+        "geriatrik",
+        "geriatrik beslenme"
+      ],
+      "exclude_if_only": [
+        "diyabet",
+        "diabetes",
+        "hipertansiyon",
+        "tansiyon",
+        "kolesterol",
+        "ldl",
+        "hdl",
+        "kanser",
+        "onkoloji",
+        "çölyak",
+        "colyak",
+        "böbrek",
+        "bobrek",
+         "vejeteryan",
+         "vegan"
+      ],
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "hipertansiyon",
+          "diyabet",
+          "kanser",
+          "bobrek",
+          "coelyak_gluten",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "cocuk_ergen"
+        ],
+        "rules": [
+          {
+            "id": "elder_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Sağlıklı yaşlı domain'indeyken üretilen her retrieval query en az 1 sağlıklı yaşlı anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "elder_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir hastalık/kısıt domain'inin anchor'larını içeriyorsa sağlıklı yaşlı domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          }
+        ]
+      },
+      "notes": "Sağlıklı yaşlılarda enerji/protein, sıvı, lif ve kemik sağlığı gibi geriatrik odaklı genel öneriler."
+    },
+
+    "cocuk_adelson": {
+      "aliases": [
+        "çocuk ve adelson",
+        "cocuk",
+        "ergen",
+        "ergen beslenmesi",
+        "cocuk beslenmesi",
+        "adolesan",
+        "adolescent"
+      ],
+      "anchors": [
+        "çocuk",
+        "cocuk",
+        "ergen",
+        "ergen beslenmesi",
+        "cocuk beslenmesi",
+        "adolesan"
+      ],
+      "exclude_if_only": [
+        "bebek",
+        "infant",
+        "emzirme",
+        "anne sütü",
+        "anne sutu",
+        "diyabet",
+        "diabetes",
+        "hipertansiyon",
+        "tansiyon",
+        "kolesterol",
+        "ldl",
+        "hdl",
+        "kanser",
+        "onkoloji",
+        "çölyak",
+        "colyak",
+        "böbrek",
+        "bobrek",
+        "vegan",
+        "vejeteryan"
+      ],
+      "disambiguation": {
+        "require_anchor_for_retrieval_queries": true,
+        "strict_competitor_exclusion": true,
+        "competitor_domains": [
+          "kolesterol",
+          "hipertansiyon",
+          "diyabet",
+          "kanser",
+          "bobrek",
+          "coelyak_gluten",
+          "tiroid",
+          "solunum",
+          "reflu_gastrit",
+          "gut_hiperurisemi",
+          "anemi",
+          "obezite",
+          "karaciger",
+          "sağlıklı_yetiskin",
+          "sağlıklı_yasli"
+        ],
+        "rules": [
+          {
+            "id": "child_q_anchor_gate",
+            "type": "drop_query_if_missing_anchor",
+            "description": "Çocuk/ergen domain'indeyken üretilen her retrieval query en az 1 çocuk/ergen anchor içermeli.",
+            "apply_to": "retrieval_query",
+            "must_contain_any_from": "SELF.anchors"
+          },
+          {
+            "id": "child_q_competitor_block",
+            "type": "drop_query_if_contains_any_competitor_anchor",
+            "description": "Query başka bir hastalık/kısıt domain'inin anchor'larını içeriyorsa çocuk/ergen domain'inde query elenir.",
+            "apply_to": "retrieval_query",
+            "competitor_anchor_sources": "DOMAINS[SELF.disambiguation.competitor_domains].anchors",
+            "mode": "any_hit_drop"
+          }
+        ]
+      },
+      "notes": "Çocuk/ergen genel beslenmesi. Bebek/infant kapsam dışı tutulmuştur."
+    }
+  }
+}

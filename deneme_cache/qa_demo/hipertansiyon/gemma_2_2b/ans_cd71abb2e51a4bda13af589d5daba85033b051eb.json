@@ -1,0 +1,42 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+  "answer": "Beyaz et tüketimi DASH diyeti için idealdir  |  Bu diyet, düşük yağlı süt ve ürünleri, tam tahıllar, sebze ve meyveler, kuru baklagiller ve yağlı tohumlar içerir",
+  "used_chunks": [
+    "ht_dash_01",
+    "cvh_dash_3",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için beyaz et (tavuk hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "margarin  |  zeytinyağı  |  fındık yağı  |  kanola yağı  |  kepekli ekmek  |  tam buğday ekmeği",
+  "used_chunks": [
+    "dm_ek_05",
+    "dm_4_3_01",
+    "t2p_3",
+    "t2p_4",
+    "dm_ek_11",
+    "chunk_000390",
+    "chunk_000442_1",
+    "chunk_000426",
+    "not_16",
+    "chunk_000428",
+    "cvh_sugar_2"
+  ],
+  "strict_chunks_count": 11,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "Kolesterolü Düşüren Lifler  |  Beyaz ekmek yerine tam tahıllı ekmek, pirinç yerine bulgur tercih edilmelidir.",
+  "used_chunks": [
+    "chol_5_5_01"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

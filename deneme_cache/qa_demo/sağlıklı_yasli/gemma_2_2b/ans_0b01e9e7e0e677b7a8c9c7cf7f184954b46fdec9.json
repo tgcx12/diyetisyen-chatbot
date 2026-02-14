@@ -1,0 +1,40 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yaşlılarda kırmızı et tüketimi konusunda genel öneriler bulunmamaktadır.  |  Yumurtanın sağlıklı beslenme için önemli olduğunu ve et tüketimine dair daha fazla araştırmaya ihtiyaç olduğunu belirtmek gerekir.  |  Et tüketiminin, yaş ve sağlık durumuna göre farklılık gösterebileceği unutulmamalıdır.  |  Daha fazla bilgi edinmek için bir diyetisyen veya sağlık uzmanına danışmak en iyisidir.  |  Yaşlılarda beslenme konusunda uzman görüşü almak önemlidir.",
+  "used_chunks": [
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için kırmızı et tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

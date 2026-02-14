@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Kabuklu yemişler, özellikle fındık, ceviz ve badem gibi omega 3 yağ asitleri açısından zengindir  |  Sağlıklı beslenme için tekli doymamış yağların tüketimi önemlidir  |  Yaşlı bireylerde susama hissi azalabilir, bu nedenle kabuklu yemişler sıvı alımını artırmaya yardımcı olabilir  |  Yemeklerde doymuş yağların yerine kabuklu yemişler tercih edilmelidir  |  Tuzlu besinler sınırlandırılmalı, yemeklere tuz eklenmemelidir  |  Kabuklu yemişlerin günlük veya haftalık tüketimi önerilir.",
+  "used_chunks": [
+    "chunk_000593_01",
+    "yasli_ilke_08_sivi",
+    "c176",
+    "yasli_ilke_11_tuz"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için kuruyemiş kabuklu yemiş tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_freq",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

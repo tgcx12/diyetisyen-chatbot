@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Besinlerden günde en az 25 g posa alınması önerilir  |  bu posa kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanmalıdır  |  kuru baklagiller de bu pozadan fayda sağlar  |  yeterli miktarda folat içeren yeşil ve kuru mercimek, tam tahıllar ve yer fıstığı tüketimi önerilir  |  baklagil tüketimi, özellikle de mercimek, nohut ve fasulye gibi kuru baklagiller, diyet posası alımına katkıda bulunur  |  önerilen posa miktarı günlük 35 g/gün'dür.",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "kalp_2_4_12",
+    "ca_folate_sources_reco"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için baklagil tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_freq",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

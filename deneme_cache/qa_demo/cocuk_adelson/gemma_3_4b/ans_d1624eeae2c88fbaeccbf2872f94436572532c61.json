@@ -1,0 +1,40 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+  "answer": "Balık tüketimi, çocuk ve Adelson için B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir  |  Omega 3 açısından özellikle somon, uskumru gibi yağlı balıklar tercih edilmelidir  |  Hamsi gibi yerli balıklar da iyi bir seçenektir  |  Balık pişirme yöntemleri olarak buharda veya hafifçe pişirilmiş olarak tercih edilmelidir  |  Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir",
+  "used_chunks": [
+    "chunk_000730"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için balık tüketimi nasıl olmalı ve hangi tür pişirme tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_balik",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "DASH diyeti, beyaz et tüketimini kırmızı ete göre artırmayı içerir  |  Beyaz et, tavuk veya hindi gibi kaynaklar, DASH diyeti için önerilen protein kaynaklarıdır  |  Sodyum/tuzdan kısıtlanmış DASH diyeti, haftada birkaç kez beyaz et tüketimini destekler  |  Tüketim sıklığı, bireysel ihtiyaçlara ve genel diyet tercihlerine bağlıdır  |  Ancak, DASH diyeti, beyaz et tüketimini kırmızı ete kıyasla daha sık tüketmeyi teşvik eder.",
+  "used_chunks": [
+    "ht_dash_01",
+    "cvh_dash_3",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için beyaz et (tavuk hindi) tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "clauses_total": 105,
+  "clauses_mined": 70,
+  "final_pass": {
+    "dropped_unknown_tags": [],
+    "missing_evidence_tags": [],
+    "numeric_invalid_units": [],
+    "numeric_missing_limit_tag": [
+      "lif_orta"
+    ],
+    "dropped_unsupported_evidence": [],
+    "quote_reuse_pruned": [
+      {
+        "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, yumurta yenilen günlerde kırmızı et yerine tavuk eti ",
+        "dropped": 2
+      },
+      {
+        "quote": "Yarım yağlı veya yağsız süt ürünleri tercih edilmeli",
+        "dropped": 8
+      },
+      {
+        "quote": "Yemekler pişirilirken daha az tuz kullanılmalı, tabaktaki yemeğin tadına bakmadan tuz ilave etme alışkanlığından vazgeçi",
+        "dropped": 2
+      },
+      {
+        "quote": "Kolesterol içeriği yüksek besinlerden kaçınılmalı",
+        "dropped": 2
+      },
+      {
+        "quote": "Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli",
+        "dropped": 2
+      },
+      {
+        "quote": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı",
+        "dropped": 4
+      },
+      {
+        "quote": "Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli",
+        "dropped": 2
+      },
+      {
+        "quote": "Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı",
+        "dropped": 4
+      },
+      {
+        "quote": "Tereyağ, margarin yerine yumuşak margarin ve zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağ asitlerinden z",
+        "dropped": 2
+      },
+      {
+        "quote": "Yemeklere eklenen yağ miktarı azaltılmalı, katı yağ yerine sıvı yağ, özellikle zeytinyağı kullanılmalı",
+        "dropped": 2
+      }
+    ],
+    "evidence_per_tag_pruned": [
+      {
+        "tag": "beyaz_et",
+        "dropped": 1
+      },
+      {
+        "tag": "az_yagli_sut_urunleri",
+        "dropped": 1
+      },
+      {
+        "tag": "hafif",
+        "dropped": 1
+      },
+      {
+        "tag": "pilav_makarna",
+        "dropped": 2
+      },
+      {
+        "tag": "hdl_artirma",
+        "dropped": 1
+      },
+      {
+        "tag": "balik",
+        "dropped": 1
+      },
+      {
+        "tag": "coklu_doymamis",
+        "dropped": 1
+      },
+      {
+        "tag": "doymus_yag_orta",
+        "dropped": 7
+      },
+      {
+        "tag": "baklagil_yemegi",
+        "dropped": 2
+      },
+      {
+        "tag": "bulgur",
+        "dropped": 2
+      },
+      {
+        "tag": "et_suyu",
+        "dropped": 2
+      }
+    ],
+    "numeric_normalized": 28,
+    "dropped_numeric_empty": 0
+  }
+}

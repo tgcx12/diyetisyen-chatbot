@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+  "answer": "Posa miktarı: 35 g/gün vs 15 g/gün ve öneri  |  kanser  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan sağlanan ortalama 35 g/gün diyet posasının ortalama 15 g/günlük posa alımı ile kıyaslandığında kolorektal kanser riskini azalttığı saptanmıştır.  |  Besinlerden günde en az 25 g posa alınması ve bunun da kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanması önerilmektedir.  |  Baklagiller aynı zamanda folik asit açısından zengindir.  |  Folat: beslenme önerisi ve kaynaklar",
+  "used_chunks": [
+    "ca_fiber_amounts_reco",
+    "kalp_2_4_12",
+    "ca_folate_sources_reco"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kanser baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "baklagil_1",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

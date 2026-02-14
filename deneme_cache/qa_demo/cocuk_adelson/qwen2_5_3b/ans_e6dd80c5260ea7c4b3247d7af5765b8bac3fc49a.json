@@ -1,0 +1,43 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Süt içeren dondurma ve sütlü tatlılar  |  Az yağlı ürünler",
+  "used_chunks": [
+    "chunk_000375",
+    "chunk_000372",
+    "ca_2",
+    "chunk_000281"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

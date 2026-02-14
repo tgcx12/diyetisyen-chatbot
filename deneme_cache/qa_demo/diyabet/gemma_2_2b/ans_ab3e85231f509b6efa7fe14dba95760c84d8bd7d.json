@@ -1,0 +1,45 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Süt ürünleri tüketimi azaltılmalı  |  Yemekler pişirilirken daha az tuz kullanılmalı  |  Şekerle tatlandırılmış içecekler yerine su tercih edilmeli  |  Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı  |  Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli  |  Eklenmiş şeker ve rafine tahıl tüketimi azaltılmalı",
+  "used_chunks": [
+    "t2p_4",
+    "t2p_3",
+    "dm_4_6_01",
+    "dm_ek_05",
+    "chunk_000433",
+    "chunk_000428"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

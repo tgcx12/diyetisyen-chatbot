@@ -1,0 +1,47 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Tuz tüketimini sınırlamak için tuzlanmış kuruyemişler (fındık, fıstık, ceviz, badem, leblebi, kabak ve ayçiçeği çekirdeği) gibi ürünlerden kaçınmak  |  Tuzlu besinler sınırlandırılmalı ve yiyeceklere tuz eklenmemeli  |  Sofrada tuzluk bulundurulmamalı  |  Düşük sodyumlu besinleri tercih etmek  |  DASH diyeti, tuz/sodyum kısıtlı bir beslenme modelidir.",
+  "used_chunks": [
+    "ht_salt_01",
+    "chunk_000408",
+    "chunk_000418_1",
+    "yasli_ilke_11_tuz",
+    "chunk_000420",
+    "chunk_000424",
+    "cvh_dash_3",
+    "cvh_salt_2"
+  ],
+  "strict_chunks_count": 11,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için kuruyemiş kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik"
+      },
+      {
+        "retry": false,
+        "query": "kuruyemiş kuruyemis kabuklu yemiş kabuklu yemis yağlı tohum yagli tohum badem ceviz fındık findik fıstık fistik"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "kuruyemis_1_num_amt",
+    "category": "kuruyemis",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "model_key": "gemma_2_2b",
+  "count": 35,
+  "items": [
+    {
+      "question": "yetişkin için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Yetişkinler için sağlıklı bir diyet, enerji yoğunluğu düşük, besin değeri yüksek yiyecekleri tercih etmeli  |  Günlük diyetinde doymuş yağ oranını azaltmak için az yağlı süt ve ürünleri ile et ve ürünleri tercih edilmelidir  |  Öğünlerde besin çeşitliliği sağlanmalı, enerji içeriği yüksek ancak besin değeri düşük gıdalar yerine protein, vitamin ve mineralden zengin besinler tercih edilmelidir  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimi artırılarak posa alımı yükseltilmelidir  |  Glisemik indeksi düşük besinler tercih edilmelidir",
+      "used_chunks": [
+        "yasli_ilke_02_uc_ogun",
+        "chunk_000592_02",
+        "yasli_saglikli_02_ogun",
+        "chunk_000594_01",
+        "chunk_000588_01",
+        "chunk_000595_02",
+        "chunk_000589_01",
+        "chunk_000606_01",
+        "yasli_saglikli_03_besin_hazirlama",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "genel_12_yasam_boyu_etki",
+        "genel_01_dengeli_beslenme"
+      ]
+    },
+    {
+      "question": "yetişkin için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Yetişkinler için genel olarak sınırlandırılması gereken şeyler şunlardır: * Az yağlı seçenekler tercih edilmelidir  |  * Doğumdan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır  |  * Hazır paketli ürün tüketimine sınır koyun  |  * Yağ ve şeker içeriği düşük olanlar tercih edin  |  * Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimine odaklanın  |  * Glisemik indeksi düşük besinler tercih edin",
+      "used_chunks": [
+        "chunk_000601_01",
+        "chunk_000592_02",
+        "genel_04_tuz_yag_seker",
+        "chunk_000598_01",
+        "chunk_000594_01",
+        "chunk_000592_01",
+        "chunk_000608_01",
+        "chunk_000606_01",
+        "chunk_000605_01",
+        "chunk_000590_03",
+        "chunk_000609_01",
+        "chunk_000588_01"
+      ]
+    },
+    {
+      "question": "yetişkin için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Yemeklerde doymuş yağları tercih etmeyin. Bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı, mısırözü, soya, kanola yağı vb.) tercih edin.  |  Tavuk ve hindi gibi beyaz et tüketimi sağlıklı bir beslenme için önemlidir.  |  Yemeklerde doymuş yağları yerine bitkisel sıvı yağlar kullanın.  |  Beyaz etin pişirme yöntemi de önemlidir.  |  Örneğin, tavuk ve hindi gibi beyaz et tüketimi sağlıklı bir beslenme için önemlidir.  |  Tavuk ve hindi gibi beyaz et tüketimini düzenli olarak yapın.",
+      "used_chunks": [
+        "chunk_000593_01"
+      ]
+    },
+    {
+      "question": "yetişkin için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yetişkinler için beyaz et tüketimi haftada 2 3 kez önerilir.  |  Tavuk ve hindi gibi et türleri de sağlıklı bir beslenme programına dahil edilebilir.  |  Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine sağlıklı yağlar tercih edilmelidir.",
+      "used_chunks": [
+        "chunk_000593_01"
+      ]
+    },
+    {
+      "question": "yetişkin için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yetişkinler için beyaz et tüketim miktarı konusunda genel öneriler bulunmamaktadır",
+      "used_chunks": [
+        "chunk_000593_01"
+      ]
+    },
+    {
+      "question": "yetişkin için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Yetişkinler için haftada en az iki kez 300 500 gram balık tüketimi önerilir  |  Balık pişirme yöntemleri arasında ızgara, fırında veya buharda pişirme tercih edilmelidir  |  Kızartma ise önerilmemelidir  |  Soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur",
+      "used_chunks": [
+        "chunk_000599_02",
+        "yasli_ilke_07_doymus_yag",
+        "c176"
+      ]
+    },
+    {
+      "question": "yetişkin için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Haftada en az iki kez (300 500 g) balık tüketilmelidir.  |  Balıklar pişirilirken ızgara, fırında veya buharda pişirme yöntemleri kullanılmalı.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.",
+      "used_chunks": [
+        "chunk_000599_02",
+        "yasli_ilke_07_doymus_yag",
+        "c176"
+      ]
+    },
+    {
+      "question": "yetişkin için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Haftada en az iki kez balık tüketmek önemlidir  |  Balık pişirme yöntemleri ise ızgara, fırında veya buharda yapılmalıdır  |  Sağlıklı yağ kaynakları tercih edilmelidir  |  Omega 3 yağ asitlerinin artması kanser gelişimini önlemeye yardımcı olur  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur",
+      "used_chunks": [
+        "chunk_000599_02",
+        "yasli_ilke_07_doymus_yag",
+        "c176"
+      ]
+    },
+    {
+      "question": "yetişkin için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Yetişkinler için yumurta tüketimi önerilir",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi"
+      ]
+    },
+    {
+      "question": "yetişkin için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yetişkinler için yumurta tüketimi haftada 2 kez önerilir",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi"
+      ]
+    },
+    {
+      "question": "yetişkin için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurtanın sağlıklı bir beslenme programına dahil edilmesi önerilir.  |  Yetişkinler için günlük yumurta tüketimi, ortalama olarak 1 porsiyon (2 adet) önerilir.  |  Yumurta sarısı ve yumurta sarısı gibi besin öğelerinin sağlıklı bir beslenme programına dahil edilmesi önerilir.  |  Yumurtanın sağlıklı bir beslenmede önemli bir rolü vardır.",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi"
+      ]
+    },
+    {
+      "question": "yetişkin için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Az yağlı süt ve ürünleri tercih etmelisiniz  |  Toplam ve doymuş yağ alımını azaltmak önemlidir  |  Süt ve süt ürünlerinin az yağlı olanları tercih edin  |  Doymuş yağlar tam yağlı süt ve süt ürünleri ile et ve et ürünlerinde bulunur  |  Kemik sağlığı için her gün 2 3 su bardağı süt ve/veya yoğurt tüketilmelidir  |  Dışarıda yemek yenildiğinde az yağlı seçenekler tercih edin",
+      "used_chunks": [
+        "chunk_000592_02",
+        "chunk_000592_01",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "chunk_000596_01",
+        "chunk_000601_01",
+        "yasli_ilke_10_kalsiyum"
+      ]
+    },
+    {
+      "question": "yetişkin için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Süt ve süt ürünleri günlük beslenmede önemli bir rol oynar. Az yağlı süt ve yoğurt tüketimi, kemik sağlığını destekler.  |  Günlük olarak süt ve süt ürünleri tüketmek, sağlıklı bir yaşam için önemlidir.  |  2 3 su bardağı süt ve/veya yoğurt tüketilmelidir.  |  Süt ve süt ürünlerinin az yağlı olanları tercih edilmelidir.",
+      "used_chunks": [
+        "chunk_000592_02",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "chunk_000592_01",
+        "chunk_000596_01",
+        "yasli_ilke_10_kalsiyum",
+        "chunk_000601_01"
+      ]
+    },
+    {
+      "question": "yetişkin için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Süt ve süt ürünleri tüketim miktarı, günlük enerji ihtiyacının %10'unu aşmamalıdır  |  Az yağlı süt ve ürünlerin tercih edilmesi önerilir  |  Yoğurt, peynir gibi süt ürünleri de kemik sağlığı için önemlidir  |  Kemik sağlığı için her gün 2 3 su bardağı süt tüketilmelidir  |  Süt ve süt ürünlerinin az yağlı olanları tercih edilmelidir",
+      "used_chunks": [
+        "chunk_000592_02",
+        "chunk_000592_01",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "chunk_000596_01",
+        "yasli_ilke_10_kalsiyum",
+        "chunk_000601_01"
+      ]
+    },
+    {
+      "question": "yetişkin için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Tam tahıl ekmek tüketimi önerilir  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimine dikkat etmek önemlidir  |  Glisemik indeksi düşük besinler tercih edilmelidir  |  Şeker ve şeker ilaveli besinler ile pastane ürünleri kullanımı azaltılmalı  |  Esmer ekmek, bulgur pilavı ve esmer un tercih edilmelidir  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur",
+      "used_chunks": [
+        "yasli_saglikli_06_tahil_yag",
+        "chunk_000594_01",
+        "yasli_ilke_06_tam_tahil",
+        "chunk_000594_02",
+        "c176",
+        "c175b",
+        "yasli_ilke_09_posa",
+        "c175a"
+      ]
+    },
+    {
+      "question": "yetişkin için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "",
+      "used_chunks": []
+    },
+    {
+      "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Yemeklerde bitkisel sıvı yağlar tercih edilmeli  |  Kabuklu yemişler, zeytinyağı ve omega 3 yağ asitleri gibi sağlıklı yağlar tüketilmelidir",
+      "used_chunks": [
+        "chunk_000593_01",
+        "c176",
+        "yasli_ilke_11_tuz",
+        "yasli_ilke_08_sivi"
+      ]
+    },
+    {
+      "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kuruyemiş/kabuklu yemiş tüketim sıklığı konusunda genel öneriler bulunmamaktadır.  |  Yemeklerde doymuş yağlar yerine sağlıklı yağlar kullanın  |  Yaşlılarda susama hissi azalabilir.  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Yemeklere ek tuz eklenmemeli ve tuzlu besinler sınırlandırılmalıdır.",
+      "used_chunks": [
+        "chunk_000593_01",
+        "yasli_ilke_08_sivi",
+        "c176",
+        "yasli_ilke_11_tuz"
+      ]
+    },
+    {
+      "question": "yetişkin için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yetişkinler için kuruyemiş/kabuklu yemiş tüketim miktarı konusunda kesin bir bilgi bulunamadı.  |  Yemeklerde doymuş yağlar yerine zeytinyağı ve kabuklu yemişler tüketin  |  Omega 3 yağ asitleri tüketin",
+      "used_chunks": [
+        "chunk_000593_01",
+        "c176",
+        "yasli_ilke_11_tuz"
+      ]
+    },
+    {
+      "question": "yetişkin için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Yetişkinler için doymuş yağ tüketimine dikkat etmek önemlidir  |  Toplam ve doymuş yağ ile kolesterol ve şeker alımı azaltılmalıdır  |  Günlük alınan doymuş yağ miktarı toplam enerjinin %10’unu aşmamalıdır  |  Doymuş yağlar tam yağlı süt ve süt ürünleri ile et ve et ürünlerinde bulunur",
+      "used_chunks": [
+        "chunk_000592_01",
+        "chunk_000592_02",
+        "chunk_000593_01",
+        "yasli_ilke_07_doymus_yag",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_06_tahil_yag",
+        "c176",
+        "chunk_000613_01"
+      ]
+    },
+    {
+      "question": "yetişkin için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yetişkinler için doymuş yağ tüketim sıklığı, günlük enerji miktarının %10'unu aşmamalıdır  |  Doymuş yağlar tam yağlı süt ve süt ürünleri ile et ve et ürünlerinde bulunur  |  Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine bitkisel sıvı yağlar tercih edilmelidir  |  Yetişkinler için doymuş yağ tüketimi azaltılmalı, aşırı yağlı besinlerden kaçınılmalıdır  |  Doymuş yağdan zengin besinlerin fazla tüketimi kalp damar hastalıkları riskini artırabilir",
+      "used_chunks": [
+        "chunk_000592_01",
+        "chunk_000592_02",
+        "chunk_000593_01",
+        "yasli_ilke_07_doymus_yag",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_06_tahil_yag",
+        "c176",
+        "chunk_000613_01"
+      ]
+    },
+    {
+      "question": "yetişkin için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yetişkinler için doymuş yağ tüketim miktarı, toplam enerjinin %10'unu aşmamalıdır.  |  Doymuş yağlar, tam yağlı süt ve süt ürünleri ile et ve et ürünlerinde bulunur.  |  Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine bitkisel sıvı yağlar (zeytinyağı, ayçiçek yağı, mısırözü, soya, kanola yağı vb.) tercih edilmelidir.",
+      "used_chunks": [
+        "chunk_000592_01",
+        "chunk_000592_02",
+        "chunk_000593_01",
+        "genel_04_tuz_yag_seker",
+        "yasli_ilke_07_doymus_yag",
+        "yasli_saglikli_06_tahil_yag",
+        "c176",
+        "chunk_000613_01"
+      ]
+    },
+    {
+      "question": "yetişkin için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "Yemeklerde margarin, tereyağı, kuyruk yağı, iç yağı ve hindistan cevizi yağı gibi doymuş yağlar yerine bitkisel sıvı yağlar tercih edilmelidir  |  Hazır paketli ürün tüketimi sınırlandırılmalı  |  Yağ ve şeker içeriği düşük olanlar tercih edilmelidir  |  Meyve suyu yerine meyve tüketimi tercih edilmelidir  |  Besinleri kızartmak yerine fırında, haşlama, ızgara, buharda veya mikrodalga fırında pişirme yöntemleri tercih edilmelidir  |  Dışarıdan satın alınan ve hazır besinlerin tüketimi sınırlandırılmalıdır",
+      "used_chunks": [
+        "chunk_000593_01",
+        "chunk_000598_01",
+        "chunk_000592_04",
+        "chunk_000599_01",
+        "genel_10_ev_yemegi",
+        "chunk_000599_02",
+        "chunk_000592_03",
+        "yasli_saglikli_03_besin_hazirlama",
+        "chunk_000614_01",
+        "chunk_000615_01"
+      ]
+    },
+    {
+      "question": "yetişkin için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Yetişkinler için posa alımı önemlidir  |  Meyve ve sebze tüketimi en az 400 gram olmalı  |  Tam tahıllar, kuru baklagiller, meyveler ve sebzeleri tüketmek posa alımını artırır",
+      "used_chunks": [
+        "chunk_000592_04",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "yasli_saglikli_05_sebze_meyve",
+        "c175b",
+        "c178",
+        "yasli_ilke_01_besin_cesitliligi",
+        "genel_01_dengeli_beslenme",
+        "chunk_000595_01",
+        "chunk_000594_01",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_saglikli_06_tahil_yag",
+        "c176"
+      ]
+    },
+    {
+      "question": "yetişkin için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yetişkinler için posa tüketimi günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek, nişastalı olmayan kökler ve yumrular (örneğin havuç, enginar, kereviz (kereviz kökü), şalgam, pancar) tüketmek önemlidir",
+      "used_chunks": [
+        "yasli_saglikli_04_besin_cesitliligi",
+        "chunk_000595_01",
+        "c178",
+        "yasli_saglikli_05_sebze_meyve",
+        "c175b",
+        "genel_01_dengeli_beslenme",
+        "yasli_ilke_01_besin_cesitliligi",
+        "chunk_000592_04",
+        "chunk_000594_01",
+        "yasli_ilke_09_posa",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_saglikli_06_tahil_yag"
+      ]
+    },
+    {
+      "question": "yetişkin için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yetişkinler için posa alımı, günlük beslenmede önemli bir rol oynar. Sebzeler ve meyvelerin mevsiminde tüketilmesi önerilir.  |  Tam tahıl, kuru baklagiller, sebze ve meyve tüketimini artırmak, posa alımını yükseltebilir.  |  Günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek, nişastalı olmayan kökler ve yumrular (örneğin havuç, enginar, kereviz (kereviz kökü), şalgam, pancar) tüketmek kansere karşı koruyucu.  |  Sebzeler ve meyvelerin mevsiminde tüketilmesi önerilir.  |  Tam tahıllar posa, vitamin ve mineral içerikleri sayesinde sindirim sağlığını destekler ve kabızlık riskini azaltır.  |  Günde en az 400 g sebze ve meyve tüketilmelidir.",
+      "used_chunks": [
+        "c175b",
+        "chunk_000595_01",
+        "yasli_saglikli_04_besin_cesitliligi",
+        "genel_01_dengeli_beslenme",
+        "yasli_saglikli_05_sebze_meyve",
+        "c178",
+        "yasli_ilke_01_besin_cesitliligi",
+        "chunk_000592_04",
+        "chunk_000594_01",
+        "yasli_ilke_09_posa",
+        "yasli_ilke_06_tam_tahil",
+        "yasli_saglikli_06_tahil_yag"
+      ]
+    },
+    {
+      "question": "yetişkin için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Tuz, tuzlanmış besin ve tuz içeriği yüksek besinlerin (turşu, salamura besinler, zeytin vb  |  ) tüketimi azaltılmalıdır  |  Yemeğin tadına bakmadan tuz ilavesi yapılmamalı ve kullanılan tuzun iyotlu tuz olmasına dikkat edilmelidir",
+      "used_chunks": [
+        "chunk_000602_01",
+        "yasli_ilke_11_tuz",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000593_01",
+        "c176",
+        "c175a",
+        "chunk_000616_01"
+      ]
+    },
+    {
+      "question": "yetişkin için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yetişkinler için günlük tuz tüketiminin sınırları belirsiz  |  Tuz, sodyum ve tuzlu besinlerin tüketimine dikkat etmek önemlidir  |  Yemeklerde tuz eklemeyi azaltmak ve salamura ve turşu gibi tuz içeriği yüksek besinleri sınırlamak önemlidir",
+      "used_chunks": [
+        "yasli_ilke_11_tuz",
+        "chunk_000602_01",
+        "yasli_saglikli_07_su_tuz_seker",
+        "genel_04_tuz_yag_seker",
+        "chunk_000593_01",
+        "c175a",
+        "chunk_000616_01"
+      ]
+    },
+    {
+      "question": "yetişkin için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Tuz tüketimine dikkat etmek önemlidir  |  Aşırı tuz tüketimi, kalp damar hastalıkları riskini artırabilir",
+      "used_chunks": [
+        "chunk_000602_01",
+        "yasli_ilke_11_tuz",
+        "genel_04_tuz_yag_seker",
+        "yasli_saglikli_07_su_tuz_seker",
+        "chunk_000593_01",
+        "c176",
+        "c175a",
+        "chunk_000616_01"
+      ]
+    },
+    {
+      "question": "yetişkin için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Şekerli içeceklerden kaçınmak ve meyve tüketimini artırmak önemli  |  Yaşlı bireylerde kan şekeri kontrolü için şeker tüketimine dikkat etmek gerekir",
+      "used_chunks": [
+        "chunk_000592_04",
+        "chunk_000592_03",
+        "yasli_ilke_12_seker",
+        "genel_04_tuz_yag_seker",
+        "chunk_000598_01",
+        "chunk_000594_02",
+        "chunk_000592_01",
+        "yasli_saglikli_07_su_tuz_seker",
+        "yasli_ilke_07_doymus_yag",
+        "c176",
+        "genel_08_sekerli_icecekler",
+        "c175b"
+      ]
+    }
+  ]
+}

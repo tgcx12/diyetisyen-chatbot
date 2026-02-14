@@ -1,0 +1,39 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+  "used_chunks": [],
+  "strict_chunks_count": 0,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": false,
+    "reason": "no_chunks"
+  },
+  "qspec": {
+    "id": "sut_1_num_amt",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

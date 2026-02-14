@@ -1,0 +1,51 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "posali  |  tam tahil  |  sebzeler  |  meyveler  |  zeytinyağı  |  kuru baklagil",
+  "used_chunks": [
+    "chunk_000592_04",
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_saglikli_05_sebze_meyve",
+    "c175b",
+    "c178",
+    "yasli_ilke_01_besin_cesitliligi",
+    "genel_01_dengeli_beslenme",
+    "chunk_000595_01",
+    "chunk_000594_01",
+    "yasli_ilke_06_tam_tahil",
+    "yasli_saglikli_06_tahil_yag",
+    "c176"
+  ],
+  "strict_chunks_count": 18,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

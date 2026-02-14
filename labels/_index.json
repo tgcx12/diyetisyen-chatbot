@@ -1,0 +1,58 @@
+{
+  "base_dir": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo",
+  "tag_dicts": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\tag_dicts.json",
+  "output_root": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\labels",
+  "domains": [
+    "cocuk_adelson",
+    "diyabet",
+    "hipertansiyon",
+    "kanser",
+    "kolesterol",
+    "sağlıklı_yasli",
+    "sağlıklı_yetiskin"
+  ],
+  "runs": [
+    {
+      "domain": "cocuk_adelson",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\cocuk_adelson\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "diyabet",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\diyabet\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "hipertansiyon",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\hipertansiyon\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "kanser",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\kanser\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "kolesterol",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\kolesterol\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "sağlıklı_yasli",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\sağlıklı_yasli\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "domain": "sağlıklı_yetiskin",
+      "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\sağlıklı_yetiskin\\gemma_2_2b\\qa_summary.json",
+      "status": "ok",
+      "error": null
+    }
+  ]
+}

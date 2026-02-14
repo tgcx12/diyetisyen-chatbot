@@ -1,0 +1,547 @@
+{
+  "ts": "20260118_145118",
+  "condition": "kolesterol",
+  "model": {
+    "model_key": "qwen2_5_3b",
+    "model_label": "Qwen-2.5:3B",
+    "model_ollama": "qwen2.5:3b"
+  },
+  "inputs": {
+    "profile": {
+      "ad_soyad": "tuğçe gül",
+      "sex": "female",
+      "age": 22,
+      "height_cm": 153.0,
+      "weight_kg": 61.0,
+      "activity": "light",
+      "deficit_pct": 0.15
+    },
+    "metrics": {
+      "bmi": 26.06,
+      "bmr_mifflin": 1295.0,
+      "tdee": 1781.0,
+      "deficit_pct": 0.15,
+      "target_kcal": 1514.0,
+      "meals_detected": [
+        "sabah",
+        "ara_1",
+        "öğle",
+        "ara_2",
+        "ara_3",
+        "akşam",
+        "yatarken"
+      ],
+      "day_count": 7,
+      "weeks": 1
+    },
+    "seed": 42,
+    "weeks": 1,
+    "day_count": 7,
+    "base_url": "http://localhost:11434"
+  },
+  "files": {
+    "labels_base_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\labels\\kolesterol\\python_only\\labels.json",
+    "labels_revised_path": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\llm_labels_revize\\kolesterol\\qwen2_5_3b\\labels.json",
+    "debug_dir": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\diet_out\\qwen2_5_3b\\kolesterol\\run_20260118_145015"
+  },
+  "qa_explanation_text": "Bu metin, kolesterol seviyenin kontrolünü ve düzenli bir diyetin nasıl oluşturulacağını açıklar. İşte bazı önemli noktalar:\n\n1. Kolesterol tüketimi:\n- Günlük olarak en az 5 porsiyon sebze/meyve tüketilmelidir.\n- Haftada 2-3 kez kurubaklagil yemek yemeli.\n- Yumurtalı yemekler (yumurta, yumurtalı omlet) haftada en az 1-2 kez, yağsız veya haşlanmış şekilde pişirilmelidir.\n\n2. Doymuş yağı ve trans yağ:\n- Trans yağı ve doymuş yağı tüketiminden kaçınılmak istenir.\n- Zeytinyağı ve fındık yağı kötü kolesterolü düşürür.\n\n3. Tuz/sodyum tüketimi:\n- Günlük toplam yağ tüketimi azaltılmalıdır.\n- Az tuzlu ve az yağlı salamura veya konserve zeytinler (6-8 adet) tüketilebilir.\n- Zeytin, yüksek yağ ve tuz içeriği nedeniyle dikkatli tüketilmelidir.\n\n4. Şeker/sodyum:\n- Günlük şeker tüketimi kontrol altında tutulmalıdır.\n- Şekerli gıdalar (şekerli içecekler, bal gibi) kan kolesterolünü artırabilir.\n- Zeytinyağı ve fındık yağı kötü kolesterolü düşürür.\n\n5. Diğer öneriler:\n- Tam tahıl ve posalı besinler tercih edilmelidir.\n- Lif (fotokrom), folik asit ve kanserden korunma açısından önemlidir.\n- Tuzlu gıdaların tüketimi kolesterol seviyelerini yükseltebilir.\n\nBu öneriler, genellikle sağlıklı bir diyetin temel özelliklerini içeriyor. Her kişiden ve sağlık durumuna göre bazı değişiklikler yapılabilir, ancak bu temel çerçeveler genellikle uygulanır.",
+  "tests": {
+    "constraint_adherence": {
+      "constraint_adherence_est": 0.8889,
+      "avoid_violations": 3,
+      "fish_dairy_violations": 0,
+      "mandatory_snack_empty_days": 7,
+      "target_min": 0.9,
+      "pass": false
+    },
+    "numeric_accuracy": {
+      "avg_abs_kcal_delta": 273.29,
+      "avg_pct_kcal_delta": 0.1805,
+      "within_10pct_days_rate": 0.2857,
+      "target_within10pct_rate_min": 0.85,
+      "pass": false
+    },
+    "weekly_numeric_constraints": {
+      "weekly_numeric_ok_rate": 0.0,
+      "target_min": 0.85,
+      "pass": false,
+      "details": [
+        {
+          "week": 1,
+          "ok": false,
+          "details": [
+            {
+              "tag": "baklagil",
+              "count": 3,
+              "min": 2.0,
+              "max": 3.0,
+              "ok": true,
+              "desc": "haftada 2 3 kez kurubaklagil tüketin"
+            },
+            {
+              "tag": "balik",
+              "count": 2,
+              "min": null,
+              "max": 2.0,
+              "ok": true,
+              "desc": "haftada 2 kez yağlı balık (somon"
+            },
+            {
+              "tag": "balik",
+              "count": 2,
+              "min": null,
+              "max": 2.0,
+              "ok": true,
+              "desc": "haftada 2 kez yağlı balık tüketilmelidir"
+            },
+            {
+              "tag": "balik",
+              "count": 2,
+              "min": null,
+              "max": 2.0,
+              "ok": true,
+              "desc": "haftada 2 kez yağlı balık tüketmek iyi bir seçim"
+            },
+            {
+              "tag": "balik",
+              "count": 2,
+              "min": null,
+              "max": 2.0,
+              "ok": true,
+              "desc": "tuzlu ve salamura ürünlerden kaçının. haftada 2 kez yağlı balık tüketin. zeytinyağı ve fındık yağı iyi bir seçenek"
+            },
+            {
+              "tag": "beyaz_et",
+              "count": 1,
+              "min": null,
+              "max": 4.0,
+              "ok": true,
+              "desc": "beyaz et tüketimi haftada 4 kez olmalı"
+            },
+            {
+              "tag": "beyaz_et",
+              "count": 1,
+              "min": null,
+              "max": 4.0,
+              "ok": true,
+              "desc": "beyaz et tüketimi ise 4 kez olmalı"
+            },
+            {
+              "tag": "beyaz_et",
+              "count": 1,
+              "min": null,
+              "max": 4.0,
+              "ok": true,
+              "desc": "beyaz et tüketiminin sıklığı ise haftada 4 kez olmalıdır"
+            },
+            {
+              "tag": "doymus_yag_yuksek",
+              "count": 3,
+              "min": 2.0,
+              "max": 3.0,
+              "ok": true,
+              "desc": "kalp damar hastalıkları olanlar ise haftada 2 3 kez bir adet tüketilebilir"
+            },
+            {
+              "tag": "kirmizi_et",
+              "count": 0,
+              "min": null,
+              "max": 3.0,
+              "ok": true,
+              "desc": "haftada kırmızı et tüketimi 3 kez"
+            },
+            {
+              "tag": "kirmizi_et",
+              "count": 0,
+              "min": null,
+              "max": 3.0,
+              "ok": true,
+              "desc": "kırmızı et tüketiminin sıklığı haftada 3 kez"
+            },
+            {
+              "tag": "yag",
+              "count": 12,
+              "min": 2.0,
+              "max": null,
+              "ok": true,
+              "desc": "doymuş yağ tüketim sıklığı haftada 2 kez önerilir"
+            },
+            {
+              "tag": "yumurta",
+              "count": 3,
+              "min": 2.0,
+              "max": 3.0,
+              "ok": true,
+              "desc": "yumurta tüketimi sağlıklı bireyler için günde bir adet önerilir. kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir"
+            },
+            {
+              "tag": "yumurta",
+              "count": 3,
+              "min": 1.0,
+              "max": 2.0,
+              "ok": false,
+              "desc": "sağlıklı bireyler için haftada 1 2 kez yumurta tüketmek yeterlidir"
+            },
+            {
+              "tag": "yumurta",
+              "count": 3,
+              "min": 1.0,
+              "max": 2.0,
+              "ok": false,
+              "desc": "yumurta haftada 1 2 kez"
+            },
+            {
+              "tag": "yumurta",
+              "count": 3,
+              "min": 1.0,
+              "max": 2.0,
+              "ok": false,
+              "desc": "yumurta haftada 1 2 kez yenmeli"
+            }
+          ]
+        }
+      ]
+    },
+    "reference_metrics": {
+      "BERTScore": "not_applicable",
+      "ROUGE-L": "not_applicable"
+    }
+  },
+  "thresholds": {
+    "constraint_adherence_min": 0.9,
+    "within_10pct_days_rate_min": 0.85,
+    "weekly_numeric_ok_rate_min": 0.85,
+    "factual_accuracy_bertscore_min": 0.85,
+    "textual_rougeL_min": 0.8,
+    "pilot_likert_min": 3.8
+  },
+  "pass_flags": {
+    "constraint_adherence_pass": false,
+    "numeric_within10pct_pass": false,
+    "weekly_numeric_pass": false,
+    "factual_accuracy_bertscore": "not_applicable_without_reference_texts",
+    "textual_rougeL": "not_applicable_without_reference_texts",
+    "pilot_user_tests": "manual_required"
+  },
+  "raw_score": {
+    "avg_abs_kcal_delta": 273.29,
+    "avg_pct_kcal_delta": 0.1805,
+    "within_10pct_days_rate": 0.2857,
+    "avoid_violations": 3,
+    "fish_dairy_violations": 0,
+    "mandatory_snack_empty_days": 7,
+    "total_items": 83,
+    "constraint_adherence_est": 0.8889,
+    "weekly_numeric_ok_rate": 0.0,
+    "weekly_numeric": [
+      {
+        "week": 1,
+        "ok": false,
+        "details": [
+          {
+            "tag": "baklagil",
+            "count": 3,
+            "min": 2.0,
+            "max": 3.0,
+            "ok": true,
+            "desc": "haftada 2 3 kez kurubaklagil tüketin"
+          },
+          {
+            "tag": "balik",
+            "count": 2,
+            "min": null,
+            "max": 2.0,
+            "ok": true,
+            "desc": "haftada 2 kez yağlı balık (somon"
+          },
+          {
+            "tag": "balik",
+            "count": 2,
+            "min": null,
+            "max": 2.0,
+            "ok": true,
+            "desc": "haftada 2 kez yağlı balık tüketilmelidir"
+          },
+          {
+            "tag": "balik",
+            "count": 2,
+            "min": null,
+            "max": 2.0,
+            "ok": true,
+            "desc": "haftada 2 kez yağlı balık tüketmek iyi bir seçim"
+          },
+          {
+            "tag": "balik",
+            "count": 2,
+            "min": null,
+            "max": 2.0,
+            "ok": true,
+            "desc": "tuzlu ve salamura ürünlerden kaçının. haftada 2 kez yağlı balık tüketin. zeytinyağı ve fındık yağı iyi bir seçenek"
+          },
+          {
+            "tag": "beyaz_et",
+            "count": 1,
+            "min": null,
+            "max": 4.0,
+            "ok": true,
+            "desc": "beyaz et tüketimi haftada 4 kez olmalı"
+          },
+          {
+            "tag": "beyaz_et",
+            "count": 1,
+            "min": null,
+            "max": 4.0,
+            "ok": true,
+            "desc": "beyaz et tüketimi ise 4 kez olmalı"
+          },
+          {
+            "tag": "beyaz_et",
+            "count": 1,
+            "min": null,
+            "max": 4.0,
+            "ok": true,
+            "desc": "beyaz et tüketiminin sıklığı ise haftada 4 kez olmalıdır"
+          },
+          {
+            "tag": "doymus_yag_yuksek",
+            "count": 3,
+            "min": 2.0,
+            "max": 3.0,
+            "ok": true,
+            "desc": "kalp damar hastalıkları olanlar ise haftada 2 3 kez bir adet tüketilebilir"
+          },
+          {
+            "tag": "kirmizi_et",
+            "count": 0,
+            "min": null,
+            "max": 3.0,
+            "ok": true,
+            "desc": "haftada kırmızı et tüketimi 3 kez"
+          },
+          {
+            "tag": "kirmizi_et",
+            "count": 0,
+            "min": null,
+            "max": 3.0,
+            "ok": true,
+            "desc": "kırmızı et tüketiminin sıklığı haftada 3 kez"
+          },
+          {
+            "tag": "yag",
+            "count": 12,
+            "min": 2.0,
+            "max": null,
+            "ok": true,
+            "desc": "doymuş yağ tüketim sıklığı haftada 2 kez önerilir"
+          },
+          {
+            "tag": "yumurta",
+            "count": 3,
+            "min": 2.0,
+            "max": 3.0,
+            "ok": true,
+            "desc": "yumurta tüketimi sağlıklı bireyler için günde bir adet önerilir. kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir"
+          },
+          {
+            "tag": "yumurta",
+            "count": 3,
+            "min": 1.0,
+            "max": 2.0,
+            "ok": false,
+            "desc": "sağlıklı bireyler için haftada 1 2 kez yumurta tüketmek yeterlidir"
+          },
+          {
+            "tag": "yumurta",
+            "count": 3,
+            "min": 1.0,
+            "max": 2.0,
+            "ok": false,
+            "desc": "yumurta haftada 1 2 kez"
+          },
+          {
+            "tag": "yumurta",
+            "count": 3,
+            "min": 1.0,
+            "max": 2.0,
+            "ok": false,
+            "desc": "yumurta haftada 1 2 kez yenmeli"
+          }
+        ]
+      }
+    ]
+  },
+  "patch_used": {
+    "labels_json": {
+      "akrilamid": [],
+      "asitli": [
+        "yag",
+        "sut_urunleri"
+      ],
+      "az_yagli_sut_urunleri": [
+        "sut_urunu",
+        "tam_yagli_sut_urunleri"
+      ],
+      "baharatli": [],
+      "baklagil": [
+        "baklagil_gaz_yapici",
+        "baklagil_yemegi"
+      ],
+      "balik": [
+        "balik",
+        "et_grubu",
+        "islenmis_et"
+      ],
+      "beyaz_et": [],
+      "bulgur": [
+        "pilav_makarna",
+        "kuruyemis"
+      ],
+      "coklu_doymamis": [
+        "doymus_yag_dusuk",
+        "doymus_yag_orta",
+        "doymus_yag_yuksek"
+      ],
+      "corba": [],
+      "damar_sagligi": [
+        "kh_dusuk",
+        "kh_orta",
+        "kh_yuksek"
+      ],
+      "doymus_yag_dusuk": [
+        "zeytinyagi"
+      ],
+      "doymus_yag_kisitlama": [
+        "yag"
+      ],
+      "doymus_yag_orta": [],
+      "doymus_yag_yuksek": [
+        "sut_urunu",
+        "tam_yagli_sut_urunleri"
+      ],
+      "ekmek": [
+        "kuruyemis",
+        "tam_yagli_sut_urunleri"
+      ],
+      "et_grubu": [
+        "beyaz_et",
+        "hafif",
+        "oksalat_yuksek",
+        "peynir"
+      ],
+      "et_suyu": [],
+      "gi_dusuk": [
+        "sodyum_orta"
+      ],
+      "gi_orta": [
+        "kh_orta",
+        "sodyum_yuksek"
+      ],
+      "gi_yuksek": [
+        "kh_yuksek",
+        "sodyum_dusuk"
+      ],
+      "hafif": [],
+      "hdl_artirma": [
+        "kuruyemis"
+      ],
+      "histamin_orta": [],
+      "islenmis_et": [
+        "et_grubu"
+      ],
+      "kafeinli_icecek": [
+        "kafeinsiz"
+      ],
+      "kafeinsiz": [],
+      "kh_dusuk": [
+        "sodyum_yuksek",
+        "kuruyemis"
+      ],
+      "kh_orta": [
+        "kh_dusuk",
+        "sodyum_orta"
+      ],
+      "kh_yuksek": [
+        "sodyum_dusuk",
+        "kuruyemis"
+      ],
+      "kirmizi_et": [],
+      "kolay_sindirim": [
+        "kh_orta",
+        "kh_yuksek"
+      ],
+      "kolesterol": [
+        "yag",
+        "tam_yagli_sut_urunleri",
+        "kuruyemis",
+        "sodyum_dusuk",
+        "tahil",
+        "tam_yagli_sut_urunleri"
+      ],
+      "kompleks_kh": [],
+      "kuruyemis": [
+        "kuruyemis",
+        "kuruyemis_gaz_yapici",
+        "kuruyemis_yemegi"
+      ],
+      "laktoz": [],
+      "laktoz_intoleransi": [],
+      "ldl_kontrol": [
+        "kh_orta",
+        "kh_yuksek"
+      ],
+      "lif_dusuk": [
+        "kh_dusuk",
+        "kh_orta"
+      ],
+      "lif_orta": [
+        "kh_orta"
+      ],
+      "lifli_beslenme": [
+        "kuruyemis_gaz_yapici",
+        "kuruyemis_yemegi"
+      ],
+      "meyve": [],
+      "nitrat": [
+        "yag"
+      ],
+      "oksalat_yuksek": [
+        "et_grubu"
+      ],
+      "omega3": [
+        "balik"
+      ],
+      "peynir": [
+        "et_grubu"
+      ],
+      "pilav_makarna": [
+        "kuruyemis",
+        "tam_yagli_sut_urunleri"
+      ],
+      "tekli_doymamis": [],
+      "trans_yag_riski": [
+        "yag"
+      ],
+      "unlu_corba": [],
+      "yag": [
+        "yag",
+        "tam_yagli_sut_urunleri"
+      ],
+      "yagsiz_sut_urunleri": [
+        "az_yagli_sut_urunleri"
+      ],
+      "yuksek_kalori": [],
+      "yumurta": [
+        "kuruyemis_gaz_yapici",
+        "kuruyemis_yemegi"
+      ],
+      "zeytinyagi": [
+        "zeytinyagi"
+      ]
+    },
+    "numeric_constraints_add": [],
+    "prefer_add": [],
+    "limit_add": [],
+    "avoid_add": [],
+    "notes": []
+  }
+}

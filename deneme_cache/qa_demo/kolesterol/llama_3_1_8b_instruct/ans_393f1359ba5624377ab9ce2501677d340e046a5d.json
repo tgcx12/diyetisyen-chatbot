@@ -1,0 +1,43 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Sağlıklı bireyler tam yumurtayı günde bir adet, kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet tüketebilir.  |  Yumurta haftada 1 2 kez yenmeli, haşlama veya yağsız tavada omlet biçiminde pişirilmelidir.  |  Kolesterolden zengin bir besin olmasına karşın yumurtanın kan kolesterolünü yükseltici etkisi yağlı et ve süt ve ürünlerinden daha az olduğu için sağlıklı bireylerin kolesterol içeriğinden dolayı yumurta tüketiminden kaçınmasına gerek yoktur.  |  Günlük Doymuş Yağ ve Trans Yağ, Kolesterol Alımı .  |  Süt Ürünleri, Yumurta ve Antioksidanlar  |  Peynir, süt ve yoğurt az yağlı olanlardan seçilmelidir.",
+  "used_chunks": [
+    "chunk_000406",
+    "kalp_2_4_10"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_yumurta_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

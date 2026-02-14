@@ -1,0 +1,43 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+  "answer": "Balık ve Omega 3  |  Balık haftada en az 2 kez önerilir.  |  omega 3 içerir.  |  Pişirmede ızgara gibi daha hafif yöntemler tercih edilir.  |  Yumurta yenilen günlerde kırmızı et yerine tavuk eti veya hindi eti veya balık tercih edilmeli, kolesterol içeriği yüksek besinlerden kaçınılmalı, .  |  Kızartma yerine haşlama ve ızgara pişirme yöntemi tercih edilmeli, .",
+  "used_chunks": [
+    "dm_ek_03",
+    "t2p_4"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için balık tüketimi nasıl olmalı ve hangi tür pişirme tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      },
+      {
+        "retry": false,
+        "query": "balık balik somon uskumru sardalya hamsi omega-3 omega3 balık yağı balik yagi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "protein_balik",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

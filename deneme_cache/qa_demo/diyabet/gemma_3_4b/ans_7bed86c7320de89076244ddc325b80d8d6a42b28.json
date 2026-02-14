@@ -1,0 +1,41 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Beyaz et tüketimi, özellikle tavuk ve hindi, diyabet yönetimi için kolesterol içeriğini azaltmak amacıyla diğer protein kaynakları ile dengelenmelidir  |  Tavuk veya hindi eti, kırmızı et yerine tercih edilmelidir  |  Et üzerindeki yağlar ve deriler uzaklaştırılmalıdır  |  Beyaz et tüketimi haftada birkaç kez olabilir  |  Yeterli sıvı tüketimi, günlük en az 10 bardak su içmek önemlidir  |  Tavuk ve hindi tüketimi, sağlıklı bir diyabet diyetinin bir parçası olabilir.",
+  "used_chunks": [
+    "t2p_4",
+    "dm_ek_11"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için beyaz et (tavuk hindi) tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

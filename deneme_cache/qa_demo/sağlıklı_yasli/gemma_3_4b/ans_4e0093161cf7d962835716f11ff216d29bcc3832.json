@@ -1,0 +1,41 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+  "answer": "Yaşlılarda et tüketimi değişkenlik gösterebilir  |  Tavuk ve hindi gibi beyaz etler, yaşlı bireylerin beslenmesinde yer alabilir  |  Pişirme yöntemleri olarak buhar, fırın veya az yağda pişirme önerilir  |  Kırmızı et tüketimi değişkenlik gösterebilir  |  Beyaz et tüketiminin, genel beslenme düzenine uygun olarak dengelenmesi önemlidir  |  Tavuk ve hindi gibi beyaz etler, protein ihtiyacını karşılamada yardımcı olabilir.",
+  "used_chunks": [
+    "yasli_besin_02_et_grubu",
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için beyaz et (tavuk hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

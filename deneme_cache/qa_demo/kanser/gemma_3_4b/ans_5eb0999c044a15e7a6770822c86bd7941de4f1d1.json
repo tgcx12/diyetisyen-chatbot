@@ -1,0 +1,44 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Bitkisel sıvı yağlar (zeytinyağı vb.) tercih edilmelidir.  |  Bu diyet kalıpları, işlenmemiş gıdalar, meyveler ve sebzeler, zeytinyağ ve proteinler, kuru baklagiller, tam tahıllar ve kuruyemişlere odaklanan güçlü kanıtlarla desteklenmektedir.  |  Özellikle kalın bağırsak rektum kanserlerini ilerletici safra tuzları gibi maddelerin yapımı yağ alımı arttıkça artar.",
+  "used_chunks": [
+    "c176",
+    "ca_fat_recommendations",
+    "c175a",
+    "ca_fat_risk_cancers"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için tuz sodyum tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tuz sodyum tuzlu salamura turşu tursu zeytin"
+      },
+      {
+        "retry": false,
+        "query": "tuz sodyum tuzlu salamura turşu tursu zeytin"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": false,
+    "reason": "invalid_output"
+  },
+  "qspec": {
+    "id": "tuz_1_num_amt",
+    "category": "tuz_seker",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

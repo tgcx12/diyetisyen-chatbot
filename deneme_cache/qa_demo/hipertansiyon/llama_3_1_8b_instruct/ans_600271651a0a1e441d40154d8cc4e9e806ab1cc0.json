@@ -1,0 +1,46 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ve alkol tüketimi ilişkili sağlık risklerini destekleyen kanıtlar gözden geçirilmiştir.  |  Bu amaca sodyum, doymuş yağlar, ilave şekerler ve rafine tahıllar bakımından zengin yiyecekleri daha az tüketerek ve alkol tüketiminden sakınarak ulaşılabilinmektedir.  |  doymuş yağ asidi, kolesterol ve sodyum içeriği düşüktür.  |  Giriş / Genel Bilgiler Fazla tüketilen doymuş yağ, şeker ve sodyum ciddi sağlık koşulları riskini artırdığı ve besin ögesi yoğunluğu yüksek besinlerin yerini aldığından, bu bileşenlerden zengin besinlerin sınırlanması önerilmektedir.  |  Kalp hastalığı, yüksek tansiyon, tip 2 diyabet ve obezite gibi kronik hastalıkları önlemek için daha az miktarlarda şeker, doymuş yağ ve sodyum (tuz) tüketilmelidir.  |  Yağ, şeker ve tuz içeriği yüksek besinlerin tüketiminin artması beslenme ile ilgili hastalıkların prevalansında artışa neden olmaktadır.",
+  "used_chunks": [
+    "chunk_000393",
+    "ht_dash_01",
+    "chunk_000389",
+    "cvh_dash_3",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

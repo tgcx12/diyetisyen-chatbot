@@ -1,0 +1,379 @@
+{
+  "domain": "kanser",
+  "model_key": "gemma_3_4b",
+  "count": 35,
+  "items": [
+    {
+      "question": "onkoloji için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları, omega 3 yağ asitlerinin artması kanser gelişimini önlemeye yardımcı olur  |  Koruyucu diyet yaklaşımları, 5 porsiyon sebze meyve ve tam tahıl tüketimi önerilir  |  Kahverengi pirinç, buğday, yulaf, arpa ve çavdar gibi kepekli tahıllar da dahil olmak üzere tam tahıllar önerilir  |  Akciğer kanseri için c vitamininden zengin sebze ve meyveler, kızartmalardan kaçınılmalıdır  |  Yeterli ve dengeli beslenme önemlidir  |  Sebze ve meyve tüketimi, bazı kanser türleri de dahil olmak üzere çeşitli hastalıklara karşı koruma sağlayabilir",
+      "used_chunks": [
+        "c176",
+        "ca_fiber_diet_patterns_5servings",
+        "not_36",
+        "ca_nutrition_rel_1",
+        "akciger_kanseri_04",
+        "c175a",
+        "ca_folate_sources_reco",
+        "c178",
+        "ca_prev_1",
+        "ca_diet_factors_overview"
+      ]
+    },
+    {
+      "question": "onkoloji için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Zeytinyağı, kabuklu yemişler ve omega 3 yağ asitlerinin artması kanser gelişimini önlemeye yardımcı olur  |  Kırmızı et tüketimi haftada 3 porsiyonla sınırlanmalı, işlenmiş etten kaçınılmalı  |  5 porsiyon sebze, meyve, tam tahıl ve kepekli tahıl tüketilmeli  |  Kanser riskinin azaltılması yaşam tarzı ve diyet değişiklikleri ile sağlanabilir  |  Kanser önlenmesinde sigara, obezite ve hareketsiz yaşamdan kaçınılmalı  |  Akdeniz tarzı beslenme ve yeterli sebze tüketimi kansere karşı koruyucu olabilir",
+      "used_chunks": [
+        "c176",
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_fiber_diet_patterns_5servings",
+        "ca_risk_reduction_1",
+        "not_35",
+        "ca_prev_1",
+        "akciger_kanseri_04",
+        "not_34",
+        "not_36",
+        "ca_nutrition_rel_1",
+        "c175a",
+        "c178"
+      ]
+    },
+    {
+      "question": "onkoloji için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "Kırmızı et tüketimi, özellikle işlenmiş etler kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Kırmızı et, kanatlı etler ve balıkların yüksek sıcaklıklarda pişirilmesiyle oluşan heterosiklik aminler (HA) kanser riskini artırabilir  |  İşlenmiş etlerdeki nitrat türevleri kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Kırmızı et tüketiminin olumlu ve olumsuz etkileri arasında, kırmızı et yemenin temel besin ihtiyacını karşılaması ve kanser riskini artırması arasında bir denge sağlanmalıdır  |  Tavada kızartma, mangalda pişirme ve fastfood yiyeceklerin pişirilmesi sırasında oluşan polisiklik aromatik hidrokarbonlar (PAH) ve akrilamit gibi karsinojenik bileşiklerden kaçınılmalıdır.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_additives_nitrate_example",
+        "ca_heterocyclic_amines",
+        "ca_redmeat_balance_note",
+        "ca_cooking_compounds_overview"
+      ]
+    },
+    {
+      "question": "onkoloji için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kırmızı et tüketimi, özellikle işlenmiş et, kolorektal kanser riskini artırabilir  |  Kırmızı et miktarı, temel besin kaynağı olarak olumlu ve olumsuzluklar arasında bir denge sağlamak için önemlidir  |  Tavada kızartma veya mangalda pişirme gibi yüksek sıcaklıklarda pişirme yöntemleri, heterosiklik aminler (HA) oluşumuna katkıda bulunur  |  İşlenmiş et ürünleri, nitrat türevleri nedeniyle kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Kanser riskini azaltmak için kırmızı et tüketimini sınırlamak veya alternatif protein kaynaklarına yönelmek önerilir  |  Kırmızı et tüketiminde, pişirme yöntemlerinin dikkatli seçilmesi önemlidir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_redmeat_balance_note",
+        "ca_additives_nitrate_example",
+        "ca_heterocyclic_amines",
+        "ca_cooking_compounds_overview"
+      ]
+    },
+    {
+      "question": "onkoloji için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kırmızı et tüketiminin olumlu ve olumsuz etkileri arasında bir denge sağlanmalıdır  |  Kırmızı etin artan kolorektal kanser riski ile ilişkisi vardır  |  İşlenmiş et ürünleri, kolon, mide, mesane ve pankreas kanseri riskini artırabilir  |  Tavada kızartma, mangalda pişirme gibi yüksek sıcaklıklarda pişirme yöntemleri, heterosiklik aminler (HA) oluşumuna neden olur  |  Kırmızı et, kuzu ve dana gibi kaynaklar, temel besinlerin kaynağı olarak kabul edilse de, tüketim miktarı dikkatli olmalıdır  |  Kırmızı et tüketiminin olumsuz etkilerini azaltmak için alternatif protein kaynakları tercih edilmelidir",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_redmeat_balance_note",
+        "ca_additives_nitrate_example",
+        "ca_heterocyclic_amines",
+        "ca_cooking_compounds_overview"
+      ]
+    },
+    {
+      "question": "onkoloji için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Yumurta, balık, tavuk ve hindi gibi alternatif protein kaynakları  |  Yağ içeriği yüksek et ve işlenmiş et yerine sağlıklı pişirme yöntemleriyle tüketilmelidir  |  Kırmızı et tüketimi haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanmalıdır  |  İşlenmiş et tüketimi azaltılmalıdır  |  Tavuk ve hindi gibi beyaz etler sağlıklı pişirme yöntemleriyle pişirilmelidir  |  Kanser önleme için beyaz et tüketimini sınırlamak önemlidir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit"
+      ]
+    },
+    {
+      "question": "onkoloji için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması önerilmektedir  |  Tavuk ve hindi gibi beyaz et tüketimi, işlenmiş et yerine sağlıklı bir alternatif olabilir  |  Yumurta, balık ve tavuk gibi protein kaynakları tercih edilmelidir  |  Kırmızı et yerine beyaz et tüketimi, sağlıklı bir diyetin parçası olabilir  |  İşlenmiş etin tüketimi azaltılmalıdır  |  Tavuk ve hindi gibi beyaz et tüketimi haftada birkaç kez olabilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit"
+      ]
+    },
+    {
+      "question": "onkoloji için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla (350 500 g/hafta) sınırlanması önerilir  |  İşlenmiş etin tüketimi azaltılmalıdır  |  Tavuk ve hindi gibi beyaz et tüketimi, kırmızı et alternatifleri olarak değerlendirilebilir  |  Protein alımında yumurta, balık ve tavuk/hindi gibi kaynaklar tercih edilmelidir  |  Sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Beyaz et tüketim miktarı, bireysel ihtiyaçlara ve genel diyetle uyumlu olacak şekilde belirlenmelidir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit"
+      ]
+    },
+    {
+      "question": "onkoloji için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Yağ içeriği yüksek et yerine yumurta, balık ve tavuk gibi alternatif protein kaynakları  |  sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Soğuk su balıkları, özellikle hamsi ve sardalya gibi, kanser gelişimini önlemeye yardımcı olur  |  Omega 3 yağ asitleri açısından zengin olan bu balıklar faydalıdır  |  Kırmızı et ve işlenmiş et tüketimi sınırlanmalıdır  |  Yüksek sıcaklıklarda pişirilen balıklar, özellikle tavada kızartma veya mangalda pişirme sırasında heterosiklik aminler oluşturabilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "c176",
+        "ca_heterocyclic_amines",
+        "ca_pah_benzoapyrene_note"
+      ]
+    },
+    {
+      "question": "onkoloji için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kırmızı et tüketiminin haftada üç porsiyonla sınırlanması önerilir  |  Yağ içeriği yüksek et ve işlenmiş et yerine balık, uskumru, somon, sardalya gibi soğuk su balıkları tercih edilmelidir  |  Küçük balıklar hamsi gibi omega 3 yağ asitleri kanser gelişimini önlemeye yardımcı olur  |  Tavada kızartma, mangalda pişirme gibi yüksek sıcaklıklarda pişirme yöntemleri nedeniyle balıkta heterosiklik aminler oluşabilir  |  Kömür ateşinde pişirilen balıkların PAH içeriği yüksek olabilir  |  Balık tüketimi haftada birkaç kez önerilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "c176",
+        "ca_heterocyclic_amines",
+        "ca_pah_benzoapyrene_note"
+      ]
+    },
+    {
+      "question": "onkoloji için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kırmızı et tüketiminin haftada üç porsiyonla sınırlanması önerilir  |  Alternatif protein kaynakları olarak yumurta, balık, tavuk ve soğuk su balıkları (sardalya, hamsi) tercih edilmelidir  |  Yağlı balıklar, özellikle küçük balıklar (sardalya, hamsi) ve omega 3 yağ asitleri kanser gelişimini önlemeye yardımcı olur  |  Kırmızı et ve tavuk gibi ürünlerin yüksek sıcaklıklarda pişirilmesi, heterosiklik aminler oluşturabilir  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar faydalıdır  |  Kömür ateşinde pişirilen balıklar ve etlerde PAH içeriği yüksek olabilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "c176",
+        "ca_heterocyclic_amines",
+        "ca_pah_benzoapyrene_note"
+      ]
+    },
+    {
+      "question": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Yumurta, alternatif protein kaynakları olarak önerilir  |  sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Kırmızı et tüketimi haftada yaklaşık üç porsiyonla sınırlanmalıdır  |  Yağ içeriği yüksek et ve işlenmiş et yerine yumurta tercih edilmelidir  |  Yumurta sarısı, hayvansal kaynaklardan A vitamini sağlar  |  Folat için yumurta, yeşil yapraklı sebzeler ve kuru mercimek gibi kaynaklar önerilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "ca_folate_sources_reco",
+        "ca_obesity_cancers_13plus",
+        "ca_fat_risk_cancers",
+        "ca_vitA_sources"
+      ]
+    },
+    {
+      "question": "onkoloji için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Yumurta, balık, tavuk gibi alternatif protein kaynakları olan yumurta, yağ içeriği yüksek et ve işlenmiş et tüketimi yerine sağlıklı pişirme yöntemleriyle tüketilmelidir  |  Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması önerilmektedir  |  Yumurta, balık karaciğeri yağı ve yumurta gibi doğal olarak D vitamini, süt, meyve suları ve kahvaltılık gevrekler gibi D vitamini eklenmiş besinlerde bulunmaktadır  |  Diyette folat kaynağı olan yeşil ve kuru mercimek, tam tahıllar ve ürünleri, yumurta, yeşil yapraklı sebzeler ve yer fıstığına yeterli miktarda yer vermek önerilmektedir  |  Yağ alımı, özellikle meme, prostat, testis, rahim, yumurtalık ve kalın bağırsak rektum kanserlerinin oluşum riskini arttırmaktadır  |  Yumurta sarısı, hayvansal besinlerde A vitamini kaynağıdır.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "ca_folate_sources_reco",
+        "ca_obesity_cancers_13plus",
+        "ca_fat_risk_cancers",
+        "ca_vitA_sources"
+      ]
+    },
+    {
+      "question": "onkoloji için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Yumurta, balık, tavuk ve yağlı balık gibi alternatif protein kaynakları  |  yumurta sarısı, balık karaciğeri yağı ve süt gibi doğal D vitamini kaynakları  |  Yeşil ve kuru mercimek, tam tahıllar, yumurta, yeşil yapraklı sebzeler ve yer fıstığı gibi folat kaynakları  |  Kırmızı etin haftada üç porsiyonla sınırlanması  |  Yağ alımının meme, prostat ve kalın bağırsak kanseri riskini arttırması  |  Yumurta sarısı, karaciğer ve süt gibi hayvansal kaynaklardan A vitamini alınabilir.",
+      "used_chunks": [
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_vitD_epid_sources",
+        "ca_folate_sources_reco",
+        "ca_obesity_cancers_13plus",
+        "ca_fat_risk_cancers",
+        "ca_vitA_sources"
+      ]
+    },
+    {
+      "question": "onkoloji için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Süt ve süt ürünleri tüketimi  |  D vitamini açısından zengin sütler önerilir  |  Yogurt ve peynir gibi süt ürünleri tüketimi önerilir  |  Az yağlı süt ve süt ürünleri tercih edilmelidir  |  Süt tüketimi, diyetle D vitamini alımını destekleyebilir  |  D vitamini gereksinimi karşılanmazsa eklenmesi gerekebilir.",
+      "used_chunks": [
+        "ca_vitD_epid_sources"
+      ]
+    },
+    {
+      "question": "onkoloji için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "onkoloji için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "onkoloji için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Tam tahıl örnekleri, örneğin kahverengi pirinç, buğday, yulaf ve arpa, kanser için koruyucu diyet yaklaşımlarında 5 porsiyon olmalıdır  |  Besinlerden günde en az 25 g posa alınması önerilir, bu da kepekli tahıllar, nişastalı olmayan sebzeler ve meyvelerden sağlanabilir  |  Kuru baklagiller, tam tahıllar, meyveler ve sebzeler öncelikli karbonhidrat kaynakları olmalıdır  |  Batı diyetine geçiş, rafine şeker tüketimini artırmış ve glisemik indeksi ve yükü artırmıştır  |  Folat, yeşil ve kuru mercimek, tam tahıllar ve yumurtalar gibi kaynaklardan sağlanmalıdır  |  Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.",
+      "used_chunks": [
+        "ca_fiber_diet_patterns_5servings",
+        "c176",
+        "ca_carbs_western_transition",
+        "c175b",
+        "ca_fiber_amounts_reco",
+        "ca_folate_sources_reco",
+        "c175a"
+      ]
+    },
+    {
+      "question": "onkoloji için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Baklagil tüketimi, kolorektal kanser riskini azaltmada önemli bir rol oynar  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan ortalama 35 g/gün diyet posası önerilir  |  Besinlerden günde en az 25 g posa alınması, kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanmalıdır  |  Kuru mercimek, tam tahıllar ve yer fıstığı gibi folat açısından zengin baklagiller tüketmek önemlidir  |  Baklagiller, folat takviyesi olarak kabul edilebilir  |  Kuru baklagillerin tüketimi, diyet pozunda yeterli miktarda folat sağlamaya yardımcı olur.",
+      "used_chunks": [
+        "ca_fiber_amounts_reco",
+        "kalp_2_4_12",
+        "ca_folate_sources_reco"
+      ]
+    },
+    {
+      "question": "onkoloji için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Besinlerden günde en az 25 g posa alınması önerilir  |  bu posa kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanmalıdır  |  kuru baklagiller de bu pozadan fayda sağlar  |  yeterli miktarda folat içeren yeşil ve kuru mercimek, tam tahıllar ve yer fıstığı tüketimi önerilir  |  baklagil tüketimi, özellikle de mercimek, nohut ve fasulye gibi kuru baklagiller, diyet posası alımına katkıda bulunur  |  önerilen posa miktarı günlük 35 g/gün'dür.",
+      "used_chunks": [
+        "ca_fiber_amounts_reco",
+        "kalp_2_4_12",
+        "ca_folate_sources_reco"
+      ]
+    },
+    {
+      "question": "onkoloji için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Posa miktarı: 35 g/gün vs 15 g/gün ve öneri  |  kanser  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan sağlanan ortalama 35 g/gün diyet posasının ortalama 15 g/günlük posa alımı ile kıyaslandığında kolorektal kanser riskini azalttığı saptanmıştır.  |  Besinlerden günde en az 25 g posa alınması ve bunun da kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanması önerilmektedir.  |  Baklagiller aynı zamanda folik asit açısından zengindir.  |  Folat: beslenme önerisi ve kaynaklar",
+      "used_chunks": [
+        "ca_fiber_amounts_reco",
+        "kalp_2_4_12",
+        "ca_folate_sources_reco"
+      ]
+    },
+    {
+      "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar, fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur  |  Soğuk su balıkları (hamsi, sardalya) tüketimi önerilir  |  Protein: Aşırı et ve dolayısı ile hayvansal proteini çok tüketen ülkelerde kanser sıklığı daha yüksektir  |  Kabuklu yemişler ve yağlı tohumlar tüketmek faydalı olabilir  |  Kuruyemiş tüketiminde çeşitliliği tercih etmek önemlidir  |  Hayvansal protein tüketimini sınırlamak önemlidir.",
+      "used_chunks": [
+        "c176",
+        "ca_protein_high_animal_note"
+      ]
+    },
+    {
+      "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kabuklu yemiş tüketimi, kanser gelişimini önlemeye yardımcı olabilir  |  Omega 3 yağ asitleri açısından zengin kabuklu yemişler (fındık, ceviz, badem) faydalı olabilir  |  Protein alımının, özellikle hayvansal proteinin fazla tüketimi bazı kanser türlerinin riskini artırabilir  |  Kabuklu yemişleri günde birkaç kez tüketmek düşünülebilir  |  Ancak, protein alımının dengesi önemlidir  |  Yağlı tohumlar da benzer şekilde faydalı olabilir.",
+      "used_chunks": [
+        "c176",
+        "ca_protein_high_animal_note"
+      ]
+    },
+    {
+      "question": "onkoloji için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kabuklu yemiş tüketim miktarı hakkında spesifik bir porsiyon önerisi bulunamadı  |  Omega 3 yağ asitlerinin artırılması kanser gelişimini önlemeye yardımcı olabilir  |  Fındık, ceviz ve badem gibi kabuklu yemişler faydalı olabilir  |  Tekli doymamış yağlar ve soğuk su balıkları tüketimi önerilir  |  Kabuklu yemişler, yağlı tohumlar gibi sağlıklı yiyecekler tüketmek önemlidir.",
+      "used_chunks": [
+        "c176"
+      ]
+    },
+    {
+      "question": "onkoloji için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Doymuş yağların tüketimi azaltılmalı  |  Bitkisel sıvı yağlar, özellikle zeytinyağı tercih edilmelidir  |  Tekli doymamış yağlar, hamsi, sardalya, fındık, ceviz ve badem gibi omega 3 yağ asitlerininin artırılması önerilir  |  Bu yağlar kanser gelişimini önlemeye yardımcı olur  |  Yüksek miktarda hayvansal protein tüketimi doymuş yağ tüketimini artırabilir  |  Tereyağı yerine zeytinyağı kullanımı önerilir.",
+      "used_chunks": [
+        "ca_fat_recommendations",
+        "c176",
+        "ca_protein_high_animal_note"
+      ]
+    },
+    {
+      "question": "onkoloji için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Doymuş yağların tüketimi azaltılmalı  |  Zeytinyağı gibi bitkisel sıvı yağlar tercih edilmeli  |  Omega 3 yağ asitleri olan soğuk su balıkları ve fındık tüketimi artırılmalı  |  Kanser gelişimini önlemeye yardımcı olabilir  |  Yüksek miktarda hayvansal protein tüketimi doymuş yağ tüketimini artırabilir  |  Doymuş yağ tüketimi haftada birkaç kez azaltılmalıdır",
+      "used_chunks": [
+        "ca_fat_recommendations",
+        "c176",
+        "ca_protein_high_animal_note"
+      ]
+    },
+    {
+      "question": "onkoloji için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Doymuş yağların tüketimi azaltılmalı  |  Zeytinyağı gibi bitkisel sıvı yağlar tercih edilmeli  |  Omega 3 yağ asitlerininin artırılması kanser gelişimini önlemeye yardımcı olur  |  Küçük balıklar (hamsi, sardalya) ve fındık gibi yiyecekler önerilir  |  Yüksek miktarda hayvansal protein tüketimi doymuş yağ tüketimini artırabilir  |  Doymuş yağların azaltılması, doymus yağ tüketiminin azaltılması önemlidir.",
+      "used_chunks": [
+        "ca_fat_recommendations",
+        "c176",
+        "ca_protein_high_animal_note"
+      ]
+    },
+    {
+      "question": "onkoloji için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "Trans yağlar, tavada kızartma gibi yüksek sıcaklıklarda pişirme yöntemlerinde oluşur  |  kanser  |  Kızartma ile prostat, pankreas, akciğer, oral/faringeal, özofagus ve laringeal kanserler arasında bir ilişki olduğu bilinmektedir  |  Hazırlama yöntemine bağlı olarak bazı reaksiyonlar sonucu zararlı bileşikler oluşabilir  |  C vitamininden zengin sebze ve meyveler artırılmalı, kızartmalardan kaçınılmalıdır  |  Paketli ve hazır ürünlerde trans yağlar bulunabilir",
+      "used_chunks": [
+        "ca_heterocyclic_amines",
+        "akciger_kanseri_04",
+        "ca_frying_association",
+        "ca_additives_1",
+        "ca_cooking_compounds_overview"
+      ]
+    },
+    {
+      "question": "onkoloji için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Koruyucu diyet yaklaşımları: 5 porsiyon, tam tahıl örnekleri  |  kanser  |  Sebzeler, meyveler, kuru baklagiller ve tahıllardan ortalama 35 g/gün diyet posası alınması önerilmektedir  |  Besinlerden günde en az 25 g posa alınması ve bunun da kepekli tahıllar, nişastalı olmayan sebzeler, meyve ve kuru baklagillerden sağlanması önerilmektedir  |  Günde en az 5 porsiyon nişastasız sebzeler ve farklı renklerde meyvelere yer vermek kansere karşı koruyucu  |  Sebzeler (patates hariç) ve meyveler her öğünün yarısını oluşturmalıdır.",
+      "used_chunks": [
+        "ca_fiber_diet_patterns_5servings",
+        "ca_fiber_amounts_reco",
+        "c178",
+        "c175b",
+        "ca_diet_fv_tbsa",
+        "c173",
+        "ca_vitD_epid_sources",
+        "c176",
+        "ca_fiber_inflammation",
+        "ca_fiber_microbiota_bile_acids",
+        "ca_folate_sources_reco",
+        "ca_protective_fiber_def"
+      ]
+    },
+    {
+      "question": "onkoloji için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Sebzeler ve meyveler her öğünün yarısını oluşturmalı  |  kanser  |  Günde en az 25 g posa alınmalı, kepekli tahıllar, nişastalı olmayan sebzeler, meyveler ve kuru baklagillerden sağlanmalı  |  5 porsiyon sebze, meyve, tam tahıl ve kepekli tahıl tüketimi önerilir  |  haftada 10 veya daha fazla domates tüketimi prostat kanseri riskini azaltabilir  |  Daha fazla sebze ve meyve tüketimi çeşitli hastalıklara karşı koruma sağlayabilir",
+      "used_chunks": [
+        "ca_fiber_amounts_reco",
+        "ca_fiber_diet_patterns_5servings",
+        "c178",
+        "c175b",
+        "ca_diet_fv_tbsa",
+        "c173",
+        "ca_fiber_inflammation",
+        "ca_fiber_microbiota_bile_acids",
+        "ca_protective_fiber_def",
+        "c176",
+        "ca_folate_sources_reco",
+        "kalp_2_4_12"
+      ]
+    },
+    {
+      "question": "onkoloji için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Sebzeler ve meyveler her öğünün yarısını oluşturmalıdır  |  kanser  |  Günde en az 25 g posa alınması önerilir  |  5 porsiyon tam tahıl örnekleri (kahverengi pirinç, buğday, yulaf vb.) tüketmek önerilir  |  Kuru baklagiller, tam tahıl ve meyveler gibi posalı besinler günlük diyetin temelini oluşturmalıdır  |  Yüksek posa tüketimi inflamasyonu azaltır ve kanser riskini azaltabilir",
+      "used_chunks": [
+        "ca_fiber_amounts_reco",
+        "ca_fiber_diet_patterns_5servings",
+        "c175b",
+        "c178",
+        "ca_diet_fv_tbsa",
+        "c173",
+        "ca_fiber_inflammation",
+        "ca_fiber_microbiota_bile_acids",
+        "ca_protective_fiber_def",
+        "c176",
+        "ca_folate_sources_reco",
+        "c177"
+      ]
+    },
+    {
+      "question": "onkoloji için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (hamsi, sardalya gibi) tüketmek kanser gelişimini önlemeye yardımcı olur  |  Bitkisel sıvı yağlar (zeytinyağı gibi) tercih edilmelidir  |  Kuru baklagiller, tam tahıllar ve kuruyemişler önerilir  |  Özellikle kalın bağırsak rektum kanserlerini ilerletici safra tuzları gibi maddelerin yapımı yağ alımı arttıkça artar  |  Tuz alımına dikkat edilmeli  |  Tuzlu gıdalardan kaçınılmalıdır",
+      "used_chunks": [
+        "c176",
+        "ca_fat_recommendations",
+        "c175a",
+        "ca_fat_risk_cancers"
+      ]
+    },
+    {
+      "question": "onkoloji için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Bitkisel sıvı yağlar (zeytinyağı vb.) tercih edilmelidir.  |  Bu diyet kalıpları, işlenmemiş gıdalar, meyveler ve sebzeler, zeytinyağ ve proteinler, kuru baklagiller, tam tahıllar ve kuruyemişlere odaklanan güçlü kanıtlarla desteklenmektedir.  |  Özellikle kalın bağırsak rektum kanserlerini ilerletici safra tuzları gibi maddelerin yapımı yağ alımı arttıkça artar.",
+      "used_chunks": [
+        "c176",
+        "ca_fat_recommendations",
+        "c175a",
+        "ca_fat_risk_cancers"
+      ]
+    },
+    {
+      "question": "onkoloji için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Zeytinyağı ve kabuklu yemişler gibi tekli doymamış yağlar ve soğuk su balıkları (tercihen küçük balıklar hamsi, sardalya) ve fındık, ceviz, badem gibi omega 3 yağ asitlerininin artması kanser gelişimini önlemeye yardımcı olur.  |  Bitkisel sıvı yağlar (zeytinyağı vb.) tercih edilmelidir.  |  Bu diyet kalıpları, işlenmemiş gıdalar, meyveler ve sebzeler, zeytinyağ ve proteinler, kuru baklagiller, tam tahıllar ve kuruyemişlere odaklanan güçlü kanıtlarla desteklenmektedir.  |  Özellikle kalın bağırsak rektum kanserlerini ilerletici safra tuzları gibi maddelerin yapımı yağ alımı arttıkça artar.",
+      "used_chunks": [
+        "c176",
+        "ca_fat_recommendations",
+        "c175a",
+        "ca_fat_risk_cancers"
+      ]
+    },
+    {
+      "question": "onkoloji için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Şekerli içecek tüketiminin sınırlandırılması  |  kanser  |  Eklenen şekerler günlük enerji alımının %5 %10’undan daha azıyla sınırlandırılmalıdır.  |  Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla sınırlanması önerilir  |  İşlenmiş etlerin tüketimi azaltılmalıdır  |  Tavada kızartma, mangalda pişirme ve fastfood yiyeceklerin pişirilmesi gibi yüksek sıcaklıklarda pişirme yöntemlerinden kaçınılmalıdır",
+      "used_chunks": [
+        "c176",
+        "ca_protein_alternatives_redmeat_limit",
+        "ca_carbs_western_transition",
+        "ca_heterocyclic_amines",
+        "c175b",
+        "ca_additives_1",
+        "ca_pah_benzoapyrene_note"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+  "answer": "Örnek: nitrat türevleri ve işlenmiş et ürünleri  |  kanser  |  Örneğin, nitrat türevi bileşikleri içeren işlenmiş et ürünleri kolon, mide, mesane ve pankreas kanseri riskini artırmaktadır.  |  Heterosiklik aminler: oluşumu ve ilişkili pişirme yöntemleri  |  Heterosiklik aminler (HA) kırmızı et, kanatlı etler ve balıkların yüksek sıcaklıklarda pişirilmesi ile oluşan mutajenik/karsinojenik bileşiklerdir ve daha çok tavada kızartma, mangalda pişirme ve fastfood yiyeceklerin pişirilmesi sırasında meydana gelir.  |  Kırmızı et tüketimi artmış kolorektal kanser riski ile ilişkilidir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_additives_nitrate_example",
+    "ca_heterocyclic_amines",
+    "ca_redmeat_balance_note",
+    "ca_cooking_compounds_overview"
+  ],
+  "strict_chunks_count": 5,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için kırmızı et tüketimi nasıl olmalı ve hangi türlerden işlenmiş etlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": false,
+    "reason": "exception",
+    "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)"
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

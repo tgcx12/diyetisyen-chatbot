@@ -1,0 +1,41 @@
+{
+  "domain": "kolesterol",
+  "question": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Sağlıklı bireyler günde bir adet yumurta tüketebilir. Kalp damar hastalıkları olanlar da haftada 2 3 kez bir adet yumurta tüketebilir. yumurta  |  yumurta sarısı  |  yumurta",
+  "used_chunks": [
+    "chunk_000406",
+    "kalp_2_4_10"
+  ],
+  "strict_chunks_count": 2,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "kolesterol için yumurta tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kolesterol yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

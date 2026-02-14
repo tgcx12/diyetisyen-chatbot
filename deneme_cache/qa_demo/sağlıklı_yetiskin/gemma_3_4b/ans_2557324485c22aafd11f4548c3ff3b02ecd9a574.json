@@ -1,0 +1,40 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Yetişkinler için günlük beslenmede yumurta yer alabilir  |  Yumurta tüketimi için çeşitli pişirme yöntemleri mevcuttur  |  Yumurta sarisi, sağlıklı bir besin kaynağıdır  |  Yumurta, yanında sebzeler veya tahıllarla tüketilebilir  |  Pişirme yöntemleri arasında haşlama, omlet veya menemen yer alabilir  |  Yumurta tüketimi, beslenme çeşitliliğine katkıda bulunur.",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+  "answer": "Yumurta, alternatif protein kaynakları olarak önerilir  |  sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Kırmızı et tüketimi haftada yaklaşık üç porsiyonla sınırlanmalıdır  |  Yağ içeriği yüksek et ve işlenmiş et yerine yumurta tercih edilmelidir  |  Yumurta sarısı, hayvansal kaynaklardan A vitamini sağlar  |  Folat için yumurta, yeşil yapraklı sebzeler ve kuru mercimek gibi kaynaklar önerilir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "ca_folate_sources_reco",
+    "ca_obesity_cancers_13plus",
+    "ca_fat_risk_cancers",
+    "ca_vitA_sources"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için yumurta tüketimi nasıl olmalı ve pişirme yanında tüketim önerisi var mı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

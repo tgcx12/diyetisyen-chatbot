@@ -1,0 +1,46 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "DASH diyeti, sebze meyve, tam tahıl, az yağlı süt ürünleri ve yağlı tohumlar içerir  |  posa içeriği yüksek besinler, doymuş yağ, kolesterol ve sodyum tüketimini azaltır  |  tuz tüketimini azaltmak için doğal lezzet arttırıcılar kullanılmalı  |  hazır soslar, tuzlanmış atıştırmalıklar ve tuzlanmış et/balık ürünlerinden kaçınılmalı  |  tam tahıl tüketimi önerilir  |  lif içeriği yüksek besinler tüketmek önemlidir",
+  "used_chunks": [
+    "ht_dash_01",
+    "ht_lifestyle_01",
+    "chunk_000418_1",
+    "chunk_000419",
+    "chunk_000389",
+    "cvh_dash_3",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

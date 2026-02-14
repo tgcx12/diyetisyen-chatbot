@@ -1,0 +1,40 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için süt ve süt ürünleri tüketimi nasıl olmalı?",
+  "answer": "Süt ve süt ürünleri tüketimi onkoloji için önemlidir  |  D vitamini, süt ve süt ürünleri gibi doğal olarak bulunan besinler, vücutta bağışıklık sistemini güçlendirmede rol oynar",
+  "used_chunks": [
+    "ca_vitD_epid_sources"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için süt ve süt ürünleri tüketimi nasıl olmalı?"
+      },
+      {
+        "retry": false,
+        "query": "kanser süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

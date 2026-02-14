@@ -1,0 +1,40 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+  "answer": "Kırmızı et tüketimi değişkenlik gösterebilir  |  Kırmızı et, tavuk ve balık tüketimi değişkenlik gösterebilir  |  İşlenmiş etlerden kaçınılmalıdır  |  Kırmızı et tüketimi için tavuk ve balık önerilir  |  Kırmızı et tüketimi görece daha az olabilir  |  Kırmızı et, kuzu gibi türlerden kaçınılmalıdır",
+  "used_chunks": [
+    "chunk_yasli_0003"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için kırmızı et tüketimi nasıl olmalı ve hangi türlerden işlenmiş etlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": false,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+  "answer": "Kırmızı et tüketimini sınırlamak ve tuzlu işlenmiş etlerden kaçınmak  |  Tuz tüketimi konusunda öneriler, tuzlanmış etler, salamura edilmiş etler ve konservelerden kaçınılmalıdır  |  Yüksek tuz içeriğine sahip konserve, salamura ve hazır çorbalar sınırlı tüketilmelidir  |  DASH diyeti, kırmızı et tüketimini azaltmayı ve daha fazla beyaz et, sebze ve meyve tüketmeyi önerir  |  Tuz bebeklerde susuzluğa ve böbrek hasarına neden olabilir, bu nedenle bebeklerde tuz eklenmemelidir",
+  "used_chunks": [
+    "chunk_000408",
+    "chunk_000418_2",
+    "chunk_000418_1",
+    "chunk_000421",
+    "ht_dash_01",
+    "tb_besin_tuz",
+    "cvh_dash_3"
+  ],
+  "strict_chunks_count": 10,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için kırmızı et tüketimi nasıl olmalı ve hangi türlerden işlenmiş etlerden kaçınılmalı?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma"
+      },
+      {
+        "retry": false,
+        "query": "kırmızı et kirmizi et dana kuzu işlenmiş et islenmis et sucuk salam sosis pastırma pastirma jambon"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_kirmizi_et",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

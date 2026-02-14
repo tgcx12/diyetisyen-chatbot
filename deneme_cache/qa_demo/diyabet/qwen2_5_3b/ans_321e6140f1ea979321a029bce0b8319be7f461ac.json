@@ -1,0 +1,40 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "kuru baklagil 1 porsiyon  |  mercimek 1 yemek kaşı  |  nohut 1 adet  |  fasulye 1 kg",
+  "used_chunks": [
+    "t2p_3"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için baklagil tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_amt",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "günde 2 3 kez  |  ayda 16 20 kez",
+  "used_chunks": [
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_besin_01_sut",
+    "chunk_yasli_0003",
+    "yasli_ilke_10_kalsiyum"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": true,
+  "qual_in_evidence": false,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "qwen2_5_3b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1_num_freq",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

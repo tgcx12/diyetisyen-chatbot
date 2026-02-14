@@ -1,0 +1,50 @@
+===== CONTENT-GOLD RETRIEVER-ONLY EVALUATION =====
+Chunks: C:\Users\user\Desktop\diyetisyen_llm\merged_all_rag_standardized.json
+Testset: C:\Users\user\Desktop\diyetisyen_llm\test_seti.json
+Question count: 35
+K values: [1, 3, 5]
+STRICT_MUST_HAVE: True
+Gold checking: must_have/must_not_have + optional gold.answer token overlap
+
+--- Model: emrecan/bert-base-turkish-cased-mean-nli-stsb-tr ---
+Embedding dim: 768
+Chunk embedding time (s): 156.46
+Query embedding time (s): 0.27
+Valid questions (with gold signal): 35/35
+HitRate@1: 1.0000
+MustHaveRecall@1: 1.0000
+AnswerOverlap@1: 0.0775
+----------------------------------------
+Valid questions (with gold signal): 35/35
+HitRate@3: 1.0000
+MustHaveRecall@3: 1.0000
+AnswerOverlap@3: 0.1009
+----------------------------------------
+Valid questions (with gold signal): 35/35
+HitRate@5: 1.0000
+MustHaveRecall@5: 1.0000
+AnswerOverlap@5: 0.1122
+----------------------------------------
+------------------------------------------------------------
+
+--- Model: trmteb/turkish-embedding-model-fine-tuned ---
+Embedding dim: 768
+Chunk embedding time (s): 58.33
+Query embedding time (s): 0.28
+Valid questions (with gold signal): 35/35
+HitRate@1: 1.0000
+MustHaveRecall@1: 1.0000
+AnswerOverlap@1: 0.0860
+----------------------------------------
+Valid questions (with gold signal): 35/35
+HitRate@3: 1.0000
+MustHaveRecall@3: 1.0000
+AnswerOverlap@3: 0.1081
+----------------------------------------
+Valid questions (with gold signal): 35/35
+HitRate@5: 1.0000
+MustHaveRecall@5: 1.0000
+AnswerOverlap@5: 0.1219
+----------------------------------------
+------------------------------------------------------------
+

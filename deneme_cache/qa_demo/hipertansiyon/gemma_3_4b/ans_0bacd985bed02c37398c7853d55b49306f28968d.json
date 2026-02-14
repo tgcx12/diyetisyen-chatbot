@@ -1,0 +1,40 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "DASH diyeti kuru baklagilleri içerir  |  Kuru baklagillerin tüketimi sodyum/tuzdan kısıtlı bir diyetin parçasıdır  |  Porsiyon miktarı belirtilmemiştir  |  Örüntü özeti, kuru baklagillerin tüketim miktarı hakkında spesifik bir porsiyon veya gramaj belirtmez  |  Kuru baklagil tüketimi DASH diyeti için önerilir.",
+  "used_chunks": [
+    "cvh_dash_3"
+  ],
+  "strict_chunks_count": 3,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için baklagil tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      },
+      {
+        "retry": false,
+        "query": "baklagil kuru baklagil kurubaklagil mercimek nohut fasulye"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "baklagil_1_num_amt",
+    "category": "baklagil",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

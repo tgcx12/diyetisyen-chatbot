@@ -1,0 +1,40 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+  "answer": "Sodyumun Kaynağı ve Hipertansiyon Riski (Diyetisyen Notu)  |  ÖNEMLİ DİYETİSYEN NOTU (not18): Besinler ile alınan sodyumun (tuz) %75’inden fazlası paketlenmiş ve ev dışında tüketilen hazır besinlerden gelir.  |  Fazla sodyum (tuz) alımı hipertansiyon geliştirme riskini artırır.  |  Yaşlılarda Sağlıklı Beslenme İlkeleri  |  Aşırı tuz tüketimi hipertansiyon ve kalp damar hastalıkları riskini artırır.  |  Yemeklere ek tuz eklenmemeli ve tuzlu besinler sınırlandırılmalıdır.",
+  "used_chunks": [
+    "not_18",
+    "yasli_ilke_11_tuz",
+    "ht_lifestyle_01",
+    "cvh_salt_1",
+    "genel_04_tuz_yag_seker",
+    "ht_beverage_01",
+    "ht_info_01"
+  ],
+  "strict_chunks_count": 7,
+  "retrieval_meta": {
+    "retrieval_attempts": 1,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "genel_1",
+    "category": "genel",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

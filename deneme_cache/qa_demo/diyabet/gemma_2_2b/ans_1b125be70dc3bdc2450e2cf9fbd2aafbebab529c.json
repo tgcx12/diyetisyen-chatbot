@@ -1,0 +1,48 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Günde en az 5 porsiyon sebze ve meyve yenilmesi gerektiği unutulmamalı  |  Kuru baklagiller sıkça (haftada 2 3 kez) tüketilmeli  |  Alınan her 1000 kkalori enerji alımı için 14 g veya daha fazla olacak şekilde posa tüketimini arttırmak ve gereksinimin en az yarısını tam taneli tahıllardan karşılamak 6",
+  "used_chunks": [
+    "t2p_3",
+    "t2p_1",
+    "t2r_1",
+    "dm_ek_05",
+    "dm_ek_04",
+    "dm_4_3_01",
+    "chunk_000393",
+    "chunk_000390",
+    "genel_04_tuz_yag_seker"
+  ],
+  "strict_chunks_count": 9,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": false,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus_num_amt",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla (350 500 g/hafta) sınırlanması önerilir  |  İşlenmiş etin tüketimi azaltılmalıdır  |  Tavuk ve hindi gibi beyaz et tüketimi, kırmızı et alternatifleri olarak değerlendirilebilir  |  Protein alımında yumurta, balık ve tavuk/hindi gibi kaynaklar tercih edilmelidir  |  Sağlıklı pişirme yöntemleri ile pişirilerek tüketilmelidir  |  Beyaz et tüketim miktarı, bireysel ihtiyaçlara ve genel diyetle uyumlu olacak şekilde belirlenmelidir.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit"
+  ],
+  "strict_chunks_count": 1,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için beyaz et (tavuk hindi) tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser tavuk hindi beyaz et"
+      },
+      {
+        "retry": false,
+        "query": "tavuk hindi beyaz et"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_beyaz_et_num_amt",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

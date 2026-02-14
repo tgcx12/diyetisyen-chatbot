@@ -1,0 +1,47 @@
+{
+  "domain": "sağlıklı_yetiskin",
+  "question": "yetişkin için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+  "answer": "Tam tahıl veya bulgur gibi tam tahillerin tüketilmesi önerilir  |  Sebze, meyve, tam tahıl, kuru baklagil ve yağlı tohum tüketimi artırılarak posa alımı yükseltilmelidir  |  Şeker ve şeker ilaveli besinler ile pastane ürünleri kullanımı azaltılmalı  |  İşlenmemiş gıdalar, meyveler ve sebzeler, zeytinyağı ve proteinler, kuru baklagiller, tam tahıllar ve kuruyemişlere odaklanın  |  Tam tahıl, posa alımını artırır ve sindirim sağlığını destekler",
+  "used_chunks": [
+    "yasli_saglikli_06_tahil_yag",
+    "chunk_000594_01",
+    "yasli_ilke_06_tam_tahil",
+    "chunk_000594_02",
+    "c176",
+    "c175b",
+    "yasli_ilke_09_posa",
+    "c175a"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yetişkin için ekmek tahıl pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yetiskin tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      },
+      {
+        "retry": false,
+        "query": "tam tahıl tam tahil bulgur yulaf beyaz ekmek rafine pirinç pirinc kepekli"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "tahil_1",
+    "category": "tahil",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

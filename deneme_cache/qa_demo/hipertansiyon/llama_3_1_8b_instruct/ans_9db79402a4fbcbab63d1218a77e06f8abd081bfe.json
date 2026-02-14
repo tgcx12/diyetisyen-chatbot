@@ -1,0 +1,48 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Sebze meyve, az yağlı/yağsız süt ürünleri, tam tahıllar, tavuk balık, kuru baklagil ve yağlı tohumları içerir.  |  Potasyum, kalsiyum, magnezyum ve posa içeriği yüksektir.  |  Yaşam tarzı (RAG bilgilendirme)  |  lifestyle  |  Yaşam tarzı değişiklikleri kan basıncını azaltmaya katkı sağlar: kilo kaybı, DASH diyeti, tuz azaltımı, fiziksel aktivite ve alkolün sınırlandırılması ile toplam düşüş artabilir.  |  Tuz tüketimi konusunda öneriler Hazır soslar (soya ve salata sosu, ketçap sos, barbekü sos, tartar sos, salsa sos, hardal, makarna sosu vb.), Atıştırmalık ürünler (cips, tahıl bazlı bar, meyve bazlı bar, ekstrüde ürünler, patlamış mısır vb.), Tuzlanmış kuruyemişler (fındık, fıstık, ceviz, badem, leblebi, kavurga, kabak ve ayçiçeği çekirdeği, her türlü çekirdek içi vb.), Turşu ve salamura (siyah ve yeşil zeytin, sebze turşuları) yiyecekler, Balık konserveleri, tuzlanmış, tütsülenmiş ve/veya salamura edilmiş et ve balık ürünleri, Yemek hazırlama ve pişirme sırasında ilave edilen tuz ve sebzeli tuzların miktarı azaltılmalıdır.",
+  "used_chunks": [
+    "ht_dash_01",
+    "ht_lifestyle_01",
+    "chunk_000418_1",
+    "chunk_000419",
+    "cvh_dash_3",
+    "chunk_000389",
+    "cvh_dash_1"
+  ],
+  "strict_chunks_count": 8,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için posa lif tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "llama_3_1_8b_instruct",
+    "ok": false,
+    "reason": "exception",
+    "error": "404 Client Error: Not Found for url: http://localhost:11434/api/chat"
+  },
+  "qspec": {
+    "id": "lif_1_num_amt",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

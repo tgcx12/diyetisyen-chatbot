@@ -1,0 +1,51 @@
+{
+  "domain": "hipertansiyon",
+  "question": "hipertansiyon için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+  "answer": "trans yağdan kaçınılması gerekir.  |  İşlenmiş fırınlanmış ve ticari olarak kızartılmış ürünlerde yüksek miktarda doymuş yağlar ve trans yağlar bulunabilmektedir.  |  Hazır besinlerde sodyum içeriği kontrol edilmeli ve düşük sodyumlu seçenekler tercih edilmelidir.  |  Paketli ürünlerde düşük sodyum ifadeleri tercih edilmeli, konserve ve hazır çorba kullanılmamalıdır.  |  Tuz yerine limon, sirke ve baharat gibi tat vericiler kullanılabilir.  |  Tuzlanmış kuruyemişler ve tuzlanmış et ürünlerden uzak durulmalı.",
+  "used_chunks": [
+    "chunk_000390",
+    "chunk_000408",
+    "not_18",
+    "ht_beverage_01",
+    "chunk_000418_1",
+    "ht_salt_01",
+    "cvh_salt_2",
+    "not_16",
+    "chunk_000424",
+    "chunk_000421",
+    "chunk_000419",
+    "tb_besin_tuz"
+  ],
+  "strict_chunks_count": 12,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "hipertansiyon için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?"
+      },
+      {
+        "retry": false,
+        "query": "hipertansiyon trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret"
+      },
+      {
+        "retry": false,
+        "query": "trans margarin paketli hazır hazir unlu mamul fast food kızart kizart gofret bisküvi biskuvi"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_trans",
+    "category": "yag",
+    "want_numeric": false,
+    "want_qual": true
+  }
+}

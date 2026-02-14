@@ -1,0 +1,43 @@
+{
+  "domain": "cocuk_adelson",
+  "question": "çocuk ve adelson için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+  "answer": "Yağı azaltılmış süt ve süt ürünlerini iki yaşından küçük çocuklar tüketmemelidir  |  Süt ve süt ürünleri grubunda yer alan besinlerin tüketimi sağlanamadığında süt içeren dondurma ve sütlü tatlılar tercih edilebilir  |  Çocuk ve adolesanlar için sadece anne sütü ile beslenme hedeflenmelidir  |  Eğer bebek sadece anne sütü alıyorsa süt ve süt ürünleri annenin diyetinden çıkarılmalıdır  |  Anne sütü alımı yoksa süt ve süt ürünleri çocuğun diyetinden çıkarılmalıdır  |  Yogurt tüketimi, özellikle erken çocukluk döneminde dikkatli yapılmalıdır",
+  "used_chunks": [
+    "chunk_000375",
+    "chunk_000372",
+    "ca_2",
+    "chunk_000281"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "çocuk ve adelson için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon adet gram ml)?"
+      },
+      {
+        "retry": false,
+        "query": "cocuk_adelson süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı"
+      },
+      {
+        "retry": false,
+        "query": "süt sut yoğurt yogurt peynir az yağlı az yagli yağsız yagsiz tam yağlı tam yagli kaymak"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "sut_1_num_amt",
+    "category": "sut",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

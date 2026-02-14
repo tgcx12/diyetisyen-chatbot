@@ -1,0 +1,11 @@
+{
+  "input": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\kolesterol\\llama_3_1_8b_instruct\\qa_summary.json",
+  "tag_dicts": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\tag_dicts.json",
+  "output_root": "C:\\Users\\user\\Desktop\\diyetisyen_llm\\deneme_cache\\qa_demo\\kolesterol\\llama_3_1_8b_instruct\\labels_output",
+  "models": [
+    "llama_3_1_8b_instruct",
+    "gemma_3_4b",
+    "qwen2_5_3b",
+    "gemma_2_2b"
+  ]
+}

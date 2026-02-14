@@ -1,0 +1,270 @@
+{
+  "domain": "cocuk_adelson",
+  "model_key": "llama_3_1_8b_instruct",
+  "count": 35,
+  "items": [
+    {
+      "question": "çocuk ve adelson için beslenme genel olarak nasıl olmalı, neler tercih edilmeli?",
+      "answer": "Ebeveynler çocuklarını yemek yerine övgüyle ödüllendirmelidir.  |  Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir.  |  Çocuklar yeterli ve dengeli beslenmeli, besin çeşitliliğini artırmak için her öğünde farklı besin gruplarından tüketmelidir.  |  Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.",
+      "used_chunks": [
+        "ca_4",
+        "genel_04_tuz_yag_seker",
+        "chunk_000730",
+        "genel_01_dengeli_beslenme",
+        "genel_02_enerji_yuksek_besinler",
+        "ergen_07_onleme_yaklasimi",
+        "okul_ergen_07_saglik_koruma",
+        "ca_2",
+        "genel_12_yasam_boyu_etki",
+        "genel_11_adolesan_bagimsizlik",
+        "okul_ergen_04_alismanliklar",
+        "okul_ergen_02_fiziksel_bilissel_gelisim"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için genel olarak neler sınırlandırılmalı, nelerden kaçınılmalı?",
+      "answer": "Ebeveynler çocuklarını yemek yerine övgüyle ödüllendirmelidir.  |  Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  Enerji değeri düşük ancak enerji içeriği yüksek yiyecek ve içeceklerin tüketimi sınırlandırılmalıdır.  |  Bu gruptaki besinler çocukluk ve adolesan dönemde sağlıklı beslenmeyi olumsuz etkileyebilir.  |  Çocuk ve Adolesanlar İçin Ulaşılması Gereken Hedefler",
+      "used_chunks": [
+        "ca_4",
+        "genel_04_tuz_yag_seker",
+        "genel_02_enerji_yuksek_besinler",
+        "ca_2",
+        "chunk_000372",
+        "genel_11_adolesan_bagimsizlik",
+        "genel_01_dengeli_beslenme",
+        "genel_06_hijyen_aliskanligi",
+        "okul_ergen_08_yaygin_sorunlar",
+        "ergen_07_onleme_yaklasimi",
+        "okul_ergen_05_psikososyal_etkiler",
+        "genel_03_ogun_atlama"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için kırmızı et tüketimi nasıl olmalı ve hangi türlerden/işlenmiş etlerden kaçınılmalı?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için kırmızı et tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için kırmızı et tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için beyaz et (tavuk/hindi) tüketimi nasıl olmalı ve pişirme yöntemi nasıl olmalı?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için beyaz et (tavuk/hindi) tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için beyaz et (tavuk/hindi) tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için balık tüketimi nasıl olmalı ve hangi tür/pişirme tercih edilmeli?",
+      "answer": "Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir",
+      "used_chunks": [
+        "chunk_000730"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için balık tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir",
+      "used_chunks": [
+        "chunk_000730"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için balık tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Ayrıca vejetaryen gebelerin diyetleri B12, kalsiyum, çinko, kolin ve omega 3 (EPA/DHA) açısından değerlendirilmelidir",
+      "used_chunks": [
+        "chunk_000730"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için yumurta tüketimi nasıl olmalı ve pişirme/yanında tüketim önerisi var mı?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için yumurta tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için süt ve süt ürünleri tüketimi nasıl olmalı?",
+      "answer": "Süt ve süt ürünleri grubunda yer alan besinlerin tüketimi sağlanamadığında (özellikle çocukluk döneminde) süt içeren dondurma ve sütlü tatlılar tercih edilebilir.  |  Ancak bu ürünlerin içeriğinde yer alan yağ ve şeker miktarı nedeniyle tüketim miktarlarına dikkat edilmelidir.  |  Yağı azaltılmış süt ve süt ürünlerini iki yaşından küçük çocuklar tüketmemelidir.  |  Çocuk ve Adolesanlar İçin Ulaşılması Gereken Hedefler  |  Emziren kadınlar yaşamın ilk altı ayında sadece anne sütü ile beslemeye teşvik edilmeli ve desteklenmelidir.  |  Özellikle bebeklik ve erken çocukluk döneminde görülen besin alerjilerinin önemli bir kısmı süt ve süt ürünleri proteini kaynaklıdır.",
+      "used_chunks": [
+        "chunk_000375",
+        "chunk_000372",
+        "ca_2",
+        "chunk_000281"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için süt ve süt ürünleri tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Çocuk ve Adolesanlar İçin Ulaşılması Gereken Hedefler  |  Emziren kadınlar yaşamın ilk altı ayında sadece anne sütü ile beslemeye teşvik edilmeli ve desteklenmelidir.  |  Yağı azaltılmış süt ve süt ürünlerini iki yaşından küçük çocuklar tüketmemelidir.  |  Süt ve süt ürünleri grubunda yer alan besinlerin tüketimi sağlanamadığında (özellikle çocukluk döneminde) süt içeren dondurma ve sütlü tatlılar tercih edilebilir.  |  Özellikle bebeklik ve erken çocukluk döneminde görülen besin alerjilerinin önemli bir kısmı süt ve süt ürünleri proteini kaynaklıdır.  |  Bu durum varlığında eğer bebek sadece anne sütü alıyor ise bu besinler annenin diyetinden çıkarılmalıdır.",
+      "used_chunks": [
+        "ca_2",
+        "chunk_000372",
+        "chunk_000375",
+        "chunk_000281"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için süt ve süt ürünleri tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Süt ve süt ürünleri grubunda yer alan besinlerin tüketimi sağlanamadığında (özellikle çocukluk döneminde) süt içeren dondurma ve sütlü tatlılar tercih edilebilir.  |  Yağı azaltılmış süt ve süt ürünlerini iki yaşından küçük çocuklar tüketmemelidir.  |  Çocuk ve Adolesanlar İçin Ulaşılması Gereken Hedefler  |  Emziren kadınlar yaşamın ilk altı ayında sadece anne sütü ile beslemeye teşvik edilmeli ve desteklenmelidir.  |  Özellikle bebeklik ve erken çocukluk döneminde görülen besin alerjilerinin önemli bir kısmı süt ve süt ürünleri proteini kaynaklıdır.  |  Bu durum varlığında eğer bebek sadece anne sütü alıyor ise bu besinler annenin diyetinden çıkarılmalıdır.",
+      "used_chunks": [
+        "chunk_000375",
+        "chunk_000372",
+        "ca_2",
+        "chunk_000281"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için ekmek/tahıl/pilav-makarna tüketimi nasıl olmalı (tam tahıl mı rafine mi)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için baklagil tüketimi nasıl olmalı ve hangi şekilde tercih edilmeli?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için baklagil tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için baklagil tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Kaynaklarda bu soru için bilgi bulunamadı.",
+      "used_chunks": []
+    },
+    {
+      "question": "çocuk ve adelson için kuruyemiş/kabuklu yemiş tüketimi nasıl olmalı, hangi türler tercih edilmeli ve hangilerinden kaçınılmalı?",
+      "answer": "Günün en az bir öğününü okulda tüketen çocuklara doğru beslenme alışkanlığı kazandırmada önemli rol oynar",
+      "used_chunks": [
+        "okul_ergen_06_okulun_rolu"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için kuruyemiş/kabuklu yemiş tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Günün en az bir öğününü okulda tüketen çocuklara doğru beslenme alışkanlığı kazandırmada önemli rol oynar",
+      "used_chunks": [
+        "okul_ergen_06_okulun_rolu"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için kuruyemiş/kabuklu yemiş tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Günün en az bir öğününü okulda tüketen çocuklara doğru beslenme alışkanlığı kazandırmada önemli rol oynar",
+      "used_chunks": [
+        "okul_ergen_06_okulun_rolu"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için doymuş yağ tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için doymuş yağ tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için trans yağdan kaçınılmalı mı, hangi ürünlerde bulunur?",
+      "answer": "Dışarıdan satın alınan ve hazır besinlerin tüketimi sınırlandırılmalıdır.  |  Genel Beslenme Önerileri  |  Ev ortamında hazırlanan, besin öğesi içeriği yüksek yemeklerin tüketimi teşvik edilmelidir.  |  Aile ile birlikte yemek hazırlama ve yeme sürecine katılım, çocukların sağlıklı beslenme alışkanlığı kazanmasına yardımcı olur ve beslenme eğitimi için fırsat sunar.",
+      "used_chunks": [
+        "genel_10_ev_yemegi",
+        "genel_09_aile_katilimi"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+      "answer": "Ebeveynler çocuklarını yemek yerine övgüyle ödüllendirmelidir.  |  Daha fazla sebze ve meyve yenilmelidir.  |  Günde 60 dakika fiziksel aktivite yapılmalıdır.  |  Ekran süresi günde 2 saat olarak sınırlandırılmalıdır.  |  Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.",
+      "used_chunks": [
+        "ca_4",
+        "genel_01_dengeli_beslenme"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için posa/lif tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Daha fazla sebze ve meyve yenilmelidir.  |  Günde 60 dakika fiziksel aktivite yapılmalıdır.  |  Ekran süresi günde 2 saat olarak sınırlandırılmalıdır.  |  Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.",
+      "used_chunks": [
+        "ca_4",
+        "genel_01_dengeli_beslenme"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için posa/lif tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Meyve, sebze ve protein içeren besinlerin günlük beslenmede yer alması önemlidir.  |  Daha fazla sebze ve meyve yenilmelidir.  |  Günde 60 dakika fiziksel aktivite yapılmalıdır.  |  Ekran süresi günde 2 saat olarak sınırlandırılmalıdır.",
+      "used_chunks": [
+        "genel_01_dengeli_beslenme",
+        "ca_4"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için tuz/sodyum tüketimi nasıl olmalı ve hangi ürünlerden kaçınılmalı?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  İyotlu tuzun uygun şekilde kullanılması iyot yetersizliğinin önlenmesinde önemlidir.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker",
+        "ergen_03_iyot_yetersizligi"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için tuz/sodyum tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  İyotlu tuzun uygun şekilde kullanılması iyot yetersizliğinin önlenmesinde önemlidir.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker",
+        "ergen_03_iyot_yetersizligi"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için tuz/sodyum tüketim miktarı ne olmalı (1 porsiyon/adet/gram/ml)?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  İyotlu tuzun uygun şekilde kullanılması iyot yetersizliğinin önlenmesinde önemlidir.",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker",
+        "ergen_03_iyot_yetersizligi"
+      ]
+    },
+    {
+      "question": "çocuk ve adelson için rafine şeker/şekerli içecek tüketimi nasıl olmalı ve yerine ne tercih edilmeli?",
+      "answer": "Genel Beslenme Önerileri  |  Küçük yaşlardan itibaren tuz, doymuş yağ ve eklenmiş şeker içeren besinlerin tüketimi sınırlandırılmalıdır.  |  Ancak bu ürünlerin içeriğinde yer alan yağ ve şeker miktarı nedeniyle tüketim miktarlarına dikkat edilmelidir.  |  Süt ve süt ürünleri grubunda yer alan besinlerin tüketimi sağlanamadığında (özellikle çocukluk döneminde) süt içeren dondurma ve sütlü tatlılar tercih edilebilir.  |  Ebeveynler çocuklarını yemek yerine övgüyle ödüllendirmelidir.  |  Diş Çürükleri",
+      "used_chunks": [
+        "genel_04_tuz_yag_seker",
+        "chunk_000375",
+        "ca_4",
+        "dis_03_seker_iliskisi",
+        "genel_08_sekerli_icecekler",
+        "dis_04_korunma",
+        "ca_2"
+      ]
+    }
+  ]
+}

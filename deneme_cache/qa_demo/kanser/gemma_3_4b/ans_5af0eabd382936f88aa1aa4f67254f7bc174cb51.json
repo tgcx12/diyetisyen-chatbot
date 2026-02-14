@@ -1,0 +1,42 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "Doymuş yağların tüketimi azaltılmalı  |  Bitkisel sıvı yağlar, özellikle zeytinyağı tercih edilmelidir  |  Tekli doymamış yağlar, hamsi, sardalya, fındık, ceviz ve badem gibi omega 3 yağ asitlerininin artırılması önerilir  |  Bu yağlar kanser gelişimini önlemeye yardımcı olur  |  Yüksek miktarda hayvansal protein tüketimi doymuş yağ tüketimini artırabilir  |  Tereyağı yerine zeytinyağı kullanımı önerilir.",
+  "used_chunks": [
+    "ca_fat_recommendations",
+    "c176",
+    "ca_protein_high_animal_note"
+  ],
+  "strict_chunks_count": 4,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "kanser doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

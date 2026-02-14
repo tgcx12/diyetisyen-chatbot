@@ -1,0 +1,48 @@
+{
+  "domain": "diyabet",
+  "question": "diyabet için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?",
+  "answer": "Doymuş yağ tüketimi sınırlandırılmalı, özellikle trans yağ içeren işlenmiş gıdalar ve margarinlerden kaçınılmalı  |  Tereyağı, zeytinyağı, fındık yağı, kanola yağı gibi tekli doymamış yağlar tercih edilmeli  |  Günlük enerjinin %10’undan azını doymuş yağlardan sağlamak hedeflenmeli  |  Fazla kilolu ve obez bireylerde vücut ağırlığında %7 10 oranında kaybı sağlamak ve günlük enerjinin %30’undan azını yağlardan karşılamak önemlidir  |  Diyet posasının az olması, doymuş yağların ve sodyum tuzlarının fazla alınması diyabet gelişimine zemin hazırlar  |  Sodyum, doymuş yağlar, ilave şekerler ve rafine tahılların yüksek miktarlarda alınmasıyla ilişkili sağlık risklerini azaltmak gerekir.",
+  "used_chunks": [
+    "t2p_3",
+    "t2r_1",
+    "t2p_1",
+    "dm_ek_05",
+    "dm_ek_04",
+    "dm_4_3_01",
+    "chunk_000393",
+    "chunk_000390",
+    "genel_04_tuz_yag_seker"
+  ],
+  "strict_chunks_count": 9,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "diyabet için doymuş yağ tüketimi nasıl olmalı ve hangi yağlar tercih edilmeli?"
+      },
+      {
+        "retry": false,
+        "query": "diyabet doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      },
+      {
+        "retry": false,
+        "query": "doymuş doymus tereyağı tereyagi margarin zeytinyağı zeytinyagi fındık yağı findik yagi trans"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "yag_doymus",
+    "category": "yag",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}

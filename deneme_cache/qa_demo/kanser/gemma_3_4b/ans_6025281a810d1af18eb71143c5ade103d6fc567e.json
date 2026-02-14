@@ -1,0 +1,45 @@
+{
+  "domain": "kanser",
+  "question": "onkoloji için yumurta tüketimi ne sıklıkla olmalı (günde/haftada/ayda kaç kez)?",
+  "answer": "Yumurta, balık, tavuk gibi alternatif protein kaynakları olan yumurta, yağ içeriği yüksek et ve işlenmiş et tüketimi yerine sağlıklı pişirme yöntemleriyle tüketilmelidir  |  Kırmızı et tüketiminin haftada yaklaşık üç porsiyonla (350500 g/hafta) sınırlanması önerilmektedir  |  Yumurta, balık karaciğeri yağı ve yumurta gibi doğal olarak D vitamini, süt, meyve suları ve kahvaltılık gevrekler gibi D vitamini eklenmiş besinlerde bulunmaktadır  |  Diyette folat kaynağı olan yeşil ve kuru mercimek, tam tahıllar ve ürünleri, yumurta, yeşil yapraklı sebzeler ve yer fıstığına yeterli miktarda yer vermek önerilmektedir  |  Yağ alımı, özellikle meme, prostat, testis, rahim, yumurtalık ve kalın bağırsak rektum kanserlerinin oluşum riskini arttırmaktadır  |  Yumurta sarısı, hayvansal besinlerde A vitamini kaynağıdır.",
+  "used_chunks": [
+    "ca_protein_alternatives_redmeat_limit",
+    "ca_vitD_epid_sources",
+    "ca_folate_sources_reco",
+    "ca_obesity_cancers_13plus",
+    "ca_fat_risk_cancers",
+    "ca_vitA_sources"
+  ],
+  "strict_chunks_count": 6,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "onkoloji için yumurta tüketimi ne sıklıkla olmalı (günde haftada ayda kaç kez)?"
+      },
+      {
+        "retry": false,
+        "query": "kanser yumurta yumurta sarısı yumurta sarisi"
+      },
+      {
+        "retry": false,
+        "query": "yumurta yumurta sarısı yumurta sarisi"
+      }
+    ]
+  },
+  "numeric_in_evidence": true,
+  "numeric_in_answer": true,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_3_4b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "protein_yumurta_num_freq",
+    "category": "protein",
+    "want_numeric": true,
+    "want_qual": false
+  }
+}

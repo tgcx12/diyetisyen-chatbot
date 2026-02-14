@@ -1,0 +1,51 @@
+{
+  "domain": "sağlıklı_yasli",
+  "question": "yaşlı için posa/lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?",
+  "answer": "Yaşlılar için posa tüketimine dikkat etmek önemlidir. Tam tahıllar ve kuru baklagiller gibi posa bakımından zengin besinler tüketmek, sindirim sağlığını destekler ve kabızlık riskini azaltır.  |  tam tahıl",
+  "used_chunks": [
+    "yasli_besin_04_tahil",
+    "chunk_yasli_0004",
+    "yasli_saglikli_04_besin_cesitliligi",
+    "yasli_saglikli_05_sebze_meyve",
+    "yasli_ilke_01_besin_cesitliligi",
+    "yasli_saglikli_06_tahil_yag",
+    "yasli_ilke_06_tam_tahil",
+    "yasli_ilke_09_posa",
+    "yasli_ilke_05_sebze_meyve",
+    "yasli_besin_05_sebze",
+    "yasli_besin_03_kuru_baklagil",
+    "yasli_besin_06_meyve"
+  ],
+  "strict_chunks_count": 13,
+  "retrieval_meta": {
+    "retrieval_attempts": 3,
+    "attempts": [
+      {
+        "retry": false,
+        "query": "yaşlı için posa lif tüketimi nasıl olmalı ve hangi kaynaklar önerilir?"
+      },
+      {
+        "retry": false,
+        "query": "sağlıklı_yasli lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      },
+      {
+        "retry": false,
+        "query": "lif posa posalı posali tam tahıl tam tahil baklagil sebze meyve"
+      }
+    ]
+  },
+  "numeric_in_evidence": false,
+  "numeric_in_answer": false,
+  "qual_in_evidence": true,
+  "qual_in_answer": true,
+  "llm_meta": {
+    "model_used": "gemma_2_2b",
+    "ok": true
+  },
+  "qspec": {
+    "id": "lif_1",
+    "category": "posa_lif",
+    "want_numeric": true,
+    "want_qual": true
+  }
+}
